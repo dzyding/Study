@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	document.write("Hello World!")
+</script>
+<!-- 浏览器不支持改脚本语言时所显示 -->
+<noscript>Your browser does not support JaveScript!</noscript>
+
+<form>
+	First name:<br>
+	<input type="submit" name="firstName">
+	<br>
+	Last name:<br>
+	<input type="text" name="lastName">
+	<br>
+	Test name:<br>
+	<input type="radio" name="testName"> 
+</form>
+
+<!-- 这个action里面包含一个相应的php -->
+<!-- <form action=""> -->
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab" selected>Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+<br><br>
+<input type="submit">
+<!-- </form> -->
+
+<textarea name="message" rows="10" cols="30">
+	The cat was playing in the garden.
+</textarea>
+
+<br><br><br><br>
+<button type="button" onclick="alert('Hello world!')">Click me!</button>
+<br><br><br><br>
+
+<!-- 提示输入 -->
+<input list="browsers">
+<datalist id="browsers">
+	<option value="Internet Explorer"></option>
+	<option value="FireFox"></option>
+	<option value="Chrome"></option>
+	<option value="Opear"></option>
+	<option value=Safri></option>
+</datalist>
+</body>
+</html>

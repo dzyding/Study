@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box {
+			position: absolute;
+			top: 100px;
+			left: 0;
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">开始</button>
+	<div class="box" id="b">
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var btn = document.getElementById("btn");
+	var box = document.getElementById("b");
+	/*
+	 //匀速
+	var num = 0;
+	var timer = null;
+	btn.onclick = function(){
+		timer = setInterval(function(){
+			num ++;
+			if (num >= 500) {
+				clearInterval(timer);
+			}else{
+				box.style.left = num + "px";
+			}
+		},5)
+	}
+	*/
+
+	//变速动画
+	var leader = 0;
+	var target = 800;
+	var timer = null;
+	btn.onclick = function(){
+		timer = setInterval(function(){
+			leader = leader + (target - leader) / 5;
+			if (leader >= target) {
+				clearInterval(timer);
+			}else{
+				box.style.left = leader + "px";
+			}
+		},100)
+	}
+</script>

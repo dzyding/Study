@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.scroll {
+			width: 400px;
+			height: 8px;
+			background-color: #ccc;
+			margin: 100px;
+			position: relative;
+		}
+		.bar {
+			width: 10px;
+			height: 25px;
+			background-color: #369;
+			position: absolute;
+			top: -7px;
+			left: 0;
+			cursor: pointer;
+		}
+		.mask {
+			width: 0;
+			height: 8px;
+			background-color: #369;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="scroll" id="scrollBar">
+		<div class="bar"></div>
+		<div class="mask"></div>
+	</div>
+	<div id="demo">
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+// onmouseup 当鼠标弹起
+// onmousedown 当鼠标按下的时候
+	var scrollBar = document.getElementById("scrollBar");
+	var bar = scrollBar.children[0];
+	var mask = scrollBar.children[1];
+	var demo = document.getElementById('demo');
+	bar.onmousedown = function(event1){
+		var evt1 = event1 || window.event;
+		//记录初始值 
+		var leftVal = evt1.clientX - this.offsetLeft;
+		var that = this;
+		//只要按下bar 在document任何地方移动都可以触发事件
+		document.onmousemove = function(event2){
+			var evt2 = event2 || window.event;
+			that.style.left = evt2.clientX - leftVal + "px";
+			var val = parseInt(that.style.left)
+			if (val < 0) {
+				that.style.left = 0;
+			}else if(val > scrollBar.offsetWidth - bar.offsetWidth) {
+				that.style.left = scrollBar.offsetWidth - bar.offsetWidth + "px";
+			}
+			//遮罩盒子的宽
+			mask.style.width = that.style.left;
+			//计算百分比
+			demo.innerHTML = "已经走了: " + parseInt(parseInt(that.style.left) / (scrollBar.offsetWidth - bar.offsetWidth) * 100) + "%";
+			/*
+			按下鼠标 然后拖拽 是可以选择文字的
+			若出现了选中状态，则不用按住鼠标也可以拖动
+			以下为解决方案 
+				window.getSelection().removeAllRangs()  为正常浏览器
+				document.selection.empty()				为ie678
+			*/
+			window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+		}
+		document.onmouseup = function() {
+			document.onmousemove = null; //不做任何操作
+		}
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

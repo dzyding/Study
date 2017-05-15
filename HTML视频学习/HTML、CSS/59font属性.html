@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		p.p1{
+			font: 18px/30px "宋体";
+			/*
+				等价于
+				font-size: 14px;
+				line-height: 24px;
+				font-family: "宋体";
+
+				用英语的逗号隔开表示备选字体，就是说如果没有前者就使用后者。备选字体可以有无数个。
+				eg:font-family: "微软雅黑","宋体";
+
+				!! 不是所有的字体都能用，因为这个字体要看用户的电脑里面装没装。
+			*/
+		}
+		p.p2{
+			font-size: 100px;
+			/*
+				可以这样单独设置英文的字体，因为在这个字体里面所有的中文都会不匹配，于是选择备用字体 宋体
+			*/
+			font-family: "Times New Roman","宋体";
+		}
+
+		p.p3{
+			/*
+				所有的中文字体，都有对应的英文名字。
+				微软雅黑: Microsoft YaHei;
+				宋体: SimSun;
+			*/
+			font-size: 100px;
+			/*微软雅黑*/
+			font-family: "Microsoft YaHei";
+		}
+
+		/*
+			行高可以用百分比，一般是大于100%
+		*/
+		p.p4{
+			font: 25px/200% "宋体";
+			/*
+				等价于
+				font: 12px/24px "宋体";
+			*/
+		}
+	</style>
+</head>
+<body>
+	<p class="p1">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+
+	<p class="p2">wgergertwegergh文字</p>
+
+	<!-- 整个个文本并不是说匹配了第二个字体就不再尝试第一个字体，而是每个字单独的匹配 -->
+	<p class="p2">文wgergertwegergh字</p>
+
+	<p class="p3">wgergertwegergh文字</p>
+
+	<p class="p4">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+</body>
+</html>

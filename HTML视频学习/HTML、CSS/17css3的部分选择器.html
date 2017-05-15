@@ -1,0 +1,113 @@
+<!-- 
+ 1.儿子选择器 符号 ">"
+   IE7开始兼容 IE6不兼容
+
+ 2.序选择器 符号":first-child"
+   IE8开始兼容 IE6 7都不兼容
+   如果需要兼容IE6 7 则只能用类选择器来区分
+
+ 3.下一个兄弟选择器 符号"+"
+   能选择上的是某元素后面紧挨着的一个元素
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	    /*
+	    儿子选择器
+	    	div的儿子p  这里不能有空格
+	    */
+		div>p{
+			color: red;
+		}
+
+		/*
+		序选择器
+			first-child     第一个
+			last-child      最后一个
+			nth-child(4)    第四个
+			nth-child(2n+2) 偶数个
+		*/
+		ul li:first-child{
+			color: red;
+		}
+
+		/*
+		下一个兄弟选择器
+			h3后面紧挨着的一个p
+		*/
+		h3+p{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<!-- 儿子选择器 -->
+	<div>
+		<p>div儿子</p>
+		<ul>
+			<li>
+				<p>div重孙子</p>
+			</li>
+		</ul>
+	</div>
+
+<!-- 序选择器 -->
+	<div>
+		<ul>
+			<li>项目</li>
+			<li>项目</li>
+			<li>项目</li>
+			<li>项目</li>
+			<li>项目</li>
+			<li>项目</li>
+		</ul>
+	</div>
+
+<!-- 下一个兄弟选择器 -->
+	<div>
+		<dl>
+			<dt>
+				<dd>
+					<h3>我是一个标题</h3>
+					<p>我是一个段落</p>
+					<p>我是一个段落</p>
+					<p>我是一个段落</p>
+					<h3>我是一个标题</h3>
+					<p>我是一个段落</p>
+					<p>我是一个段落</p>
+					<p>我是一个段落</p>
+					<h3>我是一个标题</h3>
+					<p>我是一个段落</p>
+					<p>我是一个段落</p>
+					<p>我是一个段落</p>
+					<h3>我是一个标题</h3>
+					<p>我是一个段落</p>
+					<p>我是一个段落</p>
+					<p>我是一个段落</p>
+				</dd>
+			</dt>
+		</dl>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

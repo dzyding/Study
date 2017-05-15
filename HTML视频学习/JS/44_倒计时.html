@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#demo {
+			font-size: 20px;
+			color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function() {
+			var demo = document.getElementById("demo");
+			var endTime = new Date("2017/04/08 00:00:00");
+			setInterval(clock,1000); //开启定时器
+			function clock(){
+				var nowTime = new Date();
+				// parseInt 获取整数  getTime 获取现在的毫秒数 
+				var second = parseInt((endTime.getTime() - nowTime.getTime()) / 1000);
+				//天数
+				var d = parseInt(second / 3600 / 24);
+				//小时
+				var h = parseInt(second / 3600 % 24);
+				//分数
+				var m = parseInt(second / 60 % 60);
+				//秒数
+				var s = parseInt(second % 60);
+				console.log(d);
+				console.log(h);
+				console.log(m);
+				console.log(s);
+				d = d < 10 ? "0"+d : d;
+				h = h < 10 ? "0"+h : h;
+				m = m < 10 ? "0"+m : m;
+				s = s < 10 ? "0"+s : s;
+				demo.innerHTML = "距离抢购时间还剩: " +d+ "天 " +h+ "小时 " +m+ "分钟 " +s+ "秒";
+ 			}
+		}
+	</script>
+</head>
+<body>
+	<div id="demo"></div>
+</body>
+</html>

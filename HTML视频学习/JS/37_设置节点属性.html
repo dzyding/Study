@@ -1,0 +1,41 @@
+<!-- 
+设置节点属性
+	1.获取节点属性
+	 getAttribute()  获取属性
+	 通过这个方法，可以得到某些元素的 某些属性
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="demo" class="one" title="你好">
+		
+	</div>
+	<script type="text/javascript">
+		var demo = document.getElementById("demo");
+		// 获取类
+		// alert(demo.getAttribute("class"));
+		// 获取id 
+		// alert(demo.getAttribute("id"));
+		// 获取title
+		// alert(demo.getAttribute("title"));
+
+		// 设置id
+		// demo.setAttribute("id", "xxx");
+		// alert(demo.getAttribute("id"));
+		// 设置class
+		// demo.setAttribute("class","qwe");
+
+		// 删除某个属性
+		demo.removeAttribute("title");
+		if (demo.getAttribute("title")) {
+			alert(demo.getAttribute("title"));
+		}else{
+			alert("没有title");
+		}
+	</script>
+</body>
+</html>

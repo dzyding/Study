@@ -1,0 +1,63 @@
+<!-- 
+ 1. 利用点语法
+ 	box.style.width
+ 	box.style.top
+ 	a.点语法访问的属性是带有参数的 "px"
+ 	b.width top这种属性名是没办法通过传递string类型参数进行灵活调用的
+ 	  eg: 
+ 	  	var w = width;
+ 	  	box.style.w   //错误的
+
+ 2. 利用[]访问属性
+ 	语法格式: box.style["width"]
+ 	!!只能取行内元素
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ 	<style type="text/css">
+ 		div {
+ 			width: 100px;
+ 			height: 100px;
+ 			background-color: pink;
+ 			left: 10px;
+ 			top: 20px;
+ 			position: absolute;
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	<div id="box" style="left:30px;height: 100px;top: 20px;"></div>
+ </body>
+ </html>
+ <script type="text/javascript">
+ 	var box = document.getElementById('box');
+ 	console.log(box.style.left);	//30px
+ 	console.log(box.style["left"]); //30px
+
+ 	function fn(str) {
+ 		//只能取行内元素
+ 		console.log(box.style[str]);
+ 	}
+ 	fn("height");
+ 	fn("top");
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

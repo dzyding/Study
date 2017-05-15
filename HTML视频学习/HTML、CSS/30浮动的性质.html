@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!--  
+		两个元素并排了，并且两个元素都能够设置宽度 高度了(这在刚才的标准流中，不能实现)
+		特性
+		1. 浮动的元素脱离标准文档流 "脱标"
+		   一旦一个元素浮动了，那么将能够设置宽高了，无论他原来是个div还是span
+		2. 浮动的元素有互相贴靠的情况 "贴靠"
+		3. 浮动的元素有字围效果 "字围"
+  		   浮动的元素可以挡住盒子，但是挡不住盒子里面的字
+  		4. 浮动的元素会自动收缩为内容的大小 "收缩"
+
+  		浮动这个东西，我们在初期一定要遵循一个原则:
+  			永远不是一个东西单独浮动，浮动都是一起浮动，要浮动，大家都浮动
+	-->
+	<style type="text/css">
+	/* 
+		Demo1 浮动的元素脱离标准文档流
+		
+		.box1{
+			float: left;
+			width: 200px;
+			height: 200px;
+			background-color: yellowgreen;
+		}
+		.box2{
+			width: 400px;
+			height: 400px;
+			background-color: skyblue;
+		}
+	*/
+
+	/* 
+		Demo2 浮动的元素脱离标准文档流 变得可以设置宽高了
+	*/ 
+		span{
+			float: left;
+			width: 200px;
+			height: 200px;
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+<!-- Demo1 
+	<div class="box1"></div>
+	<div class="box2"></div>
+-->
+
+<!-- Demo2 -->
+	<span>我是</span>
+	<span>我是</span>
+	<span>我是</span>
+</body>
+</html>

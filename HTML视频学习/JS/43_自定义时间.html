@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var date = new Date();
+		console.log(date);  	//现在时间
+		//方式1  不存在兼容问题 日期和时分秒中间有空格隔开
+		var endTime = new Date("2015/12/12 12:13:13");
+		//方式2
+		// var endTime = new Date(2015,12,12);
+		console.log(endTime);	//2015-12-12
+	</script>
+</body>
+</html>

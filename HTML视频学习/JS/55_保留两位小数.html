@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var PI = 3.141592653;	//常量要大写
+		var str = PI + "";		//因为数字没法进行字符操作 先转换
+		console.log(str.substr(0,str.indexOf(".")+3));
+
+		console.log(parseInt(PI * 100) / 100);
+
+		//toFixed(n) 保留n位小数
+		console.log(PI.toFixed(2));
+	</script>
+</body>
+</html>

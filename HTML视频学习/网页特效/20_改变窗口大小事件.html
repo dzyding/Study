@@ -1,0 +1,29 @@
+<!-- 
+	当我们页面宽度大于960像素的时候  页面颜色是红色
+	当我们页面宽度大小640小于960的时候  页面颜色是绿色
+	剩下的颜色是蓝色
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script type="text/javascript" src="dzyTools.js"></script>
+<script type="text/javascript">
+	//事件会在窗口或框架被调整大小时发生
+	window.onresize = function () {
+		var clientWidth = dzy_clientWidth().width;
+		if (clientWidth > 960) {
+			document.body.style.backgroundColor = "red";
+		}else if (clientWidth > 640) {
+			document.body.style.backgroundColor = "green";
+		}else {
+			document.body.style.backgroundColor = "blue";
+		}
+	}
+</script>

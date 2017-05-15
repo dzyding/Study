@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script type="text/javascript">
+	// var arr = []; //数组
+	// arr.run = function(){
+	// 	console.log("酸辣土豆是");
+	// }
+	// arr.run();
+
+	// var arr1 = [];
+	// arr1.run();	//这个明显不能掉用
+
+	//如何让所有数组都拥有run方法呢
+	Array.prototype.run = function(){
+		console.log("酸辣土豆");
+	}
+
+	var demo = [];
+	demo.run();
+
+	var demo1 = [];
+	demo1.run();
+</script>

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+*{ padding:0; margin:0; list-style:none; border:0;}
+.all{
+  width:500px;
+  height:200px;
+  padding:7px;
+  border:1px solid #ccc;
+  margin:100px auto;
+  position:relative;
+}
+.screen{
+	width:500px;
+	height:200px;
+	 overflow:hidden; 
+	position:relative;
+}
+
+.screen li{ width:500px; height:200px; overflow:hidden; float:left;}
+.screen ul{ position:absolute; left:0; top:0px; width:3000px;}
+.all ol{ position:absolute; right:10px; bottom:10px; line-height:20px; text-align:center;}
+.all ol li{ float:left; width:20px; height:20px; background:#fff; border:1px solid #ccc; margin-left:10px; cursor:pointer;}
+.all ol li.current{ background:yellow;}
+
+</style>
+<script type="text/javascript">
+  window.onload = function () {
+    var box = document.getElementById('all');
+    var ul = document.getElementById('ul');
+    var ulLis = ul.children;
+    //克隆第一个放到最后面
+    ul.appendChild(ul.children[0].cloneNode(true));
+
+    var ol = document.createElement("ol");
+    box.appendChild(ol);
+
+    //这里ulLis的定义在添加最后一个克隆li之前，居然也更新里ulLis里面的数据
+    for (var i = 0; i < ulLis.length - 1; i++) {
+      var li = document.createElement("li");
+      li.innerHTML = i + 1;
+      ol.appendChild(li);
+    }
+    ol.children[0].className = "current";
+
+    //触摸动画部分
+    var olLis = ol.children;
+    for (var i = 0; i < olLis.length; i++) {
+      olLis[i].index = i;
+      olLis[i].onmouseover = function(){
+        for (var j = 0; j < olLis.length; j++) {
+          olLis[j].className = "";
+          this.className = "current";
+          animate(ul, -this.index * 500);
+          //配合下面的小方块操作
+          square = key = this.index;
+        }
+      }
+    }
+
+    //轮播图的定时器
+    var timer = null;
+    var key = 0;
+    var square = 0;
+    timer = setInterval(autoplay, 2000);
+    function autoplay (){
+      key ++;
+      if (key > ulLis.length - 1) {
+        //快速跳回第一张 然后直接进行下一次的跳转
+        ul.style.left = 0;
+        key = 1;
+      }
+      animate(ul, -key * 500);
+
+      //小方块处理
+      square ++;
+      for (var j = 0; j < olLis.length; j++) {
+          olLis[j].className = "";
+      }
+      olLis[square % olLis.length].className = "current";
+    }
+    box.onmouseover = function(){
+      clearInterval(timer);
+    }
+    box.onmouseout = function(){
+      timer = setInterval(autoplay, 2000);
+    }
+  }
+
+  //动画函数
+  function animate(obj, target) {
+    clearInterval(obj.timer);
+    var speed = obj.offsetLeft > target ? -10 : 10;
+    obj.timer = setInterval(function(){
+      var result = target - obj.offsetLeft;
+      // 去绝对值
+      if (Math.abs(result) < 10) {
+        clearInterval(obj.timer);
+        //停在目标位置
+        obj.style.left = target + "px";
+        return;
+      }
+      obj.style.left = obj.offsetLeft + speed + "px";
+    },10);
+  }
+</script>
+
+</head>
+
+<body>
+<div class="all" id='all'>
+	<div class="screen">
+        <ul id="ul">
+            <li><img src="images/taobao/1.jpg" width="500" height="200" /></li>
+            <li><img src="images/taobao/2.jpg" width="500" height="200" /></li>
+            <li><img src="images/taobao/3.jpg" width="500" height="200" /></li>
+            <li><img src="images/taobao/4.jpg" width="500" height="200" /></li>
+            <li><img src="images/taobao/5.jpg" width="500" height="200" /></li>
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>

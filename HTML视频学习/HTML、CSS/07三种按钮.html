@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!--
+		这里的 1.php 是用来进行提交操作的。
+		对应提交按钮
+		action 表示 表单将提交到哪里
+		method属性表示用什么http方法提交 get post
+
+		现阶段input的所有类型:
+			text
+			password
+			radio
+			checkbox
+			button
+			submit
+			reset
+	 -->
+	<form action="1.php" method="">
+		<p>
+			普通按钮
+			<input type="button" value="我是一个普通按钮" />
+		</p>
+
+		<p>
+			<!-- 
+				不改value 默认就是"提交"两个字 
+				这里的submit按钮点了以后就是提交到form 的action属性对应的文件
+			-->
+			提交按钮
+			<input type="submit" value="确定提交" />
+		</p>
+
+		<p>
+			<!-- 
+				不改value 默认就是"重置"两个字
+			 -->
+			重置按钮
+			<input type="reset" />
+		</p>
+	</form>
+</body>
+</html>

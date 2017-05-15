@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script type="text/javascript">
+	function client() {
+		if (window.innerWidth != null) { //ie9 + 最新浏览器
+			return {
+				width: window.innerWidth,
+				height: window.innerHeight
+			}
+		}else if(document.compatMode === "CSS1Compat") { // 标准浏览器 (有申明html头的)
+			return {
+				width: document.documentElement.clientWidth,
+				height: document.documentElement.clientHeight,
+			}
+		}else {  //怪异浏览器
+			return {
+				width: document.body.clientWidth,
+				height: document.body.clientHeight
+			}
+		}
+	}
+	document.write(client().width);
+</script>

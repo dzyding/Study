@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script type="text/javascript">
+	function Person(name, age){
+		var obj = {};
+		obj.name = name;
+		obj.age = age;
+		obj.showName = function(){
+			console.log("我的名字是" + name);
+		}
+		obj.showAge = function(){
+			console.log("我的年龄是" + age);
+		}
+		return obj;
+	}
+
+	var obj = Person("丁志远",55);
+	var obj2 = Person("丁志远",55);
+	obj.showName();
+	obj.showAge();
+	alert(obj.showName == obj2.showName); //这里的showName都是自己独立拥有的， 并不是继承来的 所以是false
+</script>

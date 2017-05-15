@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		body{
+			background: url(images/1.jpg) top center;
+		}
+		.box {
+			height: 150px;
+			background: rgba(255,255,255,.3);
+			text-align: center;
+			padding-top: 50px;
+		}
+		.box img{
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+	//入口函数 界面读取完成则执行
+		window.onload = function(){
+			var pic1 = document.getElementById("pic1");
+			var pic2 = document.getElementById("pic2");
+			var pic3 = document.getElementById("pic3");
+
+			pic1.onclick = function(){
+				//获取界面的body
+				document.body.style.backgroundImage = "url(images/1.jpg)";
+			}
+			pic2.onclick = function(){
+				//获取界面的body
+				document.body.style.backgroundImage = "url(images/2.jpg)";
+			}
+			pic3.onclick = function(){
+				//获取界面的body
+				document.body.style.backgroundImage = "url(images/3.jpg)";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="box">
+		<img src="images/1.jpg" width="150px" id="pic1">
+		<img src="images/2.jpg" width="150px" id="pic2">
+		<img src="images/3.jpg" width="150px" id="pic3">
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

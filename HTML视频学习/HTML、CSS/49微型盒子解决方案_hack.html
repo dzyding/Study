@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!-- 浏览器hack. hack就是"黑客", 就是使用浏览器提供的后门，只针对某一浏览器做兼容 -->
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border: 1px solid red;
+			/*
+				这个下划线 "_" 只有IE6能看见 会有效果
+				IE6留了一个后门，就是只要给css属性之前，加上下划线，这个属性就是只有IE6才认识的专有属性
+			*/
+			_background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			margin: 20px;
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		function fn(obj){
+			var taget = document.getElementById(obj);
+			taget.style.display = "block";
+		}
+	</script>
+</head>
+<body>
+	<button onclick = "fn('demo1');">第一个按钮</button>
+	<button onclick = "fn('demo2');">第二个按钮</button>
+	<button onclick = "fn('demo3');">第三个按钮</button>
+	<button onclick = "fn('demo4');">第四个按钮</button>
+	<div id="demo1">1</div>
+	<div id="demo2">2</div>
+	<div id="demo3">3</div>
+	<div id="demo4">4</div>
+</body>
+</html>

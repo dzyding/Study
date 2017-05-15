@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		body {
+			background-color: black;
+		}
+		.nav {
+			width: 800px;
+			height: 42px;
+			background-color: #fff;
+			margin: 100px auto;
+			/*圆角*/
+			border-radius: 5px;
+			background: url("images/rss.png") no-repeat right center #fff;
+			position: relative;
+		}
+		.cloud {
+			width: 83px;
+			height: 42px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: url(images/cloud.gif) no-repeat;
+		}
+		.nav ul {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.nav li {
+			float: left;
+			width: 83px;
+			height: 42px;
+			line-height: 42px;
+			text-align: center;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+	<!-- 这里ul和cloud 都是绝对定位，因为cloud是先加载,ul后加载。 所以ul肯定是压着cloud的。但是ul是透明的，所以达到了效果 -->
+		<span class="cloud" id="c"></span>
+		<ul>
+			<li>首页新闻</li>
+			<li>师资力量</li>
+			<li>活动策划</li>
+			<li>企业文化</li>
+			<li>招聘信息</li>
+			<li>公司简介</li>
+			<li>上海小区</li>
+			<li>广州校区</li>
+		</ul>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var lis = document.getElementsByTagName('li');
+	var cloud = document.getElementById('c');
+	var timer = null;
+	var current = 0;  //用于存放点击时候的 offsetLeft
+	var leader = 0;
+	var target = 0;
+	for (var i = 0; i < lis.length; i++) {
+		lis[i].onmouseover = function () {
+			target = this.offsetLeft;
+		}
+		lis[i].onmouseout = function() {
+			target = current;	//鼠标离开不再是0了。 而是刚才点击的位置
+		}
+		lis[i].onclick = function() {
+			current = this.offsetLeft;  //点击的时候存储当前位置
+		}
+	}
+	timer = setInterval(function(){
+				leader = leader + (target - leader) / 10;
+				cloud.style.left = leader + "px";
+			},30);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

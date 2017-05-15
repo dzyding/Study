@@ -1,0 +1,62 @@
+<!-- 
+ 标准文档流中，竖直方向的margin不叠加，取最大的值
+ -->
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+ 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ 	<title>Document</title>
+ 	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*
+			Demo1
+			标准流竖直方向margin不叠加
+		*/
+		.p1{
+			width: 300px;
+			height: 200px;
+			background-color: orange;
+			/*
+				这个bottom 只要小于50都没有意义
+				标准文档流中 竖直方向的margin不叠加，以较大的为准
+				!!!! 浮动的盒模型没有塌陷现象
+			*/
+			margin-bottom: 40px;
+		}
+
+		.p2{
+			width: 300px;
+			height: 200px;
+			background-color: orange;
+			margin-top: 50px;
+		}
+		
+		/*
+			Demo2
+			标准流水平方向margin叠加
+		*/
+		span{
+			background-color: pink;
+		}
+		.s1{
+			margin-right: 30px;
+		}
+		.s2{
+			margin-left: 20px;
+		}
+		/*这里两个span中间的间隔为50px*/
+ 	</style>
+ </head>
+ <body>
+	<div>
+ 		<p class="p1"></p>
+ 		<p class="p2"></p>
+ 	</div>
+ 	<div>
+ 		<span class="s1">文字文字文字</span><span class="s2">文字文字文字</span>
+ 	</div>
+ </body>
+ </html>

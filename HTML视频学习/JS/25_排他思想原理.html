@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.damao {
+			background-color: pink;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var btns = document.getElementsByTagName("button");
+			for (var i = 0; i < btns.length; i++) {
+				btns[i].onclick = function(){
+					//清除所有的对象 (md，以前的逻辑都写错了)
+					for (var i = 0; i < btns.length; i++) {
+						btns[i].className = "";
+					}
+					//只留下自己
+					this.className = "damao";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<button>思想原理</button>
+	<button>思想原理</button>
+	<button>思想原理</button>
+	<button>思想原理</button>
+	<button>思想原理</button>
+	<button>思想原理</button>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			position: absolute;
+			width: 400px;
+			height: 200px;
+			padding: 50px;
+			background-color: blue;
+			top: 0;
+			/*这句话是让盒子的左边线处于父元素的正中间*/
+			left: 50%;
+			/*这里(400+50+50)/2=250 表示margin-left自己宽度的一半，就是回退一半*/
+			margin-left: -250px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

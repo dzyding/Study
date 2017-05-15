@@ -1,0 +1,63 @@
+<!-- 
+ 有一些属性，当给自己设置的时候，自己的后代都继承上了，这个就是继承性
+ 1.并不是所有的属性都可以继承
+ 	 可继承属性:  
+	 这些关于文字样式的都可以继承; 所有关于盒子 定位 布局的属性都不能继承
+	 color text-开头的 line-开头的 font-开头的
+ 2.继承性是从大到小贯穿所有的属性
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			color: red;
+			text-decoration: underline;
+			font-weight: bold;
+			font-size: 14px;
+		}
+	</style>
+	<!--
+		Demo 1
+	div p{
+			/*这个属性可以继承*/
+			color: blue; 
+			/*这个属性不能继承*/
+			border: 1px solid red;
+		}
+	 -->
+</head>
+<body>
+	<div>
+		<p>我是段落</p>
+		<p>我是段落</p>
+		<p>我是段落</p>
+		<p>我是段落</p>
+	</div>
+
+	<div>
+		<div>
+			<div>
+				查看颜色
+				<div>
+					<div>
+						查看颜色
+						<div>
+							<ul>
+								查看颜色
+								<li>
+									<span>
+										<p>查看颜色</p>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

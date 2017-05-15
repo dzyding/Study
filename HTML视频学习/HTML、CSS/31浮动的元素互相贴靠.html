@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!-- 
+		2.浮动的元素有互相贴靠的情况
+	 -->
+	<style type="text/css">
+		body{
+			font-size: 60px;
+		}
+		.box1{
+			/*float: left;*/
+			float: right;
+			width: 100px;
+			height: 400px;
+			background-color: yellowgreen;
+		}
+		.box2{
+			/*float: left;*/
+			float: right;
+			width: 120px;
+			height: 220px;
+			background-color: gold;
+		}
+		.box3{
+			/*float: left;*/
+			float: right;
+			width: 140px;
+			height: 300px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+<!-- 
+	如果有足够的空间，那么就会靠着2哥。如果没有足够的空间，就会靠着1哥。
+	如果没有足够的空间靠着1号大哥，自己就会去贴靠墙
+ -->
+	<div class="box1">1</div>
+	<div class="box2">2</div>
+	<div class="box3">3</div>
+</body>
+</html>

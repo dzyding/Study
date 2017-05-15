@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#fa{
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="gf">
+		<div id="fa">
+			<div id="son">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var son = document.getElementById('son');
+
+	//Demo1
+	// alert(son.parentNode.id);  //fa
+
+	//Demo2 fa不定位时 tagName 标签名字
+	// alert(son.offsetParent.tagName); //Body
+
+	//Demo3 fa定位
+	alert(son.offsetParent.tagName); //DIV
+</script>

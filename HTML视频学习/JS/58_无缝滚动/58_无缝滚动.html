@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style-type: none;
+		}
+		/*取消三像素的距离*/
+		img {
+			vertical-align: top;
+		}
+		.box {
+			width: 600px;
+			height: 200px;
+			margin: 100px auto;
+			background-color: pink;
+			position: relative;
+			/*显示滚动条*/
+			overflow: auto; 
+		}
+		.box ul li{
+			float: left;
+		}
+		.box ul{
+			width: 400%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="scroll">
+		<ul>
+			<li><img src="images/01.jpg" alt=""></li>
+			<li><img src="images/02.jpg" alt=""></li>
+			<li><img src="images/03.jpg" alt=""></li>
+			<li><img src="images/04.jpg" alt=""></li>
+			<li><img src="images/01.jpg" alt=""></li>
+			<li><img src="images/02.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var scroll = document.getElementById("scroll");
+	var ul = scroll.children[0];
+	var x = 0; //控制左侧值
+	var timer = null;
+	timer = setInterval(autoPlay,5);
+	function autoPlay(){
+		x --;
+		if (x <= -1200) {x = 0;}
+		ul.style.left = x + "px";
+	}
+	//鼠标经过大盒子 停止
+	scroll.onmouseover = function(){
+		clearInterval(timer);
+	}
+	//鼠标离开继续
+	scroll.onmouseout = function(){
+		timer = setInterval(autoPlay,5);
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+

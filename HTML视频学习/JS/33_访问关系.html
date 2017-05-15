@@ -1,0 +1,83 @@
+<!-- 
+	parentNode : 父节点
+
+		window.onload = function(){
+			var x = document.getElementById("x");
+			x.onclick = function(){
+				this.parentNode.style.display = "none";
+			}
+		}
+
+
+	nextSibling : 			下一个兄弟 (只有ie678认识)
+	nextElementSibling:		下一个兄弟 (其他浏览器认识的)
+	previousSibling:		上一个兄弟
+	previousSibling:		上一个兄弟 (和上面同理)
+
+	: 他们两个兼容性不好 空格也会算一个节点 所有使用的很少
+	firstChlid :			第一个孩子 (只有ie678认识)
+	firstElementChlid :		第一个孩子 (其他浏览器认识)
+	lastChlid :				最后一个孩子
+	lastElementChild :		最后一个孩子
+
+
+	childNodes :			所有的孩子节点 (嫡出)
+		这个是标准属性 它返回指定元素的字元素集合 包括HTML节点，所有属性，文本节点
+		！！！！火狐 谷歌等高版本会把换行也看作是自节点
+		可以通过nodeType 获取元素节点 (屏蔽空格)
+			nodeType == 1 元素节点
+			nodeType == 2 属性节点
+			nodeType == 3 文本节点
+
+	children :				(重要) 选取所有的孩子 只有元素节点 (庶出)
+		!!!! ie678 会包含注释节点 需要避免开
+		这个更好 我们更喜欢它 并且没有兼容性问题
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ 	<script type="text/javascript">
+ 		window.onload = function(){
+ 			var one = document.getElementById("one");
+ 			one.style.backgroundColor = "red";
+ 			// 必须先写正常浏览器 不然该表达式执行了前半段 就已经成了“真” 但是没有实际效果
+ 			var next = one.nextElementSibling || one.nextSibling;
+ 			next.style.backgroundColor = "yellow";
+ 		}
+ 	</script>
+ </head>
+ <body>
+ 	<ul id="uuu">
+ 		<li></li>
+ 		<li></li>
+ 		<li></li>
+ 		<li></li>
+ 		<li id="one"></li>
+ 		<li></li>
+ 		<li></li>
+ 		<li></li>
+ 		<li></li>
+ 		<li></li>
+ 	</ul>
+ 	<script type="text/javascript">
+ 		var ul = document.getElementById("uuu");
+ 		// Demo1
+ 		// var childrens = ul.childNodes;
+ 		// for (var i = 0; i < childrens.length; i++) {
+ 		// 	if (childrens[i].nodeType == 1) {
+ 		// 		childrens[i].style.backgroundColor = "red";
+ 		// 	}
+ 		// }
+
+ 		// Demo2
+ 		var childrens = ul.children;
+ 		for (var i = 0; i < childrens.length; i++) {
+ 			if (i != 4) {
+ 				childrens[i].style.backgroundColor = "blue";
+ 			}
+ 		}
+ 	</script>
+ </body>
+ </html>

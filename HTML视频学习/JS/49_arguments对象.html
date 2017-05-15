@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function fn(a,b,c) {
+			console.log(a+b+c);
+			// 实參的个数
+			alert(arguments.length);
+			// 返回正在执行的函数 (进行递归调用的时候，推荐使用这种方式)
+			alert(arguments.callee);
+		}
+		fn(1,2,3,5);
+	</script>
+</body>
+</html>

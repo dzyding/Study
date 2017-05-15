@@ -1,0 +1,32 @@
+<!-- 
+ css中，所有的行，都有行高。盒模型padding，绝对不是直接作用在文字上的，而是作用在“行”上的
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*
+			这里p的总高度就是 行数 ✖️ 行高
+			文字是在自己的行里面居中的。 (因为奇数的不平分问题，所以工程师一般只用偶数的行高，字号)
+				eg: 1. 文字的高度是14  行高是24 那么文字上下的间距都是5
+					2. 文字的高度是14  行高是25 那么文字上间距为5 下间距为6 (如果不能平分一般加下面)
+		*/
+		p{
+			border: 1px solid black;
+			width: 500px;
+			margin: 100px;
+			line-height: 24px;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+</body>
+</html>

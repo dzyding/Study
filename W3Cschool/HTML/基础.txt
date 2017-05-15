@@ -1,0 +1,19 @@
+HTML标题
+
+<h1>这是标题一</h1>
+<h2>这是标题二</h2>
+<h3>这是标题三</h3>
+
+h1 到 h6  就是字体越来越小
+
+HTML 段落
+
+<p>这是一个段落</p>
+<p>这是另外一个段落</p>
+
+HTML 链接
+
+<a href="http://www.baidu.com">这是一个链接</a>
+
+HTML图像
+<img src="ChongYang.png" width="104" height="142">

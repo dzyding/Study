@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo"></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div class="one"></div>
+	<div></div>
+	<div class="one"></div>
+	<div></div>
+	<div></div>
+	<div id="last"></div>
+</body>
+</html>
+<script type="text/javascript">
+	// 以前的这个写的不完善 只能获取id
+	// function $(id) {return document.getElementById(id);}
+
+
+	function getClass(classname){
+		//如果浏览器支持的，直接返回
+		if (document.getElementsByClassName) {
+			return document.getElementsByClassName(classname);
+		}
+		var arr = [];
+		//通配符 获取所有的标签 (节点)
+		var dom = document.getElementsByTagName("*");
+		for (var i = 0; i < dom.length; i++) {
+			var txtarr = dom[i].className.split(" "); //分割类名 并且转换成数组
+			for (var j = 0; j < txtarr.length; j++) {
+				if (txtarr[j] == classname) {
+					arr.push(dom[i]);
+				} 
+			}
+		}
+		return arr;
+	}
+
+	//封装自己的$
+	function $(str) {
+		//首元素
+		var s = str.charAt(0);
+		//后缀
+		var ss = str.substr(1);
+		switch (s) {
+			case "#":
+				return document.getElementById(ss);
+				break;
+			case ".":
+				return getClass(ss);
+				break;
+			default:
+				return document.getElementsByTagName(str);
+		}
+	}
+
+	$("#demo").style.backgroundColor = "purple";
+	$("#last").style.backgroundColor = "yellow";
+	var ones = $(".one");
+	for (var i = 0; i < ones.length; i++) {
+		ones[i].style.backgroundColor = "blue";
+	}
+</script>
+
+
+
+
+
+
+
+
+
+

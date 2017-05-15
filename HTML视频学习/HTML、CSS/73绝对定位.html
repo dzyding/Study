@@ -1,0 +1,72 @@
+<!-- 
+ 绝对定位 opsition: absolute
+  绝对定位以后脱离标准流，也就没有了文本类型 和 盒子类型的区别 span也可以设置宽高了
+  绝对定位的位置和该元素原来的位置没有关系
+  1.top属性是相对页面上边框进行定位的 
+  2.bottom属性是相对首屏(初始屏幕)的下边框进行定位的，而不是当前屏幕的下边框。
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.box1{
+			background-color: yellowgreen;
+		}
+		.box2{
+			background-color: skyblue;
+			position: absolute;
+			left: 300px;
+			top: 0px;
+		}
+		.box3{
+			background-color: orange;
+		}
+		/*绝对定位以后脱离标准流，也就没有了文本类型 和 盒子类型的区别 span也可以设置宽高了*/
+		span{
+			position: absolute;
+			top: 0px;
+			left: 600px;
+			width: 100px;
+			height: 100px;
+			background: pink;
+		}
+		img{
+			display: block;
+			width: 1000px;
+			height: 700px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<span></span>
+	<img src="73绝对定位的理解.png">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

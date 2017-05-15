@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		p.p1{
+			/* Demo 1
+				  单行文本，行高等于盒子高的时候，这行文本就是垂直居中的
+			*/
+			width: 600px;
+			background-color: yellow;
+			margin: 100px;
+			height: 60px;
+			line-height: 60px;
+		}
+
+		p.p2{
+			/* Demo 2
+				  多行文本，设置垂直居中只能设置盒子的padding (口算)
+				  这里一共两行  (60为原行高)
+				  padding-top = (60 - 18 * 2) / 2
+				  height      = 60 - padding-top
+			*/
+			width: 600px;
+			background-color: yellow;
+			margin: 100px;
+			
+			height: 48px;
+			line-height: 18px;
+			padding-top: 12px;
+		}
+	</style>
+</head>
+<body>
+	<p class="p1">文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+	<p class="p2">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        ul {
+            list-style: none;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 1200px;
+            height: 400px;
+            margin: 50px auto;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+        div ul {
+            width: 1300px;
+        }
+        li {
+            width: 240px;
+            height: 400px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../dzyTools.js"></script>
+<script type="text/javascript">
+    var box = document.getElementsByTagName('div')[0];
+    var lis = box.getElementsByTagName("li");
+    for (var i = 0; i < lis.length; i++) {
+        lis[i].style.backgroundImage = "url(images/" + (i+1) + ".jpg)";
+        lis[i].onmouseover = function () {
+            for (var i = 0; i < lis.length; i++) {
+                dzy_attAnimate(lis[i], {width: 100});
+            }
+            dzy_attAnimate(this, {width: 800});
+        }
+        lis[i].onmouseout = function () {
+            for (var i = 0; i < lis.length; i++) {
+                dzy_attAnimate(lis[i], {width: 240});
+            }
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

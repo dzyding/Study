@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+		}
+		#box1 {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			top: 150px;
+			left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn200">200</button>
+	<button id="btn400">400</button>
+	<div id="box"></div>
+	<div id="box1"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var box = document.getElementById('box');
+	var box1 = document.getElementById('box1');
+	var btn200 = document.getElementById('btn200');
+	var btn400 = document.getElementById('btn400');
+	btn200.onclick = function () {
+		animate(box,200);
+		animate(box1,500);
+	}
+	btn400.onclick = function () {
+		animate(box,400);
+		animate(box1,700);
+	}
+
+	//封装匀速运动
+	function animate(obj, target) {
+		clearInterval(obj.timer);
+		var speed = obj.offsetLeft > target ? -10 : 10;
+		obj.timer = setInterval(function(){
+			var result = target - obj.offsetLeft;
+			// 去绝对值
+			if (Math.abs(result) < 10) {
+				clearInterval(obj.timer);
+				//停在目标位置
+				obj.style.left = target + "px";
+				return;
+			}
+			obj.style.left = obj.offsetLeft + speed + "px";
+		},30);
+	}
+</script>

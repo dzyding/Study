@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 200px;
+			top: 10px;
+			left: 20px;
+			background-color: pink;
+			z-index: 2;
+			opacity: 0.4;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var demo = document.getElementById('demo');
+	//指定对象 的 指定属性
+	function getStyle(obj,attr) {
+		if (obj.currentStyle) {	//ie等
+			return obj.currentStyle[attr];
+		}else { //标准浏览器 w3c
+			return window.getComputedStyle(obj,null)[attr];
+		}
+	}
+	console.log(getStyle(demo,"opacity"));
+	console.log(getStyle(demo,"background-color"));
+	console.log(getStyle(demo,"height"));
+	console.log(getStyle(demo,"z-index")); 	//0 
+</script>

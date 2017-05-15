@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.search {
+			width: 300px;
+			height: 30px;
+			margin: 100px auto;
+			position: relative;
+		}
+		.search input {
+			width: 200px;
+			height: 25px;
+		}
+		.search label {
+			font-size: 12px;
+			color: #ccc;
+			cursor: text;
+			position: absolute;
+			top: 8px;
+			left: 20px;
+		}
+	</style>
+	<!-- 外链式 -->
+	<!-- <script type="text/javascript" src="04.js"></script> -->
+
+	<script type="text/javascript">
+		window.onload = function(){
+			function $(id){
+				return document.getElementById(id);
+			}
+			// IE8及以下不认识oninput方法 (大部分浏览器都支持)
+			// IE8及以下使用onpropertychange
+			$("txt").oninput = $("txt").onpropertychange = function(){
+				if (this.value == "") {
+					$("message").style.display = "block";
+				}else{
+					$("message").style.display = "none";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="search">
+		<input type="text" id="txt"/>
+		<!-- 这个for表示只要一点该label 就相当于点击txt -->
+		<label for="txt" id="message">必败的国际大牌</label>
+	</div>
+</body>
+</html>

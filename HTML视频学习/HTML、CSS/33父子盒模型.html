@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		div{
+			/*父亲能够容纳子内容的体积只有 400 * 400 */
+			width: 400px;
+			height: 400px;
+			padding: 100px;
+			background-color: pink;
+		}
+		.para1{
+			float: left;
+			width: 100px;
+			height: 300px;
+			background-color: yellowgreen;
+		}
+		.para2{
+			float: left;
+			/*
+				所以两个儿子的总宽度加起来只能有400 超过400就会掉到下面去显示 不能并排了
+				比如1:
+					para1 width 300
+					para2 width 100
+				比如2:
+					para1 width   300
+					para2 width   80
+					      padding 10
+			*/
+			width: 280px;
+			height: 300px;
+			padding: 10px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p class="para1"></p>
+		<p class="para2">
+			<!-- 这里两个span就只能够分父亲的width 280, padding 部分子元素不能使用 -->
+			<span></span>
+			<span></span>
+		</p>
+	</div>
+</body>
+</html>

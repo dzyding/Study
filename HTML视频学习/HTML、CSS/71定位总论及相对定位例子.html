@@ -1,0 +1,94 @@
+<!-- 
+ 定位有三种。
+
+ 1.相对定位:
+  position: relative
+  用来微调元素位置的，就是相对自己原来的位置进行移动 
+  eg:
+   position: relative;  先申请
+   left: 100px;         再移动
+   top:  100px;         再移动
+   
+  相对定位的值设置 (移动方向就是和单词的方向相反)
+   top:    100px  向下移动
+   bottom: 100px  向上移动
+   right:  100px  向左移动
+   left:   100px  向右移动
+
+  三个性质:
+   1.不脱标
+   2.老家留坑  
+   3.形影分离
+     虽然显示出来的位置变了，但其实它依旧在原来的位置，我们看到的只是他的"影子"。
+     这个时候设置padding margin 依旧会在原来的位置影响上下左右的其他的元素.
+     而不会影响这个"影子"旁边的元素.
+  用途:
+   相对定位有坑，所以一般不用于做"压盖"效果. 在页面中，效果极小。
+   (就是在一个盒子上面盖另一个盒子，因为它必须有个原始位置,必须占个坑,所以用起来会很麻烦)
+   a: 微调元素
+   b: 做绝对定位的参考,子绝父相
+
+ 2.绝对定位:
+  position: absolute
+  特性:
+  1.脱离标准流，也就没有了文本类型 和 盒子类型的区别 span也可以设置宽高了
+  2.绝对定位的位置和该元素原来的位置没有关系
+  3.属性设置
+	  a.top属性是相对页面上边框进行定位的 
+	  b.bottom属性是相对首屏(初始屏幕)的下边框进行定位的，而不是当前屏幕的下边框。
+  4.一个绝对定位的元素，如果父辈元素中出现了定位(相对定位 绝对定位都可以)的元素，那么将以这个父辈元素，为参考点。
+    这个地方不一定是父亲，只要是父辈都行。
+    eg:
+      1. 当box1 定位， box2 不定位, p将以box1为参考点进行绝对定位
+      2. 当box1 不定位， box2 定位, p将以box2为参考点进行绝对定位
+      3. 当box1 box2 都相对定位,p将以离它更近的父辈(box2)为参考点进行绝对定位
+     <div class="box1">
+        <div class="box2">
+          <p></p>
+        </div>
+     </div>
+  5.绝对定位的儿子 无视父辈作为参考盒子的padding
+
+  使用:
+  子绝父绝、子绝父相、子绝父固，都是可以给儿子定位的。但是工程上子绝、父绝，没有一个盒子在标准流里面了，所以页面就不稳固，没有任何实战用途。工程上，"子绝父相"才有意义，父亲没有脱标，儿子脱标在父亲的范围里面移动。
+
+  绝对定位盒子的居中
+  left: 50%;
+  margin-left: (负的自身宽度的一半);
+
+ 3.固定定位
+  position: fixed
+
+ 每一种定位都暗藏玄机，所以我们分别讲解
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.box1{
+			background-color: yellowgreen;
+		}
+		.box2{
+			background-color: skyblue;
+			/*相对定位  就是相对自己原来的位置进行移动*/
+			position: relative;
+			left: 100px;
+			top: 150px;
+		}
+		.box3{
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!-- 
+		本例子的使用范围.
+		 需求父亲将所有的儿子横排现实。但是父亲的宽度不够，于是加一个够宽的中间盒子来装所有内容 然后在父亲里面剪切超出内容
+	 -->
+	<style type="text/css">
+		.father{
+			width: 400px;
+			height: 200px;
+			border: 1px solid black;
+			/*这里需要剪切掉多余的*/
+			overflow: hidden;
+		}
+		.father ul {
+			/*将父视图和内容视图之间插一个够装所有内容视图的盒子*/
+			width: 404px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.father ul li{
+			float: left;
+			width: 100px;
+			height: 100px;
+			border: 1px solid blue;
+			margin: -1px 0 0 -1px;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!-- 
+	新建节点 插入节点 删除节点 克隆节点 等等
+
+	创建节点:
+		eg: 生成一个li标签
+		var div = document.createElement("li");
+
+	插入节点:
+		appendChild()  (放入盒子的最后面)
+
+		insertBefore(插入节点，参照节点)   (插入到指定节点之前)
+
+	删除节点:
+		removeChild()
+
+	克隆节点:
+		cloneNode();  (复制节点) 
+		括号里面可以跟参数
+		如果里面是true，深层复制  (就是复制该盒子及其子盒子)
+		如果里面是false，浅层复制 (就是只复制该盒子，不复制其子盒子)
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ </head>
+ <body>
+ 	<div id="test"></div>
+ 	<script type="text/javascript">
+ 		var t = document.getElementById("test");
+ 		//创建节点
+ 		var firstDiv = document.createElement("div");
+ 		firstDiv.style.backgroundColor = "red";
+ 		firstDiv.style.height = "200px";
+ 		//插入节点
+ 		t.appendChild(firstDiv);
+
+ 		var secondDiv = document.createElement("div");
+ 		secondDiv.style.backgroundColor = "yellow";
+ 		secondDiv.style.height = "100px";
+ 		//在第一个节点前面(这个例子中也可以直接写firstDiv) 插入 secondDiv 节点
+ 		t.insertBefore(secondDiv,t.children[0]);
+ 		//如果第二个参数为null 则默认把新生成的盒子放到最后面
+ 		// t.insertBefore(secondDiv,null);
+
+ 		//移除制定节点
+ 		// t.removeChild(firstDiv);
+
+ 		//克隆节点
+ 		var lastDiv = t.children[0].cloneNode();
+ 		t.appendChild(lastDiv);
+
+ 		//深复制t节点 并通过t获取其父节点 然后给t自己添加一个兄弟
+ 		var sT = t.cloneNode(true);
+ 		t.parentNode.appendChild(sT);
+ 	</script>
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+

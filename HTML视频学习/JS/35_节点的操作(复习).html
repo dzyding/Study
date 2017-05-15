@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function() {
+			var demo = document.getElementById('demo');
+			var btn = document.getElementsByTagName('button')[0];
+			btn.onclick = function(){
+				//创建新节点
+				var newli = document.createElement("li");
+				newli.innerHTML = "文字";
+				//插入到父节点的最后面
+				demo.appendChild(newli);
+				//查到父节点的最前面
+				// demo.insertBefore(newli, demo.children[0]);
+				//克隆
+				demo.parentNode.appendChild(demo.cloneNode(true));
+			}
+		}
+	</script>
+</head>
+<body>
+	<button>点击</button>
+	<ul id="demo">
+		
+	</ul>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.demo {
+			width: 400px;
+			height: 400px;
+			background-color: pink;
+			margin: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="demo"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var div = document.getElementsByTagName('div')[0];
+	div.onmousemove = function (event) {
+		var evt = event || window.event;
+		var x = event.clientX - this.offsetLeft;
+		var y = event.clientY - this.offsetTop;
+		this.innerHTML = "x: " + x + "px " + "y: " + y + "px";
+	}
+</script>

@@ -1,0 +1,101 @@
+<!-- 
+ css2.1中 颜色的表示方法有哪些
+   1. 用英文单词来表示
+   2. 用rgb方法来表示
+   3. 十六进制表示法
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 180px;
+			height: 40px;
+			border: 1px solid black;
+			margin-bottom: 20px;
+		}
+		.box1{
+			background-color: red;
+		}
+		.box2{
+			/*
+				rgb分别表示 red green blue
+				光学显示器，每个像素都是由三原色的发光原件组成的，靠明亮度不同调成不同的颜色。
+				取值范围 0 - 255
+			*/
+			background-color: rgb(0,255,0);
+		}
+		.box3{
+			/*黑色*/
+			background-color: rgb(0,0,0);
+		}
+		.box4{
+			/*白色*/
+			background-color: rgb(255,255,255);
+		}
+		.box5{
+			/*黄色*/
+			background-color: rgb(255,255,0);
+		}
+		.box6{
+			/*粉色*/
+			background-color: rgb(255,0,255);
+		}
+		.box7{
+			/*
+				用#开头的值，都是16进制的. 所以16进制中f就是15 ff就是255
+				#ff 00 00  
+				对应255 0 0
+				其实也是对应 红 绿 蓝
+			*/
+			/*红色*/
+			background-color: #ff0000;
+		}
+		.box8{
+			/*
+				等价 rgb(18,52,86)
+			*/
+			background-color: #123456;
+		}
+		.box9{
+			/*
+				简化: #ff 00 00;
+				     只有aabbcc的模式才能简化
+				eg: #112233  == #123
+
+				#000 黑
+				#fff 白
+				#f00 红
+				#333 灰色
+				#222 深灰
+				#ccc 浅灰
+			*/
+			background-color: #f00;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box5"></div>
+	<div class="box6"></div>
+	<div class="box7"></div>
+	<div class="box8"></div>
+	<div class="box9"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box {
+            text-align: center;
+            margin:100px auto;
+        }
+        span {
+            display: inline-block;
+            width: 150px;
+            height: 20px;
+            border: 1px solid #ccc;
+            font-size:12px;
+            line-height: 20px;
+            text-align: left;
+            padding-left: 20px;
+            background-color: #eee;
+            color:#999;
+        }
+        .right {  /*正确的*/
+            color: #5EFF5E;
+            background:url(images/right.png) no-repeat #DFFFDF 4px 3px;
+            border: 1px solid #ACFFAC;
+        }
+        .wrong {  /*错误的*/
+            background:url(images/wrong.png) no-repeat #FFDCD0 4px 3px;
+            border: 1px solid #FFAC91;
+            color: #FF6B39;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function(){
+            function $(id){
+                return document.getElementById(id);
+            }
+            $("txt").onblur = function(){ //离开焦点判断
+                // alert($("txt").value);
+                //this 表示事件调用者
+                // alert(this.value);
+                if (this.value == "") {
+                    // 更改类名
+                    $("result").className = "wrong";
+                    //更换盒子里面的内容
+                    $("result").innerHTML = "内容不能为空";
+                }else if(isNaN(this.value)){  //isNaN   不是数字返回true 反之返回false
+                    //不是一个数字
+                    $("result").className = "wrong";
+                    $("result").innerHTML = "请输入数字";
+                }else if(this.value > 150 || this.value < 0){
+                    //输入数字超过范围
+                    $("result").className = "wrong";
+                    $("result").innerHTML = "请输入合理的范围";
+                }else {
+                    //正确
+                    $("result").className = "right";
+                    $("result").innerHTML = "输入正确";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="box">
+    语文: <input type="text" id="txt" />  <span id="result">请输入成绩</span>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

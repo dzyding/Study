@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="images/jd1.png" id="jd">
+	<script type="text/javascript">
+		var pic = document.getElementById('jd');
+		pic.onmouseover = function(){
+			// src 不属于样式 所以不用加style
+			// 样式 就是在head里面申明的 <style type="text/css"></style> 中的属性
+			pic.src = "images/jd2.png";			
+		}
+		pic.onmouseout = function(){
+			pic.src = "images/jd1.png";
+		}
+	</script>
+</body>
+</html>

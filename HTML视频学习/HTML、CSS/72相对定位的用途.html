@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.txt{
+			font-size: 30px;
+		}
+		.btn{
+			position: relative;
+			top: -7px;
+			left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		<input type="text" class="txt"/>
+		<!-- 
+		在这种情况下，相让按钮往上移动一点，
+		由于上下都没有别的元素，所以padding margin失效，只能用相对定位 
+		-->
+		<input type="button" class="btn" value="我是一个小按钮" />
+	</p>
+</body>
+</html>

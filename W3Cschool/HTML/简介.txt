@@ -1,0 +1,62 @@
+<!DOCTYPE html>  
+<html>
+<body>
+<h1>我的第一个标题</h1>
+<p>我的第一个段落</p>
+</body>
+</html>
+
+DOCTYPE 声明了文档类型
+<html></html>描述了文档类型
+<body></body>为可视化网页内容
+<h1></h1>作为一个标题使用
+<p></p>作为一个段落使用
+
+<!DOCTPYE html> 在HTML5中也是描述了文档类型  
+*这个声明里面的html是不分大小写的  html HTML Html都行
+
+
+什么是HTML ?
+
+HTML 是用来描述网页的一种语言。
+  1.HTML 指的是超文本标记语言: Hyper Text Markup Language
+  2.HTML 不是一种编程语言 而是一种标记语言
+  3.标记语言是一套标记标签 (markup tag)
+  4.HTML 使用标记标签来描述网页
+  5.HTML 文档包含了HTML标签及文本内容
+  6.HTML 文档也叫做web页面
+
+HTML标签
+
+HTML标记标签通常被称为HTML标签(HTML tag).
+  1.HTML标签是由尖括号包围的关键词，比如<html>
+  2.一般是成对出现的.
+  3.开始标签 结束标签
+  4.也叫作 开放标签 毕业标签
+   eg:  <标签> 内容 <标签>
+
+
+HTML元素
+
+HTML标签 HTML元素 通常是同样的意思
+但是严格来讲 一个HTML元素包含了开始与结束标签 如下实例:
+eg: HTML元素
+    <p> This is a paragraph </p>
+
+
+Web 浏览器
+
+浏览器并不是直接显示HTML标签，但可以使用标签来决定如何展现HTML页面的内容给用户
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>w3cschool 在线教程(www.baidu.com)</title>
+</head>
+<body>
+<h1>我的标题</h1>
+<p>我的段落</p>
+</body>
+</html>

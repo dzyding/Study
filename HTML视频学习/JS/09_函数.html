@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!--
+	 	函数的声明
+	 -->
+	<script type="text/javascript">
+		var num = 10;
+		//方式1
+		function fun(){
+			alert("我是自定义函数");
+		}
+		// fun(); //函数不调用则不执行
+
+		//方式2
+		var fun1 = function(){
+			alert("直接亮声明");
+		}
+		// fun1();
+
+		//方式3
+		var fun2 = new Function("var a = 10; var b = 20; alert(a+b)");
+		fun2();
+
+		
+	</script>
+</body>
+</html>

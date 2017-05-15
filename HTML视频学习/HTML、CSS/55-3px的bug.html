@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!-- 
+		绿色的儿子，右浮动
+		margin-right踹了脚父亲，结果IE6中多了3px.
+		本来margin-right:10px 变成13px
+
+		解决办法:
+			不用管，因为根本就不允许用儿子踹父亲(margin)。所以，如果你出现了3px，说明你的代码不标准。
+			(这里应该使用父亲的padding)
+
+		IE6 千万不要跟他死磕、较劲，它不配。这里学这些只是为了增加面试的成功率。
+	 -->
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 400px;
+			height: 400px;
+			background-color: orange;
+		}
+		div p{
+			float: right;
+			margin-right: 10px;
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p></p>
+	</div>
+</body>
+</html>

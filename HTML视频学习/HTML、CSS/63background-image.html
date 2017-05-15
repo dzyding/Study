@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div.box1{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			/*
+				最基本的写法 (默认会平铺满)
+				url 统一资源定位符: uniform resouce locator;
+
+				!! padding区域也会有背景图
+			*/
+			background-image: url(images/weiwei.jpg)
+		}
+
+		div.box2{
+			/*
+				background-repeat 设置背景图是否重复显示
+
+				no-repeat 不重复
+				repeat-x  x轴重复
+				repeat-y  y轴重复
+			*/
+			width: 500px;
+			height: 500px;
+			background-image: url(images/weiwei.jpg);
+			border: 1px solid #000;
+			/*background-repeat: no-repeat;*/
+			/*background-repeat: repeat-x;*/
+			background-repeat: repeat-y;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
+	<div class="box2"></div>
+</body>
+</html>

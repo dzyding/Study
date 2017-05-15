@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 
+		日期函数 Date()
+		这个函数(对象) 可以设置我们本地 日期。 年月日时分秒
+	 -->
+	 <script type="text/javascript">
+	 	// 曾经用过的new
+	 	// var arr = new Array();
+
+	 	//创造声明一个新的日期函数 
+	 	var date = new Date();
+	 	/* 
+	 		从1970 1 1 日开始 的毫秒数 1秒等于1000毫秒
+	 		1 和 2为提倡使用
+	 		3 和 4为直接使用
+	 	*/
+	 	//Demo1
+	 	console.log(date.getTime());
+	 	//Demo2
+	 	console.log(date.valueOf());
+	 	//Demo3
+	 	console.log(Date.now());
+	 	//Demo4
+	 	console.log(+new Date());
+
+	 	date.getDate();				//获取日 1-31
+	 	date.getDay();				//获取星期 0-6
+	 	date.getMonth();			//月 0-11
+	 	date.getFullYear();			//完整年份 浏览器都支持
+	 	date.getHours();			//获取小时 0-23
+	 	date.getMinutes();			//获取分钟 0-59
+	 	date.getSeconds();			//获取秒 0-59
+	 	date.getMilliseconds();		//获取毫秒
+	 	date.getTime();				//获取累计毫秒数 (从1970/1/1)
+	 </script>
+</body>
+</html>

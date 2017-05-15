@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*
+			尽其所能的增加margin-left 也就是div靠右
+			margin-left: auto;
+			尽其所能的增加margin-right 也就是div靠左
+			margin-right: auto;
+			同时存在则居中
+
+			等同于margin 0 auto;
+				这里0表示上下是0 左右是auto
+			1.使用margin:0 auto的盒子，必须有width，明确的width
+			2.只有标准流的盒子，才能使用margin: 0 auto 来居中
+			  也就是说当一个盒子 浮动了、绝对定位了、固定定位了都不能使用margin 0 auto
+			3.margin: 0 auto; 是在居中盒子，而不是居中文档，文本的居中需要使用 text-align: center;
+
+			text-align: center;   -> 让盒子中的文本居中  (图片就是文本)
+			margin: 0 auto;       -> 让盒子居中
+
+ 			text-align 的可选值
+			text-align: left;   (这个是默认属性)
+			text-align: right;
+			text-align: center;
+		*/
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			/*margin-left: auto;*/
+			/*margin-right: auto;*/
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

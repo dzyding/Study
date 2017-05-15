@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		h3.special.zhongyao{
+			color: yellow;
+		}
+		h3.special{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		交集选择器
+		1.元素是同时满足多个需求，交集选择器没有空格
+		2.交集选择器 我们一般都是以标签名开头 比如: div.haha
+		3.交集选择器可以连续交
+		  这个写法是IE7开始兼容的,IE6不兼容
+		  兼容问题一般都出现在IE6 和 IE7 这两个浏览器是非常低级的浏览器
+		  介绍一下浏览器:
+		  	IE: 微软的浏览器，随着操作系统安装的
+		  		xp     IE6
+		  		vista  IE7
+		  		7	   IE8
+		  		8      IE9
+		  		10     edge
+	 -->
+	 <h3>我是标题</h3>
+	 <h3 class="special zhongyao">我是标题</h3>
+	 <h3 class="special">我是标题</h3>
+	 <p class="special">我是一个段落</p>
+	 <p>我是一个段落</p>
+	 <p>我是一个段落</p>
+</body>
+</html>

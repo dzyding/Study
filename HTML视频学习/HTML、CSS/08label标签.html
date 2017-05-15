@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>label标签</title>
+	<style type="text/css">
+		.kk{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<p>
+	<!-- 
+		label标签用于绑定作用。  讲汉字和input标签进行绑定
+	 -->
+		<!-- 
+			这里的字不能点
+			本质上来说"男" "女" 这两个字是在标签外面的 和input元素没有关系
+		 -->
+		请选择你的性别
+		<input type="radio" name="sex" />男
+		<input type="radio" name="sex" />女
+
+		<br />
+		<br />
+		<br />
+		<!-- 
+			label 就是解决上述问题的 让字点了等于点击按钮
+		 -->
+		<input type="radio" name="sex" id="nan"/><label for="nan">男</label>
+		<input type="radio" name="sex" id="nv" /><label for="nv">女</label>
+
+		<!-- 例子 -->
+		<p>	
+			<input type="checkbox" id="ck"/>
+			<label for="ck">10天内免登陆</label>
+		</p>
+
+		<p>
+			<label for="xingming">姓名：</label>
+			<input type="text" id="xingming" />
+		</p>
+
+		<!-- 默认选择 -->
+		<p>
+			<input type="radio" name="sex" checked="checked" />男
+			<input type="radio" name="sex"/>女
+		</p>
+	</p>
+</body>
+</html>

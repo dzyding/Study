@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			float: left;
+			width: 120px;
+			height: 40px;
+			background-color: orange;
+			text-align: center;
+		}
+		.box1{
+			/*
+				IE6中 益出盒子的属性兼容
+					  但是用来清除浮动就不行
+			*/
+			overflow: hidden;
+			/*
+				zoom 是放大的意思
+				!!!!!解决IE6兼容问题
+					本质是触发了hasLayout机制，不需要深究，这个机制只有IE6有
+			*/
+			_zoom:1;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>HTML5</li>
+			<li>JS</li>
+			<li>设计模式</li>
+		</ul>
+	</div>
+
+	<div class="box2">
+		<ul>
+			<li>英语</li>
+			<li>面试</li>
+			<li>吹牛</li>
+		</ul>
+	</div>
+</body>
+</html>

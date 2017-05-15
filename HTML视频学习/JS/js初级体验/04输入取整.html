@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+	    //带输入框的alert  用户不管输入的什么东西都是字符串
+	    /*
+		var year = prompt("请输入你的出生年份");
+		var age = 2017 - year + 1;
+		console.log(age);
+		alert("哈哈，你今年" + age + "岁了，聪明吧");
+		*/
+
+		/*
+			parseInt()  
+			1.字符串转数字 
+			2.数字的取整
+			parse 转换的意思
+			Int   整数的意思
+		*/
+		var a = "123";            //字符串
+		var b = parseInt(a);      //专成数字类型
+		console.log(b);
+		console.log(typeof b);
+
+		console.log(parseInt("365天"));  //365 这里不管后面有多少汉字都只会保留365
+		console.log(parseInt(5.4));      //取整  这里的结果就是5
+
+		var aa = parseInt(5.8) + parseInt(4.7);  //9
+		parseInt(5.8 + 4.7);                     //10
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

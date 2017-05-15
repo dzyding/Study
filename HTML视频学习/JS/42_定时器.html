@@ -1,0 +1,41 @@
+<!-- 
+	window.setInterval("执行的函数",间隔时间)  //单位毫秒
+	window 可以省略
+	eg:
+		方式1:
+		setInterval(fun,1000);  //每隔1秒钟(1000毫秒)就执行一次fun这个函数
+		方式2:
+		setInterval("fun()",1000);
+		方式3:
+		setInterval(function(){},1000);
+		错误方式:
+			setInterval(fun(),1000); //这个直接就执行了
+
+
+	JavaScript 是单线程执行的，也就是无法同时执行多段代码，当某一段代码正在执行的时候，所有的后续任务都必须等待，形成一个队列，
+	一旦当前任务执行完毕，再从队列中取出下一个任务。这也常被称为“阻塞式执行”
+
+	如果代码中设定了一个setTimeout, 那么浏览器便会在合适的时间 将代码插入任务队列，如果这个时间设为0，就代表立即插入队列，
+	但不是立即执行，仍然要等待前面代码执行完毕。所以setTimeout并不能保证执行的时间，是否及时执行取决于JavaScript线程是拥挤还是空闲
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ 	<script type="text/javascript">
+ 		window.onload = function(){
+ 			var demo = document.getElementById("demo");
+ 			setInterval(fn,1000);
+ 			var num = 1;
+ 			function fn() {
+ 				num++;
+ 				demo.innerHTML = num;
+ 			}
+ 		}
+ 	</script>
+ </head>
+ <body>
+ 	<div id="demo"></div>
+ </body>
+ </html>

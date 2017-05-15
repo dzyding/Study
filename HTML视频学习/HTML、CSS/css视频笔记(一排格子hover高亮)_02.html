@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.wai{
+			margin: 300px 100px;
+		}
+		.wai div{
+			width: 200px;
+			height: 200px;
+			border: 1px solid gray;
+			float: left;
+			margin-left: -1px;
+			/*position: relative;*/
+		}
+		.wai div:hover{
+			border: 1px solid red;
+			/*z-index: 1;*/
+			/*
+			 	这里如果父亲不用定位，只需要在这里加个相对定位就可以了
+			 	如果父亲是相对定位 就改成z-index属性
+			 */
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="wai">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

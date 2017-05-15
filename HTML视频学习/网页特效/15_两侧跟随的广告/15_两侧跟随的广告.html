@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img{
+            position: absolute;
+            left:0;
+            top:50px;
+        }
+        #demo{
+            width:1000px;
+            margin:0 auto;
+        }
+    </style>
+    <script src="../dzyTools.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        var pic = $("pic");
+        var leader = 0;
+        var target = 0;
+        var timer = null;
+        //记录初始的top值
+        var top = pic.offsetTop;
+        window.onscroll = function (){
+          //先清除 再开启
+          clearInterval(timer);
+          timer = setInterval(function(){
+            target = dzy_scrollTop().top + top;
+            leader = leader + (target - leader) / 10;
+            pic.style.top = leader + "px";
+          },30);
+        }
+      }
+    </script>
+</head>
+<body>
+<img src="images/aside.jpg" alt="" id="pic"/>
+<div id="demo">
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+   <p>天王盖地虎，小鸡炖蘑菇</p>
+</div>
+</body>
+</html>

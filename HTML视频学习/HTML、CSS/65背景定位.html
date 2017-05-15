@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		span{
+			float: left;
+			background-image: url(images/zimu.jpg);
+			background-repeat: no-repeat;
+		}
+		span.l{
+			width: 22px;
+			height: 42px;
+			/*
+				相对于图片左上角的坐标系
+				这个技术叫做css精灵技术 就是从一个图片里面直接取出其中的一小部分
+			*/
+			background-position: -374px -169px;
+		}
+		span.o{
+			width: 26px;
+			height: 40px;
+			background-position: -37px -257px;
+		}
+		span.v{
+			width: 26px;
+			height: 40px;
+			background-position: -34px -338px;
+		}
+		span.e{
+			width: 27px;
+			height: 45px;
+			background-position: -374px -81px;
+		}
+	</style>
+</head>
+<body>
+	<span class="l"></span>
+	<span class="o"></span>
+	<span class="v"></span>
+	<span class="e"></span>
+</body>
+</html>

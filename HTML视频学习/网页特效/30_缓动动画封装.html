@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			position: absolute;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn200">200</button>
+	<button id="btn400">400</button>
+	<div id="box"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var btn200 = document.getElementById('btn200');
+	var btn400 = document.getElementById('btn400');
+	var box = document.getElementById("box");
+	btn200.onclick = function(){
+		animate(box, 200);
+	}
+	btn400.onclick = function(){
+		animate(box, 400);
+	}
+
+	//封装函数
+	function animate(obj, target) {
+		clearInterval(obj.timer);
+		obj.timer = setInterval(function(){
+			var step = (target - obj.offsetLeft) / 10; //步长
+			step = step > 0 ? Math.ceil(step) : Math.floor(step);
+			obj.style.left = obj.offsetLeft + step + "px";
+			if (obj.offsetLeft == target) {
+				clearInterval(obj.timer);
+			}
+		},30);
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

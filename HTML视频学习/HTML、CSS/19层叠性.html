@@ -1,0 +1,145 @@
+<!-- 
+ 很多公司如果要笔试，那么一定会考层叠性
+ 层叠性: cdd 处理冲突的能力.
+
+ 当选择器 选择上了某个元素的时候，要这么进行统计权重
+ id > 类 > 标签
+ 	 选中:
+	 1.一个上级大于无数个下级 (不能进位)
+	   255个标签 进位 1个类名 不过没有实际意义
+	 2.同一种数量相同时 则比较下一种
+	 3.如果权重一样 谁写在后面听谁的
+	 未选中:
+	 4.继承过来的属性 权重为0
+	   如果大家都是0 谁描述得近听谁的
+
+ 权重问题大总结:
+  1.先看有没有选中 如果选中了 那么以(id, 类, 标签)来计权重 谁大听谁的。如果都一样，以厚写的为准。
+  2.如果没有选中，那么权重是0，此时标签的数量一点用都没有了。这个时候谁最近听谁的。
+  
+  所有权重问题没有任何兼容性问题!! 
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/* Demo1
+		p{
+			color:red;
+		}
+		.pp{
+			color:green;
+		}
+		#para1{
+			color:blue;
+		}
+	*/
+
+	/* Demo2
+	 我们要分别数一下id选择器的数量 类选择器的数量 标签选择器的数量 
+	 这里地方计算权重最后一个标签必须选中 所以这里最后都是 p 结尾 不然就是继承过来的属性 权重为0
+	 选中并不一定是标签结尾 也可能是类 或者 id
+	 1个id 1个类选择器 1个标签选择器  记做 1,1,1 
+	 1个id 0个类选择器 3个标签选择器  记做 1,0,3 
+	 0个id 3个类选择器 4个标签选择器  记做 0,3,4 
+	 所以这里 第一个最大
+
+	 !! div.hezi22 记作 0 1 1 (是计两次 不是一次)
+	 */
+		#box21 .hezi22 p{     
+			color: red;
+		}
+		div div #box23 p{    
+			color: green;
+		}
+		div.hezi21 div.hezi22 div.hezi23 p{  
+			color: blue;
+		}
+
+	  /* Demo3
+	  如果权重一样 谁写在后面听谁的 
+	  所以这里第二个大
+	  */
+	  #hezi31 .box32 p{
+	  	color: red;
+	  }
+	  #hezi32 div .pp{
+	  	color: blue;
+	  }
+
+	  /* Demo4
+	  继承过来的属性权重为0
+	  所以这里第三个最大
+	  */
+	  #hezi41 #hezi42 #hezi43{
+	  	color: red;
+	  }
+	  div.box40 div.box40 div.box40{
+	  	color: blue;
+	  }
+	  p{
+	  	color: green;
+	  }
+	  
+	  /* Demo5
+	  如果都是继承过来的属性 谁近听谁的
+	  */
+	  #hezi53{
+	  	color: blue;
+	  }
+	  #hezi51 #hezi52{
+	  	color: red;
+	  }
+	</style>
+</head>
+<body>
+<!-- Demo1 -->
+	<p class="pp" id="para1">查看颜色</p>
+
+<!-- Demo2 -->
+	<div class="hezi21" id="box21">
+		<div class="hezi22" id="box22">
+			<div class="hezi23" id="box23">
+				<p>猜猜我是什么颜色</p>
+			</div>
+		</div>
+	</div>
+
+<!-- Demo3 -->
+	<div class="box31" id="hezi31">
+		<div class="box32" id="hezi32">
+			<div class="box33" id="hezi33">
+				<p class="pp">猜猜我是什么颜色</p>
+			</div>
+		</div>
+	</div>
+
+<!-- Demo4 -->
+<div class="box40" id="hezi41">
+	<div class="box40" id="hezi42">
+		<div class="box40" id="hezi43">
+			<p>猜猜我是什么颜色</p>
+		</div>
+	</div>
+</div>
+
+<!-- Demo5 -->
+<div class="box50" id="hezi51">
+	<div class="box50" id="hezi52">
+		<div class="box50" id="hezi53">
+			<h1>猜猜我是什么颜色</h1>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

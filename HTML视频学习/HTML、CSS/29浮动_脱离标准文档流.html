@@ -1,0 +1,47 @@
+<!-- 
+ 标准流里面限制非常多，标签的性质恶心。比如：我们现在就要并排，并且就要设置宽高。
+ 所以，移民！ 脱离标准流！
+
+ css中一共有三种手段，使一个元素脱离标准文档流:
+ 1: 浮动
+ 2: 绝对定位
+ 3: 固定定位
+
+ 浮动是css里面布局用的最多的属性
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*演示*/
+		.b1{
+			/*左浮动*/
+			float: left;
+			width: 300px;
+			height: 400px;
+			background-color: yellowgreen;
+		}
+		.b2{
+			/*左浮动*/
+			float: left;
+			width: 400px;
+			height: 400px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="b1"></div>
+	<div class="b2"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+

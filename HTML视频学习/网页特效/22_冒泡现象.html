@@ -1,0 +1,46 @@
+<!-- 
+ 冒泡顺序
+ IE 6.0
+ div -> body -> html -> document
+
+ 其他浏览器
+ div -> body -> html -> document -> window
+
+ 不是所有时间都能冒泡，以下事件不冒泡
+ blur focus load unload
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="btn">点击</button>
+</body>
+</html>
+<script type="text/javascript">
+	var btn = document.getElementById('btn');
+	document.onclick = function () {
+		alert("点击了空白处");
+	}
+	/*
+	// 这个地方点击按钮 会出现点击空白和点击按钮两个alert
+	btn.onclick = function() {
+		alert("点击了按钮");
+	}
+	*/
+
+	//解决方法
+	btn.onclick = function(event) {
+		alert("点击了按钮");
+		var event = event || window.event;
+		if (event && event.stopPropagation) {
+			//正常浏览器的方法
+			event.stopPropagation();
+		}else {
+			//ie678
+			event.cancelBubble = true;
+		}
+	}
+</script>

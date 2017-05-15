@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		input,button{
+			border: 0 none;
+			padding: 0;
+		}
+		.search{
+			width: 258px;
+			height: 40px;
+			margin: 100px auto;
+			background-color: pink;
+		}
+		.search input{
+			width: 208px;
+			height: 40px;
+			background: url(images/left.jpg) no-repeat;
+			outline-style: none;
+			padding-left: 8px;
+			color: #ccc;
+			float: left;
+		}
+
+		.search button{
+			float: left;
+			height: 40px;
+			width: 42px;
+			background: url(images/right.jpg) no-repeat; 
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+	// 这里的js代码其实就是直接给标签加上了一些属性 只不过通过代码些的是活的
+	// 我们如果直接写css样式的话，没办法写成活的
+		window.onload = function(){
+			var txt = document.getElementById("txt");
+			txt.onfocus = function(){
+				if (txt.value == "请输入...") {
+					txt.value = "";
+					txt.style.color = "#333";
+				}
+			}
+
+			txt.onblur = function(){
+				if (txt.value == "") {
+					txt.value = "请输入...";
+					txt.style.color = "#ccc";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="search">
+		<input type="text" value="请输入..." id="txt" /><button></button>
+	</div>
+</body>
+</html>
+
+
+
+
+

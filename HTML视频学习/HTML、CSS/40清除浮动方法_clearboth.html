@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			float: left;
+			width: 90px;
+			height: 40px;
+			background-color: gold;
+			/*居中*/
+			text-align: center;
+		}
+		.box2{
+			/*
+				清理 这里分 
+				clear: left
+				clear: right
+				但是一般我们都使用clear: both  左浮动和右浮动都要清除 就是要清除别人对自己的影响
+
+				这个clear: both 属性是要给那个不想让它往上贴的元素进行设置，也就是这里的第二个元素
+
+				这个方法有一个最大的缺点. margin失效
+			*/
+			clear: both;
+			/*
+				这句话失效 原因依旧是因为父盒子没有高
+			*/
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<!-- <h3>在传智播客，我们能够学习到</h3> -->
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>HTML5</li>
+			<li>JS</li>
+			<li>设计模式</li>
+		</ul>
+	</div>
+
+	<div class="box2">
+		<!-- <h3>还能学到</h3> -->
+		<ul>
+			<li>英语</li>
+			<li>面试</li>
+			<li>吹牛</li>
+		</ul>
+	</div>
+</body>
+</html>

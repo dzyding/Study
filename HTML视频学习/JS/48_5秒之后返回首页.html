@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			text-align: center;
+			font-size: 40px;
+			line-height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var demo = document.getElementById("demo");
+	var count = 5;
+	setTimeout(goIndexPage, 1000); //1秒钟之后执行goIndexPage
+	function goIndexPage(){
+		demo.innerHTML = "<a href='https://www.baidu.com'>本页将在" + count + "秒后跳转</a>"
+		count --;
+		if (count <= 0) {
+			// 跳转
+			window.location.href = "https://www.baidu.com"
+		}else{
+			// 递归
+			setTimeout(arguments.callee, 1000);
+		}
+	}
+</script>

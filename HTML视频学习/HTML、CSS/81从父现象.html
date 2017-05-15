@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.linzhiying{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			position: relative;
+			z-index: 10;
+		}
+		.tianliang{
+			width: 200px;
+			height: 200px;
+			background: orange;
+			position: relative;
+			z-index: 9;
+		}
+		.kimi{
+			width: 60px;
+			height: 60px;
+			background-color: green;
+			position: absolute;
+			top: 300px;
+			left: 450px;
+		}
+		.cindy{
+			width: 60px;
+			height: 60px;
+			background-color: pink;
+			position: absolute;
+			top: 130px;
+			left: 490px;
+			z-index: 999;
+		}
+	</style>
+</head>
+<body>
+<!-- 
+	从父现象
+	这里因为linzhiying z-index为10 大于tianliang的9 
+	所以无论cindy的z-index有多大 kimi都压着他 
+ -->
+	<div class="linzhiying">
+		<div class="kimi"></div>
+	</div>
+	<div class="tianliang">
+		<div class="cindy"></div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

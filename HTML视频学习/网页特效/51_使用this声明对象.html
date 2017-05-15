@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script type="text/javascript">
+	function Person(name,age){
+		this.name = name;
+		this.age  = age;
+		this.showName = function(){
+			alert("我的名字是 " + name);
+		}
+		this.showAge  = function(){
+			alert("我的你年龄是 " + age);
+		}
+	}
+
+	var demo = new Person('刘德华', '19');
+	console.log(demo.name);
+	console.log(demo.age);
+	demo.showName();
+</script>

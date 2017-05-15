@@ -1,0 +1,124 @@
+<!-- 
+对事件做出反应
+onlick = JavaScript
+HTML 事件的例子:
+  .当用户点击鼠标时
+  .当网页已加载时
+  .当图像已加载时
+  .当鼠标移动到元素上时
+  .当输入字段被改变时
+  .当提交HTML表单时
+  .当用户触发按键时
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <script>
+ 	function changetext(id) {
+ 		id.innerHTML = "谢谢!"
+ 	}
+
+ 	function displayDate(name) {
+ 		document.getElementById(name).innerHTML = Date()
+ 	}
+
+ 	function checkCookies() {
+ 		if (navigator.cookieEnabled == true) {
+ 			alert("已启动 cookie")
+ 		}else {
+ 			alert("未启动 cookie")
+ 		}
+ 	}
+
+ 	function changeToUpper(name) {
+ 		var x = document.getElementById(name)
+ 		x.value = x.value.toUpperCase()
+ 	}
+
+ 	function mOver(obj) {
+ 		obj.innerHTML = "谢谢"
+ 	}
+
+ 	function mOut(obj) {
+ 		obj.innerHTML = "把鼠标移到上面"
+ 	}
+
+ 	function mDown(obj) {
+ 		obj.style.backgroundcolor = "#1ec5e5"
+ 		obj.innerHTML = "请释放鼠标按钮"
+ 	}
+
+ 	function mUp(obj) {
+ 		obj.style.backgroundcolor = "green"
+ 		obj.innerHTML = "请按下鼠标按钮"
+ 	}
+
+ 	function mOnclick(obj) {
+ 		obj.innerHTML = "请点击这里"
+ 	}
+ </script>
+ </head>
+ <!--       onload    进入界面时触发 
+      对应的 onunload  离开界面时触发
+ -->
+ <body onload = "checkCookies()">
+ <!-- 点击事件 -->
+ <h1 onclick = "this.innerHTML = '谢谢!'">点击文本触发事件</h1>
+
+ <!-- 点击触发函数 -->
+ <h1 onclick = "changetext(this)">点击文本触发函数</h1>
+
+ <!-- 事件属性 -->
+<button onclick = "displayDate('demo1')">点击更改Demo属性</button>
+<p id = "demo1"></p>
+</br></br></br></br>
+
+<!-- 使用HMTL DOM 来分配事件 
+     HTML DOM 允许您通过使用JavaScript来向HTML 元素分配事件
+ -->
+ <button id = "myBtn">点击执行displayDate()函数</button>
+ <script>
+ 	document.getElementById("myBtn").onclick = function() {displayDate('demo2')}
+ </script>
+ <p id = "demo2"></p>
+</br></br></br></br>
+
+<!-- onchange 事件 
+     当您离开输入字段时 会触发将输入文本转换为大写的函数 就是数据改变时.? 
+ -->
+请输入英文字符: <input type="text" id="fname" onchange="changeToUpper('fname')">
+</br></br></br></br>
+
+<!-- onmouseover onmouseout 事件
+     可用于在用户的鼠标移至HTML 元素上方 或 移出HTML 元素上方 时触发 
+ -->
+ <div onmouseover = "mOver(this)" onmouseout = "mOut(this)" style = "background-color:green; width:120px; height:20px;
+ padding:40px; color:#ffffff">把鼠标移到上面</div>
+</br></br></br></br>
+
+<!--  onmousedown onmouseup onclick
+      这三个构成了鼠标点击事件的所有部分 点击down 释放up 完成onclick
+      ！！！这里同事写三个好像有冲突 onclick 不能正常执行
+ -->
+ <div onmousedown = "mDown(this)" onmouseup = "mUp(this)" onclick = "mOnclick(this)" style = "background-color:green; color:#ffffff; width:90px;
+ height:20px; padding:40px; font-size:12px">请点击这里</div>
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

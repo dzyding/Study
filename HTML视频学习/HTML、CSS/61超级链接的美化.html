@@ -1,0 +1,74 @@
+<!-- 
+ a标签用起来会比较难，因为不仅仅要控制a这个盒子，也要控制它的伪类。
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*这里统一设置字体样式 行高*/
+		.nav{
+			width: 960px;
+			height: 40px;
+			border: 1px solid red;
+			margin: 100px auto;
+			font:15px/40px "微软雅黑";
+			text-align: center;
+		}
+		/*统一更改ul列表的样式*/
+		.nav ul{
+			list-style: none;
+		}
+		/*统一li的样式*/
+		.nav ul li{
+			width: 120px;
+			height: 40px;
+			float: left;
+		}
+		/*盒子的属性写到a标签中*/
+		.nav ul li a{
+			/*转块，不然只有点击字才有用*/
+			display: block;
+			width: 120px;
+			height: 40px;
+		}
+		/*
+			所有关于文字的样式 背景什么的 写到伪类中
+
+			注意: 
+			   1.a不继承text font这些东西。因为a自己有一个伪类的权重。
+			   2.如果 link visited 的属性是一样的，可以直接省略掉这两个伪类，把内容直接写到 a 标签的属性里面。
+		*/
+		.nav ul li a:link, .nav ul li a:visited{
+			text-decoration: none;
+			color: white;
+			background-color: yellowgreen;
+		}
+		.nav ul li a:hover{
+			background-color: purple;
+			font-weight: bold;
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+		<!-- 链接到本页 不跳转 -->
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+			<li><a href="#">网站栏目</a></li>
+		</ul>
+	</div>
+</body>
+</html>

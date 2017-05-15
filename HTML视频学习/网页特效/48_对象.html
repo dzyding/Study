@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script type="text/javascript">
+	var num = 10;		//变量
+	var arr = [];		//数组
+	arr.index = 10;		//给数字添加一个index属性
+
+	//对象的声明 方式1
+	var obj = new Object();
+
+	//对象的声明 方式2
+	var obj2 = {};
+
+	obj.name = "刘德华";
+	obj.age = 55;
+	obj.showName = function(){
+		console.log(this.name);
+	}
+	obj.showAge = function(){
+		console.log(this.age);
+	}
+	obj.showName();
+	console.log(obj.name);
+	obj.showAge();
+</script>

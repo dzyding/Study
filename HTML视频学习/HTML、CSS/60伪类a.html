@@ -1,0 +1,36 @@
+<!-- 
+ 同一个标签，根据用户的某种状态不同，有不同的样式。这就叫做"伪类"
+ 这里a的"类"不明确，因为要看用户有没有点击、有没有触碰、有没有按住。分别属于不同的类
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*
+		这里的4个状态在css中不能更换位置，更换了以后会失去效果
+	*/
+		/*没点击过*/
+		a:link{
+			color:red;
+		}
+		/*点击过*/
+		a:visited{
+			color: orange;
+		}
+		/*触碰*/
+		a:hover{
+			color: green;
+		}
+		/*按住的状态*/
+		a:active{
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<a href="http://www.263.com/" target="_blank">点击我去263</a>
+	<a href="http://www.163.com/" target="_blank">点击我去网易</a>
+</body>
+</html>

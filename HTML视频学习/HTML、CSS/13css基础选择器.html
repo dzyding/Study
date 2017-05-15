@@ -1,0 +1,121 @@
+<!-- 
+ 基础选择器:
+ 1.标签选择器
+   标签选择器 选择的是这个界面上所有的标签 所以经常描述"共性" 无法单独描述一个
+   a:所有的标签都可以是选择器 比如 ul li label
+   b:无论这个标签藏的多深 一定可以选择的上 (就是不管多少层)
+   c:选择的所有标签 不是一个
+
+ 2.id选择器
+   id选择器的 选择符号 是 #
+   任何的HTML标签都可以有id属性 表示这个标签的名字
+   a: 只有有数字 字母 下划线
+   b: 必须以字母开头
+   c: 不能和标签同名
+   一个HTML界面中不能出现相同的id 哪怕他们不是同一个类型
+
+ 3.类选择器
+   类选择器的符号是 .
+   class属性和id非常相似。任何标签都可以携带class属性
+   1:clss可以重复 也就是同一个界面上可能有多个标签属于同一个类
+   2.同一个标签可以属于多个类
+   	eg: <p class="teshu zhongyao">我是一个段落</p>
+		这里p 同时属于teshu zhongyao 两个类
+
+		<p class="teshu" class="zhongyao">我是一个段落</p> 这种写法是错的！！！！！！
+
+   注意!!!
+   1.不要试图用一个类名把标签的所有样式写完，多用原子类，然后一个标签同时携带几个类达到需要的效果
+   2.每一个类要尽可能的小 (成为公共的)
+
+ 什么情况用id 什么情况用class ?
+ 答案: 尽可能多用class,除非极特殊的情况才用id
+ 原因: js通过id属性得到标签,两边同时用会有很多冲突 css一般不用id
+ 	  另一个层面，我们认为有id属性的会带有动态效果
+ 	  !!!!类上样式，id上行为
+
+ 一个标签可以被多个css选择器选择，共同作用，这就是层叠式的第一层含义
+ -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*标签选择器*/
+		span{
+			color: red;
+		}
+		/*
+		p{
+			font-size: 40px;
+		}*/
+	/*id选择器*/
+		#pp{
+			color: red;
+		}	
+		#pp2{
+			color: yellow;
+		}
+	/*类选择器*/
+		.teshu{
+			color: red;
+		}
+		.zhongyao{
+			text-decoration: underline;;
+		}
+	/*Demo*/
+		.lvse{
+			color: green;
+		}
+		.s40{
+			font-size: 40px;
+		}
+		.uline{
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+<!-- 标签选择器 -->
+	<h1>前端与移动开发<span>1期班</span>我是谁谁</h1>
+
+<!-- id选择器 -->
+	<p>我是段落1</p>
+	<p id="pp">我是段落2</p>
+	<p id="pp2">我是段落3</p>
+
+<!-- 类选择器 -->
+	<h3>我是一个h3</h3>
+	<h3 class="teshu">我是一个h3</h3>
+	<h3>我是一个h3</h3>
+	<p>我是一个段落</p>
+	<p class="teshu">我是一个段落</p>
+	<p class="teshu zhongyao">我是一个段落</p>
+
+<!-- Demo -->
+	<p class="s40 lvse">段落1</p>
+	<p class="lvse uline">段落2</p>
+	<p class="s40 uline">段落3</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

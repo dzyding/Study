@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<!-- 
+ 在程序语言中，所谓闭包，是指语法域位于某个特定的区域，具有持续参照（读写）位于该区域内自身范围之外
+ 的执行域上的非持久型变量值能力的段落。这些外部执行域的费持久型变量神奇的保留他们在闭包最初定义（或创建）时的值
+
+ 白话 : 我们可以用一个函数去访问另一个函数的内部变量的方式就是闭包
+ -->
+<script type="text/javascript">
+	function outFun() {
+		var num = 10;
+		function inFun() {
+			console.log(num); //非常正常的写法
+		}
+		return inFun;  //返回的是inFun
+	}
+
+	//和上面是一个意思
+	function outFun2(){
+		var num = 10;
+		return function(){
+			console.log(num);
+		}
+	}
+
+	//使用
+	var demo = outFun(); 
+	/*
+		这里返回的是
+		function inFun() {
+			console.log(num); //num = 10
+		}
+	*/
+
+	demo();  //10
+
+	//其实每一个简单的函数都算一个闭包
+	var key = 10;
+	function one() {
+		console.log(key);
+	}
+</script>

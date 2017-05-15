@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .box {
+      width: 300px;
+      height: 500px;
+      border: 1px solid red;
+      margin: 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    .content {
+      /*这里不能给宽，给了宽加上padding 就超出大盒子的范围了。 只需要让其自动适应就行*/
+      /*width: 100%;*/
+      height: auto;
+      /*这里js滑动会出现正好压线，或者差1点点的问题，就直接拿css添加一个padding来调整*/
+      padding: 5px 20px 5px 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .scroll {
+      width: 20px;
+      height: 100%;
+      position: absolute;
+      background-color: #eee;
+      top: 0;
+      right: 0;
+    }
+    .bar {
+      width: 100%;
+      height: 100px;
+      background-color: red;
+      cursor: pointer;
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="box">
+    <div class="content">
+      厨房对于面积来说，是户型空间里非常小的一块地方，100平米的户型大概也只有5-7平米的地产，可以说比重非常非常小。但是在另外一个层面，厨房却是家庭收纳最多，操作流程最复杂的一个地方.我们需要在一个狭小的空间里完成洗菜、切菜、做饭、端盘等动作，还要在这个狭小的地方收纳我们的碗筷、清洁用品、日常食物等大量元素所以对于这一块狭小的地方，如何更好的利用空间，高效的利用空间，就变得非常关键。但是很遗憾的是，根据我的观察，大量的厨房都是做一些华而不实的元素，我们再往里面填充我们平时不知道会不会用的烤箱酒柜的时候，在基本的收纳规划这一块几乎都是错的这里谈论的对错不是说厨房这么做了就不能用，而是未来使用起来不合理，不舒适，反人性的很多好用的厨房，其实都不一样是好看的，但是却是耐用的到底什么样的厨房相对比较合理，我的好朋友妍酱深度观察了空间利用的集大成者宜家之后，给大家带来这样的文字观点，希望能够给到大家一点启发妍酱拜访过的家庭厨房，下柜大多为开门设计，里面柜体采用简单隔板。在使用中，这些柜子很快被塞得乱七八糟，藏在柜子深处的东西被自动屏蔽，每次整理都会发现过期食材，浪费又糟心。厨房是一个“杂货铺”，物品细碎纷杂。虽然橱柜五金件比较费钱，妍酱建议下柜至少要保留三到四个抽屉，一方面便于杂物进行分类分区收纳，另一方面，抽屉的抽拉设计，可以轻松把收纳在深处的物品拿出，便于物品管理。如果已经是开门的设计，也可以进行改造，将内柜换成多层拉篮，但切记改造时要避开柜门开合的五金，这种方法会比直接用抽屉省钱。
+    </div>
+    <div class="scroll">
+      <div class="bar"></div>
+    </div>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+  //获取最大的内容
+  var box = document.getElementById('box');
+  //内容盒子
+  var content = box.children[0];
+  //右边盒子
+  var scroll = box.children[1];
+  //拉动使用的
+  var bar = scroll.children[0];
+
+  /*
+    1.首先先要计算红色滚动条的高度 内容越多 高度越短
+      公式:  容器的高度 / 内容的高度 * 容器的高度 
+  */
+  var barHeight = box.offsetHeight / content.offsetHeight * box.offsetHeight;
+  // 所有的style相关属性都要加"px";
+  bar.style.height = barHeight + "px";
+
+  /*
+    2.拖动红色盒子
+  */
+  startScroll(bar);
+  function startScroll(obj) {
+    obj.onmousedown = function(event){
+      var event = event || window.event;
+      //触发点Y值 - 红色盒子的顶部到父亲的距离(就是偏移量) = 触发点距离父亲盒子顶部的距离
+      var t = event.clientY - this.offsetTop;
+      document.onmousemove = function(event){
+        var event = event || window.event;
+        var val = event.clientY - t;
+        if (val < 0) {
+          val = 0;
+        }else if (val > scroll.offsetHeight - bar.offsetHeight){
+          val = scroll.offsetHeight - bar.offsetHeight;
+        }
+        obj.style.top = val + "px";
+        content.style.top = -obj.offsetTop / box.offsetHeight * content.offsetHeight + "px";
+        //处理选中状态
+        window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+      }
+    }
+    document.onmouseup = function(){
+      document.onmousemove = null;
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

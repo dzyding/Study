@@ -1,0 +1,62 @@
+<!-- 
+ 什么是cookie ?
+ cookie 是储存于访问者的计算机中的变量。每当同一台计算机通过浏览器请求某个界面时，就会发送这个cookie。你可以使用JavaScript 来创建和取回cookie的值
+
+ 有关cookie的例子:
+
+  名字cookie
+    当访问者首次访问界面时，他或她也许会填写他/她们的名字。名字会存储于cookie中。当访问者再次访则可从cookie 中取出他的名字
+
+  密码cookie
+    记住第一次登陆时的密码 之后直接取出来使用
+
+  日期cookie
+    记住上次访问的时间，在下次访问时可以进行一些交互
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+//检查是否设置 cookie  存在则获取
+ function getCookie(c_name){
+ 	if (document.cookie.length > 0) {
+ 		c_start = document.cookie.indexOf(c_name + "=")
+ 		if (c_start != -1) {
+ 			c_start = c_start + c_name.length + 1
+ 			c_end = document.cookie.indexOf(";", c_start)
+ 			if (c_end == -1) {
+ 				c_end = document.cookie.length
+ 			}
+ 			return unescape(document.cookie.substring(c_start, c_end))
+ 		}
+ 	}
+ 	return ""
+ }
+ 
+ //名称 值 过期天数
+ function setCookie(c_name, value, expiredays){
+ 	var exdate = new Date()
+ 	exdate.setDate(exdate.getDate() + expiredays)
+ 	document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString())
+ }
+
+ //判断是否含有cookie 有则显示欢迎界面
+ function checkCookie() {
+ 	username = getCookie('username')
+ 	if (username != null && username != "") {
+ 		alert('Welcome again ' + username + ' !')
+ 	}else {
+ 		username = prompt('Please enter your name:', "")
+ 		if (username != null && username != "") {
+ 			setCookie('username', username, 365)
+ 		}
+ 	}
+ }
+</script>
+</head>
+<body onload="checkCookie()">
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset='utf-8'>
+<title>各种测试</title>
+<!-- 定义类 -->
+<style>
+	.cities{
+		background-color: black;
+		color: white;
+		margin: :20px;
+		padding: 20px;
+	}
+	/*行内元素*/
+	span.red {
+		color: red;
+	}
+</style>
+</head>
+
+<body>
+<!-- div 为一个块， 为整体的布局 -->
+<div class="cities">
+
+<h1>这是标题一</h1>
+<h2>这是标题二</h2>
+<h3>这是标题三</h3>
+<p>这是一个段落</p>
+<p>这是另外一个段落</p>
+
+</div>
+
+<div class="cities">
+<h2>表格我<span class="red">问问</span>我我我我</h2>
+<table border='1' cellpadding='10'>
+<!-- <table border='1' cellspacing="10"> -->
+<!-- 这个好像有问题，背景图片 -->
+<!-- <table border="1" background="ChongYang"> -->
+<!-- <table bgcolor="red"> -->
+<!-- <table> -->
+<caption>我的表哥</caption>
+<tr>
+<!-- 占两列-->
+<!-- <th colspan="2">Heading</th> -->  
+<th>Heading</th>
+<th>Gooo</th>
+</tr>
+<tr>
+	<!-- <td>row 1, cell 1</td> -->
+	<!-- 占位 -->
+	<td bgcolor="red">&nbsp;</td>  
+	<!-- 占两行 -->
+	<!-- <td rowspan="2">ddd</td> -->
+	<td>row 1, cell 2</td>
+</tr>
+<tr>
+	<td>row 2, cell 1</td>
+	<td>row 2, cell 2</td>
+</tr>
+<tr>
+	<td align="left" colspan="2">化妆品</td>
+</tr>
+</table>
+</div>
+
+<a href="http://www.baidu.com">这是一个链接</a>
+<img src="ChongYang.png" width="150" height="300">
+
+<div class="cities">
+<h4>一个无序列表</h4>
+<!-- 无序列表 -->
+<ul>
+	<li>咖啡</li>
+	<li>茶</li>
+	<li>流奶</li>
+</ul>
+<ul type="circle">
+	<li>咖啡</li>
+	<li>茶</li>
+	<li>流奶</li>
+</ul>
+<ul type="square">
+	<li>咖啡</li>
+	<li>茶</li>
+	<li>流奶</li>
+</ul>
+<!-- 有序列表 -->
+<ol>
+	<li>咖啡</li>
+	<li>流奶</li>
+	<li>茶</li>
+</ol>
+
+<!-- <ol type="A"> -->
+<!-- <ol type="a"> -->
+<!-- <ol type="I"> -->
+<ol type="i">
+	<li>咖啡
+		<ul>
+			<li>红茶</li>
+			<li>绿茶</li>
+		</ul>
+	</li>
+	<li>流奶</li>
+	<li>茶</li>
+</ol>
+
+<ol start="19">
+	<li>你好</li>
+	<li>我好</li>
+	<li>他也好</li> 
+</ol>
+<!-- 自定义列表 -->
+<dl>
+	<dt>Coffee</dt>
+	<dd>Black hot drink</dd>
+	<dd>siWa</dd>
+	<dt>Milk</dt>
+	<dd>White cold drink</dd>
+	<dd>Sunshine</dd>
+</dl>
+</div>
+</body>
+</html>

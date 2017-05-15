@@ -1,0 +1,30 @@
+<!-- 
+ 文档 document 
+ 基本结构 : html body head 等
+ 
+ 访问
+ document.head
+ document.body
+ document.title
+ document.documentElement  //访问html标签
+ !! html 不能直接访问
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>我的页面</title>
+ </head>
+ <body> 
+ 	
+ </body>
+ </html>
+ <script type="text/javascript">
+ 	console.log(document.title); //访问标题标签
+ 	console.log(document.head);  //访问head标签
+ 	console.log(document.body);  //访问body标签
+ 	console.log(document.documentElement);	//访问html标签
+
+ 	console.log(document.html);  //!!!!这个方法不存在
+ </script>

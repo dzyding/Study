@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<h3>欢迎注册本网站</h3>
+		<!-- 
+			form 形式 形状 英语表单的意思 
+			form 标签里面有action属性和method属性 在ajax课程上会讲解
+		-->
+		<form action="" method="post">
+			<!-- 所有的表单内容，都要写在form标签里面 -->
+			<p>
+				<!-- 
+					文本框 
+					input 表示输入 指的是这是一个输入控件 
+					type 表示类型
+					text 表示文本 指的是类型是一个文本框输入小部件
+					value 值
+					这是一个自封闭标签 自此 我们学习的自封闭标签有: 
+						<meta name="Key" content="">
+						<img src="" alt="">
+						<input type="text">
+
+					input标签很神奇 又是文本框 又是密码框 具体的由type来决定
+					type = "text"      文本框
+				-->
+				请输入您的姓名:
+				<input type="text" value="默认有的值"/>
+			</p>
+
+			<p>
+				<!-- type = "password"  密码框 -->
+			 	请输入您的密码
+				<input type="password" />
+			</p>
+
+			<p>
+				<!-- 
+					type = radio  则是单选按钮 不过天生不会互斥 (就是选了一个 其他的就成了未选)
+					当选择项"name"相同时 则会产生互斥属性
+				 -->
+				请选择你的性别
+				<input type="radio" name="xingbie"/>男
+				<input type="radio" name="xingbie"/>女
+				<input type="radio" name="xingbie"/>保密
+			</p>
+
+			<p>
+				请选择你的学历:
+				<input type="radio" name="xueli" />幼儿园
+				<input type="radio" name="xueli" />小学
+				<input type="radio" name="xueli" />初中
+				<input type="radio" name="xueli" />高中
+				<input type="radio" name="xueli" />大学
+				<input type="radio" name="xueli" />硕士
+			</p>
+
+			<p>
+				<!-- 
+					type = "checkbox" 多选按钮
+					虽然不要求相同"name" (一个问题下面: 比如这里的问题是 选择爱好)  但是最好还是相同的
+				 -->
+				请选择你的爱好:
+				<input type="checkbox" name="aihao"/>睡觉
+				<input type="checkbox" name="aihao"/>吃饭
+				<input type="checkbox" name="aihao"/>足球
+				<input type="checkbox" name="aihao"/>乒乓球
+				<input type="checkbox" name="aihao"/>打豆豆
+			</p>
+
+			<p>
+				<!--
+					type = "color" 选择颜色 
+					ie 8 不兼容
+				 -->
+				 请选择你喜欢的颜色:
+				 <input type="color" />
+			</p>
+
+			<p>
+				<!--
+					type = "date" 选择日历
+					ie 8 不兼容 火狐也不兼容
+				 -->
+				 请选择你的生日:
+				 <input type="date" />
+			</p>
+
+			<p>
+				<!-- 
+					select 选择 下拉列表单
+					option 选项
+					select 标签和 ul dl ol 一样都是组标签
+				 -->
+				请选择你的籍贯:
+				<select name="" id="">
+					<option value="">北京</option>
+					<option value="">河北</option>
+					<option value="">河南</option>
+					<option value="">山西</option>
+				</select>
+			</p>
+
+			<p>
+				<!--
+					textarea 多行文本框 文本域
+					这个标签 是个标签对。 但是对里面不用写东西。如果写了就是这个框的默认文字
+					cols 属性 表示 columns "列"
+					rows 属性 表示 rows    "行"
+				  -->
+				签名:
+				<textarea cols="30" rows="10"></textarea>
+			</p>
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

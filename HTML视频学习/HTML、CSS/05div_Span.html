@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 500px;
+			height: 250px;
+			/*dashed 虚线*/
+			border: 2px dashed green;
+			margin-bottom: 10px;
+		}
+
+		span{
+			background-color: yellow;
+		}
+
+		/*下面的都是例子中用到的*/
+
+		.header{
+			width: 980px;
+			height: 100px;
+			margin: 0 auto;
+			/*background-color: orange;*/
+			margin-bottom: 10px;
+		}
+
+		.content{
+			width: 980px;
+			height: 400px;
+			/*background-color: green;*/
+			margin: 0 auto;
+			margin-bottom: 10px;
+		}
+
+		.footer {
+			width: 980px;
+			height: 400px;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			background-color: yellow;
+		}
+
+		.logo{
+			float: left;
+			width: 200px;
+			height: 60px;
+			background-color: red;
+		}
+
+		.nav{
+			float: right;
+			width: 600;
+			height: 60px;
+			background-color: blue;
+		}
+
+		.guanggao{
+			float: left;
+			width: 250px;
+			height: 400px;
+			background-color: darkblue;
+		}
+
+		.dongxi{
+			float: right;
+			width: 650px;
+			height: 400px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+<!-- 
+ div 和 span 是很重要的标签  这两个都是最最重要的 "盒子"
+	 div division 分割 部门
+	 span 范围 块
+ -->
+ 
+ <!-- 
+ div 在浏览器中 默认是不会增加任何改变的 但是语义变了 div中的所有元素是一个小区域
+ div 是容器级标签 里面什么都可以放 甚至可以放div自己
+ -->
+	<div>
+	 	<h3>中国主要城市</h3>
+	 	<ul>
+	 		<li>北京</li>
+	 		<li>上海</li>
+	 		<li>广州</li>
+	 	</ul>
+	</div>
+
+	<div>
+	 	<h3>美国主要城市</h3>
+	 	<ul>
+	 		<li>纽约</li>
+	 		<li>洛杉矶</li>
+	 		<li>华盛顿</li>
+	 	</ul>
+ 	</div>
+
+ 	<br/>
+ 	<br/>
+ 	<br/>
+
+ <!-- 
+ span 也是表达"小区域 小跨度"的标签 但是是一个文本级标签
+ 也就是说里面只能放 文字 图片 表单元素。 不能放 p h ul dl ol div 
+
+ span里面是放置小元素的 div里面是放置大东西的
+  -->
+
+  <h3>书</h3>
+  <ul>
+  	<li>
+  		<p>书名</p>
+  		<p>
+  			简介简介简介简介简介简介简介简介简介简介简介简介
+  			<!-- 语义就是把两个a 和 上面隔开了 -->
+  			<span>
+	  			<a href="">详细新信息</a>
+	  			<a href="">购买</a>
+  			</span>
+  		</p>
+  	</li>
+  	<li>
+  		<p>书名</p>
+  		<p>
+  			简介简介简介简介简介简介简介简介简介简介简介简介
+  			<span>
+	  			<a href="">详细新信息</a>
+	  			<a href="">购买</a>
+  			</span>
+  		</p>
+  	</li>
+  	<li>
+  		<p>书名</p>
+  		<p>
+  			简介简介简介简介简介简介简介简介简介简介简介简介
+  			<span>
+	  			<a href="">详细新信息</a>
+	  			<a href="">购买</a>
+  			</span>
+  		</p>
+  	</li>
+  </ul>
+
+ 	<br/>
+ 	<br/>
+ 	<br/>
+
+
+ <!-- div例子 
+ 我们亲切的称呼这种模式叫做"div + css"  div标签负责布局 负责结构 负责分块。css负责样式。
+ -->
+  <div class="header">
+  	<div class="logo">
+  		logo
+  	</div>
+  	<div class="nav">
+  		导航条
+  	</div>
+  </div>
+
+  <div class="content">
+  	<div class="guanggao">
+  		广告
+  	</div>
+  	<div class="dongxi">
+  		卖的东西
+  	</div>
+  </div>
+
+  <div class="footer"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

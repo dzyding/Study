@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 
+	 什么是变量提升
+	 -->
+	 <script type="text/javascript">
+	 //原样
+	 	// function fun(){
+	 	// 	console.log(num);
+	 	// 	var num = 20;
+	 	// }
+
+	 //变量提升  (感觉没什么卵用，经常这么写，似乎是为了程序的可读性，让人们知道函数内部有这么一个声明)
+	 	function fun(){
+	 		var num;
+	 		console.log(num);
+	 		num = 20;
+	 	}
+	 </script>
+</body>
+</html>

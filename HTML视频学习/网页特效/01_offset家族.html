@@ -1,0 +1,85 @@
+<!-- 
+ js中有一套方便获取元素尺寸的办法就是offset元素
+
+ 	offsetWidth		//得到对象的宽度 (自己的，与他人无关)
+ 	offsetHeight	//得到对象的高度 (自己的，与他人无关)
+
+	//这个系列只有左和上
+ 	offsetLeft		//返回距离上级盒子(带有定位) 左边的位置
+ 	offsetTop
+ 		!!!如果所有父级都没有定位，则以body为准
+
+ 		offsetTop 和 style.top 的区别
+ 		1.最大区别在于 offsetLeft 可以返回没有定位盒子的距离左侧的位置。而style.top不可以
+ 		2.offsetTop 返回的是数字，而style.top返回的是字符串，除了数字外还带有单位:px
+ 		3.offsetTop只读，而style.top 可读写
+ 		4.如果没有给HTML元素指定过top样式，则style.top返回的是空字符串
+ 		5.最重要的区别 style.left 只能得到行内样式 offsetLeft 随便
+
+ 	offsetParent    //返回对象的父级 (带有定位的，如果不存在带有定位的父级，则返回body)  !!!不需要是亲爹，爷爷什么的都行
+ 					//就是找到最近的带有定位的父级
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#demo {
+			width: 300px;
+			height: 300px;
+			border: 1px solid red;
+			padding: 10px;
+			margin: 15px;
+		}
+
+		#father {
+			width: 500px;
+			height: 500px;
+			background-color: pink;
+			margin: 100px;
+			position: relative;
+		}
+
+		#son {
+			width: 200px;
+			height: 200px;
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo"></div>
+	<div id="father">
+		<div id="son">
+			
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var demo = document.getElementById("demo");
+	console.log(demo.style.width); //这个是错的 会返回null 只能得到行内式的
+	// 这个offsetWidth = width + border + padding (不包含margin)
+	console.log(demo.offsetWidth);
+	console.log(demo.offsetHeight);
+	console.log("---------------");
+
+	var son = document.getElementById("son");
+	//如果所有父级都没有定位，则以body为准 (这里的父级并不是仅仅说父亲，爷爷，曾爷爷等等都可以)
+	//1.父级取消相对定位 则是100 
+	//2.父级相对定位 则是0
+	//  算的是边框到边框的距离，包括padding
+	console.log(son.offsetLeft);
+</script>
+
+
+
+
+
+
+

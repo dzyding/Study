@@ -1,0 +1,30 @@
+<!-- 
+ 溢出边框的内容 都要隐藏掉
+ -->
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+ 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ 	<title>Document</title>
+ 	<style type="text/css">
+ 		div{
+ 			width: 300px;
+ 			height: 300px;
+ 			border: 1px solid red;
+ 			/*
+ 				本意:
+ 					当内容溢出边框， 则隐藏掉  溢出的是图片也会隐藏
+
+ 				偏方:
+ 					一个父亲不能被自己浮动的儿子 撑出高度，只要给父亲加上overflow: hidden 父亲就能被儿子撑出高度了;
+ 			*/
+ 			overflow: hidden;
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	<div>
+ 		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容<img src="namei.jpg" alt="" />
+ 	</div>
+ </body>
+ </html>

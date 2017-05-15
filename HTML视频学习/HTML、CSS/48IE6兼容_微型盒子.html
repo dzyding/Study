@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*
+		IE6不支持小于12号像素的盒子 也不一定是到12像素，反正就是微型盒子最好都加
+		解决办法很简单，就是将盒子的字号，设置小(小于盒子的高)，比如0px;
+	*/
+		div{
+			width: 700px;
+			height: 4px;
+			/*
+				加个下划线，让该属性只对IE6有效
+			*/
+			_font-size: 0px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

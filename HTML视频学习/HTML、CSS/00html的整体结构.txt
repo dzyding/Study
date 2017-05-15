@@ -1,0 +1,113 @@
+A 头部内容
+
+1.设置页面标题<title>
+<html>
+<head>
+<title>请在此输入标题名</title>
+</head>
+<body>
+</body>
+</html>
+
+2.设置基底网址<base>
+/*
+  不太明白  什么代码运行后 讲鼠标放在链接文字“博文视点”上，状态栏就会显示该链接的地址
+*/
+<html>
+<head>
+ <title>设置基底网址</title>
+ <base href="文件路径" target="目标窗口">
+</head>
+<body>
+</body>
+</html>
+
+3.定义元信息<meta>
+/*
+  该标记主要功能是定义页面中的一些信息，但这些信息不回出现在网页中，而会在源文件中显示
+  不是成对的标记
+  通常用来定义文件的信息，例如文件的关键字，作者信息，网页过期时间等等
+*/
+<meta http-equiv="" name="" content="">
+http-equiv属性用于设置一个http的标题域  但确定值由content属性决定
+name属性用于设置元信息出现的形式 
+content属性用于设置元信息出现的内容
+eg:
+<html>
+<head>
+ <title>定义元信息</title>
+ <meta http-equiv="" name="" content="">
+ ...
+</head>
+<body>
+ ...
+</body>
+</html>
+
+4.设置页面关键字 - keywords
+<meta name="keywords" content="value">
+eg:
+<html>
+<head>
+ <title>设置文件关键字</title>
+ <meta name="keywords" content="计算机，英语，经管，财务，职场">
+ ...
+</head>
+<body>
+ ...
+</body>
+</html>
+
+5.设置页面过期时间 expires
+<meta http-equiv="expires" content="value">
+expires 用于设置页面过期时间
+content 属性设置具体过期时间
+eg:
+<html>
+<head>
+ <title>设置页面过期时间</title>
+ <meta http-equiv="expires" content="FRI,1 JUN 2013 00 00 00 GMT">
+ ...
+</head>
+<body>
+ ...
+</body>
+</html>
+
+
+
+B 主体内容<body>
+
+1.设置页面背景 - bgcolor
+<body bgcolor="">
+eg:
+<html>
+<head>
+ <title>设置页面背景</title>
+</head>
+<body style="background-color:blue">
+</body>
+</html>
+/*
+ 这里的颜色可以是英文单词，也可以是十六进制数 
+*/
+
+
+2.设置页面的边距 topmargin leftmargin rightmargin bottomnargin
+eg:
+ <body topmargin=0 leftmargin=20 rightmargin=20 bottomnargin=180>
+
+
+3.设计正文的颜色 --- text
+<body text="">  <!--除了颜色还可以设置别的属性，例如背景，字体-->
+</body>
+eg:
+<body text="white" bgcolor="red">
+</body>
+
+
+
+
+
+
+

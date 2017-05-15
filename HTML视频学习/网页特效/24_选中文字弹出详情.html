@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 400px;
+			margin: 50px;
+		}
+		#demo {
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<span id="demo"></span>
+	<div id="test">我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字</div>
+	<div id="another">我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字我要复制文字</div>
+</body>
+</html>
+<script type="text/javascript">
+	function $(id) {
+		return document.getElementById(id);
+	}
+	//弹起才显示
+	$("test").onmouseup = function(event){
+		var event = event || window.event;
+		var x = event.clientX; //鼠标的x坐标
+		var y = event.clientY; //鼠标的y坐标
+		var txt;  //用于存储文字的变量
+		/*
+			获取用户选择的内容
+			window.getSelection()  //标准浏览器
+			document.selection.createRange().text	//ie 浏览器
+		*/
+		if (window.getSelection) {
+			txt = window.getSelection().toString();
+		}else {
+			txt = document.selection.createRange().text;
+		}
+		if (txt) { 
+			//判断有没有选中的文字，没有选中文字则不执行
+			showBox(x,y,txt);
+		}
+	}
+	document.onclick = function (event) {
+		var event = event || window.event;
+		var targetId = event.target ? event.target.id : event.scrElement.id;
+		if (targetId != "demo") {
+			$("demo").style.display = "none";
+		}
+	}
+	function showBox(x,y,txt){
+		//100毫秒之后执行
+		setTimeout(function(){
+			$("demo").style.display = "block";
+			$("demo").style.left = x + "px";
+			$("demo").style.top  = y + "px";
+			$("demo").innerHTML = txt;
+		},300);
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

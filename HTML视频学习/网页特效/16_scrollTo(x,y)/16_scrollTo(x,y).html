@@ -1,0 +1,96 @@
+<!-- 
+ window.scrollTo(x,y)
+ 滚动到指定的坐标
+ -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            width: 2000px;
+        }
+       .top{
+           position: fixed;
+           right:50px;
+           bottom:100px;
+           display: none;
+       }
+
+    </style>
+    <script src="../dzyTools.js" type="text/javascript"></script>
+    <script>
+        window.onload = function() {
+        	var goTop = $("gotop");
+        	var leader = 0, target = 0, timer = null;
+        	window.onscroll = function(){
+        		dzy_scrollTop().top > 0 ? show(goTop) : hide(goTop);
+        		leader = dzy_scrollTop().top;
+        	}
+        	goTop.onclick = function(){
+        		target = 0;
+        		timer = setInterval(function(){
+        			/* 
+        			//视频里面写的 感觉用缓动动画不合理 
+        			leader = leader + (target - leader) / 10;
+        			*/
+        			leader -= 60;
+        			
+        			window.scrollTo(0, leader);
+        			if (leader <= 0) {
+        				clearInterval(timer);
+        			}
+        		},20);
+        	}
+        }
+    </script>
+</head>
+<body>
+<div id="gotop" class="top">
+    <img src="images/Top.jpg" alt=""/>
+</div>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+<p>我是内容部分，有很多恩多很多</p>
+</body>
+</html>

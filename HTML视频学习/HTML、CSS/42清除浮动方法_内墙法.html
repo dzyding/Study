@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			float: left;
+			width: 120px;
+			height: 40px;
+			background-color: orange;
+			text-align: center;
+		}
+		.box1{
+			background-color: gold;
+		}
+		.cl{
+			clear: both;
+		}
+		.h16{
+			height: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>HTML5</li>
+			<li>JS</li>
+			<li>设计模式</li>
+		</ul>
+		<!-- 
+			一个父亲是不能被浮动的儿子撑出高的 !!!!!!
+
+			内墙法
+				不但隔开了两者 还把所在盒子撑出了应有的高度 比如这里的box1就有了高度16 + 40 = 56
+
+			隔墙法
+				虽然两者隔开了，但是上下两个盒子依旧没有高度，就不方便进行别的装饰，比如背景颜色什么的
+		-->
+		<div class="cl h16"></div>
+	</div>
+
+	<div class="box2">
+		<ul>
+			<li>英语</li>
+			<li>面试</li>
+			<li>吹牛</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.box {
+			width: 350px;
+			height: 350px;
+			margin: 100px;
+			border: 1px solid #ccc;
+			position: relative;
+		}
+		.big {
+			width: 450px;
+			height: 450px;
+			position: absolute;
+			top: 0;
+			left: 360px;
+			border: 1px solid #ccc;
+			overflow: hidden;
+			display: none;
+		}
+		.mask {
+			width: 100px;
+			height: 100px;
+			background: rgba(255, 255, 0, 0.4);
+			position: absolute;
+			top: 0;
+			left: 0;
+			cursor: move;
+			display: none;
+		}
+		.small {
+			position: relative;
+		}
+		.big img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="fdj">
+		<!-- 小图 -->
+		<div class="small">
+			<img src="images/001.jpg" alt="" />
+			<!-- 需要让mask属于small的一部分，不然small的onmouseover 和 out方法会有冲突 会不停的显示 -->
+			<div class="mask"></div>
+		</div>
+		<!-- 大图 -->
+		<div class="big">
+			<img src="images/0001.jpg" alt="" />
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var fdj = document.getElementById('fdj');
+	//小图
+	var small = fdj.children[0];
+	//大图
+	var big = fdj.children[1];
+	//遮盖图
+	var mask = small.children[1];
+	//大图里面的图片
+	var bigImage = big.children[0];
+	//这里不适合使用fdj 因为大图也是属于fdj的，离开的时候鼠标放到fdj它不会消失
+	small.onmouseover = function () {
+		mask.style.display = "block";
+		big.style.display  = "block";
+	}
+	small.onmouseout = function () {
+		mask.style.display = "none";
+		big.style.display  = "none";
+	}
+	var x = 0, y = 0;
+	small.onmousemove = function(event) {
+		var event = event || window.event;
+		//fdj.offsetLeft = this.offsetParent.offsetLeft;
+		x = event.clientX - fdj.offsetLeft - mask.offsetWidth / 2;
+		y = event.clientY - fdj.offsetTop  - mask.offsetHeight / 2;
+		x = x < 0 ? 0 : x;
+		x = x > (small.offsetWidth - mask.offsetWidth) ? (small.offsetWidth - mask.offsetWidth) : x;
+		y = y < 0 ? 0 : y;
+		y = y > (small.offsetHeight - mask.offsetHeight) ? (small.offsetHeight - mask.offsetHeight) : y;
+		mask.style.left = x + "px";
+		mask.style.top  = y + "px";
+
+		//这里的800可以进行适当的调整
+		//可以改成大小盒子的宽高 big.offsetWeight / small.offsetWeight
+		bigImage.style.left = -x * 800 / 350 + "px";
+		bigImage.style.top  = -y * 800 / 350 + "px";
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

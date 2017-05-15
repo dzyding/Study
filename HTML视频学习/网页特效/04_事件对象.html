@@ -1,0 +1,54 @@
+<!-- 
+ 在触发DOM上的某个事件时，会产生一个事件对象event，这个对象包含着所有与事件有关的信息。
+ 所有浏览器都支持event对象，但支持的方式不同
+
+ 	eg:
+ 	 比如鼠标操作的时候，会添加鼠标位置的相关信息到事件对象中.
+
+ 常见属性:
+  data: 返回拖拽对象的url字符串 (dragDrop)
+  width: 该窗口或框架的宽度
+  height: 该窗口或框架的高度
+  pageX: 光标相对于该文档左上角的x (ie无)  //以文档的基准点对齐 类似于 绝对定位
+  pageY: 光标相对于该文档左上角的y (ie无)
+  screenX: 光标相对于该屏幕的水平位置
+  screenY: 光标相对于该屏幕的垂直位置
+  target: 该事件被传送到的对象
+  type: 该事件的类型
+  clientX: 光标相对于该网页的水平位置 (当前可见区域)  //以可视区域为基准点 类似于 固定定位
+  clientY: 光标相对于该网页的竖直位置
+
+  由于event 在ie678中不兼容.
+   所以兼容的写法是 var event = event || window.event;
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#demo {
+			width: 1000px;
+			height: 1000px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo"></div>
+</body>
+</html>
+<script type="text/javascript">
+	//这里的event为demo.onclick的事件对象
+	var demo = document.getElementById('demo');
+	demo.onclick = function (event) {
+		//兼容写法
+		var evt = event || window.event;
+		//以当前窗口左上角为基准点
+		console.log("client " + evt.clientY);
+		//以当前屏幕左上角为基准点
+		console.log("screen " + evt.screenY);
+		//以当前文档左上角为基准点
+		console.log("page " + evt.pageY);
+	}
+</script>

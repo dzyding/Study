@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script type="text/javascript">
+	var json = {name: "刘德华", age: 55};
+	/*
+	 in 可以用来判断json 里面有没有某个属性
+		要求: 
+			1. 左边的操作符必须是字符串类型或可以转换为字符串类型的其他类型
+			2. 右边的必须是数组 或者 对象
+
+	*/
+
+	if ("name" in json) {
+		console.log(json["name"]); //刘德华
+	}
+	if ("andy" in json) {	//不存在 所以不执行
+		console.log(json["andy"]); 
+	}
+</script>

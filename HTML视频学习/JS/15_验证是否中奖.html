@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	window.onload = function(){
+		function $(id){
+			return document.getElementById(id);
+		}
+		$("btn").onclick = function(){
+			//获得表单的值
+			// alert($("txt").value);
+			if ($("txt").value == "刘德华") {
+				alert("恭喜中奖");
+			}else{
+				alert("查无此人");
+			}
+		}
+	}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt" value="请输入..." /></input> <button id="btn">查询</button>
+</body>
+</html>

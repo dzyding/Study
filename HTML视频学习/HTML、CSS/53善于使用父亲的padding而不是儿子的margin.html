@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div.box1{
+			width: 300px;
+			height: 300px;
+			background-color: orange;
+			border: 1px solid red;
+		}
+		p.p1{
+			/*
+				这里我们想的是让儿子向下移动40像素.
+				但是这里如果父亲没有边框，则会变成父亲和儿子一起下降40px，则不是我们想要的效果
+				
+				margin这个属性，本质上描述的是兄弟和兄弟之间的距离：最好不要用这个margin表达父子之间的距离。所以我们一定要善于使用父亲的padding，而不是儿子的margin。
+			*/
+			margin-top: 40px;
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+
+		/*为达到上述效果的正确方式*/
+		div.box2{
+			width: 300px;
+			/*加padding 减height*/
+			height: 250px;
+			background-color: orange;
+			padding-top: 50px;
+		}
+
+		p.p2{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<p class="p1"></p>
+	</div>
+
+	<div class="box2">
+		<p class="p2"></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*
+			用小属性层叠大属性
+				!!!反过来是错的
+		*/
+		div{
+			width: 200px;
+			height: 200px;
+			/*先统一设置*/
+			padding: 20px;
+			/*然后部分重叠*/
+			padding-left: 30px;
+			border: 1px solid red;
+		}
+
+		/*
+			真实宽度 262 
+		*/
+		div.box1{
+			width: 200px;
+			height: 200px;
+			padding: 10px 20px 30px;
+			padding-right: 40px;
+			border: 1px solid red;
+		}
+
+		/*
+			真实宽度 302 真实高度272
+		*/
+		div.box2{
+			width: 200px;
+			height: 200px;
+			padding-left: 10px;
+			padding-right: 20px;
+			padding: 40px 50px 60px;
+			padding-bottom: 30px;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>

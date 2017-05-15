@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+// 例 1
+	function validate_required(field, alerttxt) {
+		with (field){
+			if (value == null || value == "") {
+				alert(alerttxt);
+				return false
+			}else {
+				return true
+			}
+		}
+	}
+	function validate_form(thisform){
+		with(thisform){
+			if (validate_requierd(email, "Email must be filled out!") == false) {
+				/*
+				这个并不是js的函数  而是Dom 对象的方法
+				表示不太明白是个什么概念
+				*/
+				email.focus();  //输入焦点移动到email上
+				return false
+			}
+		}
+	}
+
+// 例 2
+	function validate_email(field, alerttxt) {
+		with(field) {
+			apos = value.indexOf("@")
+			dotpos = value.lastIndexOf(".")
+			if (apos < 1 || dotpos - apos < 2) {
+				alert(alerttxt)
+				return false
+			}else {
+				return true
+			}
+		}
+	}
+
+	function validate_form_two(thisform) {
+		with (thisform) {
+			if (validate_email(email, "Not a valid e-mail address!") == false) {
+				email.focus() //输入焦点移动到email上
+				return false
+			}
+		}
+	}
+</script>
+
+</head>
+<body>
+<!-- 例1 -->
+<form action = "submitpage.htm" onsubmit = "return validate_form(this)" method="post">
+Email: <input type="text" name="email" size="30">
+<input type="submit" value="Submit">
+</form>
+</br></br></br></br>
+
+<!-- 例2 -->
+<form action = "submitpage.htm" onsubmit = "return validate_form_two(this);" method = "post">
+Email: <input type="text" name="email" size="30">
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

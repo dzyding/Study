@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 
+	js的主要目的: 控制web标签中的前两种 (结构，样式)  js属于行为
+
+	console.log()    控制台输出 普通输出语句
+	console.warn()   控制台警示
+	console.error()  错误提示
+
+	document.write()  文档打印输出
+		1. document 文档对象 它不可以省略
+		2. Alert()  用的很少，用户体验不好
+		3. console  用户看不见
+		4. document.write() 直接在文档中显示
+	 -->
+	 <div id="demo"></div>
+
+	 <script type="text/javascript">
+	 /*
+	 	console.log("你好");
+	 	console.warn("不好玩");
+	 	console.error("错了");
+	    document.write("你是傻瓜");
+	  */
+
+	  //最基本的用法
+	  /*
+	  document.getElementById("demo").style.width = "200px";
+	  document.getElementById("demo").style.height = "200px";
+	  document.getElementById("demo").style.backgroundColor = "red";
+	  */
+
+	  //使用类
+	  var obj = document.getElementById("demo");
+	  obj.style.width = "200px";
+	  obj.style.height = "300px";
+	  obj.style.backgroundColor = "red";
+
+
+	  //全局变量
+	  //第一种方式 是申明在函数外面的 
+	  var num = 10;  
+	  function fn(){
+	  	console.log(num);
+	  	//第二种方式 申明在函数里面 但是没有添加var 关键字  (隐式申明的全局变量)
+	  	result = 20;
+
+	  	//局部变量 在函数里面通过var申明的
+	  	var x = 333;
+	  	console.log(x);
+	  }
+	  fn(); 
+	  console.log(result);
+	 </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

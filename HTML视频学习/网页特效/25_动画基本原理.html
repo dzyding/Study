@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<button>开始</button>
+	<div id="demo"></div>
+</body>
+</html>
+<script type="text/javascript">
+ // 动画的原理让 offsetLeft + 步长
+ 	var btn = document.getElementsByTagName('button')[0];
+ 	var div = document.getElementsByTagName('div')[0];
+ 	var timer = null;
+ 	btn.onclick = function () {
+ 		timer = setInterval(function(){
+ 			if (div.offsetLeft > 400) {
+ 				clearInterval(timer);
+ 				return;
+ 			}
+ 			div.style.left = div.offsetLeft + 10 + "px";
+ 		},20);
+ 	}
+</script>

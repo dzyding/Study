@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box1{
+			width: 400px;
+			height: 400px;
+			padding: 100px;
+			border: 10px solid red;
+			margin: 100px;
+			position: relative;
+		}
+		.box2{
+			width: 300px;
+			height: 300px;
+			border: 50px solid blue;
+			position: relative;
+		}
+		p{
+			width: 100px;
+			height: 100px;
+			background: orange;
+			position: absolute;
+			top: 40px;
+			left: 40px;
+		}
+	</style>
+</head>
+<body>	
+	<!-- 
+	    这个逻辑 父辈无论是 相对定位 还是 决定定位 效果都一样
+		1. 当box1 定位， box2 不定位, p将以box1为参考点进行绝对定位
+		2. 当box1 不定位， box2 定位, p将以box2为参考点进行绝对定位
+		3. 当box1 box2 都相对定位,p将以离它更近的父辈(box2)为参考点进行绝对定位
+	 -->
+	<div class="box1">
+		<div class="box2">
+			<p></p>
+		</div>
+	</div>
+</body>
+</html>

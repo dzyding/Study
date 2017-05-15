@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#demo{
+			width: 200px;
+			height: 200px;
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo"></div>
+	<button id="btn">改变宽度</button>
+	<script type="text/javascript">
+	//先找标签
+		var demo = document.getElementById('demo');
+		var btn  = document.getElementById('btn');
+	//事件三要素 
+	//只能设置一次 后面一个会覆盖前面一个
+		//onclick 单击
+		btn.onclick = function(){
+			demo.style.width = "400px";
+		}
+		btn.onclick = function(){
+			demo.style.height = "500px";
+		}
+		//ondblclick 双击
+		btn.ondblclick = function(){
+			demo.style.backgroundColor = "yellow";
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

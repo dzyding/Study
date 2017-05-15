@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+	// 形参
+	// arguments 用来储存实參
+		function fun(a,b){
+			console.log(fun.length); //2 形参的个数
+			console.log(arguments);  //[1, 2]  [5]  [4, 6, 8]  得到形参
+			console.log(arguments.length);  //形参的个数
+			if (fun.length == arguments.length) {
+				console.log(a+b);
+			}else{
+				console.error("对不起，您的参数不匹配，正确的参数个数为" + fun.length);
+			}
+		}
+		// 实參
+		fun(1,2);
+		fun(5);     //NaN  任何数组加一个undefine 等于NaN
+		fun(4,6,8); //10   8没用
+	</script>
+</body>
+</html>

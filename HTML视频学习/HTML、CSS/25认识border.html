@@ -1,0 +1,129 @@
+<!-- 
+ 边框
+ 	边框有三个要素: 粗细、线型、颜色。
+ 	颜色默认是黑色，另两个颜色不写的话会显示不出来
+
+ border 是一个大综合属性:
+ 	border 1px solid red;
+ 	设置的上下左右四个方向的.
+
+ border 属性可以拆开
+ 1: 按要素
+ 	border-width border-style border-color
+ 2: 按方向
+ 	border-top border-right border-bottom border-left
+
+ border 可以没有
+ 	border: none;
+
+
+ 知识点:
+ 	用边框做三角形
+ -->
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+ 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ 	<title>Document</title>
+ 	<style type="text/css">
+ 		div.box1{
+ 			width: 200px;
+ 			height: 200px;
+ 			/*
+	 			solid 实线 
+	 			dashed 虚线
+	 			dotted 点线
+ 			*/
+ 			border: 1px solid red;
+ 		}
+
+ 		/*
+ 			按要素拆开  等于 border: 1px solid red;
+ 			这三个属性还可以按照 上 右 下 左 的顺序和padding一样进行分别设置
+ 			border-width: 1px 5px 2px 10px;
+ 			border-style: solid dashed datted;
+ 			border-color: red green blue; 
+ 		*/
+ 		div.box2{
+ 			width: 200px;
+ 			height: 200px;
+ 			border-width: 1px;     /*边框宽度*/
+ 			border-style: solid;   /*线型*/
+ 			border-color: red;     /*颜色*/
+ 		}
+
+ 		/*
+			按方向拆开  等于 border: 10px solid red;
+ 		*/
+ 		div.box3{
+ 			width: 200px;
+ 			height: 200px;
+ 			border-top: 10px solid red;
+ 			border-right: 10px solid red;
+ 			border-bottom: 10px solid red;
+ 			border-left: 10px solid red;
+ 		}
+
+ 		/*
+			按方向再细拆  等于 border: 10px solid red;
+ 		*/
+ 		div.box4{
+			width: 200px;
+			height: 200px;
+			border-top-width: 10px;
+			border-top-style: solid;
+			border-top-color: red;
+			border-right-width: 10px;
+			border-right-style: solid;
+			border-right-color: red;
+			border-bottom-width: 10px;
+			border-bottom-style: solid;
+			border-bottom-color: red;
+			border-left-width: 10px;
+			border-left-style: solid;
+			border-left-color: red;
+ 		}
+
+ 		div.box5{
+ 			width: 200px;
+ 			right: 200px;
+ 			border: 10px solid red;
+ 			/*
+ 				border-left-width: 0px;
+ 				与下面的设置等价
+ 			*/
+ 			border-left: none;
+ 			
+ 		}
+
+ 		/*三角形*/
+ 		div.sanjiao{
+ 			width: 0px;
+ 			height: 0px;
+ 			border: 50px solid white;
+ 			border-bottom: none;
+ 			border-top-color: blue; 
+ 			transition: all 1s ease 0s;
+ 		}
+ 		div:hover{
+ 			transform: rotate(180deg);
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	<div class="sanjiao">
+ 		
+ 	</div>
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+

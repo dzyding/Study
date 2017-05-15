@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="textn/css">
+	/*
+		块级元素
+		1.霸占一行，不与其他任何元素并列
+		2.能接受宽、高
+		3.如果不设置宽度，那么宽度将默认变为父亲的100%
+	*/
+		h1{
+			background-color: pink;
+			width: 400px;
+		}
+	/*
+		行内元素
+		1.与其他行内元素并排
+		2.不能设置 宽 高，默认的宽高就是文字的宽高
+	*/
+		span{
+			background-color: pink;
+			/*这个属性设置没用*/
+			width: 400px;
+		}
+	/*
+		HTML中，我们已经将标签分过类，当时分为了：文本级、容器级
+		文本级: p span a i u em;
+		容器级: div h系列 li dt dd;
+		
+		CSS的分类和上面的很像，就一个人不一样
+		所有的文本级标签，都是行内元素，除了p，p是个文本级别，但是是个块级元素
+		所有的容器级标签，都是块级元素
+	*/
+	</style>
+</head>
+<body>
+	<h1>哈哈哈哈</h1>
+	<h1>嘻嘻嘻嘻</h1>
+
+	<span>哈哈哈哈</span>
+	<span>嘻嘻嘻嘻</span>
+</body>
+</html>

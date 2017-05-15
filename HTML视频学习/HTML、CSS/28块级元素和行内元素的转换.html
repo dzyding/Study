@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			/*
+				display 显示模式
+					inline 转成行内元素 此时这个div不能设置宽高 可以和别的标签并排了
+					block  转换成块级元素 此时这个标签和div一样可以设置宽高 并且会霸占一行
+			*/
+			display: inline;
+			background-color: pink; 
+			/*这两个设置没用*/
+			width: 500px;
+			height: 500px;
+		}
+		h1{
+			background-color: greenyellow;
+			display: inline;
+		}
+
+		span{
+			display: block;
+			/*文本居中*/
+			text-align: center;
+			/*行高40 和盒子一样高 所以就垂直居中了*/
+			line-height: 40px;
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+<!-- 块转行内 -->
+	<div>我是一个div</div>
+	<div>我是一个div</div>
+
+	<h1>我</h1><h1>爱</h1><h1>你</h1>
+<!-- 行内转块 -->
+	<span>我是一个span</span>
+	<span>我是一个span</span>
+</body>
+</html>

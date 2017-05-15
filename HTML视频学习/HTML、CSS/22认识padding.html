@@ -1,0 +1,78 @@
+<!-- 
+ 1.padding区域是有背景色的
+ 2.padding是4个方向的 所以我们能够描述4个方向的padding
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*background-color 会影响到padding*/
+		.box1{
+			width: 200px;
+			height: 200px;
+			padding: 100px;
+			border: 1px solid red;
+			background-color: pink;
+		}
+
+		/*
+			4个方向的padding
+			如果这样4个分开写，有一项不写的话，就代表没有那一项
+		*/
+		.box2{
+			width: 200px;
+			height: 200px;
+			padding-left: 100px;
+			padding-right: 20px;
+			padding-top: 30px;
+			padding-bottom: 40px;
+			border: 1px solid red;
+		}
+
+		/*
+			综合属性 上 右 下 左 (顺时针)
+			1.如果只写三个值 综合顺序仍然是 上 右 下 左 (默认的左会和右一样)
+			2.如果只写两个值 综合顺序仍然是 上 右 下 左 (默认的下会和上一样 左会和右一样)
+			3.如果只写一个值 就是上 右 下 左 都一样
+		*/
+		.box3{
+			width: 200px;
+			height: 200px;
+			padding: 30px 20px 40px 100px;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		盒子1
+	</div>
+
+	<div class="box2">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</div>
+
+	<div class="box3">
+		内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

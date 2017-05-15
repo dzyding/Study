@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-size: 15px;
+			font-family: "Mircosoft YaHei","SumSun";
+			padding-top: 58px;
+			/*height: 8888px;*/
+		}
+		.cl{
+			clear: both;
+		}
+		.header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: rgb(26,29,56);
+			width: 100%;
+			height: 58px;
+			z-index: 999999;
+		}
+		.header .nav{
+			width: 1000px;
+			height: 58px;
+			margin: 0 auto;
+		}
+		.header .nav h1{
+			float: left;
+			width: 190px;
+			height: 58px;
+			text-indent: -99999em;
+			background-image: url(images/logo.png);
+		}
+		.header .nav h2{
+			float: left;
+		}
+		.header .nav h2 a{
+			display: block;
+			font-size: 14px;
+			width: 100px;
+			height: 34px;
+			background-color: rgb(82,164,100);
+			color: white;
+			text-decoration: none;
+			border-radius: 4px;
+			text-align: center;
+			line-height: 34px;
+			margin-left: 49px;
+			position: relative;
+			top: 12px; 
+			left: 0;
+		}
+		.header .nav h2 a:hover{
+			background-color: rgb(50,130,70);
+		}
+		.header .nav ul{
+			float: left;
+			list-style: none;
+			text-align: center;
+			line-height: 58px;
+			margin-left: 34px;
+		}
+		.header .nav ul li{
+			float: left;
+			border-left: 1px solid rgb(37,41,71);
+		}
+		.header .nav ul li a{
+			display: block;
+			text-decoration: none;
+			color: rgb(129,132,150);
+			width: 101px;
+			height: 58px;
+		}
+		.header .nav ul li a:hover{
+			color: white;
+			background-color: rgb(37,41,71);
+		}
+		.header .nav ul li.last{
+			border-right: 1px solid rgb(37,41,71);
+		}
+		.banner{
+			position: relative;
+			height: 462px;
+			background: url(images/banner.jpg) no-repeat center top;
+		}
+		.banner .circles{
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			margin-left: -60px;
+			width: 120px;
+			height: 12px;
+		}
+		.banner .circles ul li{
+			float: left;
+			display: block;
+			width: 12px;
+			height: 12px;
+			_font-size: 0px;
+			margin-right: 12px;
+			background-image: url(images/dian_n.png);
+		}
+		.banner .circles ul li.current{
+			background-image: url(images/dian_c.png);
+		}
+		.content{
+			/*这里有缺陷 和下面的图对不上 应该是1010px*/
+			width: 1002px;
+			height: 280px;
+			margin: 0 auto;
+			border-bottom: 1px solid rgb(219,225,231);
+			position: relative;
+		}
+		.content .prolist{
+			list-style: none;
+			padding-top: 50px;
+			overflow: hidden;
+		}
+		.content .prolist li{
+			float: left;
+			padding-right: 43px;
+		}
+		.content .prolist li.last{
+			padding-right: 0;
+		}
+
+		.content .prolist li a{
+			text-decoration: none;
+			text-align: center;
+		}
+		.content .prolist li a p{
+			padding-top: 10px;
+		}
+		.content .prolist li a p.title{
+			color: rgb(26,29,56);
+			font-weight: bold;
+		}
+		.content .prolist li a img.pro{
+			display: block;
+			width: 217px;
+			height: 130px;
+		}
+		.content .prolist li a p.btn{
+			font-size: 14px;
+			color: rgb(56,183,116);
+		}
+		.content .circle{
+			width: 117px;
+			height: 15px;
+			background-color: white;
+			position: absolute;
+			bottom: -7px;
+			left: 50%;
+			margin-left: -59px;
+		}
+		.content .circle ul.dian{
+			padding-top: 2px;
+			list-style: none;
+			margin-left: 17px;
+		}
+		.content .circle ul.dian li{
+			float: left;
+			margin-right: 14px;
+			height: 12px;
+			width: 12px;
+			background-image: url(images/dian_n.png);
+		}
+		.content .circle ul.dian li.last{
+			margin-right: 0;
+			background-image: url(images/dian_c.png);
+		}
+		.bottom{
+			height: 314px;
+			width: 1010px;
+			padding: 53px 0px;
+			margin: 0 auto;
+		}
+		.bottom div{
+			float: left;
+			width: 505px;
+			height: 314px;
+		}
+		.bottom .left{
+			position: relative;
+			background: url(images/bynewsbg.jpg) no-repeat;
+		}
+		.bottom .left ul{
+			width: 485px;
+			padding-top: 119px;
+			list-style: none;
+		}
+		.bottom .left ul li a {
+			display: block;
+			text-decoration: none;
+			color: rgb(26,29,56);
+			height: 50px;
+			line-height: 50px;
+			border-bottom: 1px solid rgb(219,225,231);
+		}
+		.bottom .left ul li a.first{
+			height: 40px;
+			line-height: 35px;
+		}
+		.bottom .left ul li a span{
+			font-size: 12px;
+			color: rgb(175,190,216);
+		}
+		.bottom .left h3 a{
+			display: block;
+			width: 66px;
+			height: 28px;
+			text-indent: -999em;
+			background-image: url(images/more1.png);
+			position: absolute;
+			top: 40px;
+			left: 218px;
+		}
+		.bottom .right{
+			background: url(images/byhrbg3.jpg) no-repeat;
+			color: white;
+			position: relative;
+		}
+		.bottom .right h3 a{
+			display: block;
+			width: 66px;
+			height: 28px;
+			text-indent: -999em;
+			background-image: url(images/more2.png);
+			position: absolute;
+			top: 40px;
+			left: 218px;
+		}
+		.bottom .right .zczp{
+			width: 121px;
+			height: 44px;
+			background-image: url(images/zczp.png);
+			position: absolute;
+			left: 75px;
+			top: 44px;
+		}
+		.bottom .right .title{
+			padding-left: 18px;
+			padding-top: 112px;
+		}
+		.bottom .right ul{
+			list-style: none;
+			width: 305px;
+			padding-left: 18px;
+			padding-top: 5px;
+		}
+		.bottom .right ul li{
+			border-bottom: 1px solid rgb(111,222,163);
+		}
+		.bottom .right ul li a{
+			display: block;
+			color: white;
+			text-decoration: none;
+			height: 37px;
+			line-height: 37px;
+		}
+		.footer{
+			background: rgb(26,29,56);
+		}
+		.footer .msg{
+			height: 91px;
+			width: 1010px;
+			margin: 0 auto;
+			color: rgb(108,110,126);
+		}
+		.footer .msg a{
+			display: block;
+			float: left;
+			text-decoration: none;
+			font-size: 12px;
+			color: rgb(108,110,126);
+			height: 91px;
+			line-height: 91px;
+		}
+		.footer .msg p{
+			float: left;
+			height: 91px;
+			line-height: 91px;
+		}
+		.footer .msg p.sm{
+			float: right;
+			font-size: 12px;
+			padding-right: 5px;
+		}
+		.footer .msg img{
+			display: block;
+			float: right;
+			width: 40px;
+			height: 50px;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+		<!--
+			 正规来说这个地方必须有对应的标题汉字 然后用超大行高 或者超大缩紧等等来把汉字挤掉  
+			 这样的汉字可以用来优化搜索权重 正规做法都是这样
+
+			 然后我这个界面做的最大的问题就是没有用到标题语义。  h1 - h6。  这个也可以优化搜索权重
+		-->
+			<h1>博雅互动，全球第一的互动媒体。</h1>
+			<!-- <img src="images/logo.png" alt="" /> -->
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">博雅游戏</a></li>
+				<li><a href="#">博雅新闻</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">客服中心</a></li>
+				<li class="last"><a href="#">投资者关系</a></li>
+			</ul>
+			<h2><a href="#">加入我们</a></h2>
+			<!-- <img class="jrwm" src="images/jrwm.png" alt="" /> -->
+		</div>
+	</div>
+	<div class="cl"></div>
+	<div class="banner">
+		<div class="circles">
+			<ul>
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<ul class="prolist">
+			<li>
+				<a href="#">
+					<img class="pro" src="images/pro1.jpg" alt="" />
+					<p class="title">BPT宣传片</p>
+					<p class="btn"><span>点击播放 <img src="images/sanjiaoxing.png" alt="" /></span></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img class="pro" src="images/pro2.jpg" alt="" />
+					<p class="title">博雅互动宣传视频</p>
+					<p class="btn"><span>点击播放 <img src="images/sanjiaoxing.png" alt="" /></span></p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img class="pro" src="images/pro3.jpg" alt="" />
+					<p class="title">斗地主</p>
+					<p class="btn"><span>点击播放 <img src="images/sanjiaoxing.png" alt="" /></span></p>
+				</a>
+			</li>
+			<li class="last">
+				<a href="#">
+					<img class="pro" src="images/pro4.jpg" alt="" />
+					<p class="title">德州扑克</p>
+					<p class="btn"><span>点击播放 <img src="images/sanjiaoxing.png" alt="" /></span></p>
+				</a>
+			</li>
+		</ul>
+		<div class="circle">
+			<ul class="dian">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li class="last"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="left">
+			<h3><a href="#">MORE</a></h3>
+			<ul>
+				<li>
+					<a class="first" href="#"><span>09/28</span>&nbsp;&nbsp;&nbsp;&nbsp;2015博雅国际扑克大赛(BPT)在澳门落幕</a>
+				</li>
+				<li>
+					<a href="#"><span>08/26</span>&nbsp;&nbsp;&nbsp;&nbsp;2015BPT博雅国际扑克大赛重磅来袭</a>
+				</li>
+				<li>
+					<a href="#"><span>08/01</span>&nbsp;&nbsp;&nbsp;&nbsp;博雅互动与阿里游戏联手启动"淘宝杯首届电视棋牌大赛"</a>
+				</li>
+				<li>
+					<a href="#"><span>07/21</span>&nbsp;&nbsp;&nbsp;&nbsp;湖南省省长杜家毫一行参观博雅互动</a>
+				</li>
+			</ul>
+		</div>
+		<div class="right">
+			<h3><a href="#">MORE</a></h3>
+			<div class="zczp"></div>
+			<p class="title">专场招聘岗位 :</p>
+			<ul>
+				<li><a href="#">PHP开发工程师</a></li>
+				<li><a href="#">C++开发工程师</a></li>
+				<li><a href="#">WEB前端开发工程师</a></li>
+				<li><a href="#">大数据开发工程师</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="msg">
+			<a href="">网站地图</a>
+			<p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+			<a href="">免责声明</a>
+			<img src="images/govIcon.gif" alt="" />
+			<p class="sm">Copyright @ 2004 - 2014 博雅互动(Boyaa Interactive) 粤ICP备05062536号 增值电信业务经营许可证 :粤B2-20110513</p>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

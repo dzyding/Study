@@ -1,0 +1,32 @@
+<!-- 
+a&&b 返回值
+如果a为假 返回a
+如果a为真 返回b
+ eg:
+ 	1&&10  返回10
+
+a||b
+如果a为真 返回a
+如果a为假 返回b
+ eg:
+ 	0||1 	1
+ 	1||0 	1
+ 	1||5 	1
+ 	5||5 	5
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log(1&&10);  //10
+		console.log((3||0)&&2);
+		console.log(3||0&&2);
+		console.log((0||2)&&3);
+	</script>
+</body>
+</html>

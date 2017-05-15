@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<!-- 我们想在页面上输出 "<h1>" 这些字符 但是html认为这是一个语义 -->
+	好高兴啊，今天外面学习了<h1>标签，老师说这个是主标签的语义
+
+<!--
+	HTML 实体 为了处理这个问题
+	&lt    - less than     <
+	&gt    - greater than  >
+	&copy  - 版权符号 ©️
+	&nbsp  - non-breaking spacing 空格  (这个可以防止html的默认空白折叠)
+ -->
+ 好高兴啊，今天外面学习了&lt;h1&gt;标签，老师说这个是主标签的语义
+ <p>
+ 	&lt;
+ 	<!-- 这里因为前面的 < 使用了html实体 后面 > 就可以直接打出来 -->
+ 	标签&lt;label>  
+ </p>
+
+ <p>
+ 	&gt;
+ </p>
+
+ <p>
+ 	&copy;
+ </p>
+
+ <p>
+ 	哈&nbsp;哈
+ </p>
+</body>
+</html>

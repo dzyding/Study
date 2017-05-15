@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!-- 
+		IE6 双倍margin bug
+		当出现连续浮动的元素，携带与浮动方向相同的margin时，队首的元素将会出现双倍margin
+
+		解决方案:
+		1: 使浮动的方向 和 margin 相反。
+		   并且大多前端工程师都有这个习惯。(然后在父亲中加个padding 解决队首元素的"margin")
+		2: 使用hack  (不推荐这个方法，不需要惯着IE6)
+		   加个ul li.no1{
+		       _margin-left: 20px;
+		   }
+	 -->
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			border: 1px solid black;
+			height: 100px;
+			list-style: none;
+		}
+		ul li{
+			float: left;
+			width: 120px;
+			height: 40px;
+			margin-left: 40px;
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>

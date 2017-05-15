@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>My First Web Page.</h1>
+<p>My fist paragraph.</p>
+
+<button onclick="myFounction()">点击文档覆盖</button>
+<br><br><br>
+
+<p id="firstTitle">第一个测试</p>
+<button onclick="changeTitle()">更改标题</button>
+<script>
+	function myFounction() {
+		// document.write  不能在文档加载完毕以后执行 这样会直接覆盖
+		document.write("糟糕！文档消失了。");
+	}
+	function changeTitle() {
+		document.getElementById("firstTitle").innerHTML="Hello world";
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!-- 
+1.通过id查找HTML元素
+ -->
+var x = document.getElementById("intro")
+
+<!--
+2.通过标签名查找HMTL元素
+  -->
+本例查找 id = "main" 的元素，然后查找 "main" 中的所有<p>元素
+var x = document.getElementById("main")
+var y = x.getElementByTagName("p")
+(通过类名查找 HTML 元素在 IE 5,6,7,8 中无效。)
+
+<!-- 
+改变HTML输出流
+JavaScript 能够创建动态的HTML 内容
+
+!!!! 绝对不要在文档加载之后使用document.write() 这样会覆盖文档
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ <body>
+ 
+ <script>
+ 	document.write(Date())
+ </script>
+
+ </body>
+ </html>
+
+ <!-- 
+ 改变HTML 内容
+ 使用innerHTML 属性
+  -->
+  <!DOCTYPE html>
+  <html>
+  <body>
+  
+  <p id="p1">Hello World!</p>
+  <script>
+  	document.getElementById("p1").innerHTML = "New text!"
+
+  	// 分开写
+  	var element = document.getElementById("p1")
+  	element.innerHTML = "New Header"
+  </script>
+  </body>
+  </html>
+
+
+
+<!-- 
+改变HTML属性
+document.getElementById(id).attribute = new value
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ <body>
+
+ <img id = "image" src = "smiley.gif">
+
+ <script>
+ 	document.getElementById("image").src = "landscape.jpg"
+ </script>
+ 
+ </body>
+ </html>
+
+
+<!-- 
+HTML DOM 允许JavaScript 改变HTML元素的样式
+document.getElementById(id).style.property = new style
+ -->
+ <p id = "p2">Hello World!</p>
+
+ <h1 id = "od1">My heading 1</h1>
+ <button type = "button" onclick = "document.getElementById('id1').style.color = 'red'"></button>
+ <script>
+  document.getElementById("p2").style.color = "blue"
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

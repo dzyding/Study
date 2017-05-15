@@ -1,0 +1,68 @@
+<!-- 
+	现在互联网前段三层:
+	HTML  超文本标记语言  从语义的角度描述页面 结构
+	CSS   层叠式样式表    从审美的角度负责页面 样式
+	JS    JavaScript    从交互的角度描述页面 行为
+
+	我们现在要开始学习css了 就是样式
+
+	css cascading style sheet 层叠式样式表的简写
+
+		"层叠式" 我们将慢慢的去理解
+
+	css 的最新版本式css3，我们学习的式css2.1。
+ -->
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+ 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ 	<title>Document</title>
+ 	<!-- 
+ 		p {}  h1 {}  这个叫选择器
+ 		语法: key:value 
+ 		!!!!所有css的代码都在里面
+ 		(后面的课程你将知道css也可以写在单独的文件里面)
+ 	 -->
+ 	<style type="text/css">
+ 	/*
+ 	 Demo 1
+ 		p{
+ 			color: red;
+ 			font-size: 30px;
+ 			font-weight: bold;
+ 			font-style: italic;
+ 			text-decoration: underline;;
+ 			text-align: center;
+ 		}
+
+ 		h1{
+ 			color: blue;
+ 			font-size: 50px;
+ 			font-weight: bold;
+ 			background-color: pink;
+ 		}
+ 	*/
+
+ 	/*Demo 2*/
+ 	/*css对换行不敏感，对空格也不敏感，但是冒号和分号一样不能少*/
+ 	h1{color: red;font-size: 40px;}
+ 	p{
+ 		color:blue;
+ 		text-decoration: underline;;
+ 	}
+ 	</style>
+ </head>
+ <body>
+ <!--
+    Demo 1
+ 	<h1>我是一个主标题</h1>
+ 	<p>我是一个段落</p>
+ 	<p>我是一个段落</p>
+  -->
+
+  <!-- Demo 2 -->
+  <h1>我是一个主标题</h1>
+  <p>我是一个段落</p>
+ </body>
+ </html>

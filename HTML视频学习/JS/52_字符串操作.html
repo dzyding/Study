@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ </head>
+ <body>
+ 	<script type="text/javascript">
+ 		//Demo1 转换成字符串
+ 		var txt = 12345;
+ 		console.log(typeof(txt + ""));
+ 		console.log(typeof String(txt));
+ 		console.log(typeof txt.toString());
+
+ 		//Demo2 转换成N进制
+ 		var num = 10;
+ 		console.log(num.toString(2)); //把10转换成2进制
+
+ 		/*
+ 			Demo3 获取字符的位置方法
+ 			charAt() 			获取相应位置字符
+ 			charCodeAt() 		获取相应位置字符unicode编码(我们字符的唯一表示)
+ 			indexOf()			从左边开始数 第一个对应的字符的位置 (找不到该字符返回-1)
+ 			lastIndexOf()		从右边开始数 第一个对应的字符的位置 (找不到该字符返回-1)
+ 								!!!这两个方法不管用那个，最后返回的位置都是从0开始数的，而不是倒过来数的
+		*/
+		var txt2 = "abcedf";
+		var txt3 = "今天是星期天";
+		console.log(txt2.charAt(3));  //e
+		console.log(txt3.charAt(2));  //是
+
+		console.log(txt2.charCodeAt(0));  //97
+
+		console.log("从左开始计算，c的位置是" + txt2.indexOf("c"));
+		console.log("从右开始计算，c的位置是" + txt2.lastIndexOf("c"));
+
+
+		//Demo4 字符串长度
+		var txt4 = "what are you 弄啥咧";  //1个汉字两个字节 两个字母的长度
+		console.log(txt4.length);
+		function getStringLength(str) {
+			var len = 0; //存储长度
+			var c = 0;   //存储每一个编码
+			for (var i = 0; i < str.length; i++) {
+				c = str.charCodeAt(i);
+				if (c >=0 && c<=127) {
+					len ++;
+				}else {
+					len += 2;
+				}
+			}
+			return len;
+		}
+		console.log(getStringLength(txt4));
+ 	</script>
+ </body>
+ </html>

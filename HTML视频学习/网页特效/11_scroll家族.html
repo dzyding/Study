@@ -1,0 +1,71 @@
+<!-- 
+ offset	自己的偏移 宽 高 等
+ scroll 滚动相关的
+
+ scrollTop		被卷去的头部
+ 				就是当你滑动滚轮浏览页面的时候，网页隐藏在屏幕上方的距离
+
+ scrollLeft		被卷去的左边
+
+ 怎么得到scrollTop
+ //滚动事件
+ window.onscroll = function() {};
+
+ 	1.谷歌浏览器 和没有申明DTD的. 就是<!DOCTYPE html>
+ 	document.body.scrollTop;
+ 	2.火狐 其他浏览器
+ 	document.documentElement.scrollTop
+ 	3.ie9+ 最新浏览器
+ 	window.pageYOffset;
+
+ 	4.兼容性的写法
+ 	var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ 	<style type="text/css">
+ 		body {
+ 			background-color: pink;
+ 			height: 1500px;
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	
+ </body>
+ </html>
+ <script type="text/javascript">
+ 	window.onscroll = function(){
+ 		// 谷歌浏览器 和没有申明DTD的. 就是<!DOCTYPE html>  没有申明头的只能用这个
+ 		// document.title = document.body.scrollTop;
+ 		// 火狐 其他浏览器
+ 		// document.title = document.documentElement.scrollTop
+ 		// ie9+ 最新浏览器
+ 		// document.title = window.pageYOffset;
+
+ 		// 兼容性的写法
+ 		var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+ 		document.title = scrollTop;
+ 	}
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

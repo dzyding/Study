@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			position: absolute;
+			left: 0;
+			background-color: pink;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn1">右走</button>
+	<button id="btn2">左走</button>
+	<div id="box"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var btn1 = document.getElementById('btn1');
+	var btn2 = document.getElementById('btn2');
+	var box = document.getElementById('box');
+	/*
+	老的方式
+	btn1.onclick = function () {
+		move(5);
+	}
+	btn2.onclick = function () {
+		move(-5);
+	}
+	function move(speed) {
+		box.style.left = box.offsetLeft + speed + "px";
+	}
+	*/
+
+	function move(speed) {
+		return function (){
+			box.style.left = box.offsetLeft + speed + "px";
+		}
+	}
+	btn1.onclick = move(5);
+	btn2.onclick = move(-5);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*
+			并集选择器 符号为 ","  理解为 和
+		h3,li{
+			color:red;
+		}
+		*/
+
+		/*
+			通配符 符号为 "*" 理解为所有
+		*/
+		div *{
+			color: red;
+		}
+		.div2 *{
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h3>我是一个标题</h3>
+		<p>我是一个段落</p>
+		<ul>
+			<li>我是一个列表</li>
+		</ul>
+	</div>
+	<div class="div2">	
+		<p>标签2</p>
+	</div>
+</body>
+</html>

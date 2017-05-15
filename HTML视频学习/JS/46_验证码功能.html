@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text"/>
+	<button id="btn">点击发送短信</button>
+</body>
+</html>
+<script type="text/javascript">
+	var btn = document.getElementById("btn");
+	var count = 10;
+	var timer = null; //定时器的名字
+	btn.onclick = function(){
+		// 先清除原来的，预防多个同时执行
+		clearInterval(timer);
+		// 不可用 
+		// btn.disabled = "disabled"; 等价于下面的代码
+		this.disabled = true;
+		timer = setInterval(sendTextMessage,1000);
+		function sendTextMessage(){
+			if (count == 0) {
+				count = 10;
+				btn.disabled = false;
+				btn.innerHTML = "获取验证码";
+				clearInterval(timer);
+				return;	
+			}
+			count--;
+			// btn是个双标签 所以要嗯改他的值 使用innerHTML 不是value
+			btn.innerHTML = "还剩余" + count + "秒";
+		}
+	}
+</script>

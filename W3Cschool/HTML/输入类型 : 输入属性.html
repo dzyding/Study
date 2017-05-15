@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!-- 文本输入 
+value 规定初始值
+readonly 只读
+disabled 禁用
+-->
+<form>
+	First Name:<br>
+	<input type="text" name="firstName" value="John" readonly>
+	<br>
+	Last name:<br>
+	<input type="text" name="lastName" disabled>
+</form>
+
+<br><br><br><br><br>
+<!-- 密码字段 
+size 尺寸
+maxlength 允许的最大长度
+autocomplete  是否自动填充
+novalidate 提交时不对表单数据进行验证
+-->
+<form autocomplete="on" novalidate>
+	User name:<br>
+<input type="text" name="username" size="10" placeholder="First name">
+<br>
+	User password:<br>
+	<input type="password" name="psw" maxlength="5">
+<br>
+	Test password:<br>
+	<input type="text" name="psw">
+</form>
+
+<br><br><br><br><br>
+<!-- 提交表单数据 
+autofocus 自动变成第一响应者
+required 是否必须
+-->
+<form action="action_page.php">
+	First name:<br>
+	<input type="text" name="firstname" value="Mickey" autofocus>
+	<br>
+	Last name:<br>
+	<input type="text" name="lastname" value="Mouse">
+	<br><br>
+	<input type="submit" name="Submit">
+</form>
+
+<br><br><br><br><br>
+<!-- 单选 -->
+<form>
+	<input type="radio" name="sex" value="male" checked>Male
+	<br>
+	<input type="radio" name="sex" value="female">Female
+</form>
+
+<br><br><br><br><br>
+<!-- 多选 -->
+<form>
+	<input type="checkbox" name="vehicle" value="Bike">I have a bike
+	<br>
+	<input type="checkbox" name="vehicle" value="Car">I have a car
+</form>
+
+<br><br><br><br><br>
+<!-- button -->
+<input type="button" onclick="alert('Hello World')" value="Click Me!">
+
+<br><br><br><br><br>
+<!-- number -->
+<form>
+	Quantity (between 1 and 5):
+	<input type="number" name="quantity" min="1" max="5">
+</form>
+
+<br><br>
+<!-- 
+输入限制
+disabled 	规定输入字段应该被禁用。
+max 	规定输入字段的最大值。
+maxlength 	规定输入字段的最大字符数。
+min 	规定输入字段的最小值。
+pattern 	规定通过其检查输入值的正则表达式。
+readonly 	规定输入字段为只读（无法修改）。
+required 	规定输入字段是必需的（必需填写）。
+size 	规定输入字段的宽度（以字符计）。
+step 	规定输入字段的合法数字间隔。
+value 	规定输入字段的默认值。
+ -->
+ <form>
+ 	Quantity:
+ 	<input type="number" name="points" min="0" max="100" step="10" value="30">
+ </form>
+
+<br><br><br><br><br>
+<!-- date -->
+<form>
+	Enter a date before 1980-01-01:
+	<input type="date" name="bday" max="1979-12-31"><br>
+	Enter a date after 2000-01-01;
+	<input type="date" name="bday" min="2000-01-02"><br>
+</form>
+
+<br><br><br><br><br>
+<!-- color -->
+<form>
+	Select your favorite color:
+	<input type="color" name="favcolor">
+</form>
+
+<br><br><br><br><br>
+<!-- range -->
+<form>
+	<input type="range" name="points" min="0" max="10">
+</form>
+
+<br><br><br><br><br>
+<!-- month -->
+<form>
+	Birthday (month and year):
+	<input type="month" name="bdaymonth">
+</form>
+
+<br><br><br><br><br>
+<!-- week -->
+<form>
+	Select a week:
+	<input type="week" name="week_year">
+</form>
+
+<br><br><br><br><br>
+<!-- time -->
+<form>
+	Select a time:
+	<input type="time" name="usr_time">
+</form>
+
+<br><br><br><br><br>
+<!-- email -->
+<form>
+	E-mail:
+	<input type="email" name="email">
+</form>
+
+<br><br><br><br><br>
+<!-- search -->
+<form>
+	Search Google:
+	<input type="search" name="googlesearch">
+</form>
+
+<br><br><br><br><br>
+<!-- tel -->
+<form>
+	Telephone:
+	<input type="tel" name="usertel">
+</form>
+
+<br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

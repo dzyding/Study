@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="demo"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var num = 0;
+	var demo = document.getElementById('demo');
+	window.onresize = throttle(function(){
+		demo.innerHTML = window.innerWidth || document.documentElement.clientWidht;
+		num ++;
+		console.log("num = " + num);
+	},300);
+	function throttle(fn,delay) {
+		var timer = null;
+		return function(){
+			// 这里理解不了，感觉不应该这么写，这么写每次都肯定是null吧，我感觉timer的申明应该写到外面去
+			clearInterval(timer);
+			timer = setTimeout(fn,delay);
+		}
+	}
+</script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!-- 
+		浮动和浮动之间有影响 清楚的方法一 给父亲加高度
+		1. 高度必须足够装下儿子
+		   不够装的话还是会去贴上一个div
+
+		网络流传语言: 有高度的盒子，才能关住浮动。
+		
+		只要浮动在一个有高度的盒子中，那么这个浮动就不会影响后面的浮动元素。所以就是清除了浮动带来的影响.
+	 -->
+	<style type="text/css">
+		/*这里可以不设置高度 只设置边框来看看效果*/
+		div{
+			height: 200px;
+			border: 1px solid red;
+		}
+		li{
+			float: left;
+			width: 90px;
+			height: 40px;
+			margin-right: 10px;
+			background-color: gold;
+			/*居中*/
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<!-- <h3>在传智播客，我们能够学习到</h3> -->
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>HTML5</li>
+			<li>JS</li>
+			<li>设计模式</li>
+		</ul>
+	</div>
+
+	<div>
+		<!-- <h3>还能学到</h3> -->
+		<ul>
+			<li>英语</li>
+			<li>面试</li>
+			<li>吹牛</li>
+		</ul>
+	</div>
+</body>
+</html>

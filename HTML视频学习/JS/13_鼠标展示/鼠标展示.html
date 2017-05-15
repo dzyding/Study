@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		#box {
+			height: 70px;
+			width: 360px;
+			padding-top: 360px;
+			border: 1px solid #ccc;
+			margin: 100px auto;
+			overflow: hidden;
+			background: url(images/01big.jpg) no-repeat;
+		}
+		#box ul{
+			overflow: hidden;
+			border-top: 1px solid #ccc;
+		}
+		#box li{
+			float: left;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function() {
+			var box = document.getElementById("box");
+			// 这里只是声明函数
+			function fn(id){
+				var liId = "li" + id;
+				var imageName = "url(images/" + id + "big.jpg)";
+				var li = document.getElementById(liId);
+				li.onmouseover = function(){
+					box.style.backgroundImage = imageName;
+				}
+			}
+			//这里是调用 不掉用则没效果
+			for (var i = 1; i < 6; i++) {
+				var ID = "0" + i;
+				fn(ID);
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="box">
+		<ul>
+			<li id = "li01"><img src="images/01.jpg"></li>
+			<li id = "li02"><img src="images/02.jpg"></li>
+			<li id = "li03"><img src="images/03.jpg"></li>
+			<li id = "li04"><img src="images/04.jpg"></li>
+			<li id = "li05"><img src="images/05.jpg"></li>
+		</ul>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

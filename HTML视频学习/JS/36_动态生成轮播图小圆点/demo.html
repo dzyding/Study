@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin:0;padding:0;}
+        ul,ol{list-style:none}
+        .box {
+            width: 730px;
+            height: 454px;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .circle {
+            position: absolute;
+            left: 50%;
+            margin-left:-50px;
+            bottom:10px;
+        }
+        .circle span {
+            float: left;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: pink;
+            text-align: center;
+            line-height: 18px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .circle span.current {
+        	background-color: purple;
+        }
+    </style>
+    <script type="text/javascript">
+    	window.onload = function(){
+    		var scroll = document.getElementById("scroll");
+    		var circle = document.createElement("div");
+    		circle.setAttribute("class","circle");
+    		// circle.className = "circle";
+    		scroll.appendChild(circle);
+
+    		var lis = document.getElementById("ul").children;
+    		for (var i = 0; i < lis.length; i++) {
+    			var newspan = document.createElement("span");
+    			newspan.innerHTML = i+1;
+    			if (i == 0) {
+    				newspan.setAttribute("class","current");
+    			}
+    			circle.appendChild(newspan);
+    		}
+    	}
+    </script>
+</head>
+<body>
+<div class="box" id="scroll">
+    <div class="slider">
+        <ul id="ul">
+            <li><img src="images/11.jpg" alt=""/></li>
+            <li><img src="images/22.jpg" alt=""/></li>
+            <li><img src="images/33.jpg" alt=""/></li>
+            <li><img src="images/44.jpg" alt=""/></li>
+            <li><img src="images/55.jpg" alt=""/></li>
+            <li><img src="images/66.jpg" alt=""/></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

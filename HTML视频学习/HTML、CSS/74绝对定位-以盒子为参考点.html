@@ -1,0 +1,40 @@
+<!-- 
+ 一个绝对定位的元素，如果父辈元素中出现了定位(相对定位 绝对定位都可以)的元素，那么将以这个父辈元素，为参考点。
+ 这个地方不一定是父亲，只要是父辈都行。
+
+ 子绝父绝、子绝父相、子绝父固，都是可以给儿子定位的。但是工程上子绝、父绝，没有一个盒子在标准流里面了，所以页面就不稳固，没有任何实战用途。工程上，"子绝父相"才有意义，父亲没有脱标，儿子脱标在父亲的范围里面移动。
+  -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 400px;
+			height: 400px;
+			border: 10px solid red;
+			margin: 100px;
+			/*父辈元素加了定位以后，子元素将会以父辈元素为参考点进行定位*/
+			position: relative;
+		}
+		p{
+			width: 100px;
+			height: 100px;
+			background: orange;
+			position: absolute;
+			top: 40px;
+			left: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function () {
+			var div1 = document.getElementById('div1').innerHTML;
+			var div2 = document.getElementById('div2').innerHTML;
+			function onBtnClick(id, txt) {
+				document.getElementById(id).onclick = function(){
+					//用nextSibling 中间不能有空格
+					this.nextSibling.innerHTML = txt;
+				}
+			}
+			//字符串连接
+			onBtnClick("btn1",div1.concat(div2));
+
+			/*
+			 slice(取字符串的起始位置, [结束位置]);  ( []表示可选的 )
+			*/
+			onBtnClick("btn2",div1.slice(3));
+			// 包含起始元素 不包含结束元素 [3, 6)
+			onBtnClick("btn3",div1.slice(3,6));
+			// 起始位置可以是负数 从右边往左边取
+			onBtnClick("btn4",div1.slice(-3));
+
+			/*
+			 substr(起始位置, [取的个数])
+			 	!! 也可以使用负数，但是ie678报错。最好不用
+			*/
+			//不写取的个数，默认从起始位置一直取到最后
+			onBtnClick("btn5",div1.substr(3));
+			//从起始位置开始往后面数6个
+			onBtnClick("btn6",div1.substr(3,6));
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="div1">my name is andy!</div>
+	<div id="div2">what's your name?</div>
+	<button id="btn1">concat()</button><span> </span> <br />
+
+	<button id="btn2">slice(3)</button><span></span> <br />
+	<button id="btn3">slice(3,6)</button><span></span> <br />
+	<button id="btn4">slice(-3)</button><span></span> <br />
+
+	<button id="btn5">substr(3)</button><span></span> <br />
+	<button id="btn6">substr(3,6)</button><span></span> <br />
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- 
+ 从学习浮动的第一天开始就应该知道，有浮动的开始就会有清除.
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*
+		我们本以为这里给li设置浮动 这里会显示成两行 第一行是第一个div中的数据 第二行是第二个div中的数据
+		但是这里并没有这样显示 而且是两个div贴到了同一行
+		原因:
+			两个div没有高度，没办法给自己浮动的孩子撑起一行
+ 
+		解决办法是给div设置高度
+	*/
+		li{
+			float: left;
+			width: 90px;
+			height: 40px;
+			background-color: gold;
+			/*居中*/
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<!-- <h3>在传智播客，我们能够学习到</h3> -->
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>HTML5</li>
+			<li>JS</li>
+			<li>设计模式</li>
+		</ul>
+	</div>
+
+	<div>
+		<!-- <h3>还能学到</h3> -->
+		<ul>
+			<li>英语</li>
+			<li>面试</li>
+			<li>吹牛</li>
+		</ul>
+	</div>
+</body>
+</html>

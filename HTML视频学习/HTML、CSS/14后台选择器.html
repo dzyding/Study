@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*
+			div1 的后代所有p
+			是后代 不一定是儿子 也就是可能是多代以后 
+			后代选择器 符号 " " (空格)
+			空格可以出现多次
+
+			后代选择器:
+				描述的祖先结构，没必要考虑具体是哪个标签 。
+				就是一种平衡: 共性、特性的平衡。当只需要改某一个区域里面的样式时使用;
+ 		*/
+		.div1 p{
+			color: red;
+		}
+		.div2 p{
+			color: blue;
+		}
+		.div2 .li2 p{
+			color: green;
+		}
+
+		/*Demo*/
+
+		/*  这个写法是正确的
+		.dd1 .dd3 p{
+			color: red;
+		}
+		*/
+
+		/* 这个写法也是正确的 并不需要考虑到底是那两个div
+		div div p{
+			color: red;
+		}
+		*/
+
+		/* 正确
+		div .dd2 div div p{
+			color: red;
+		}
+		*/
+
+		/* 正确
+		div .dd2 div p{
+			color: red;
+		}
+		*/
+
+		/* 不正确的
+		.dd2 .dd1 .dd3 .dd4 p{
+			color: red;
+		}
+		*/
+
+		/* 不正确的
+		div div .dd4 div p {
+			color: red;
+		}
+		*/
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<p>段落</p>
+		<p>段落</p>
+		<p>段落</p>
+	</div>
+
+	<div class="div2">
+		<ul>
+			<li>
+				<p>段落</p>
+				<p>段落</p>
+				<p>段落</p>
+			</li>
+			<li class="li2">
+				<p>段落</p>
+				<p>段落</p>
+				<p>段落</p>
+			</li>
+			<li>
+				<p>段落</p>
+				<p>段落</p>
+				<p>段落</p>
+			</li>
+			<li>
+				<p>段落</p>
+				<p>段落</p>
+				<p>段落</p>
+			</li>
+		</ul>
+	</div>
+
+<!-- Demo -->
+	<div class="dd1">
+		<div class="dd2">
+			<div class="dd3">
+				<div class="dd4">
+					<p>我是什么颜色</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

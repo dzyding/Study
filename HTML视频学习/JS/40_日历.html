@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box{
+			width: 150px;
+			height: 200px;
+			background-color: #369;
+			margin: 100px auto;
+			text-align: center;
+		}
+		.box p{
+			line-height: 60px;
+			font-size: 15px;
+			color: #fff;
+		}
+		.box span{
+			display: block;
+			width: 75px;
+			height: 75px;
+			line-height: 75px;
+			margin: 0 auto;
+			font-size: 50px;
+			color: #000;
+			background-color: yellowgreen;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var cc = document.getElementById("date");
+			var boys = cc.children;
+			var arr = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+			//日期函数
+			var date = new Date();
+			//当天多少号
+			boys[1].innerHTML = date.getDate();
+			boys[0].innerHTML = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate() + " " +arr[date.getDay()];
+		}
+	</script>
+</head>
+<body>
+	<div class="box" id="date">
+		<p></p>
+		<span></span>
+	</div>
+</body>
+</html>
