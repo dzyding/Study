@@ -1,0 +1,37 @@
+<!-- 
+ js命名规范
+ 	a) 支持: 下划线、字母、$、数字 等
+ 	b) 但是不能以数字开头
+ jQuery
+	a) $ 在jQuery中就是一个符号 一个变量
+	   如果自定义 var $ = "我是$";  将原本的 $ 符号重定义，则无法正常使用jQuery
+	b) jQuery 同时支持 jQuery 和 $ 两个符号，但是明显的jQuery使用起来比较麻烦
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//若是有这句话 下面则无法正常使用$符号 会报错
+			// var $ = "我是$" ;
+
+			//jQuery支持的两个变量
+			// 1
+			$("#btn").click(function(){
+				console.log("我是jQuery");
+			});
+
+			// 2
+			jQuery("#btn").click(function(){
+				console.log("我是jQuery");
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" value="我是按钮" id="btn"></input>
+</body>
+</html>

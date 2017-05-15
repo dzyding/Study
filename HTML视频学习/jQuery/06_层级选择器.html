@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//等价
+			// $("li").css("font-size","20px");
+			//二者等价
+			// $("li").css({"font-size":"20px"});
+
+			/*
+			 1. 空格 后代选择器 $("div span")
+			 2. >	子代选择器 $("div > span")
+			 3. +	紧邻选择器 $("div + p") (紧挨着的下一个)
+			 4. ~	兄弟选择器 (选择后面的所有元素)
+			*/
+			$(".item+li").css("color","red");
+			$(".item~li").css("font-size","30px");
+		});
+	</script>
+</head>
+<body>
+	<ul>
+		<li>姐咩很多01</li>
+		<li>姐咩很多02</li>
+		<li>姐咩很多03</li>
+		<li>姐咩很多04</li>
+		<li class="item">姐咩很多05</li>
+		<li>姐咩很多06</li>
+		<li>姐咩很多07</li>
+		<li>姐咩很多08</li>
+		<li>姐咩很多09</li>
+		<li>姐咩很多10</li>
+	</ul>
+</body>
+</html>

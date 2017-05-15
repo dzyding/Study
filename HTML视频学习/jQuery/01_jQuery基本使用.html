@@ -1,0 +1,88 @@
+<!-- 
+	js入口函数 : 
+		方式1
+		$(document).ready(function(){
+
+		});
+
+		方式2 这种方式是上面的简写
+		$(function(){
+
+		});
+	
+	事件源 :
+		js:
+			document.getElementById("id");
+		jQuery:
+			$("#id");
+
+	事件 :
+		js: 	(有个 on***)
+			document.getElementById("id").onclick
+		jQuery: (不带 on)
+			$("#id").click
+
+	事件处理程序 :
+		js :
+			document.getElementById("id").onclick = function(){
+				//语句
+			};
+		jQuery :
+			$("#id").click(function(){
+				//语句
+			});
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			height: 200px;
+			background-color: #000;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		/*
+		//简写方式
+		$(function(){
+			$(btnClick).click(function(){
+				//隐藏
+				$("div").hide();
+			});
+		});
+		*/
+		$(document).ready(function(){
+			$(btnClick).click(function(){
+				//隐藏
+				$("div").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" value="点击" id="btnClick"/>
+		<div></div>
+	</input>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

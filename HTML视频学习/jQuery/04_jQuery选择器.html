@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+		}
+		li {
+			color: blue;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#demo").click(function(){
+				this.style.display = "none";
+			});
+		});
+		/*
+			js里面的写法
+			dom.style.backgroundColor = "";
+		*/
+		$(document).ready(function(){
+			//id选择器 正常设置css属性 
+			$("#b03").css("background-color","red");
+
+			//id选择器 获取被选元素的样式
+			var color = $("#b03").css("color");
+			var fontSize = $("#b03").css("font-size");
+			console.log(color);
+			console.log(fontSize);
+
+			//类选择器 .
+			$(".liItem").css("background-color", "green");
+
+			//标签选择器
+			$("li").css("font-size","20px");
+
+			// * 通配符选择器
+			$("*").css("line-height","40px");
+
+			//并级选择器
+			$(".liItem,div").css("backgroundColor", "yellow");
+		});
+	</script>
+</head>
+<body>
+	<div id="demo"></div>
+	<!-- ul>li{兄弟很多$}*8 -->
+	<ul>
+		<li>兄弟很多1</li>
+		<li>兄弟很多2</li>
+		<li id="b03">兄弟很多3</li>
+		<li>兄弟很多4</li>
+		<li>兄弟很多5</li>
+		<li class="liItem">兄弟很多6</li>
+		<li>兄弟很多7</li>
+		<li class="liItem">兄弟很多8</li>
+	</ul>
+	<div></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- 
+	js 入口函数和 jQuery 入口函数的对比
+
+	js的window.onload 事件是等到所有内容，以及我们的外部图片之类的文件加载完了之后，才去执行
+
+	jQuery 的入口函数 是在html所有标签都加在之后 就去执行
+
+	   !!!所以jQuery入口函数会比js入口函数执行的早
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	// 这里解释了为什么jQuery 的入口函数不会被覆盖 而是叠加使用
+		var iQuery = function (dom) {
+			var obj = {
+				ready : function(func){
+					// 1 判断一下 document.onload 有没有被赋值某个函数
+					if (typeof dom.onload === "function") {
+						// 2 如果有 接收一下旧的函数 调用新的函数 然后调用旧的函数
+						var oldFunc = dom.onload;
+						dom.onload = function(){
+							func();
+							oldFunc();
+						}
+					}else {
+						// 3 如果没有 直接赋值
+						dom.onload = func;
+					}
+				}
+			};
+			return obj;
+		}
+
+		iQuery(window).ready(function(){
+			console.log("第一次调用");
+		});
+		iQuery(window).ready(function(){
+			console.log("第二次调用");
+		});
+		iQuery(window).ready(function(){
+			console.log("第三次调用");
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

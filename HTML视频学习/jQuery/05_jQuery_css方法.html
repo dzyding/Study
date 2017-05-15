@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// $("li").css({
+			// 	"background-color":"red",
+			// 	"font-size":"40px",
+			// 	"color":"white"
+			// 	});
+
+			$("li").css("background-color", function(index,value){
+				//index 指定当前元素的索引号
+				//value 对应的值
+				var color = "";
+				switch(index){
+					case 0:{
+						color = "red";
+						break;
+					}
+					case 1:{
+						color = "blue";
+						break;
+					}
+					case 2:{
+						color = "yellow";
+						break;
+					}
+					case 3:{
+						color = "green";
+						break;
+					}
+				}
+				return color;
+			});
+			$("li.aa").css({
+				"font-size":"30px"
+			});
+		});
+	</script>
+</head>
+<body>
+	<ul>
+		<li>我是li元素</li>
+		<li>我是li元素</li>
+		<li>我是li元素</li>
+		<li class="aa">我是li元素</li>
+	</ul>
+</body>
+</html>
