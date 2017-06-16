@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		/*
+			:first	选取第一个元素
+			:last	选取最后一个元素
+			:not(selector)	去除所有与给定选择器匹配的元素
+			:even	选取索引是偶数的所有元素 索引从0开始
+			:odd	********奇数***
+			:eq(index)	选取索引 等于 index的元素
+			:gt(index)	选取索引 大于 index的元素 (大于而不包括)
+			:lt(index)	选取索引 小于 index的元素
+			:header	选取所有的标题元素 eg:h1 h2 h3 ...
+			:animated	选取当前正在执行动画的元素
+			:focus	选取当前获取焦点的元素
+		*/
+		$(function(){
+			//第一个div
+			// $("div:first").css("background","#bbffaa");
+
+			//最后一个div
+			// $("div:last").css("background","#bbffaa");
+
+			//class不等于one的div
+			// $("div:not(.one)").css("background","#bbffaa");
+
+			//索引值为偶数的div
+			// $("div:even").css("background","#bbffaa");
+
+			//索引值为奇数的div
+			// $("div:odd").css("background","#bbffaa");
+
+			//索引值等于3的div
+			// $("div:eq(3)").css("background","#bbffaa");
+
+			//索引值大于3的div
+			// $("div:gt(3)").css("background","#bbffaa");
+
+			//索引值小于3的div
+			// $("div:lt(3)").css("background","#bbffaa");
+
+			//所有标题
+			$(":header").css("background","#bbffaa");
+		});
+	</script>
+	<style>
+		div {
+			width: 180px;
+			height: 180px;
+			border: red 1px solid;
+			margin: 10px 0 0 10px;
+			float: left;
+		}
+		span {
+			width: 140px;
+			height: 140px;
+			margin: 10px;
+			background: #aaa;
+			border: #000 1px solid;
+			float: left;
+			font-size: 17px;
+			font-family: Verdana;
+		}
+		div.mini {
+			width: 55px;
+			height: 55px;
+			background-color: #aaa;
+			font-size: 12px;
+		}
+		div.hide {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h3>基本过滤选择器</h3>
+	<div class="one" id="one">
+		id为one.class为one的div
+		<div class="mini">class为mini</div>
+	</div>
+	<div class="one" id="two" title="test">
+		id为two.class为one.title为test的div
+		<div class="mini" title="other">class为mini.title为ohter</div>
+		<div class="mini" title="test">class为mini.title为test</div>
+	</div>
+	<div class="one">
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini"></div>
+	</div>
+	<div class="one">
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini" title="tesst">class为mini.title为tesst</div>
+	</div>
+	<div style="display:none;" class="onne">
+		style的display为"none"的div
+	</div>
+	<div class="hide">class为"hide"的div</div>
+	<div>
+		包含input的type为"hidden"的div <input type="hidden" size="8"/>
+	</div>
+	<span class="mover">正在执行动画的span元素.</span>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	/*
+		:hidden		选取所有不可见的元素
+					包括 type="hideen"	display:none	visibility:hidden
+		:visible	选取所有可见的元素
+	*/
+		$(function(){
+			//可见的
+			// $("div:visible").css("background","#ff6500");
+
+			//不可见的
+			$("div:hidden").show(3000); //这里的show 是动画 3000是3秒
+		});
+	</script>
+	<style>
+		div {
+			width: 180px;
+			height: 180px;
+			border: red 1px solid;
+			margin: 10px 0 0 10px;
+			float: left;
+		}
+		span {
+			width: 140px;
+			height: 140px;
+			margin: 10px;
+			background: #aaa;
+			border: #000 1px solid;
+			float: left;
+			font-size: 17px;
+			font-family: Verdana;
+		}
+		div.mini {
+			width: 55px;
+			height: 55px;
+			background-color: #aaa;
+			font-size: 12px;
+		}
+		div.hide {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h3>基本过滤选择器</h3>
+	<div class="one" id="one">
+		id为one.class为one的div
+		<div class="mini">class为mini</div>
+	</div>
+	<div class="one" id="two" title="test">
+		id为two.class为one.title为test的div
+		<div class="mini" title="other">class为mini.title为ohter</div>
+		<div class="mini" title="test">class为mini.title为test</div>
+	</div>
+	<div class="one">
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini"></div>
+	</div>
+	<div class="one">
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini" title="tesst">class为mini.title为tesst</div>
+	</div>
+	<div style="display:none;" class="onne">
+		style的display为"none"的div
+	</div>
+	<div class="hide">class为"hide"的div</div>
+	<div>
+		包含input的type为"hidden"的div <input type="hidden" size="8"/>
+	</div>
+	<span class="mover">正在执行动画的span元素.</span>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	/*
+		" " 空格  		所有的后代元素
+		">"		  		所有的子元素
+		"+"				同辈中的下一个该元素
+		"~"				同辈中的所有该元素
+	*/
+		$(function(){
+			//body中的所有div
+			// $("body div").css("background","#bbffaa");
+
+			//body子元素中的所有div
+			// $("body > div").css("background","#bbffaa");
+
+			/*
+				所有类名为one的下一个div同辈元素
+				等价于
+				$(".one").next("div");
+			*/
+			// $(".one + div").css("background","#bbffaa");
+
+
+			/*
+				所有id为two的元素后面的所有div同辈元素
+				等价于
+				$("#two").nextAll("div")
+			*/
+			$("#two ~ div").css("background","#bbffaa");
+
+
+
+			/*
+				!!! 补充知识
+				选取 #prev 之后的所有同辈div元素
+				$("#prev ~ div").css("background","#bbffaa");
+
+				同上
+				$("#prev").nextAll("div").css("background","#bbffaa");
+
+				选取 #prev 所有的同辈div元素，无论前后位置   !!!! 不分前后位置
+				$("#prev").siblings("div").css("background","#bbffaa");
+			*/
+		});
+	</script>
+	<style>
+		div {
+			width: 180px;
+			height: 180px;
+			border: red 1px solid;
+			margin: 10px 0 0 10px;
+			float: left;
+		}
+		span {
+			width: 140px;
+			height: 140px;
+			margin: 10px;
+			background: #aaa;
+			border: #000 1px solid;
+			float: left;
+			font-size: 17px;
+			font-family: Verdana;
+		}
+		div.mini {
+			width: 55px;
+			height: 55px;
+			background-color: #aaa;
+			font-size: 12px;
+		}
+		div.hide {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="one" id="one">
+		id为one.class为one的div
+		<div class="mini">class为mini</div>
+	</div>
+	<div class="one" id="two" title="test">
+		id为two.class为one.title为test的div
+		<div class="mini" title="other">class为mini.title为ohter</div>
+		<div class="mini" title="test">class为mini.title为test</div>
+	</div>
+	<div class="one">
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini"></div>
+	</div>
+	<div class="one">
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini" title="tesst">class为mini.title为tesst</div>
+	</div>
+	<div style="display:none;" class="onne">
+		style的display为"none"的div
+	</div>
+	<div class="hide">class为"hide"的div</div>
+	<div>
+		包含input的type为"hidden"的div <input type="hidden" size="8"/>
+	</div>
+	<span class="mover">正在执行动画的span元素.</span>
+</body>
+</html>

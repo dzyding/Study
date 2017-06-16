@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	/*
+		:contains(text)		选取含有文字内容为text的元素
+		:empty				选取不包含有子元素或者文本的空元素
+		:has(selector)		选取含有选择器所匹配的元素的元素
+		:parent				选取含有子元素或者文本的元素
+	*/
+
+		$(function(){
+			//选取含有文本"di"的div
+			// $("div:contains(di)").css("background","#bbffaa");
+
+			//选取 不含有 子元素(包括文本元素)的div
+			// $("div:empty").css("background","#bbffaa");
+
+			//选取所有 含有 子元素(包括文本元素)的div
+			// $("div:parent").css("background","#bbffaa");
+
+			//选取所有子元素中 含有.mini类 的div
+			// $("div:has(.mini)").css("background","#bbffaa");
+		});
+	</script>
+	<style>
+		div {
+			width: 180px;
+			height: 180px;
+			border: red 1px solid;
+			margin: 10px 0 0 10px;
+			float: left;
+		}
+		span {
+			width: 140px;
+			height: 140px;
+			margin: 10px;
+			background: #aaa;
+			border: #000 1px solid;
+			float: left;
+			font-size: 17px;
+			font-family: Verdana;
+		}
+		div.mini {
+			width: 55px;
+			height: 55px;
+			background-color: #aaa;
+			font-size: 12px;
+		}
+		div.hide {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h3>基本过滤选择器</h3>
+	<div class="one" id="one">
+		id为one.class为one的div
+		<div class="mini">class为mini</div>
+	</div>
+	<div class="one" id="two" title="test">
+		id为two.class为one.title为test的div
+		<div class="mini" title="other">class为mini.title为ohter</div>
+		<div class="mini" title="test">class为mini.title为test</div>
+	</div>
+	<div class="one">
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini"></div>
+	</div>
+	<div class="one">
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini">class为mini</div>
+		<div class="mini" title="tesst">class为mini.title为tesst</div>
+	</div>
+	<div style="display:none;" class="onne">
+		style的display为"none"的div
+	</div>
+	<div class="hide">class为"hide"的div</div>
+	<div>
+		包含input的type为"hidden"的div <input type="hidden" size="8"/>
+	</div>
+	<span class="mover">正在执行动画的span元素.</span>
+</body>
+</html>
