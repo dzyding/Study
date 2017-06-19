@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//title属性以en 开头的
+			// $("div[title^=en]").css("background","#bbffaa");
+
+			//title属性包含en的
+			// $("div[title*=en]").css("background","#bbffaa");
+
+			//title属性等于en 或者以 en 开头 并紧跟 - 的  	!!!!
+			// $("div[title|=en]").css("background","#bbffaa");
+
+			//title属性用空格分开 并且其中一个值 等于 uk
+			// $("div[title~=uk]").css("background","#bbffaa");
+		});
+	</script>
+	<style type="text/css">
+		div {
+			width: 250px;
+			height: 250px;
+			float: left;
+			margin: 10px;
+			border: red 1px solid;
+		}
+	</style>
+</head>
+<body>
+	<div title="en">title为en的div元素</div>
+	<div title="en-UK">title为en-UK的div元素</div>
+	<div title="english">title为english的div元素</div>
+	<div title="en uk">title为en uk的div元素</div>
+	<div title="uken">title为en的div元素</div>
+</body>
+</html>
