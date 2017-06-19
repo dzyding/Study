@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			alert("Hello World!");
+		});
+
+		//缩写
+		$(function(){
+			alert("Hello World2!")
+		});
+
+		//例子， 链式编程
+		$(".level1 > a").click(function(){
+			$(this).addClass("current")
+			.next().show()
+			.parent().siblings().children("a").removeClass("current")
+			.next().hide();
+			return false;
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

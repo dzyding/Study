@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var $cr = $("#cr");  //获取jQuery元素
+			var cr = $cr[0];	 //获取Dom元素
+			$cr.click(function(){
+				// if (cr.checked) {  //Dom方式判断
+				// 	alert("感谢您的支持");
+				// }
+
+				if ($cr.is(":checked")) { //jQuery的方式
+					alert("感谢您的支持")
+				}
+			});
+		})
+	</script>
+</head>
+<body>
+	<input type="checkbox" id="cr"/><label for="cr">我已经阅读了上面制度.</label>
+</body>
+</html>
