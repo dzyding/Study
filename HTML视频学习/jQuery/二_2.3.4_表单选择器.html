@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		/*
+			:input		选取所有的input textarea select button 元素
+			:text 		选取所有的单行文本框
+			:password	选取所有的密码框
+			:radio		选取所有的单选框
+			:checkbox	选取所有的多选框
+			:submit		选取所有的提交按钮
+			:image		选取所有的图像按钮
+			:reset		选取所有的重置按钮
+			:button 	选取所有的按钮
+			:file		选取所有的上传域
+			:hidden		选取所有不可见元素
+		*/
+		$(function(){
+			//获取表单内 表单元素的个数  !!!!注意与 $("#form1 input") 的区别
+			// var num = $("#form1 :input").length;
+
+			//获取表单内 单行文本框的个数
+			// var num = $("#form1 :text").length;
+
+			//获取表单内 密码框的个数
+			var num = $("#form1 :password").length;
+			console.log(num);
+		});
+	</script>
+</head>
+<body>
+	<form action="#" id="form1">
+		<input type="button" value="Button" /> <br />
+		<input type="checkbox" name="c" />1
+		<input type="checkbox" name="c" />2
+		<input type="checkbox" name="c" />3<br />
+		<input type="file"><br />
+		<input type="hidden"><div style="display:none">test</div><br />
+		<input type="image"><br />
+		<input type="password"><br />
+		<input type="radio" name="a" />1<input type="radio" name="a" />2<br />
+		<input type="reset"><br />
+		<input type="submit" value="提交"><br />
+		<input type="text"><br />
+		<select><option>Option</option></select><br />
+		<textarea></textarea><br />
+		<button>Button</button><br />
+	</form>
+</body>
+</html>

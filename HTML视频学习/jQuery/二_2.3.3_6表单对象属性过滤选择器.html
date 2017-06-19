@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		/*
+			:enabled		选取所有可用元素
+			:disabled		选取所有不可用元素
+			:checked		选取所有被选中的元素(单选框 复选框)
+			:selected		选取所有被选中的选项元素
+		*/
+		$(function(){
+			//改变表单内可用<input>元素的值
+			// $("#form1 input:enabled").val("这里变化了!!!");
+
+			//改变表单内不可用<input>元素的值
+			// $("#form1 input:disabled").val("这里变化了!!!");
+
+			//获取多选框选中的个数
+			// var l = $("input:checked").length;
+			// console.log(l);
+
+			//获取下拉框选中的内容
+			var arr = $("select :selected").text();
+			console.log(arr);
+		});
+	</script>
+</head>
+<body>
+	<form action="#" id="form1">
+		可用元素: <input type="text" name="add" value="可用文本框" /> <br/>
+		不可用元素: <input type="text" name="email" disabled="disabled" value="不可用文本框" /> <br/>
+		可用元素: <input type="text" name="che" value="可用文本框" /> <br/>
+		不可用元素: <input type="text" name="name" disabled="disabled" value="不可用文本框" /> <br/>
+		<br/>
+		多选框: <br/>
+		<input type="checkbox" name="newsletter" checked="checked" value="test1" /> <br/>
+		<input type="checkbox" name="newsletter" value="test2" /> <br/>
+		<input type="checkbox" name="newsletter" value="test3" /> <br/>
+		<input type="checkbox" name="newsletter" checked="checked" value="test4" /> <br/>
+		<input type="checkbox" name="newsletter" value="test5" /> <br/>
+		<div></div>
+		<br/><br/>
+		下拉列表1: <br/>
+		<select name="test" multiple="multiple" style="height:100px" id="">
+			<option>浙江</option>
+			<option selected="selected">湖南</option>
+			<option>北京</option>
+			<option selected="selected">天津</option>
+			<option>广州</option>
+			<option>湖北</option>
+		</select>
+		<br/><br/>
+		下拉列表2: <br/>
+		<select name="test2" id="">
+			<option>浙江</option>
+			<option>湖南</option>
+			<option selected="selected">北京</option>
+			<option>天津</option>
+			<option>广州</option>
+			<option>湖北</option>
+		</select>
+		<br/><br/>
+	</form>
+</body>
+</html>

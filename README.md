@@ -7,3 +7,4 @@
 1. HTML、CSS
 2. JS
 3. 网页特效
+4. jQuery
