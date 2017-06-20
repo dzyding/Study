@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		ul li.promoted{
+			background: gray;
+			color: red;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $category = $('ul li:gt(5):not(:last)');
+
+			$category.hide();
+			var $toggleBtn = $("div.showmore > a");
+
+			//标准写法
+			$toggleBtn.click(function(){
+				if ($category.is(":visible")) {
+					$category.hide();
+					$(this).find("span")
+						.css("background","url(img/down.gif)no-repeat 0 0")
+						.text("显示全部品牌");
+					$("ul li").removeClass('promoted');
+				}else {
+					$category.show();
+					$(this).find("span")
+						.css("background","url(img/up.gif)no-repeat 0 0")
+						.text("精简显示品牌");
+					$("ul li").filter(":contains('佳能'),:contains('尼康'),:contains('奥林巴斯')").addClass('promoted');
+				}
+				return false;
+			});
+
+
+			//jQuery的方法 给一个元素添加点击切换事件
+			/*
+				有点问题，不知道为什么显示全部品牌的那个按钮被隐藏了
+			*/
+			// $toggleBtn.toggle(function(){
+			// 	$category.hide();
+			// 		$(this).find("span")
+			// 			.css("background","url(img/down.gif)no-repeat 0 0")
+			// 			.text("显示全部品牌");
+			// 		$("ul li").removeClass('promoted');
+			// },function(){
+			// 	$category.show();
+			// 		$(this).find("span")
+			// 			.css("background","url(img/up.gif)no-repeat 0 0")
+			// 			.text("精简显示品牌");
+			// 		$("ul li").filter(":contains('佳能'),:contains('尼康'),:contains('奥林巴斯')").addClass('promoted');
+			// });
+		});
+	</script>
+</head>
+<body>
+	<div class="SubCategoruBox">
+		<ul>
+			<li><a href="#">佳能</a><i>(30440)</i></li>
+			<li><a href="#">索尼</a><i>(3230)</i></li>
+			<li><a href="#">三星</a><i>(3440)</i></li>
+			<li><a href="#">尼康</a><i>(3340)</i></li>
+			<li><a href="#">松下</a><i>(1240)</i></li>
+			<li><a href="#">卡西欧</a><i>(332)</i></li>
+			<li><a href="#">富士</a><i>(445)</i></li>
+			<li><a href="#">柯达</a><i>(2236)</i></li>
+			<li><a href="#">宾得</a><i>(777)</i></li>
+			<li><a href="#">理光</a><i>(2222)</i></li>
+			<li><a href="#">奥林斯巴</a><i>(3342)</i></li>
+			<li><a href="#">明基</a><i>(4561)</i></li>
+			<li><a href="#">爱国者</a><i>(355)</i></li>
+			<li><a href="#">其他品牌相机</a><i>(124)</i></li>
+		</ul>
+	</div>
+	<div class="showmore">
+		<a href="more.html"><span>显示全部品牌</span></a>
+	</div>
+</body>
+</html>
