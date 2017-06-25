@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			position: relative;
+		}
+		#tooltip{
+			position: absolute;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var x = 5;
+			var y = 5;
+			$("a.tooltip").mouseover(function(e) {
+				this.myTitle = this.title;
+				this.title = "";
+				var tooltip = "<div id='tooltip'>" + this.myTitle + "</div>";
+				$("body").append(tooltip);
+				$("#tooltip")
+					.css({
+						"top" : (e.pageY + y) + "px",
+						"left": (e.pageX + x) + "px"
+					}).show("fast");
+			}).mouseout(function(event) {
+				this.title = this.myTitle;
+				$("#tooltip").remove();
+			}).mouseover(function(event) {
+				$("#tooltip")
+					.css({
+						"top" : (event.pageY + y) + "px",
+						"left": (event.pageX + x) + "px"
+					});
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<p><a href="#" class="tooltip" title="这是我的超链接提示1.">提示1</a></p>
+	<p><a href="#" class="tooltip" title="这是我的超链接提示2.">提示2</a></p>
+	<p><a href="#" title="这是自带提示1.">自带提示1</a></p>
+	<p><a href="#" title="这是自带提示2.">自带提示2</a></p>
+</body>
+</html>
