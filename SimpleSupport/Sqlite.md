@@ -27,8 +27,7 @@ ORDER BY column1, column2	//排序
 5. Group By  
  GROUP BY 子句用于与 SELECT 语句一起使用，来对相同的数据进行分组。  
  *在 SELECT 语句中，GROUP BY 子句放在 WHERE 子句之后，放在 ORDER BY 子句之前。*  
-
- eg: 按 NAME 分组，并将相同 NAME 的 SALARY 相加，结果根据 NAME 排序。
+ **eg:** 按 NAME 分组，并将相同 NAME 的 SALARY 相加，结果根据 NAME 排序。
  ```
  SELECT NAME, SUM(SALARY) FROM COMPANY GROUP BY NAME ORDER BY NAME;
  ```
@@ -36,29 +35,28 @@ ORDER BY column1, column2	//排序
 6. Having  
  HAVING 子句允许指定条件来过滤将出现在最终结果中的分组结果。  
  *HAVING 子句则在由 GROUP BY 子句创建的分组上设置条件。*
- *在一个查询中，HAVING 子句必须放在 GROUP BY 子句之后，必须放在 ORDER BY 子句之前。*
- 
- eg: 显示名称计数大于 2 的所有记录
+ *在一个查询中，HAVING 子句必须放在 GROUP BY 子句之后，必须放在 ORDER BY 子句之前。*  
+ **eg:** 显示名称计数大于 2 的所有记录
  ```
  SELECT * FROM COMPANY GROUP BY name HAVING count(name) > 2;
  ```
 
 7. Distinct  
  DISTINCT 关键字与 SELECT 语句一起使用，来消除所有重复的记录，并只获取唯一一次记录。  
- 
- eg: 
+ **eg:** 
  ```
  SELECT DISTINCT name FROM COMPANY;
  ```
 
 8. Join  
  三种链接方式  
- - 交叉连接 : CROSS JOIN  
-   把第一个表的每一行与第二个表的每一行进行匹配。如果两个输入表分别有 x 和 y 行，则结果表有 x * y 行。
- - 内连接	 : INNER JOIN
-   根据连接谓词结合两个表（table1 和 table2）的列值来创建一个新的结果表。
- - 外连接 : OUTER JOIN  
-   最初的结果表与内链接计算方式相同。一旦主连接计算完成，将所有操作表中任何未连接的行合并进来，外连接的列使用 NULL 值，将它们附加到结果表中。  
+
+	- 交叉连接 : CROSS JOIN  
+		把第一个表的每一行与第二个表的每一行进行匹配。如果两个输入表分别有 x 和 y 行，则结果表有 x * y 行。
+ 	- 内连接	 : INNER JOIN  
+   		根据连接谓词结合两个表（table1 和 table2）的列值来创建一个新的结果表。
+ 	- 外连接 : OUTER JOIN  
+   		最初的结果表与内链接计算方式相同。一旦主连接计算完成，将所有操作表中任何未连接的行合并进来，外连接的列使用 NULL 值，将它们附加到结果表中。  
 
 9. Unions  
  UNION 子句/运算符用于合并两个或多个 SELECT 语句的结果，不返回任何重复的行。  
