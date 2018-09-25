@@ -2,7 +2,7 @@
 
 第二篇 [iOS逆向（二）：iOS工具篇](https://juejin.im/post/5af0102ef265da0b8a678bd5) 其实已经写好了，但是掘金的审核不让过，笔者表示颇为无奈，有兴趣的朋友可以移驾过去看看，主要讲了 lldb、debugserver、cycript、dumpdecrypted、usbmuxd、socat。
 # class-dump
-### 安装
+## 安装
 书中所写是在`/usr/bin`安装，由于现在一般在该目录没有权限，无法把`class-dump`文件移动到该目录。以下方法安装在了另一个目录：
 
 1. 打开Terminal，输入`mkdir ~/bin`，在当前用户根目录下创建一个bin目录；  
@@ -44,7 +44,7 @@
 
 详见: [http://bbs.iosre.com/t/10-11-usr-bin-class-dump/1936]( http://bbs.iosre.com/t/10-11-usr-bin-class-dump/1936)  
 
-### 使用
+## 使用
 由于从`AppStore` 下载的`App`都是经过加密的，被套上了一层壳，`class-dump`处理不了这种文件，这里我们的目的是学习使用`class-dump`，所以暂时只能对自己的`App`进行下手。  
 通常打包的文件是`.ipa`格式，获取`.App`格式文件的方法如下图。
 
@@ -71,19 +71,21 @@
     ```
     class-dump -s -S -H --arch armv7 dailylife.decrypted -o ./dailylife
     ```
-### 注意
+## 注意
 **class-dump 不支持Swift，所以只要你的app包中有Swift文件就会失败**  
+
 失败的警告大概是这样:  
 ```
 class-dump[5542:213244] Error: Cannot find offset for address 0x280000000100007e in stringAtAddress:
 ```
 
-### 结果
+## 结果
 ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-2.png)  
 
 # Theos
-### 安装
+## 安装
 使用`xcode-select`命令指定一个活动的`xCode`，即`Theos`默认使用的`xCode`。(如果只安装了一个xCode，请跳过这一步)  
+
 ```
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 ```
@@ -91,7 +93,9 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 安装Theos我先是使用小黄书上的标准步骤，不过到最后全部都安装好了以后，`nic.pl`无法正常运行，老是提示`-bash: nic.pl: command not found`。找了半天不知道为什么，猜测应该是一些依赖的框架没有安装好。  
 
 于是我换了一个安装的方式。  
+
 1. 安装brew (全名Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。)  
+
     ```
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
@@ -107,8 +111,10 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     brew uninstall FORMULA...
     brew list [FORMULA...]
     ...
-    ```
+    ```  
+
 2. 安装dpkg和ldid  
+
     ```
     brew install dpkg ldid
     ```
@@ -118,8 +124,10 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     ```
     ```
     ==> Installing dependencies for ldid: openssl
-    ```
-3. 安装Thoes 
+    ```  
+
+3. 安装Thoes  
+
     ```
     sudo git clone --recursive https://github.com/theos/theos.git /opt/theos
     ```
@@ -130,8 +138,10 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     *(其中`id`为系统保留的用户，`id -u`为当前用户，`id -g`为当前组，`$()`是执行命令的意思。) 这里的解释只是为了方便理解，并不是官方解释。*
     ```
     sudo chown $(id -u):$(id -g) /opt/theos
-    ```
-4. 配置环境变量(方便后期使用)
+    ```  
+
+4. 配置环境变量(方便后期使用)  
+
     ```
     localhost:/ senhongtouzi$ cd ~
     localhost:~ senhongtouzi$ vi .bash_profile 
@@ -142,8 +152,9 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     export PATH=/opt/theos/bin/:$PATH
     ````  
     
-    其中有第三句代码是`class-dump`的
-    ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-3.png)
+    其中有第三句代码是`class-dump`的  
+
+    ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-3.png)  
     
     执行代码`source ~/.bash_profile`，让环境变量生效。
     
@@ -165,9 +176,12 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
      [11.] iphone/tweak
      [12.] iphone/xpc_service
     ```
-    这里我们主要是使用 `tweak` 所以我们选择 11。
-### 使用  
-#### 1. 创建工程  
+    这里我们主要是使用 `tweak` 所以我们选择 11。  
+
+## 使用  
+
+### 1. 创建工程  
+
     ```
     //tweak 工程名
     Project Name (required): ReTest_180502
@@ -186,8 +200,10 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     
     Instantiating iphone/tweak in retest_180502/...
     Done.
-    ```
-#### 2. 定制工程文件  
+    ```  
+
+### 2. 定制工程文件  
+
     首先介绍一下创建出来的 tweak 工程包含的文件  
     ```
     localhost:retest_180502 senhongtouzi$ ls -l
@@ -198,8 +214,10 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     -rw-r--r--  1 senhongtouzi  staff   204  5  2 10:06 control
     ```
     
-##### Makefile  
-指定工程用到的文件，框架，库等信息，将这个工程自动化。
+#### Makefile  
+
+指定工程用到的文件，框架，库等信息，将这个工程自动化。  
+
 ```
 //指定处理器架构
 ARCHS = armv7 arm64
@@ -226,14 +244,14 @@ ReTest_180502_LDFLAGS = -lx
 
 lx 代表链接 libx.a 或者 libx.dylib，即给 x 加上 lib前缀，以及 .a 或 .dylib 的后缀；如果 x 是 y.o 的形式，则直接链接 y.o，不加任何前缀或后缀。
 
-eg: 链接 libsqlite3.0.dylib、libz.dylib、dylib1.o 
-ReTest_180502_LDFLAGS = -lz -lsqlite3.0 -dylib1.o
-*/
+eg: 链接 libsqlite3.0.dylib、libz.dylib、dylib1.o  
+ReTest_180502_LDFLAGS = -lz -lsqlite3.0 -dylib1.o  
+*/  
 
-include $(THEOS_MAKE_PATH)/tweak.mk
+include $(THEOS_MAKE_PATH)/tweak.mk  
 ```  
     
-##### Tweak.xm  
+#### Tweak.xm  
 用 Theos 创建 tweak 工程，默认生成的源文件是 Tweak.xm。 xm 中 x 代表这个文件支持 Logos 语法，如果后缀是单独的一个 x ，说明源文件支持 Logos 和 C 语法；如果后缀名是 xm，说明源文件支持 Logos 和 C/C++ 语法，与Xcode项目中 m 和 mm 的区别类似。  
 
 默认的 Tweak.xm 里面是一个简单的使用说明，包括几个常用的 Logos 预处理指令。%hook、%log、%orig，除了 Tweak.xm 中介绍的这三个指令以外，Logos 常用的预处理指令还有 %group、%init、%ctor、%new、%c。
@@ -372,7 +390,7 @@ include $(THEOS_MAKE_PATH)/tweak.mk
 8. %c  
     该指令等同于 `objc_getClass` 或 `NSClassFromString`，即动态获取一个类的定义，在 %hook 或者 %ctor 内部使用。 
 
-##### control
+#### control
 control 文件记录了 deb 包管理系统所需的基本信息，会被打开进 deb 包里。
 
 ```
@@ -410,7 +428,7 @@ Version: 0.0.1-1
 Install-Size: 104
 ```
 
-##### .plist  
+#### .plist  
 ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-4.png)  
 
 如图，最外层是一个字典，只有一个名为 `Filter` 的键。  
@@ -425,8 +443,9 @@ Install-Size: 104
 这三类数组可以混合使用。**不过在有不同类的 array 时，需要添加一个 Mode: Any 键值对。当只有一类 array时，不需要添加**
 ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-5.png)  
 
-### 编译+打包+安装
-#### 编译
+## 编译+打包+安装
+
+### 编译
 Theos 采用 `make` 指令来编译Theos 工程。编译成功会多出一个 `obj` 文件夹
 ```
 localhost:retest_180502 senhongtouzi$ make
@@ -444,7 +463,7 @@ localhost:retest_180502 senhongtouzi$ make
 ```
 成功编译过的文件，如果再次进行 `make` 指令，将会报错 `Nothing to be done for internal-library-compile`，这种情况可以使用 下面介绍的 `clean` 指令，或者手动的把编译成功生成的文件夹及文件删掉。
 
-#### 打包
+### 打包
 `make package` 指令，其实就是先执行 `make` 指令，然后再执行 `dpkg-deb` 指令。
 ```
 localhost:retest_180502 senhongtouzi$ make package
@@ -482,7 +501,7 @@ _THEOS_PLATFORM_DPKG_DEB_COMPRESSION ?= gzip
 ```
 参考：[http://bbs.iosre.com/t/tweak-make-package/10382/7](http://bbs.iosre.com/t/tweak-make-package/10382/7)
 
-#### 安装
+### 安装
 图形化安装 可以通过软件把把包生成的 `deb` 拖到iOS中，然后通过 `iFile` 来安装，最后重启 iOS。  
 
 这里我们推荐命令行安装法：  
@@ -528,12 +547,12 @@ Setting up com.dzyre.180502 (0.0.1-4+debug) ...
 
 ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-6.png)
 
-#### 简化命令行安装
+### 简化命令行安装
 按书上的说法，每次 `make package install` 会需要输入两次密码，显得略麻烦，于是有简化的方式。也就是通过设置 iOS 的 `authorized_keys` 来达到目的。  
 
 我这边碰到的实际情况，只需要输入一次密码，并且我按照书上的这种方式进行操作，完成之后还是需要输入密码。我试了好几次，应该没有误操作。由于没有效果，这里我就不记录过程了。 如果是我的操作问题，还请大佬指出。 
 
-#### 清理
+### 清理
 `make clean` 指令，其实就是删除 `make` 和 `make package` 指令生成的相关文件。同时可以使用 `rm packages/*.deb` 指令来删除生成的 deb 文件。
 
 # Reveal
@@ -546,13 +565,13 @@ Reveal是一个UI分析工具，可以直观的查看App的UI布局。如下图�
 
 Mac上面安装Reveal并不麻烦，你可以去下载一个破解的，也可以去支持正版，这里不做具体说明。
 
-### OpenSSH 的使用
+## OpenSSH 的使用
 我是使用爱思助手越狱以及开通OpenSSH通道的。别的方法我并不太清楚，有兴趣可以自行尝试。
 
 默认登录账号为: root  
 默认登录密码为: alpine
 
-#### 1. 链接
+### 1. 链接
 在手机的网络设置中找到当前局域网的ip地址，也就是wifi的ip地址。
 ```
 localhost:~ senhongtouzi$ ssh root@192.168.2.19
@@ -563,7 +582,7 @@ root@192.168.2.19's password:
 ```
 dzy-re:~ root# ls -l
 ```
-#### 2. 退出
+### 2. 退出
 指令为`exit`  
 
 eg:
@@ -575,7 +594,7 @@ Connection to 192.168.2.19 closed.
 
 **我之前连通过的，后来因不确定原因又导致连不上去了，提示 port 22: Connection refused，我猜测是因为Mac 我更改过登录密码，然后我在手机上重新安装了一下OpenSSH就好了。**
 
-#### 3. 拷贝文件
+### 3. 拷贝文件
 执行该操作的时候并不需要链接上`OpenSSH`，Mac本地命令行操作。
 
 下面的指令为从本地拷贝到iOS设备上，需从iOS设备拷贝到本地，反过来即可  
@@ -585,7 +604,7 @@ Connection to 192.168.2.19 closed.
 eg:   
 `localhost:Downloads senhongtouzi$ scp libReveal.dylib root@192.168.2.19:/Library/RHRevealLoader`
 
-#### 4. 修改登录密码
+### 4. 修改登录密码
 iOS上的账户有两个，分别是`root`和`mobile`。命令如下
 
 ```
@@ -599,10 +618,12 @@ New password:
 Retype new password:
 ```
 
-### Reveal Loader
-#### 安装
-在Cydia中搜索并安装Reveal Loader，如下图所示。
+## Reveal Loader
+### 安装
+在Cydia中搜索并安装Reveal Loader，如下图所示。  
+
 ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-8.png)  
+
 安装的过程中，某些文件犹豫资源在国外，不一定能正常下载。所以在下载完成后，需要检查一下iOS上的`/Library/`目录下有没有一个名为`RHRevealLoader`的文件夹。  
 
 **这里需要强调一下: 在/根目录 和~根目录下都有一个文件夹叫做Library，我们需要使用的是/根目录下的Library，也就是下面的第二个地址**
@@ -626,22 +647,27 @@ dzy-re:~ root# mkdir /Library/RHRevealLoader
 **这里需要说明一下，下面关于libReveal.dylib的操作，不管安装完Reveal Loader 有没有RHRevealLoader文件夹，最好都进行一下。没有RHRevealLoader文件夹就是手动获取该文件，有RHRevealLoader文件夹就当是更新一下该文件。**  
 
 
-在Mac上打开Reveal，在标题栏的`Help`选项下，选中其中的`Show Reveal Library in Finder`子选项。
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-9.png)
+在Mac上打开Reveal，在标题栏的`Help`选项下，选中其中的`Show Reveal Library in Finder`子选项。  
 
-在老版的Reveal中，好像有个文件叫`libReveal.dylib`，我们需要的也是它。但是新版中没有这个名字的文件，新版本中，找到如下文件，并直接复制一份出来，改名为`libReveal.dylib`
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-10.png)
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-9.png)  
+
+在老版的Reveal中，好像有个文件叫`libReveal.dylib`，我们需要的也是它。但是新版中没有这个名字的文件，新版本中，找到如下文件，并直接复制一份出来，改名为`libReveal.dylib`  
+
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-10.png)  
 
 通过OpenSSH的scp命令将该文件复制到`/Library/RHRevealLoader`目录下。  
 
 至此安装完成。
 
-#### 配置
-在手机的设置中找到`Reveal`，点击`Enabled Applications`，将你需要查看UI的app之后的按钮打开。
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-11.png)
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-12.png)
+### 配置
+在手机的设置中找到`Reveal`，点击`Enabled Applications`，将你需要查看UI的app之后的按钮打开。  
+
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-11.png)  
+
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-12.png)  
+
 ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-13.png)
 
-#### 使用Reveal查看目标App布局
+### 使用Reveal查看目标App布局
 
 ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-14.png)
