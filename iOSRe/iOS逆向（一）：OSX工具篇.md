@@ -48,7 +48,7 @@
 由于从`AppStore` 下载的`App`都是经过加密的，被套上了一层壳，`class-dump`处理不了这种文件，这里我们的目的是学习使用`class-dump`，所以暂时只能对自己的`App`进行下手。  
 通常打包的文件是`.ipa`格式，获取`.App`格式文件的方法如下图。
 
-![](https://user-gold-cdn.xitu.io/2018/4/2/162847a77aa66c4a?w=473&h=166&f=jpeg&s=21656)  
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-1.png)  
 
 1. 定位App的可执行文件  
     进入app所在目录，并用xCode自带的`plutil`工具查看`Info.plist`中的`CFBundleExecutable`字段  
@@ -79,7 +79,7 @@ class-dump[5542:213244] Error: Cannot find offset for address 0x280000000100007e
 ```
 
 ### 结果
-![](https://user-gold-cdn.xitu.io/2018/4/2/16284832f1444206?w=722&h=200&f=jpeg&s=26619)  
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-2.png)  
 
 # Theos
 ### 安装
@@ -143,7 +143,7 @@ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     ````  
     
     其中有第三句代码是`class-dump`的
-    ![](https://user-gold-cdn.xitu.io/2018/4/3/1628ac188a9e189f?w=806&h=157&f=jpeg&s=44756)
+    ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-3.png)
     
     执行代码`source ~/.bash_profile`，让环境变量生效。
     
@@ -411,7 +411,7 @@ Install-Size: 104
 ```
 
 ##### .plist  
-![](https://user-gold-cdn.xitu.io/2018/5/2/1631f98dd1a57ae1?w=510&h=162&f=jpeg&s=19609)  
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-4.png)  
 
 如图，最外层是一个字典，只有一个名为 `Filter` 的键。  
 其对应的值有三种：（这个截图中只有一种）
@@ -423,7 +423,7 @@ Install-Size: 104
     指定若干可执行文件为 tweak 的作用对象。  
 
 这三类数组可以混合使用。**不过在有不同类的 array 时，需要添加一个 Mode: Any 键值对。当只有一类 array时，不需要添加**
-![](https://user-gold-cdn.xitu.io/2018/5/2/1631fa5a9f99ad1d?w=590&h=173&f=jpeg&s=22539)  
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-5.png)  
 
 ### 编译+打包+安装
 #### 编译
@@ -526,7 +526,7 @@ Setting up com.dzyre.180502 (0.0.1-4+debug) ...
 ```
 安装成功后可以在手机的 `Cydia` 中的已安装栏目中找到，然后当你运行app的时候，就会启动这个插件，以实现钩子操作：  
 
-![](https://user-gold-cdn.xitu.io/2018/5/2/1632016af9e31dc9?w=640&h=1136&f=png&s=100780)
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-6.png)
 
 #### 简化命令行安装
 按书上的说法，每次 `make package install` 会需要输入两次密码，显得略麻烦，于是有简化的方式。也就是通过设置 iOS 的 `authorized_keys` 来达到目的。  
@@ -538,7 +538,7 @@ Setting up com.dzyre.180502 (0.0.1-4+debug) ...
 
 # Reveal
 Reveal是一个UI分析工具，可以直观的查看App的UI布局。如下图所示为iOS8.4.1上看到的老版本微博的首页。
-![](https://user-gold-cdn.xitu.io/2018/4/11/162b2a3affb4fbae?w=854&h=630&f=jpeg&s=96148)  
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-7.png)  
 使用Reveal查看别人的App布局有如下几个前提  
 - 打开OpenSSH通道的越狱手机
 - iOS设备必须和Mac在同一个局域网
@@ -602,7 +602,7 @@ Retype new password:
 ### Reveal Loader
 #### 安装
 在Cydia中搜索并安装Reveal Loader，如下图所示。
-![](https://user-gold-cdn.xitu.io/2018/4/11/162b2bb8d66c76ac?w=640&h=1136&f=png&s=173777)  
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-8.png)  
 安装的过程中，某些文件犹豫资源在国外，不一定能正常下载。所以在下载完成后，需要检查一下iOS上的`/Library/`目录下有没有一个名为`RHRevealLoader`的文件夹。  
 
 **这里需要强调一下: 在/根目录 和~根目录下都有一个文件夹叫做Library，我们需要使用的是/根目录下的Library，也就是下面的第二个地址**
@@ -627,10 +627,10 @@ dzy-re:~ root# mkdir /Library/RHRevealLoader
 
 
 在Mac上打开Reveal，在标题栏的`Help`选项下，选中其中的`Show Reveal Library in Finder`子选项。
-![](https://user-gold-cdn.xitu.io/2018/4/11/162b2c573f3ca298?w=511&h=248&f=jpeg&s=32560)
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-9.png)
 
 在老版的Reveal中，好像有个文件叫`libReveal.dylib`，我们需要的也是它。但是新版中没有这个名字的文件，新版本中，找到如下文件，并直接复制一份出来，改名为`libReveal.dylib`
-![](https://user-gold-cdn.xitu.io/2018/4/11/162b2c70e164f61e?w=417&h=177&f=jpeg&s=14868)
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-10.png)
 
 通过OpenSSH的scp命令将该文件复制到`/Library/RHRevealLoader`目录下。  
 
@@ -638,10 +638,10 @@ dzy-re:~ root# mkdir /Library/RHRevealLoader
 
 #### 配置
 在手机的设置中找到`Reveal`，点击`Enabled Applications`，将你需要查看UI的app之后的按钮打开。
-![](https://user-gold-cdn.xitu.io/2018/4/11/162b2d02acc98eb7?w=545&h=579&f=jpeg&s=39852)
-![](https://user-gold-cdn.xitu.io/2018/4/11/162b2d036224f99a?w=546&h=450&f=jpeg&s=40273)
-![](https://user-gold-cdn.xitu.io/2018/4/11/162b2d0429ec660a?w=516&h=741&f=jpeg&s=64474)
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-11.png)
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-12.png)
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-13.png)
 
 #### 使用Reveal查看目标App布局
 
-![](https://user-gold-cdn.xitu.io/2018/4/11/162b2dcbe9229a95?w=1192&h=719&f=jpeg&s=52077)
+![](https://github.com/dzyding/Study/blob/master/iOSRe/images/1-14.png)
