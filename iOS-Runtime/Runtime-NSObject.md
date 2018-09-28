@@ -100,7 +100,9 @@ union isa_t
 
 5. 每个 Meta class 的 `isa` 指针都指向 Root class(meta)。  
 
-**这里有一个特殊情况，Tagged Pointer 是没有 isa 指针的，因为它不是真正的对象。  
+我们应该明白，**类对象和元类对象是唯一的，对象是可以在运行时创建无数个的。**
+
+**还有一个特殊情况，Tagged Pointer 是没有 isa 指针的，因为它不是真正的对象。  
 具体的可以参考：[深入理解Tagged Pointer](http://blog.devtang.com/2014/05/30/understand-tagged-pointer/)**
 
 ### isa_t 的具体实现
@@ -126,25 +128,27 @@ union isa_t {
     Class cls;
     uintptr_t bits;
     
-    //这里为只显示了 ARM64 的情况
-#   define ISA_MASK        0x0000000ffffffff8ULL
-#   define ISA_MAGIC_MASK  0x000003f000000001ULL
-#   define ISA_MAGIC_VALUE 0x000001a000000001ULL
+//这里只显示了 __x86_64__ 的情况
+#define ISA_MASK        0x00007ffffffffff8ULL
+#define ISA_MAGIC_MASK  0x001f800000000001ULL
+#define ISA_MAGIC_VALUE 0x001d800000000001ULL
+#define RC_ONE   (1ULL<<56)
+#define RC_HALF  (1ULL<<7)
     struct {
-        uintptr_t nonpointer        : 1;
+        uintptr_t indexed           : 1;
         uintptr_t has_assoc         : 1;
         uintptr_t has_cxx_dtor      : 1;
-        uintptr_t shiftcls          : 33;
+        uintptr_t shiftcls          : 44;
         uintptr_t magic             : 6;
         uintptr_t weakly_referenced : 1;
         uintptr_t deallocating      : 1;
         uintptr_t has_sidetable_rc  : 1;
-        uintptr_t extra_rc          : 19;
+        uintptr_t extra_rc          : 8;
     };
 };
 ```
 
-二者的区别在于放 `cls` 的位置不同，对应初始化方法来看：  
+二者的最大区别在于放 `cls` 的位置不同，对应初始化方法来看：  
 
 ```
 inline void
@@ -170,7 +174,7 @@ objc_object::initIsa(Class cls, bool indexed, bool hasCxxDtor)
 
 会出现这种问题的原因是：**使用整个指针大小的内存来存储 isa 指针有些浪费，尤其在 64 位的 CPU 上。在 ARM64 运行的 iOS 只使用了 33 位作为类的指针，而剩下的 31 位用于其它目的。因为类的指针会根据字节对齐，每一个类指针的地址都能够被 8 整除，也就是使最后 3 bits 为 0，所以在 64位 系统上最终为 isa 留下 34 位用于性能的优化。**  
 
-我这篇文章只介绍 64位 系统的情况。  
+以下的图配及代码都是针对 __x86_64__ 系统的情况。  
 
 `isa_t` 是一个 union 类型的结构体，对 union 不熟悉的读者可以看这个 stackoverflow 上的 [回答](https://stackoverflow.com/questions/252552/why-do-we-need-c-unions)。也就是说其中的 `isa_t`、`cls`、 `bits` 还有结构体共用同一块地址空间。而 `isa_t` 总共会占据 64 位的内存空间（决定于其中的结构体）  
 
