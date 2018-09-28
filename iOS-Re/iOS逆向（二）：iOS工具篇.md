@@ -1,4 +1,3 @@
-如果你需要了解 Theos、class-dump、OpenSSH、Reveal 的基本安装使用，请移驾 [iOS逆向（一）：OSX工具篇](https://juejin.im/post/5ac194d2f265da239e4e3ae4)
 # LLDB 与 debugServer
 
 ## 1. 简介
@@ -195,7 +194,7 @@
 
 通过信息 `[  3] 0x0339e000 /Users/senhongtouzi/Library/Developer/Xcode/iOS DeviceSupport/8.4.1 (12H321)/Symbols/System/Library/Frameworks/Foundation.framework/Foundation` 中的路径找到 `Foundation` 的二进制文件，拖入 `IDA` 中。  
 
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-1.png)  
+![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-1.png)  
 
 结合 `lldb` 和 `IDA` 的中 `Foundation` 的数据：  
 `偏移前模块地址` 为 `0x2268A000` (`IDA` 中获取)  
@@ -207,7 +206,7 @@
 
 回到 `IDA`，在 `Functions window` 里搜索 `NSLog`，然后跳转到它的实现。  
 
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-2.png)  
+![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-2.png)  
 
 因为 `Foundation` 的基地址是已知的，而 `NSlog` 函数在 `Foundation` 中的位置是固定的，所以有公式：  
 ```
@@ -246,7 +245,7 @@ NSLog 偏移后基地址 = NSLog 偏移前的基地址 + Foundation ASLR偏移
 
 1. 在 `IDA` 中打开 `SpringBoard` 二进制文件，等待分析结束以后在 `Functions window` 中搜索 `menuButtonDown`，找到对应的 `-[SpringBoard _menuButtonDown:]`，如下图所示：  
 
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-3.png)  
+![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-3.png)  
 
 可以看到，第一条指令 `PUSH {R4-R7,LR}` 的偏移前基地址是 `0x00014A10`。  
 ```
@@ -346,7 +345,7 @@ NSLog 偏移后基地址 = NSLog 偏移前的基地址 + Foundation ASLR偏移
     ```
 6. print  
 
-    ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-4.png)  
+    ![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-4.png)  
 
     `MOVS R6, #0`的偏移后基地址为 `0x00014ACC` + `0x00094000` = `0x000A8ACC`。在这条指令上下一个断点，待断点被触发后，看看当前 `R6` 的值。
     ```
@@ -387,9 +386,9 @@ NSLog 偏移后基地址 = NSLog 偏移前的基地址 + Foundation ASLR偏移
     [  0] 0x00004000 /System/Library/CoreServices/SpringBoard.app/SpringBoard(0x0000000000008000)
     ```  
 
-    ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-5.png)  
+    ![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-5.png)  
 
-    ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-6.png)  
+    ![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-6.png)  
 
     `__SpringBoard__accessibilityObjectWithinProximity__0` 偏移后的基地址是 `0x00014C1C` + `0x00004000` = `0x00018C1C`。在它上面下断点，然后使用 `ni` 命令。  
     ```
@@ -447,7 +446,7 @@ NSLog 偏移后基地址 = NSLog 偏移前的基地址 + Foundation ASLR偏移
     
     `0x22c7c0` 偏移前的基地址是 `0x2287c0`，对应IDA来看，正好是位于`__SpringBoard__accessibilityObjectWithinProximity__0` 函数的内部  
 
-    ![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-7.png)  
+    ![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-7.png)  
     
     ```
     我这里的例子有点问题，我不知道为什么 ni si 的运行结果是一样的。 
@@ -458,7 +457,7 @@ NSLog 偏移后基地址 = NSLog 偏移前的基地址 + Foundation ASLR偏移
     
 `Cycript` 是由 `saurik` 推出的一款脚本语言，可以看做是 `Objective-JavaScript`。  
 
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-8.png)
+![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-8.png)
     
 ### 简单使用
 
@@ -484,7 +483,7 @@ cy# [alertView release]
 
 `Cycript` 的语法，不需要声明对象类型，也不需要结尾的分好，还是蛮简单的。如果函数有返回值，`Cycript` 会把它在内存中的地址及一些基本信息实时打印出来，非常直观。  
 
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-9.png)  
+![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-9.png)  
 
 如果知道一个对象在内存中的地址，可以通过 `#` 操作符来获取这个对象，例如：  
 
@@ -508,11 +507,11 @@ cy# choose (SBUIController)
 
 这里我自己写了个例子可以供大家参考：  
 
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-10.png)  
+![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-10.png)  
 
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-11.png)  
+![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-11.png)  
 
-![](https://github.com/dzyding/Study/blob/master/iOSRe/images/2-12.png)
+![](https://github.com/dzyding/Study/blob/master/iOS-Re/images/2-12.png)
 
 ### 退出编辑
 `control + D` 
