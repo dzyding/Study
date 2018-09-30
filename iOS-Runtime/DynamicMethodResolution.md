@@ -324,6 +324,8 @@ void playMethod() {
 
 **在这个例子中 `methodSignatureForSelector` `forwardInvocation` 方法里面，我对方法对象 `anInvocation` 进行了更改，从而执行了一个与调用皆然不同的方法。**  
 
+[Demo 地址](https://github.com/dzyding/Study/tree/master/Demo)  
+
 参考文章：  
 [Objective-C Runtime](https://tech.glowing.com/cn/objective-c-runtime/)
 
