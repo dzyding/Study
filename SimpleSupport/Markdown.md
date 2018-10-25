@@ -66,9 +66,13 @@
 							
 	| Tables| Are 	| Cool	|
 	| ---- | :----: | ----: |
+		   .
+		   .
+		   .
+	|	|	|	|
 	
 	//col 3 is right-aligned (右对齐)
-	// col 2 is centered (居中对齐)
+	//col 2 is centered (居中对齐)
 
 
 ## 换行
