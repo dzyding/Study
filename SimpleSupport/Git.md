@@ -8,7 +8,9 @@
 - 删除远程仓库：$ git remote rm [name]
 - 修改远程仓库：$ git remote set-url --push [name] [newUrl]
 - 拉取远程仓库：$ git pull [remoteName] [localBranchName]	 //localBranchName 可以是提交分支
-- 推送远程仓库：$ git push [remoteName] [localBranchName]
+- 推送远程仓库：$ git push [remoteName] [localBranchName]:[remoteRepositoryBranchName]  
+  remoteRepositoryBranchName 可以省略，如果省略就是默认提交到 remote 上与 localBranchName 相同名字的 branch
+
 
 ## 3. .gitignore 忽略部分文件
 比如.DS_Store
