@@ -77,9 +77,12 @@ void processInput(GLFWwindow * window) {
 // MARK: - 2.uniform 关键字
 const char *vertexShaderSource = "#version 330 core\n"
 "layout (location = 0) in vec3 aPos;\n"
+"uniform float padding;\n"
+"out vec4 loColor;\n"
 "void main()\n"
 "{\n"
-"   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+"   gl_Position = vec4(aPos.x + padding, -aPos.y, aPos.z, 1.0);\n"
+"   loColor = gl_Position;\n"
 "}\n\0";
 
 /*
@@ -89,10 +92,11 @@ const char *vertexShaderSource = "#version 330 core\n"
  */
 const char *fragmentShaderSource = "#version 330 core\n"
 "uniform vec4 ourColor;\n"
+"in vec4 loColor;\n"
 "out vec4 FragColor;\n"
 "void main()\n"
 "{\n"
-"   FragColor = ourColor;\n"
+"   FragColor = loColor;\n"
 "}\n\0";
 
 //MARK: - 编译着色器
@@ -261,6 +265,9 @@ int main(int argc, const char * argv[]) {
         // 在glUseProgram函数调用之后，
         // 每个着色器调用和渲染调用都会使用这个程序对象（也就是之前写的着色器)了。
         glUseProgram(shaderProgram);
+        
+        float padding = glGetUniformLocation(shaderProgram, "padding");
+        glUniform1f(padding, 0.2f);
         
         float timeValue = glfwGetTime();
         float greenValue = sin(timeValue) / 2.0f + 0.5f;
