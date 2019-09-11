@@ -229,6 +229,17 @@ int main(int argc, const char * argv[]) {
         glBindVertexArray(VAO);
         // 6 是顶点数量
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        
+        
+        glm::mat4 sTrans = glm::mat4(1.0f);
+        sTrans = glm::translate(sTrans, glm::vec3(-0.5f, 0.5f, 0.0f));
+        float sValue = sin(glfwGetTime());
+        sTrans = glm::scale(sTrans, glm::vec3(sValue, sValue, sValue));
+        glUniformMatrix4fv(tramsFormLoc, 1, GL_FALSE, &sTrans[0][0]);
+        
+        // 6 是顶点数量
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        
         glBindVertexArray(0);
         glfwSwapBuffers(window);
         // 检查并调用事件，交换缓冲
