@@ -18,8 +18,29 @@
 #include "Image/stb_image.h"
 #include <cmath>
 
+//MARK: - 声明变量
 const float screenwidth = 800.0;
 const float screenHeight = 600.0;
+
+// 自由移动时定义的变量
+glm::vec3 cameraPos     = glm::vec3(0.0f, 0.0f, 3.0f);  //位置
+glm::vec3 cameraFront   = glm::vec3(0.0f, 0.0f, -1.0f); //方向
+glm::vec3 cameraUp      = glm::vec3(0.0f, 1.0f, 0.0f);  //上量
+
+float deltaTime = 0.0f; //当前帧与上一帧的时间差
+float lastFrame = 0.0f; //上一帧的时间
+
+// 鼠标的初始位置
+float lastX = 400, lastY = 300;
+
+// 俯仰角，偏航角
+float pitch = 0, yaw = -90;
+
+// 初次进入
+bool firstMouse = true;
+
+// 默认视野角度
+float fov = 45.0f;
 
 //MARK: - 初始化 glfw
 void initGLFW() {
@@ -40,10 +61,64 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
 }
 
+//MARK: - 鼠标移动的回调
+void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
+    // 第一次启动会有一个跳动
+    if (firstMouse) {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+ 
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos; // 注意这里是相反的，因为y坐标是从底部往顶部依次增大的
+    lastX = xpos;
+    lastY = ypos;
+    
+    // 灵敏度，需要适配调整
+    float sensitivity = 0.05f;
+    xoffset *= sensitivity;
+    yoffset *= sensitivity;
+    
+    yaw += xoffset;
+    pitch += yoffset;
+    
+    if (pitch > 89.0f)
+        pitch = 89.0f;
+    if (pitch < -89.0f)
+        pitch = -89.0f;
+    
+    glm::vec3 front = glm::vec3(1.0f);
+    front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    front.y = sin(glm::radians(pitch));
+    front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+    cameraFront = glm::normalize(front);
+}
+
+//MARK: - 鼠标滚轴的监测
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset) {
+    if (fov >= 1.0f && fov <= 45.0f)
+        fov -= yoffset;
+    if (fov <= 1.0f)
+        fov = 1.0f;
+    if (fov >= 45.0f)
+        fov = 45.0f;
+}
+
 //MARK: - 检查输入
 void processInput(GLFWwindow * window) {
+    float cameraSpeed = 2.5f * deltaTime;
+    // 检查是否有输入 exc
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        cameraPos += cameraSpeed * cameraFront;
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        cameraPos -= cameraSpeed * cameraFront;
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
 }
 
 //MARK: - 创建纹理
@@ -123,6 +198,11 @@ int main(int argc, const char * argv[]) {
     // 将当前窗口设置为当前线程的主上下文
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    
+    // 隐藏光标，并捕捉(Capture)它
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    glfwSetCursorPosCallback(window, mouse_callback);
+    glfwSetScrollCallback(window, scroll_callback);
     
     //3. 初始化 glad
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
@@ -241,9 +321,12 @@ int main(int argc, const char * argv[]) {
     
     // 5. 准备引擎
     while (!glfwWindowShouldClose(window)) {
-        // 检查是否有输入 exc
-        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-            glfwSetWindowShouldClose(window, true);
+        
+        float currentFrame = glfwGetTime();
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+        
+        processInput(window);
         
         glClearColor(0.2f, 0.3f, 0.3f, 1.0);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -255,11 +338,28 @@ int main(int argc, const char * argv[]) {
         
         ourShader.use();
         
+        /*
+         // 自动旋转
+        float radius = 10.0f;
+        float camX = sin(glfwGetTime()) * radius;
+        float camZ = cos(glfwGetTime()) * radius;
+        
         glm::mat4 view = glm::mat4(1.0f);
-        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+        view = glm::lookAt(
+                           glm::vec3(camX, 0.0f, camZ),     //位置
+                           glm::vec3(0.0f, 0.0f, 0.0f),     //目标
+                           glm::vec3(0.0f, 1.0f, 0.0f));    //上量
+         */
+        
+        // 自由变换
+        glm::mat4 view = glm::mat4(1.0f);
+        view = glm::lookAt(
+                           cameraPos,                   //位置
+                           cameraPos + cameraFront,     //目标
+                           cameraUp);                   //上量
         
         glm::mat4 projection = glm::mat4(1.0f);
-        projection = glm::perspective(glm::radians(45.0f), screenwidth / screenHeight, 0.1f, 100.0f);
+        projection = glm::perspective(glm::radians(fov), screenwidth / screenHeight, 0.1f, 100.0f);
 
         glBindVertexArray(VAO);
         ourShader.setMat4("view", view);
@@ -269,17 +369,8 @@ int main(int argc, const char * argv[]) {
             glm::mat4 model = glm::mat4(1.0f);
             model = glm::translate(model, cubePositions[i]);
             float angle = 20.0f * i;
-            angle = angle == 0 ? 45.f : angle;
-            if (i % 3 != 0) {
-                // 运动
-                model = glm::rotate(model, (float)glfwGetTime() * glm::radians(angle), glm::vec3(1.0f, 0.2f, 0.4f));
-                ourShader.setMat4("model", model);
-            }else{
-                // 禁止
-                model = glm::rotate(model, glm::radians(0.0f), glm::vec3(1.0f, 0.2f, 0.4f));
-                ourShader.setMat4("model", model);
-            }
-            
+            model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.2f, 0.4f));
+            ourShader.setMat4("model", model);
             // 36 是顶点数量
             glDrawArrays(GL_TRIANGLES, 0, 36);
         }
