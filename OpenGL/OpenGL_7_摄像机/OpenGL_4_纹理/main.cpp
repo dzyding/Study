@@ -15,6 +15,7 @@
 #include <glm/gtc/type_ptr.hpp>
 
 #include "Shader/shader_s.cpp"
+#include "camera_s.cpp"
 #include "Image/stb_image.h"
 #include <cmath>
 
@@ -22,25 +23,17 @@
 const float screenwidth = 800.0;
 const float screenHeight = 600.0;
 
-// 自由移动时定义的变量
-glm::vec3 cameraPos     = glm::vec3(0.0f, 0.0f, 3.0f);  //位置
-glm::vec3 cameraFront   = glm::vec3(0.0f, 0.0f, -1.0f); //方向
-glm::vec3 cameraUp      = glm::vec3(0.0f, 1.0f, 0.0f);  //上量
-
-float deltaTime = 0.0f; //当前帧与上一帧的时间差
-float lastFrame = 0.0f; //上一帧的时间
+///当前帧与上一帧的时间差
+float deltaTime = 0.0f;
+///上一帧的时间
+float lastFrame = 0.0f;
 
 // 鼠标的初始位置
-float lastX = 400, lastY = 300;
-
-// 俯仰角，偏航角
-float pitch = 0, yaw = -90;
-
+float lastX = screenwidth / 2.0f, lastY = screenHeight / 2.0f;
 // 初次进入
 bool firstMouse = true;
-
-// 默认视野角度
-float fov = 45.0f;
+// 摄像机类
+Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 
 //MARK: - 初始化 glfw
 void initGLFW() {
@@ -69,56 +62,66 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
         lastY = ypos;
         firstMouse = false;
     }
- 
+    
     float xoffset = xpos - lastX;
     float yoffset = lastY - ypos; // 注意这里是相反的，因为y坐标是从底部往顶部依次增大的
     lastX = xpos;
     lastY = ypos;
     
-    // 灵敏度，需要适配调整
-    float sensitivity = 0.05f;
-    xoffset *= sensitivity;
-    yoffset *= sensitivity;
-    
-    yaw += xoffset;
-    pitch += yoffset;
-    
-    if (pitch > 89.0f)
-        pitch = 89.0f;
-    if (pitch < -89.0f)
-        pitch = -89.0f;
-    
-    glm::vec3 front = glm::vec3(1.0f);
-    front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
-    front.y = sin(glm::radians(pitch));
-    front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
-    cameraFront = glm::normalize(front);
+    camera.processMouseMovement(xoffset, yoffset);
 }
 
 //MARK: - 鼠标滚轴的监测
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset) {
-    if (fov >= 1.0f && fov <= 45.0f)
-        fov -= yoffset;
-    if (fov <= 1.0f)
-        fov = 1.0f;
-    if (fov >= 45.0f)
-        fov = 45.0f;
+    camera.processMouseScroll(yoffset);
 }
 
 //MARK: - 检查输入
 void processInput(GLFWwindow * window) {
-    float cameraSpeed = 2.5f * deltaTime;
     // 检查是否有输入 exc
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+    
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        cameraPos += cameraSpeed * cameraFront;
+        camera.processKeyboard(FORWARD, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        cameraPos -= cameraSpeed * cameraFront;
+        camera.processKeyboard(BACKWARD, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+        camera.processKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+        camera.processKeyboard(RIGHT, deltaTime);
+}
+
+//MARK: - 自定义 lookat 矩阵
+glm::mat4 calculate_lookAt_matrix(glm::vec3 position, glm::vec3 target, glm::vec3 worldUp)
+{
+    // 1. Position = known
+    // 2. Calculate cameraDirection
+    glm::vec3 zaxis = glm::normalize(position - target);
+    // 3. Get positive right axis vector
+    glm::vec3 xaxis = glm::normalize(glm::cross(glm::normalize(worldUp), zaxis));
+    // 4. Calculate camera up vector
+    glm::vec3 yaxis = glm::cross(zaxis, xaxis);
+    
+    // Create translation and rotation matrix
+    // In glm we access elements as mat[col][row] due to column-major layout
+    glm::mat4 translation = glm::mat4(1.0f); // Identity matrix by default
+    translation[3][0] = -position.x; // Third column, first row
+    translation[3][1] = -position.y;
+    translation[3][2] = -position.z;
+    glm::mat4 rotation = glm::mat4(1.0f);
+    rotation[0][0] = xaxis.x; // First column, first row
+    rotation[1][0] = xaxis.y;
+    rotation[2][0] = xaxis.z;
+    rotation[0][1] = yaxis.x; // First column, second row
+    rotation[1][1] = yaxis.y;
+    rotation[2][1] = yaxis.z;
+    rotation[0][2] = zaxis.x; // First column, third row
+    rotation[1][2] = zaxis.y;
+    rotation[2][2] = zaxis.z;
+    
+    // Return lookAt matrix as combination of translation and rotation matrix
+    return rotation * translation; // Remember to read from right to left (first translation then rotation)
 }
 
 //MARK: - 创建纹理
@@ -352,14 +355,10 @@ int main(int argc, const char * argv[]) {
          */
         
         // 自由变换
-        glm::mat4 view = glm::mat4(1.0f);
-        view = glm::lookAt(
-                           cameraPos,                   //位置
-                           cameraPos + cameraFront,     //目标
-                           cameraUp);                   //上量
+        glm::mat4 view = camera.getViewMatrix();
         
         glm::mat4 projection = glm::mat4(1.0f);
-        projection = glm::perspective(glm::radians(fov), screenwidth / screenHeight, 0.1f, 100.0f);
+        projection = glm::perspective(glm::radians(camera._zoom), screenwidth / screenHeight, 0.1f, 100.0f);
 
         glBindVertexArray(VAO);
         ourShader.setMat4("view", view);

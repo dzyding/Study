@@ -14,6 +14,7 @@
 		004225902325F8CF00B44EB6 /* shader_s.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0042258E2325F8CF00B44EB6 /* shader_s.cpp */; };
 		004225922325F91800B44EB6 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 004225912325F91800B44EB6 /* glad.c */; };
 		0042259B2326050E00B44EB6 /* LoadImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0042259A2326050E00B44EB6 /* LoadImage.cpp */; };
+		00DE49C02330689A00A94359 /* camera_s.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00DE49BF2330689A00A94359 /* camera_s.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		004225992326050E00B44EB6 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		0042259A2326050E00B44EB6 /* LoadImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadImage.cpp; sourceTree = "<group>"; };
 		007A76C523264C71006AC36A /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		00DE49BF2330689A00A94359 /* camera_s.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = camera_s.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				004225972326050E00B44EB6 /* Image */,
 				0042258C2325F8CF00B44EB6 /* Shader */,
 				004225912325F91800B44EB6 /* glad.c */,
+				00DE49BF2330689A00A94359 /* camera_s.cpp */,
 				0042257E2325F7F100B44EB6 /* main.cpp */,
 			);
 			path = "OpenGL_4_纹理";
@@ -176,6 +179,7 @@
 				004225902325F8CF00B44EB6 /* shader_s.cpp in Sources */,
 				0042259B2326050E00B44EB6 /* LoadImage.cpp in Sources */,
 				0042257F2325F7F100B44EB6 /* main.cpp in Sources */,
+				00DE49C02330689A00A94359 /* camera_s.cpp in Sources */,
 				004225922325F91800B44EB6 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
