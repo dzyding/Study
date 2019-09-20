@@ -36,7 +36,7 @@ bool firstMouse = true;
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 
 // 光源的位置
-glm::vec3 lightPos(1.2f, 1.5f, 2.0f);
+glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
 //MARK: - 初始化 glfw
 void initGLFW() {
@@ -222,7 +222,6 @@ int main(int argc, const char * argv[]) {
         objectShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
         objectShader.setVec3("lightColor",  1.0f, 1.0f, 1.0f);
         objectShader.setVec3("lightPos", temp);
-        objectShader.setVec3("viewPos", camera._position);
         glm::mat4 view = camera.getViewMatrix();
         
         glm::mat4 projection = glm::mat4(1.0f);
