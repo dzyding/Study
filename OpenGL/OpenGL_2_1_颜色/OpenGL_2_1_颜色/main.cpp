@@ -213,11 +213,15 @@ int main(int argc, const char * argv[]) {
         // 每次渲染迭代之前清除 颜色缓冲、深度缓冲
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
+        // 让灯的位置实时变动
+        float x = sin(glfwGetTime());
+        glm::vec3 temp = glm::vec3(lightPos.x * x, lightPos.y, lightPos.z * x);
+        
         // 激活对象，之后每个着色器调用和渲染调用都会使用这个对象对应的着色器。
         objectShader.use();
         objectShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
         objectShader.setVec3("lightColor",  1.0f, 1.0f, 1.0f);
-        objectShader.setVec3("lightPos", lightPos);
+        objectShader.setVec3("lightPos", temp);
         objectShader.setVec3("viewPos", camera._position);
         glm::mat4 view = camera.getViewMatrix();
         
@@ -230,8 +234,6 @@ int main(int argc, const char * argv[]) {
         objectShader.setMat4("projection", projection);
         
         glm::mat4 model = glm::mat4(1.0f);
-//        model = glm::translate(model, glm::vec3(0.0f, 0.0f, -1.0f));
-//        model = glm::rotate(model, glm::radians(25.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         objectShader.setMat4("model", model);
         glDrawArrays(GL_TRIANGLES, 0, 36);
         
@@ -244,7 +246,7 @@ int main(int argc, const char * argv[]) {
         lightShader.setMat4("projection", projection);
         
         model = glm::mat4(1.0f);
-        model = glm::translate(model, lightPos);
+        model = glm::translate(model, temp);
         model = glm::scale(model, glm::vec3(0.2f));
         lightShader.setMat4("model", model);
         glDrawArrays(GL_TRIANGLES, 0, 36);

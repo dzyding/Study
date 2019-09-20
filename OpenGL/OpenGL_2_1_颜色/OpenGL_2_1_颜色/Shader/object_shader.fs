@@ -15,7 +15,7 @@ uniform vec3 viewPos;
 void main()
 {
     // -- 环境光照系数
-    float ambientStrength = 0.1f;
+    float ambientStrength = 0.2f;
     vec3 ambient = ambientStrength * lightColor;
     
     // -- 漫反射光照
@@ -32,7 +32,7 @@ void main()
     vec3 diffuse = diff * lightColor;
     
     // -- 镜面光照
-    float specularStrength = 0.7;
+    float specularStrength = 0.5f;
     // 视线方向向量
     vec3 viewDir = normalize(viewPos - FragPos);
     // 沿着法线轴的反射向量
@@ -47,7 +47,7 @@ void main()
     
     // 计算镜面分量
     // 32是高光的反光度(Shininess)
-    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);
+    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32.0);
     // 镜面分量
     vec3 specular = specularStrength * spec * lightColor;
     
