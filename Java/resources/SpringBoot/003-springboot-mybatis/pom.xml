@@ -18,7 +18,6 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <mysql.version>5.1.9</mysql.version>
     </properties>
 
     <dependencies>
@@ -43,6 +42,17 @@
     </dependencies>
 
     <build>
+
+        <!--手动指定文件夹为 resources-->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
         <plugins>
             <!--mybatis 代码自动生成插件-->
             <plugin>

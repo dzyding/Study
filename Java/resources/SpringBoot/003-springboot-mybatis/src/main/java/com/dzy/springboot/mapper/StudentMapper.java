@@ -1,7 +1,9 @@
 package com.dzy.springboot.mapper;
 
 import com.dzy.springboot.model.Student;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper //扫描 DAO 接口到 Spring 容器
 public interface StudentMapper {
     int deleteByPrimaryKey(Integer id);
 

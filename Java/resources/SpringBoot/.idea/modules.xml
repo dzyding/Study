@@ -4,6 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/002-springboot-springmvc/002-springboot-springmvc.iml" filepath="$PROJECT_DIR$/002-springboot-springmvc/002-springboot-springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/003-springboot-mybatis/003-springboot-mybatis.iml" filepath="$PROJECT_DIR$/003-springboot-mybatis/003-springboot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/004-springboot-mybatis02/004-springboot-mybatis02.iml" filepath="$PROJECT_DIR$/004-springboot-mybatis02/004-springboot-mybatis02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/006-springboot-mybatis-transaction/006-springboot-mybatis-transaction.iml" filepath="$PROJECT_DIR$/006-springboot-mybatis-transaction/006-springboot-mybatis-transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/007-springboot-springmvc/007-springboot-springmvc.iml" filepath="$PROJECT_DIR$/007-springboot-springmvc/007-springboot-springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/008-springboot-interceptor/008-springboot-interceptor.iml" filepath="$PROJECT_DIR$/008-springboot-interceptor/008-springboot-interceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/009-springboot-logback/009-springboot-logback.iml" filepath="$PROJECT_DIR$/009-springboot-logback/009-springboot-logback.iml" />
     </modules>
   </component>
 </project>
