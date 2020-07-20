@@ -66,6 +66,29 @@
 99. <a href="#99">练习题</a> 
 	- <a href="#99.1">时间差的计算</a> 
 
+## MySql 环境变量
+
+```
+cd ~
+vim ./.bash_profile
+
+export PATH=$PATH:/usr/local/mysql/bin
+export PATH=$PATH:/usr/local/mysql/support-files
+
+让环境变量生效
+source ~/.bash_profile 
+echo $PATH
+
+停止
+sudo mysql.server stop
+
+重启MySQL服务
+sudo mysql.server restart
+
+查看MySQL服务状态
+sudo mysql.server status
+```
+
 ## <a id="1">Sql 语句分类</a>
 
 1. DQL（数据查询语言）：
