@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DealFilterView" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="599"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Lo-h0-G20">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="519"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KHP-gP-qY5">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KHP-gP-qY5" secondAttribute="trailing" id="5ee-DS-vi9"/>
+                        <constraint firstItem="KHP-gP-qY5" firstAttribute="leading" secondItem="0Lo-h0-G20" secondAttribute="leading" id="JLr-xN-eTd"/>
+                        <constraint firstAttribute="bottom" secondItem="KHP-gP-qY5" secondAttribute="bottom" id="f8v-jD-JHN"/>
+                        <constraint firstItem="KHP-gP-qY5" firstAttribute="top" secondItem="0Lo-h0-G20" secondAttribute="top" id="wQZ-B5-hWh"/>
+                        <constraint firstItem="KHP-gP-qY5" firstAttribute="width" secondItem="0Lo-h0-G20" secondAttribute="width" id="xsl-gI-PWo"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aj1-QS-bh7">
+                    <rect key="frame" x="0.0" y="519" width="414" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8W-x7-zKM">
+                            <rect key="frame" x="18" y="20" width="171.5" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Fk2-eC-sDo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="16"/>
+                            <state key="normal" title="清空" backgroundImage="filter_empty">
+                                <color key="titleColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="resetAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="pua-hU-9Hw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyC-wP-e4Y">
+                            <rect key="frame" x="224.5" y="20" width="171.5" height="40"/>
+                            <color key="backgroundColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="afH-HE-jp4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="16"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="sureAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ejj-1u-0Fn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="kyC-wP-e4Y" firstAttribute="leading" secondItem="A8W-x7-zKM" secondAttribute="trailing" constant="35" id="DVZ-o3-vL6"/>
+                        <constraint firstAttribute="bottom" secondItem="kyC-wP-e4Y" secondAttribute="bottom" constant="20" id="Foe-q5-ZQK"/>
+                        <constraint firstItem="A8W-x7-zKM" firstAttribute="leading" secondItem="Aj1-QS-bh7" secondAttribute="leading" constant="18" id="LoH-fU-qKy"/>
+                        <constraint firstAttribute="trailing" secondItem="kyC-wP-e4Y" secondAttribute="trailing" constant="18" id="cdg-gr-0bu"/>
+                        <constraint firstAttribute="bottom" secondItem="A8W-x7-zKM" secondAttribute="bottom" constant="20" id="hsa-nt-gWe"/>
+                        <constraint firstAttribute="height" constant="80" id="rvb-eA-hAx"/>
+                        <constraint firstItem="kyC-wP-e4Y" firstAttribute="width" secondItem="A8W-x7-zKM" secondAttribute="width" id="sW9-Dh-RJK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Aj1-QS-bh7" secondAttribute="trailing" id="2lg-4I-z9T"/>
+                <constraint firstItem="Aj1-QS-bh7" firstAttribute="top" secondItem="0Lo-h0-G20" secondAttribute="bottom" id="Auz-ml-fng"/>
+                <constraint firstAttribute="bottom" secondItem="Aj1-QS-bh7" secondAttribute="bottom" id="PtK-r0-Am5"/>
+                <constraint firstItem="Aj1-QS-bh7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UyS-vB-Wpe"/>
+                <constraint firstItem="0Lo-h0-G20" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wzz-oP-o4j"/>
+                <constraint firstItem="0Lo-h0-G20" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qUy-y6-hMK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0Lo-h0-G20" secondAttribute="trailing" id="zeK-QE-ZMM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="stackView" destination="KHP-gP-qY5" id="wKA-LT-u0Y"/>
+            </connections>
+            <point key="canvasLocation" x="131.19999999999999" y="167.76611694152925"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="filter_empty" width="6.5" height="27"/>
+    </resources>
+</document>

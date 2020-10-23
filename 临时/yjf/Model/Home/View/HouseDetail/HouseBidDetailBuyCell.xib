@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+        <array key="HiraginoSansGB-W6.otf">
+            <string>HiraginoSansGB-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HouseBidDetailBuyCell" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jy-cl-ZLu">
+                        <rect key="frame" x="18" y="53.5" width="339" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ubv-Yh-uwQ"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bid_detail_first" translatesAutoresizingMaskIntoConstraints="NO" id="GC4-xB-7CV">
+                        <rect key="frame" x="18" y="19.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="cDF-LH-Ofy"/>
+                            <constraint firstAttribute="width" constant="16" id="n9U-sm-FK5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="买22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-px-SYK">
+                        <rect key="frame" x="54" y="21" width="30.5" height="13"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200.00万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRN-LZ-bid">
+                        <rect key="frame" x="99" y="21" width="63" height="13"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W6" family="Hiragino Sans GB" pointSize="13"/>
+                        <color key="textColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现金50.00万，贷款130.00万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bi0-CM-M2w">
+                        <rect key="frame" x="170" y="23" width="147.5" height="11"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                        <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiV-Ks-OME">
+                        <rect key="frame" x="21.5" y="21" width="9" height="13"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W6" family="Hiragino Sans GB" pointSize="13"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImC-L9-R1J">
+                        <rect key="frame" x="297" y="15" width="60" height="25"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="AjO-2s-Jet"/>
+                            <constraint firstAttribute="height" constant="25" id="huz-CB-8d5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                        <state key="normal" title="成交"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="sureAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RZz-cP-vb0"/>
+                        </connections>
+                    </button>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bid_detail_cj" translatesAutoresizingMaskIntoConstraints="NO" id="UD0-1d-c5x">
+                        <rect key="frame" x="299" y="-1" width="56" height="56.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="82A-Pd-wI1"/>
+                            <constraint firstAttribute="height" constant="56" id="rx3-9R-zfL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ImC-L9-R1J" secondAttribute="trailing" constant="18" id="2N4-xK-ks5"/>
+                    <constraint firstItem="GC4-xB-7CV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="A8X-8i-Xrd"/>
+                    <constraint firstAttribute="bottom" secondItem="6Jy-cl-ZLu" secondAttribute="bottom" id="Cl9-pe-UIo"/>
+                    <constraint firstItem="GC4-xB-7CV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="D5M-aG-9xc"/>
+                    <constraint firstItem="UD0-1d-c5x" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="F96-8X-YdY"/>
+                    <constraint firstItem="c6a-px-SYK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HZ4-Ai-m0D"/>
+                    <constraint firstAttribute="trailing" secondItem="UD0-1d-c5x" secondAttribute="trailing" constant="20" id="IFK-jv-YeT"/>
+                    <constraint firstItem="ImC-L9-R1J" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IVz-VW-wzW"/>
+                    <constraint firstItem="MRN-LZ-bid" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LAL-9x-Xjx"/>
+                    <constraint firstItem="6Jy-cl-ZLu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="OQv-1m-uS3"/>
+                    <constraint firstItem="c6a-px-SYK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="54" id="Ryy-S5-4sI"/>
+                    <constraint firstItem="MRN-LZ-bid" firstAttribute="leading" secondItem="GC4-xB-7CV" secondAttribute="trailing" constant="65" id="WDM-He-hD4"/>
+                    <constraint firstItem="LiV-Ks-OME" firstAttribute="centerY" secondItem="GC4-xB-7CV" secondAttribute="centerY" id="dVT-BG-nfo"/>
+                    <constraint firstAttribute="trailing" secondItem="6Jy-cl-ZLu" secondAttribute="trailing" constant="18" id="eKF-M0-Nca"/>
+                    <constraint firstItem="Bi0-CM-M2w" firstAttribute="bottom" secondItem="MRN-LZ-bid" secondAttribute="bottom" id="f2N-mT-vtk"/>
+                    <constraint firstItem="Bi0-CM-M2w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="170" id="jg6-de-Vka"/>
+                    <constraint firstItem="LiV-Ks-OME" firstAttribute="centerX" secondItem="GC4-xB-7CV" secondAttribute="centerX" id="yYT-Jf-cwM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cjIV" destination="UD0-1d-c5x" id="84U-YW-20u"/>
+                <outlet property="detailLB" destination="Bi0-CM-M2w" id="9pq-xB-8Su"/>
+                <outlet property="nameLB" destination="c6a-px-SYK" id="rlN-bC-Db5"/>
+                <outlet property="priceLB" destination="MRN-LZ-bid" id="cBo-K8-B9d"/>
+                <outlet property="rankIV" destination="GC4-xB-7CV" id="y3i-Bl-RUf"/>
+                <outlet property="rankLB" destination="LiV-Ks-OME" id="41c-9Q-PaG"/>
+                <outlet property="sureBtn" destination="ImC-L9-R1J" id="FOO-rp-wjY"/>
+            </connections>
+            <point key="canvasLocation" x="-134" y="39"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bid_detail_cj" width="56" height="36"/>
+        <image name="bid_detail_first" width="15.5" height="14"/>
+    </resources>
+</document>

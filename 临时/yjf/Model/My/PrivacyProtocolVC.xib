@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyProtocolVC" customModule="YJF" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ps-Fi-CVy">
+                    <rect key="frame" x="0.0" y="44" width="414" height="2422"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7K1-ZO-K87">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="2135"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18m-ju-GNU">
+                                    <rect key="frame" x="16" y="16" width="382" height="2103"/>
+                                    <attributedString key="attributedText">
+                                        <fragment>
+                                            <string key="content">尊敬的用户，您好：
+
+武汉易间房科技有限公司及易间房交易平台（以下简称“易间房”或“我们”）注重您个人隐私的保护。有时候我们需要某些信息才能为您提供您请求的服务，本隐私政策声明解释了这些情况下的数据收集和使用情况。本隐私政策声明适用于武汉易间房科技有限公司旗下的易间房交易平台的各个客户端（包括：易间房APP、易间房网站、房小易APP、房小易工作台、及易间房管理平台等）及其提供的所有相关产品和服务。
+
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="一、我们如何收集和使用您的个人信息">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSansGB-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+个人信息是指以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息。
+个人敏感信息包括身份证号码、个人生物识别信息、银行账号、财产信息、行踪轨迹、交易信息、14岁以下（含）儿童的个人信息等。
+
+我们仅会出于本声明所述的以下业务目的，收集和使用您的个人信息：
+登录和注册：当您登录易间房APP之前，需要通过手机号注册，我们会记录下您的手机号码，以便于更好地为您提供服务。
+实名登记：易间房APP是线上房产交易平台，需要您提供真实有效的身份信息，包括姓名和身份证号码，我们才能够保障房产交易的安全性，这也是国家政策、法律法规的要求。我们不会对外提供您的个人身份信息。
+自助看房位置信息：在使用易间房APP的时候我们可能会获取到您的位置信息，为您提供相应的看房服务。
+网络信息：手机联网模式、是否连接网络，防止您因为流量不足而使用APP产生流量费用。
+拍照信息：当您使用易间房APP进行扫码时，我们需要获取您相机的拍照权限，以便开锁看房。
+以上信息是易间房提供服务所必须的个人基础信息。若您不提供，您将无法正常使用我们的服务。
+
+</mutableString>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="二、用户个性化推荐">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSansGB-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+我们可能根据您的个人信息向您推送您可能感兴趣的房源，包括但不限于在通知栏展示活动、评论等信息，您可以在手机设置关闭推送通知。
+
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="三、您的数据主体权利">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSansGB-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+为使您正在使用易间房的产品和服务期间更加便捷地访问、更正和删除您的个人信息，同时保障您有权撤回对个人信息的使用许可，我们在产品设计中为您提供了相应的操作设置，您可以在相应的模块做出操作。
+
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="四、您个人信息的安全">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSansGB-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+严格保护您的个人信息的安全。我们使用各种安全技术和程序来保护您的个人信息不被未经授权的访问、使用或泄漏。如果您对我们的隐私保护有任何置疑，请 email 至 security@ejfun.com。
+
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="五、数据存储地点及期限">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSansGB-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+数据存储地点：我们在本服务项下收集和产生的个人信息，将存储在中华人民共和国内。
+数据存储期限：我们仅在实现本声明目的所必需的时间内保留您的个人信息，并在超出下述保留时间后删除或匿名化处理您的个人信息，但法律法规另有要求的除外。在易间房业务中，您的个人数据具体留存时间如下：
+当您电话联系客服要求注销账号，我们不再保存您的个人信息。客服电话027-87750030。
+当我们的产品或服务发生停止运营的情形时，我们将以推送通知、公告等形式通知您，并在合理的期限内删除您的个人信息或进行匿名化处理。
+
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="六、本声明如何更新">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSansGB-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+通过各大应用商店进行更新。
+通过易间房网站（https://www2.ejfun.com）进行更新。
+
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="七、关于免责">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSansGB-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+当下列相关事宜的发生，易间房不承担任何法律责任：
+易间房会在法律要求或符合易间房的相关服务条款、软件许可使用协议约定的情况下透露您的个人信息，或者有充分理由相信必须这样做才能：
+满足法律的明文规定，或者符合易间房本应用适用的法律程序；
+符合易间房相关服务条款、软件许可使用协议的约定；
+保护易间房的权利或财产，以及在紧急情况下保护易间房的员工、易间房产品或服务的用户或大众的个人安全。
+易间房根据法律规定或相关政府的要求提供您的个人信息;
+非因易间房原因导致的个人信息的泄漏；
+任何第三方根据易间房各服务条款及声明中所列明的情况使用您的个人信息由此所产生的纠纷；
+任何由于黑客攻击、电脑病毒侵入或政府管制而造成的暂时性服务停止；
+因不可抗力导致的任何后果；
+易间房在各服务条款及声明中列明的免责情形。
+
+</mutableString>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="八、隐私声明的修订">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="16" name="HiraginoSansGB-W6"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+根据需要，将随时修改本隐私声明。我们建议用户定期上网查看最新的隐私政策与使用条款规定。未来任何条款如有更新，我们将不主动提醒用户，亦不会回溯应用在之前所发生的情形，同时不会改变我们对于之前所收集的资料之处理方式。</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HiraginoSansGB-W3"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="18m-ju-GNU" secondAttribute="trailing" constant="16" id="Iww-84-Im1"/>
+                                <constraint firstItem="18m-ju-GNU" firstAttribute="leading" secondItem="7K1-ZO-K87" secondAttribute="leading" constant="16" id="Mfd-g2-0Wv"/>
+                                <constraint firstItem="18m-ju-GNU" firstAttribute="top" secondItem="7K1-ZO-K87" secondAttribute="top" constant="16" id="TsO-vC-Qkt"/>
+                                <constraint firstAttribute="bottom" secondItem="18m-ju-GNU" secondAttribute="bottom" constant="16" id="tyn-WU-g6M"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="7K1-ZO-K87" firstAttribute="top" secondItem="6Ps-Fi-CVy" secondAttribute="top" id="3bx-cV-M9H"/>
+                        <constraint firstAttribute="trailing" secondItem="7K1-ZO-K87" secondAttribute="trailing" id="gVV-FF-HDg"/>
+                        <constraint firstItem="7K1-ZO-K87" firstAttribute="leading" secondItem="6Ps-Fi-CVy" secondAttribute="leading" id="gg5-Zo-Gbj"/>
+                        <constraint firstAttribute="bottom" secondItem="7K1-ZO-K87" secondAttribute="bottom" id="hxO-a8-P4t"/>
+                        <constraint firstItem="7K1-ZO-K87" firstAttribute="width" secondItem="6Ps-Fi-CVy" secondAttribute="width" id="rJq-of-rLJ"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Ps-Fi-CVy" secondAttribute="trailing" id="Wcb-v1-enJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6Ps-Fi-CVy" secondAttribute="bottom" id="m13-06-bRI"/>
+                <constraint firstItem="6Ps-Fi-CVy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tpx-G9-9uk"/>
+                <constraint firstItem="6Ps-Fi-CVy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xsG-H2-26v"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="113"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CardListCell" customModule="PPBody" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yRH-Dg-ITu">
+                        <rect key="frame" x="20" y="17.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Cjh-Xb-tkD"/>
+                            <constraint firstAttribute="width" constant="40" id="q5l-eq-xyd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="招商银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJh-SJ-UVc">
+                        <rect key="frame" x="75" y="17.5" width="62" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尾号1467（*小周）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbL-g8-qhq">
+                        <rect key="frame" x="75" y="41.5" width="115.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardList_moren" translatesAutoresizingMaskIntoConstraints="NO" id="pKj-YG-yRW">
+                        <rect key="frame" x="145" y="18.5" width="33" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="DoR-BI-T6P"/>
+                            <constraint firstAttribute="height" constant="16" id="oIb-vR-nuU"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5L-YF-QqQ">
+                        <rect key="frame" x="0.0" y="73.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="y9l-Uw-JOq"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0F-i7-oXr">
+                        <rect key="frame" x="314" y="15" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="gzi-mB-UlH"/>
+                            <constraint firstAttribute="height" constant="45" id="r96-yD-kpL"/>
+                        </constraints>
+                        <state key="normal" image="cardList_no_choose"/>
+                        <state key="selected" image="cardList_choose"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="yRH-Dg-ITu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3O6-D2-W54"/>
+                    <constraint firstItem="E5L-YF-QqQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BsO-Ib-V1P"/>
+                    <constraint firstAttribute="trailing" secondItem="E5L-YF-QqQ" secondAttribute="trailing" id="DH0-2e-pf9"/>
+                    <constraint firstAttribute="trailing" secondItem="p0F-i7-oXr" secondAttribute="trailing" constant="16" id="IRd-Zk-aIJ"/>
+                    <constraint firstItem="p0F-i7-oXr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="N5V-k9-CR1"/>
+                    <constraint firstItem="mbL-g8-qhq" firstAttribute="bottom" secondItem="yRH-Dg-ITu" secondAttribute="bottom" id="V5C-Nn-Ujg"/>
+                    <constraint firstItem="mbL-g8-qhq" firstAttribute="leading" secondItem="yRH-Dg-ITu" secondAttribute="trailing" constant="15" id="XZm-9A-ewQ"/>
+                    <constraint firstItem="KJh-SJ-UVc" firstAttribute="top" secondItem="yRH-Dg-ITu" secondAttribute="top" id="aeD-0j-zRO"/>
+                    <constraint firstItem="yRH-Dg-ITu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="awB-6T-I6u"/>
+                    <constraint firstItem="pKj-YG-yRW" firstAttribute="centerY" secondItem="KJh-SJ-UVc" secondAttribute="centerY" id="eLd-1v-rP4"/>
+                    <constraint firstAttribute="bottom" secondItem="E5L-YF-QqQ" secondAttribute="bottom" id="h8o-Dz-Sce"/>
+                    <constraint firstItem="pKj-YG-yRW" firstAttribute="leading" secondItem="KJh-SJ-UVc" secondAttribute="trailing" constant="8" id="nyF-Pb-tZv"/>
+                    <constraint firstItem="KJh-SJ-UVc" firstAttribute="leading" secondItem="yRH-Dg-ITu" secondAttribute="trailing" constant="15" id="vU2-2x-hxL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="defaultIV" destination="pKj-YG-yRW" id="Yjq-Vm-mRa"/>
+                <outlet property="logoIV" destination="yRH-Dg-ITu" id="rYA-Hg-AWo"/>
+                <outlet property="msgLB" destination="mbL-g8-qhq" id="dYc-38-8tl"/>
+                <outlet property="nameLB" destination="KJh-SJ-UVc" id="MR4-3d-s7m"/>
+                <outlet property="selBtn" destination="p0F-i7-oXr" id="4gZ-En-CUa"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="152.47376311844079"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cardList_choose" width="15" height="15"/>
+        <image name="cardList_moren" width="33" height="16"/>
+        <image name="cardList_no_choose" width="15" height="15"/>
+    </resources>
+</document>

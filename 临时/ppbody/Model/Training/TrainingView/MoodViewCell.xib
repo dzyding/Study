@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2qZ-sw-Fh4" customClass="MoodViewCell" customModule="PPBody" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Naz-bt-ZIz">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="141"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xAc-vC-HWQ">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="141"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_play" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-Q6-KX6">
+                                <rect key="frame" x="58" y="58" width="24" height="24"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xAc-vC-HWQ" firstAttribute="leading" secondItem="Naz-bt-ZIz" secondAttribute="leading" id="2Is-Gx-YWY"/>
+                            <constraint firstItem="I9J-Q6-KX6" firstAttribute="centerY" secondItem="Naz-bt-ZIz" secondAttribute="centerY" id="HSB-X8-wGv"/>
+                            <constraint firstAttribute="bottom" secondItem="xAc-vC-HWQ" secondAttribute="bottom" id="KwU-2y-q3O"/>
+                            <constraint firstItem="xAc-vC-HWQ" firstAttribute="top" secondItem="Naz-bt-ZIz" secondAttribute="top" id="Vda-b7-JAh"/>
+                            <constraint firstAttribute="trailing" secondItem="xAc-vC-HWQ" secondAttribute="trailing" id="Vrz-Vg-8Uu"/>
+                            <constraint firstItem="I9J-Q6-KX6" firstAttribute="centerX" secondItem="Naz-bt-ZIz" secondAttribute="centerX" id="qCZ-yh-ohk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Naz-bt-ZIz" secondAttribute="bottom" id="EDJ-r0-q9i"/>
+                <constraint firstAttribute="trailing" secondItem="Naz-bt-ZIz" secondAttribute="trailing" id="bWt-Yf-n6V"/>
+                <constraint firstItem="Naz-bt-ZIz" firstAttribute="top" secondItem="2qZ-sw-Fh4" secondAttribute="top" id="h6U-Hv-amX"/>
+                <constraint firstItem="Naz-bt-ZIz" firstAttribute="leading" secondItem="2qZ-sw-Fh4" secondAttribute="leading" id="vFH-ol-m5q"/>
+            </constraints>
+            <size key="customSize" width="140" height="141"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="coverIV" destination="xAc-vC-HWQ" id="4Bu-D9-CwM"/>
+                <outlet property="mainView" destination="Naz-bt-ZIz" id="iBA-5U-ZB0"/>
+                <outlet property="playIV" destination="I9J-Q6-KX6" id="Vv5-h6-KbL"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="72.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="video_play" width="24" height="24"/>
+    </resources>
+</document>

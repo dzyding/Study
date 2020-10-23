@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="LActivityTBHeaderView" customModule="PPBody" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_activity_header" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-ic-Ik6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
+                </imageView>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-uA-n2B">
+                    <rect key="frame" x="10" y="347" width="113" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="bfa-NF-SUT"/>
+                        <constraint firstAttribute="height" constant="48" id="t5c-V3-iSl"/>
+                    </constraints>
+                    <state key="normal" image="la_lowp_selected_no"/>
+                    <state key="selected" image="la_lowp_selected"/>
+                    <connections>
+                        <action selector="lowAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tsX-sT-G8W"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-Gb-yGG">
+                    <rect key="frame" x="252" y="347" width="113" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="O23-aF-kNG"/>
+                        <constraint firstAttribute="height" constant="48" id="o50-QF-8yl"/>
+                    </constraints>
+                    <state key="normal" image="la_maxp_selected_no"/>
+                    <state key="selected" image="la_maxp_selected"/>
+                    <connections>
+                        <action selector="maxAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hSN-0g-AMy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naH-FR-y1V">
+                    <rect key="frame" x="131" y="347" width="113" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="Agg-GB-OyN"/>
+                        <constraint firstAttribute="height" constant="48" id="yIX-hv-PNQ"/>
+                    </constraints>
+                    <state key="normal" image="la_midp_selected_no"/>
+                    <state key="selected" image="la_midp_selected"/>
+                    <connections>
+                        <action selector="midAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="4wr-qZ-K6r"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Bgx-ic-Ik6" secondAttribute="trailing" id="8zW-Im-ekd"/>
+                <constraint firstAttribute="bottom" secondItem="naH-FR-y1V" secondAttribute="bottom" constant="5" id="E5w-HL-7H9"/>
+                <constraint firstAttribute="bottom" secondItem="ZCX-Gb-yGG" secondAttribute="bottom" constant="5" id="XRS-1F-Wp6"/>
+                <constraint firstItem="Csx-uA-n2B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="dx0-lm-JPm"/>
+                <constraint firstItem="Bgx-ic-Ik6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e70-8o-hDj"/>
+                <constraint firstAttribute="trailing" secondItem="ZCX-Gb-yGG" secondAttribute="trailing" constant="10" id="ggW-b6-71N"/>
+                <constraint firstItem="naH-FR-y1V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pJc-dZ-yuy"/>
+                <constraint firstItem="Bgx-ic-Ik6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ssw-Ht-c0g"/>
+                <constraint firstAttribute="bottom" secondItem="Csx-uA-n2B" secondAttribute="bottom" constant="5" id="vHa-Y9-hZa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lowBtn" destination="Csx-uA-n2B" id="XHv-p5-Og5"/>
+                <outlet property="maxBtn" destination="ZCX-Gb-yGG" id="4mb-BM-NJ7"/>
+                <outlet property="midBtn" destination="naH-FR-y1V" id="sKJ-P0-ffG"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="109"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="la_lowp_selected" width="113" height="47.5"/>
+        <image name="la_lowp_selected_no" width="113" height="47.5"/>
+        <image name="la_maxp_selected" width="113" height="47.5"/>
+        <image name="la_maxp_selected_no" width="113" height="47.5"/>
+        <image name="la_midp_selected" width="113" height="47.5"/>
+        <image name="la_midp_selected_no" width="113" height="47.5"/>
+        <image name="location_activity_header" width="375" height="563"/>
+    </resources>
+</document>

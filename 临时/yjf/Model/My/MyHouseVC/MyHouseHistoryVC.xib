@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyHouseHistoryVC" customModule="YJF" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyView" destination="c0x-5i-0Qy" id="gV4-CH-QTh"/>
+                <outlet property="tableView" destination="psB-ZU-btj" id="2lL-d1-M67"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="psB-ZU-btj">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KZA-Kx-nAT"/>
+                        <outlet property="delegate" destination="-1" id="hfC-Cv-9tN"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0x-5i-0Qy">
+                    <rect key="frame" x="147" y="278" width="120" height="140"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house_history_empty" translatesAutoresizingMaskIntoConstraints="NO" id="Mfs-Gu-1Uh">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="9Xj-dK-WIM"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有历史房源哦~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOv-DN-pPV">
+                            <rect key="frame" x="0.0" y="120" width="120" height="20"/>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                            <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bOv-DN-pPV" secondAttribute="bottom" id="9aZ-3E-RdK"/>
+                        <constraint firstAttribute="height" constant="140" id="DZU-Ca-eAn"/>
+                        <constraint firstItem="Mfs-Gu-1Uh" firstAttribute="top" secondItem="c0x-5i-0Qy" secondAttribute="top" id="Ezj-vK-ZZl"/>
+                        <constraint firstAttribute="trailing" secondItem="bOv-DN-pPV" secondAttribute="trailing" id="KLQ-py-OoO"/>
+                        <constraint firstAttribute="trailing" secondItem="Mfs-Gu-1Uh" secondAttribute="trailing" id="SCu-Ss-TxN"/>
+                        <constraint firstItem="bOv-DN-pPV" firstAttribute="leading" secondItem="c0x-5i-0Qy" secondAttribute="leading" id="UDe-zQ-XIm"/>
+                        <constraint firstAttribute="width" constant="120" id="XJs-HU-aih"/>
+                        <constraint firstItem="bOv-DN-pPV" firstAttribute="top" secondItem="Mfs-Gu-1Uh" secondAttribute="bottom" id="df5-2e-th3"/>
+                        <constraint firstItem="Mfs-Gu-1Uh" firstAttribute="leading" secondItem="c0x-5i-0Qy" secondAttribute="leading" id="pKh-Xq-oQn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="psB-ZU-btj" secondAttribute="trailing" id="VLU-CZ-qIq"/>
+                <constraint firstItem="psB-ZU-btj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cFm-Yn-7BN"/>
+                <constraint firstItem="psB-ZU-btj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dkj-hM-1Hi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="psB-ZU-btj" secondAttribute="bottom" id="g5e-QG-hRL"/>
+                <constraint firstItem="c0x-5i-0Qy" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="umo-ng-MMM"/>
+                <constraint firstItem="c0x-5i-0Qy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wWp-9F-Tw8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="house_history_empty" width="106" height="100"/>
+    </resources>
+</document>

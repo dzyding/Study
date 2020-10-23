@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aam-RM-eIc" customClass="EvaluateHouseView" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房源" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kus-Nh-hfg">
+                    <rect key="frame" x="18" y="5" width="26.666666666666671" height="13"/>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qst-Sp-kfA">
+                    <rect key="frame" x="14" y="23" width="386" height="52"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="evaluate_rect_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Zey-5i-lw1">
+                            <rect key="frame" x="0.0" y="0.0" width="386" height="52"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rh-fa-0Kn">
+                            <rect key="frame" x="14" y="19.666666666666664" width="324" height="13"/>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                            <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YA8-PO-Swf">
+                            <rect key="frame" x="338" y="0.0" width="45" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="Eal-LI-8Lw"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="watch_down"/>
+                            <state key="selected" image="watch_up"/>
+                            <connections>
+                                <action selector="showAction:" destination="aam-RM-eIc" eventType="touchUpInside" id="6V6-Rm-EBH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="0CK-sd-qeS"/>
+                        <constraint firstItem="Zey-5i-lw1" firstAttribute="leading" secondItem="qst-Sp-kfA" secondAttribute="leading" id="0ja-3Y-qaV"/>
+                        <constraint firstAttribute="trailing" secondItem="YA8-PO-Swf" secondAttribute="trailing" constant="3" id="7Fs-Oy-q0Z"/>
+                        <constraint firstItem="Zey-5i-lw1" firstAttribute="top" secondItem="qst-Sp-kfA" secondAttribute="top" id="8K1-OF-sPu"/>
+                        <constraint firstItem="YA8-PO-Swf" firstAttribute="top" secondItem="qst-Sp-kfA" secondAttribute="top" id="9nR-XK-XV1"/>
+                        <constraint firstItem="0Rh-fa-0Kn" firstAttribute="centerY" secondItem="qst-Sp-kfA" secondAttribute="centerY" id="I3G-kS-JFM"/>
+                        <constraint firstAttribute="bottom" secondItem="YA8-PO-Swf" secondAttribute="bottom" id="P5A-sF-Ack"/>
+                        <constraint firstItem="0Rh-fa-0Kn" firstAttribute="leading" secondItem="qst-Sp-kfA" secondAttribute="leading" constant="14" id="Skc-WB-Q6Y"/>
+                        <constraint firstAttribute="bottom" secondItem="Zey-5i-lw1" secondAttribute="bottom" id="eAj-hM-Lw2"/>
+                        <constraint firstItem="YA8-PO-Swf" firstAttribute="leading" secondItem="0Rh-fa-0Kn" secondAttribute="trailing" id="osO-I1-GX2"/>
+                        <constraint firstAttribute="trailing" secondItem="Zey-5i-lw1" secondAttribute="trailing" id="qQG-ro-WJN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qst-Sp-kfA" firstAttribute="top" secondItem="kus-Nh-hfg" secondAttribute="bottom" constant="5" id="4xT-wq-9e1"/>
+                <constraint firstItem="qst-Sp-kfA" firstAttribute="leading" secondItem="aam-RM-eIc" secondAttribute="leading" constant="14" id="5nW-bi-DIK"/>
+                <constraint firstAttribute="height" constant="75" id="G17-b7-xDv"/>
+                <constraint firstItem="kus-Nh-hfg" firstAttribute="leading" secondItem="aam-RM-eIc" secondAttribute="leading" constant="18" id="JEu-Hb-s9S"/>
+                <constraint firstItem="kus-Nh-hfg" firstAttribute="top" secondItem="aam-RM-eIc" secondAttribute="top" constant="5" id="KU5-q3-KQG"/>
+                <constraint firstAttribute="trailing" secondItem="qst-Sp-kfA" secondAttribute="trailing" constant="14" id="rv9-XA-BOl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ona-CD-ulX"/>
+            <connections>
+                <outlet property="nameLB" destination="0Rh-fa-0Kn" id="aYl-kk-RRD"/>
+                <outlet property="showBtn" destination="YA8-PO-Swf" id="XFo-Rt-9AN"/>
+            </connections>
+            <point key="canvasLocation" x="203" y="40"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="evaluate_rect_bg" width="16.333333969116211" height="16.333333969116211"/>
+        <image name="watch_down" width="10" height="8"/>
+        <image name="watch_up" width="10" height="8"/>
+    </resources>
+</document>

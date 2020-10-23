@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+        <array key="HiraginoSansGB-W6.otf">
+            <string>HiraginoSansGB-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdatePwdVC" customModule="YJF" customModuleProvider="target">
+            <connections>
+                <outlet property="newpwdTF" destination="BRd-Qk-Mue" id="fYt-mc-fZd"/>
+                <outlet property="oldpwdTF" destination="F1B-lC-o9t" id="Wh4-Ub-GR1"/>
+                <outlet property="secondNewPwdTF" destination="pfJ-m0-hwh" id="h37-fD-z1B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYb-jZ-pff">
+                    <rect key="frame" x="0.0" y="44" width="414" height="10"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="tbP-d2-533"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m5e-mY-izQ">
+                    <rect key="frame" x="0.0" y="54" width="414" height="160"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tt2-x5-AiB">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="53.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-fs-hfv">
+                                    <rect key="frame" x="18" y="19.5" width="42" height="14"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cpi-XW-FPs">
+                                    <rect key="frame" x="78" y="52.5" width="318" height="1"/>
+                                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="dIc-ln-g3A"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F1B-lC-o9t">
+                                    <rect key="frame" x="78" y="6.5" width="318" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="fd5-Ld-Kj2"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ahv-fs-hfv" firstAttribute="centerY" secondItem="Tt2-x5-AiB" secondAttribute="centerY" id="6Tr-U1-qwJ"/>
+                                <constraint firstAttribute="trailing" secondItem="F1B-lC-o9t" secondAttribute="trailing" constant="18" id="AOJ-7l-9IZ"/>
+                                <constraint firstAttribute="bottom" secondItem="Cpi-XW-FPs" secondAttribute="bottom" id="SPh-6Y-EUL"/>
+                                <constraint firstItem="F1B-lC-o9t" firstAttribute="leading" secondItem="ahv-fs-hfv" secondAttribute="trailing" constant="18" id="cu0-fL-Jmx"/>
+                                <constraint firstItem="Cpi-XW-FPs" firstAttribute="leading" secondItem="ahv-fs-hfv" secondAttribute="trailing" constant="18" id="l0P-EY-aIM"/>
+                                <constraint firstAttribute="trailing" secondItem="Cpi-XW-FPs" secondAttribute="trailing" constant="18" id="pOr-nX-89A"/>
+                                <constraint firstItem="F1B-lC-o9t" firstAttribute="centerY" secondItem="Tt2-x5-AiB" secondAttribute="centerY" id="veY-Ag-S39"/>
+                                <constraint firstItem="ahv-fs-hfv" firstAttribute="leading" secondItem="Tt2-x5-AiB" secondAttribute="leading" constant="18" id="xRj-9v-fuu"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSj-LB-ngM">
+                            <rect key="frame" x="0.0" y="53.5" width="414" height="53"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8M7-mP-Q5x">
+                                    <rect key="frame" x="18" y="19.5" width="42" height="14"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uec-A8-v6Z">
+                                    <rect key="frame" x="78" y="52" width="318" height="1"/>
+                                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Bff-8m-vaR"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置6位及以上数字字母特殊符号的密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRd-Qk-Mue">
+                                    <rect key="frame" x="78" y="6.5" width="318" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="xLA-cA-HeE"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="BRd-Qk-Mue" firstAttribute="leading" secondItem="8M7-mP-Q5x" secondAttribute="trailing" constant="18" id="9qt-cj-v3O"/>
+                                <constraint firstItem="8M7-mP-Q5x" firstAttribute="centerY" secondItem="hSj-LB-ngM" secondAttribute="centerY" id="FsJ-ZN-MKB"/>
+                                <constraint firstAttribute="trailing" secondItem="uec-A8-v6Z" secondAttribute="trailing" constant="18" id="G2K-pS-qla"/>
+                                <constraint firstItem="uec-A8-v6Z" firstAttribute="leading" secondItem="8M7-mP-Q5x" secondAttribute="trailing" constant="18" id="Nh9-RM-JEX"/>
+                                <constraint firstAttribute="trailing" secondItem="BRd-Qk-Mue" secondAttribute="trailing" constant="18" id="c9l-qF-owS"/>
+                                <constraint firstAttribute="bottom" secondItem="uec-A8-v6Z" secondAttribute="bottom" id="ev3-BN-3X2"/>
+                                <constraint firstItem="BRd-Qk-Mue" firstAttribute="centerY" secondItem="hSj-LB-ngM" secondAttribute="centerY" id="lJq-em-3aN"/>
+                                <constraint firstItem="8M7-mP-Q5x" firstAttribute="leading" secondItem="hSj-LB-ngM" secondAttribute="leading" constant="18" id="lrV-qX-vSg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAG-i7-Nh8">
+                            <rect key="frame" x="0.0" y="106.5" width="414" height="53.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确认新密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWg-oC-aho">
+                                    <rect key="frame" x="18" y="20" width="70" height="14"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bI0-uH-gAY">
+                                    <rect key="frame" x="106" y="52.5" width="290" height="1"/>
+                                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="LyW-bI-cxy"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfJ-m0-hwh">
+                                    <rect key="frame" x="106" y="7" width="290" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="zwr-MR-VDo"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="eWg-oC-aho" firstAttribute="leading" secondItem="xAG-i7-Nh8" secondAttribute="leading" constant="18" id="1Mi-cz-wQX"/>
+                                <constraint firstAttribute="bottom" secondItem="bI0-uH-gAY" secondAttribute="bottom" id="7DR-Yd-oWA"/>
+                                <constraint firstAttribute="trailing" secondItem="bI0-uH-gAY" secondAttribute="trailing" constant="18" id="A4D-WN-Zqa"/>
+                                <constraint firstItem="eWg-oC-aho" firstAttribute="centerY" secondItem="xAG-i7-Nh8" secondAttribute="centerY" id="Bs6-7Q-9JM"/>
+                                <constraint firstItem="pfJ-m0-hwh" firstAttribute="leading" secondItem="eWg-oC-aho" secondAttribute="trailing" constant="18" id="Z7X-k5-9Kl"/>
+                                <constraint firstItem="pfJ-m0-hwh" firstAttribute="centerY" secondItem="xAG-i7-Nh8" secondAttribute="centerY" id="eZe-aP-lfv"/>
+                                <constraint firstAttribute="trailing" secondItem="pfJ-m0-hwh" secondAttribute="trailing" constant="18" id="lgD-jM-qHX"/>
+                                <constraint firstItem="bI0-uH-gAY" firstAttribute="leading" secondItem="eWg-oC-aho" secondAttribute="trailing" constant="18" id="nY5-pv-NBA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="RcU-s6-o85"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KU2-sd-aIu">
+                    <rect key="frame" x="326" y="239" width="70" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Whh-xs-HKv"/>
+                        <constraint firstAttribute="height" constant="30" id="jtu-iY-CL1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                    <state key="normal" title="忘记密码">
+                        <color key="titleColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="fotgetAction:" destination="-1" eventType="touchUpInside" id="AeY-2s-4qL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eu-BO-IQs">
+                    <rect key="frame" x="30" y="772" width="354" height="50"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hzA-gG-MAg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W6" family="Hiragino Sans GB" pointSize="16"/>
+                    <state key="normal" title="修改密码">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sureAction:" destination="-1" eventType="touchUpInside" id="dXU-Vx-3iG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="m5e-mY-izQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="4ZW-Fy-HTW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0eu-BO-IQs" secondAttribute="trailing" constant="30" id="A7u-jz-EKu"/>
+                <constraint firstItem="KU2-sd-aIu" firstAttribute="top" secondItem="m5e-mY-izQ" secondAttribute="bottom" constant="25" id="NPy-E9-CfD"/>
+                <constraint firstItem="WYb-jZ-pff" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PeV-T6-z3V"/>
+                <constraint firstItem="WYb-jZ-pff" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PhT-IZ-uAj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0eu-BO-IQs" secondAttribute="bottom" constant="40" id="WeI-hl-Mj5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m5e-mY-izQ" secondAttribute="trailing" id="fIo-T2-c9f"/>
+                <constraint firstItem="0eu-BO-IQs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="l6M-iE-B5p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KU2-sd-aIu" secondAttribute="trailing" constant="18" id="nih-a0-kZq"/>
+                <constraint firstItem="WYb-jZ-pff" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nwj-JY-GOx"/>
+                <constraint firstItem="m5e-mY-izQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xjG-4p-CrQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

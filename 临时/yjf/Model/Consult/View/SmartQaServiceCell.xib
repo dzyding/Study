@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="SmartQaServiceCell" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qa_server_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gW9-Vp-k4q">
+                        <rect key="frame" x="18" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="In2-nf-IZR"/>
+                            <constraint firstAttribute="height" constant="40" id="Wdh-mw-VM1"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qa_server_bg" translatesAutoresizingMaskIntoConstraints="NO" id="rHR-Vh-EQ7">
+                        <rect key="frame" x="68" y="5" width="230" height="69.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小易觉得，光谷天地的房子现在性价比是武汉市最高的，因为该地区的XXXXXXXXXXXX" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fp-CS-DCf">
+                        <rect key="frame" x="78" y="15" width="210" height="49.5"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="gW9-Vp-k4q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="58j-4k-jcB"/>
+                    <constraint firstItem="5fp-CS-DCf" firstAttribute="centerY" secondItem="rHR-Vh-EQ7" secondAttribute="centerY" id="5Mo-v3-X7B"/>
+                    <constraint firstAttribute="bottom" secondItem="5fp-CS-DCf" secondAttribute="bottom" constant="20" id="BdJ-7F-RVK"/>
+                    <constraint firstItem="5fp-CS-DCf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="JVO-Kk-Bvn"/>
+                    <constraint firstItem="5fp-CS-DCf" firstAttribute="top" secondItem="gW9-Vp-k4q" secondAttribute="top" constant="10" id="OOn-ym-4lq"/>
+                    <constraint firstItem="5fp-CS-DCf" firstAttribute="height" secondItem="rHR-Vh-EQ7" secondAttribute="height" constant="-20" id="OuP-9f-Boj"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5fp-CS-DCf" secondAttribute="trailing" constant="78" id="bDO-av-N5R"/>
+                    <constraint firstItem="gW9-Vp-k4q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="mpk-T0-rSJ"/>
+                    <constraint firstItem="5fp-CS-DCf" firstAttribute="width" secondItem="rHR-Vh-EQ7" secondAttribute="width" constant="-20" id="sNi-Bb-S7e"/>
+                    <constraint firstItem="5fp-CS-DCf" firstAttribute="centerX" secondItem="rHR-Vh-EQ7" secondAttribute="centerX" id="w55-y2-75f"/>
+                    <constraint firstItem="5fp-CS-DCf" firstAttribute="leading" secondItem="gW9-Vp-k4q" secondAttribute="trailing" constant="20" id="zZO-4e-y9U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textLB" destination="5fp-CS-DCf" id="rhM-9Y-xuP"/>
+            </connections>
+            <point key="canvasLocation" x="61.594202898550726" y="95.089285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="qa_server_bg" width="10.5" height="38"/>
+        <image name="qa_server_icon" width="40" height="40"/>
+    </resources>
+</document>

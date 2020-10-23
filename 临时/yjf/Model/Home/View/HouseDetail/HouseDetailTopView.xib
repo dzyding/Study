@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+        <array key="HiraginoSansGB-W6.otf">
+            <string>HiraginoSansGB-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HouseDetailTopView" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLi-p2-Ja2">
+                    <rect key="frame" x="0.0" y="295" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="p2Z-f3-dpt"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vl-YP-61N">
+                    <rect key="frame" x="0.0" y="285" width="375" height="10"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="cq4-RN-ihd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcP-Xu-McU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="196" id="uqf-76-DHn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqJ-Bs-Bub">
+                    <rect key="frame" x="297" y="216" width="60" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="hGQ-O0-DgX"/>
+                        <constraint firstAttribute="width" constant="60" id="zw4-0w-TDC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                    <state key="normal" image="house_detail_gz">
+                        <color key="titleColor" red="0.99215686274509807" green="0.49411764705882355" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="house_detail_gzed"/>
+                    <connections>
+                        <action selector="gzAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="NoP-c4-7Lo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最低卖价：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk5-Oa-kVK">
+                    <rect key="frame" x="18" y="255" width="55" height="11"/>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                    <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="78人实地看房" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTo-9g-ssR">
+                    <rect key="frame" x="127.66666666666669" y="255" width="70" height="11"/>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                    <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="156万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dan-y1-CEz">
+                    <rect key="frame" x="73" y="255" width="34.666666666666657" height="11"/>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W6" family="Hiragino Sans GB" pointSize="11"/>
+                    <color key="textColor" red="0.14509803921568626" green="0.44313725490196076" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="南湖-大华社区-8栋1单元101" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okv-Bu-s0D">
+                    <rect key="frame" x="18" y="221" width="269" height="15"/>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W6" family="Hiragino Sans GB" pointSize="15"/>
+                    <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21人次竞买" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jb1-kE-pDo">
+                    <rect key="frame" x="217.66666666666666" y="255" width="58.999999999999972" height="11"/>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                    <color key="textColor" red="0.1450980392" green="0.4431372549" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yTo-9g-ssR" firstAttribute="leading" secondItem="dan-y1-CEz" secondAttribute="trailing" constant="20" id="1Dr-ej-dMY"/>
+                <constraint firstItem="dLi-p2-Ja2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1jS-oL-yDY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SqJ-Bs-Bub" secondAttribute="trailing" constant="18" id="3rD-gc-sfA"/>
+                <constraint firstItem="zcP-Xu-McU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4nY-XD-2iD"/>
+                <constraint firstItem="6Vl-YP-61N" firstAttribute="top" secondItem="lk5-Oa-kVK" secondAttribute="bottom" constant="19" id="7Hr-B3-s7A"/>
+                <constraint firstItem="lk5-Oa-kVK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="AtE-LN-4L5"/>
+                <constraint firstItem="yTo-9g-ssR" firstAttribute="centerY" secondItem="lk5-Oa-kVK" secondAttribute="centerY" id="CW7-n6-2G8"/>
+                <constraint firstItem="okv-Bu-s0D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="Emg-F1-8kf"/>
+                <constraint firstItem="dLi-p2-Ja2" firstAttribute="top" secondItem="6Vl-YP-61N" secondAttribute="bottom" id="EyD-bQ-9tE"/>
+                <constraint firstItem="Jb1-kE-pDo" firstAttribute="centerY" secondItem="lk5-Oa-kVK" secondAttribute="centerY" id="HgB-2V-LL7"/>
+                <constraint firstItem="SqJ-Bs-Bub" firstAttribute="top" secondItem="zcP-Xu-McU" secondAttribute="bottom" constant="20" id="PyR-yC-c3s"/>
+                <constraint firstAttribute="bottom" secondItem="dLi-p2-Ja2" secondAttribute="bottom" id="RSv-6k-JfK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zcP-Xu-McU" secondAttribute="trailing" id="Rju-yr-A04"/>
+                <constraint firstItem="lk5-Oa-kVK" firstAttribute="top" secondItem="okv-Bu-s0D" secondAttribute="bottom" constant="19" id="bqY-B5-cDJ"/>
+                <constraint firstItem="6Vl-YP-61N" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dHX-AV-S3p"/>
+                <constraint firstItem="6Vl-YP-61N" firstAttribute="top" secondItem="zcP-Xu-McU" secondAttribute="bottom" constant="89" id="dmH-oi-p4b"/>
+                <constraint firstItem="okv-Bu-s0D" firstAttribute="top" secondItem="zcP-Xu-McU" secondAttribute="bottom" constant="25" id="eXb-Qw-Ykj"/>
+                <constraint firstItem="SqJ-Bs-Bub" firstAttribute="leading" secondItem="okv-Bu-s0D" secondAttribute="trailing" constant="10" id="pBS-hr-Km4"/>
+                <constraint firstItem="Jb1-kE-pDo" firstAttribute="leading" secondItem="yTo-9g-ssR" secondAttribute="trailing" constant="20" id="pVV-E4-ySp"/>
+                <constraint firstItem="dan-y1-CEz" firstAttribute="centerY" secondItem="lk5-Oa-kVK" secondAttribute="centerY" id="roH-mh-Qj1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6Vl-YP-61N" secondAttribute="trailing" id="utj-Bo-ymU"/>
+                <constraint firstItem="zcP-Xu-McU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="x1e-g2-eMe"/>
+                <constraint firstItem="dan-y1-CEz" firstAttribute="leading" secondItem="lk5-Oa-kVK" secondAttribute="trailing" id="xHV-4a-fKn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dLi-p2-Ja2" secondAttribute="trailing" id="zd5-HU-Ppe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="adBgView" destination="zcP-Xu-McU" id="kvv-Z0-vBx"/>
+                <outlet property="bidedNumLB" destination="Jb1-kE-pDo" id="2a7-9e-Ctx"/>
+                <outlet property="btnsBg" destination="dLi-p2-Ja2" id="3Yw-uJ-HwR"/>
+                <outlet property="gzBtn" destination="SqJ-Bs-Bub" id="9HJ-5P-2HQ"/>
+                <outlet property="lookedNumLB" destination="yTo-9g-ssR" id="AFJ-QV-o0s"/>
+                <outlet property="nameLB" destination="okv-Bu-s0D" id="l9G-cC-esf"/>
+                <outlet property="sellPriceLB" destination="dan-y1-CEz" id="2ej-U2-fmj"/>
+            </connections>
+            <point key="canvasLocation" x="-112.31884057971016" y="346.05978260869568"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="house_detail_gz" width="59" height="25"/>
+        <image name="house_detail_gzed" width="59" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+        <array key="HiraginoSansGB-W6.otf">
+            <string>HiraginoSansGB-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddHouseFurnitureVC" customModule="YJF" customModuleProvider="target">
+            <connections>
+                <outlet property="addBtn" destination="oSd-Iz-FTj" id="lZd-x9-0Yg"/>
+                <outlet property="collectionView" destination="7ec-8Y-kw6" id="wXU-mA-mms"/>
+                <outlet property="emptyView" destination="uk0-ij-9Q9" id="O0b-5f-EFQ"/>
+                <outlet property="inputTF" destination="bvo-Iw-YcX" id="7gS-Ks-4Oi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mp8-cM-4wF">
+                    <rect key="frame" x="0.0" y="44" width="414" height="53"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家具电器名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl1-Yh-dCF">
+                            <rect key="frame" x="19" y="19.5" width="84" height="14"/>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W6" family="Hiragino Sans GB" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bvo-Iw-YcX">
+                            <rect key="frame" x="118" y="6.5" width="202" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="xrD-Tr-TU1"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSd-Iz-FTj">
+                            <rect key="frame" x="335" y="14" width="60" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Cwk-lS-uNo"/>
+                                <constraint firstAttribute="width" constant="60" id="jMW-30-hAS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                            <state key="normal" title="添加">
+                                <color key="titleColor" red="0.99215686274509807" green="0.49411764705882355" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="addAction:" destination="-1" eventType="touchUpInside" id="nlY-Tv-b20"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAG-sB-kBs">
+                            <rect key="frame" x="118" y="46.5" width="277" height="1"/>
+                            <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="z9L-lB-IDT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oSd-Iz-FTj" firstAttribute="leading" secondItem="bvo-Iw-YcX" secondAttribute="trailing" constant="15" id="53X-Qv-0CE"/>
+                        <constraint firstItem="bvo-Iw-YcX" firstAttribute="leading" secondItem="Jl1-Yh-dCF" secondAttribute="trailing" constant="15" id="6Yd-8G-NmC"/>
+                        <constraint firstItem="Jl1-Yh-dCF" firstAttribute="leading" secondItem="mp8-cM-4wF" secondAttribute="leading" constant="19" id="73r-KN-BZn"/>
+                        <constraint firstAttribute="height" constant="53" id="ElB-Kg-lpL"/>
+                        <constraint firstItem="bvo-Iw-YcX" firstAttribute="centerY" secondItem="mp8-cM-4wF" secondAttribute="centerY" id="YVs-Nz-PE0"/>
+                        <constraint firstItem="Jl1-Yh-dCF" firstAttribute="centerY" secondItem="mp8-cM-4wF" secondAttribute="centerY" id="drM-6H-j2i"/>
+                        <constraint firstItem="bvo-Iw-YcX" firstAttribute="leading" secondItem="nAG-sB-kBs" secondAttribute="leading" id="fBa-3g-rTZ"/>
+                        <constraint firstItem="nAG-sB-kBs" firstAttribute="top" secondItem="bvo-Iw-YcX" secondAttribute="bottom" id="hvw-sD-i1C"/>
+                        <constraint firstAttribute="trailing" secondItem="nAG-sB-kBs" secondAttribute="trailing" constant="19" id="m40-pj-W1h"/>
+                        <constraint firstAttribute="trailing" secondItem="oSd-Iz-FTj" secondAttribute="trailing" constant="19" id="o89-os-A6q"/>
+                        <constraint firstItem="oSd-Iz-FTj" firstAttribute="centerY" secondItem="mp8-cM-4wF" secondAttribute="centerY" id="tzI-U7-eEk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uk0-ij-9Q9">
+                    <rect key="frame" x="0.0" y="97" width="414" height="250"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_house_empty_furn" translatesAutoresizingMaskIntoConstraints="NO" id="DJO-eG-MBA">
+                            <rect key="frame" x="147" y="80" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="B9a-0w-tvF"/>
+                                <constraint firstAttribute="height" constant="120" id="rXk-W0-kNU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还未添加家具电器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpQ-jV-mte">
+                            <rect key="frame" x="157.5" y="205" width="99" height="11"/>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                            <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="DJO-eG-MBA" firstAttribute="top" secondItem="uk0-ij-9Q9" secondAttribute="top" constant="80" id="BSo-AX-Rmh"/>
+                        <constraint firstItem="wpQ-jV-mte" firstAttribute="top" secondItem="DJO-eG-MBA" secondAttribute="bottom" constant="5" id="Waf-Qq-XQv"/>
+                        <constraint firstItem="DJO-eG-MBA" firstAttribute="centerX" secondItem="uk0-ij-9Q9" secondAttribute="centerX" id="el4-zz-0ca"/>
+                        <constraint firstItem="wpQ-jV-mte" firstAttribute="centerX" secondItem="uk0-ij-9Q9" secondAttribute="centerX" id="hn0-Q1-9WN"/>
+                        <constraint firstAttribute="height" constant="250" id="kDX-OL-1Fp"/>
+                        <constraint firstItem="DJO-eG-MBA" firstAttribute="centerX" secondItem="uk0-ij-9Q9" secondAttribute="centerX" id="pdD-hu-27X"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7ec-8Y-kw6">
+                    <rect key="frame" x="0.0" y="97" width="414" height="765"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gfb-Ia-3OY">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mJh-px-EM9"/>
+                        <outlet property="delegate" destination="-1" id="Yzj-5a-aEc"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7ec-8Y-kw6" firstAttribute="top" secondItem="mp8-cM-4wF" secondAttribute="bottom" id="61B-G1-mEL"/>
+                <constraint firstItem="uk0-ij-9Q9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FCj-QK-gvn"/>
+                <constraint firstItem="mp8-cM-4wF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IWi-HQ-Z4T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mp8-cM-4wF" secondAttribute="trailing" id="Isr-51-CyC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7ec-8Y-kw6" secondAttribute="trailing" id="Toi-kH-9na"/>
+                <constraint firstItem="7ec-8Y-kw6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ahY-wN-MPY"/>
+                <constraint firstItem="uk0-ij-9Q9" firstAttribute="top" secondItem="mp8-cM-4wF" secondAttribute="bottom" id="bUF-lP-Ym1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7ec-8Y-kw6" secondAttribute="bottom" id="ciO-Bx-UiU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uk0-ij-9Q9" secondAttribute="trailing" id="nxQ-k6-caa"/>
+                <constraint firstItem="mp8-cM-4wF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="snO-zl-Mzq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_house_empty_furn" width="106" height="100"/>
+    </resources>
+</document>

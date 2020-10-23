@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+        <array key="HiraginoSansGB-W6.otf">
+            <string>HiraginoSansGB-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyBiddingVC" customModule="YJF" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="nLO-dA-b4K" id="L8T-0T-DD6"/>
+                <outlet property="emptyView" destination="eva-6O-s3X" id="lCu-tT-Q8s"/>
+                <outlet property="selectAllBtn" destination="ib5-4D-3li" id="cz8-mk-m8R"/>
+                <outlet property="tableView" destination="tbn-Ed-yPZ" id="L06-c8-kxM"/>
+                <outlet property="tableViewBottomLC" destination="plk-3U-HTZ" id="amO-II-UXS"/>
+                <outlet property="tableViewRightLC" destination="3BM-eI-sPx" id="Ysd-mF-TeE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLO-dA-b4K">
+                    <rect key="frame" x="0.0" y="787" width="414" height="68"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib5-4D-3li">
+                            <rect key="frame" x="18" y="14" width="80" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="3Ok-Tu-hLv"/>
+                                <constraint firstAttribute="height" constant="40" id="lLu-F5-SgO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="全选" image="login_selected_no">
+                                <color key="titleColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="login_selected"/>
+                            <connections>
+                                <action selector="selectAllAction:" destination="-1" eventType="touchUpInside" id="ZY3-mP-Y4k"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-ks-foz">
+                            <rect key="frame" x="244" y="14" width="152" height="40"/>
+                            <color key="backgroundColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1tK-Tp-dOo"/>
+                                <constraint firstAttribute="width" constant="152" id="6Ex-8w-JWM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W6" family="Hiragino Sans GB" pointSize="16"/>
+                            <state key="normal" title="撤销报价"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelBidsAction:" destination="-1" eventType="touchUpInside" id="8Hz-2f-ZFz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ib5-4D-3li" firstAttribute="centerY" secondItem="nLO-dA-b4K" secondAttribute="centerY" id="1V1-SC-TgX"/>
+                        <constraint firstAttribute="height" constant="68" id="WRm-2D-Aue"/>
+                        <constraint firstItem="ib5-4D-3li" firstAttribute="leading" secondItem="nLO-dA-b4K" secondAttribute="leading" constant="18" id="mtf-ua-HzO"/>
+                        <constraint firstAttribute="trailing" secondItem="dHS-ks-foz" secondAttribute="trailing" constant="18" id="phW-Pj-Jo8"/>
+                        <constraint firstItem="dHS-ks-foz" firstAttribute="centerY" secondItem="nLO-dA-b4K" secondAttribute="centerY" id="yHh-sX-OII"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-Ed-yPZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nai-53-S1K"/>
+                        <outlet property="delegate" destination="-1" id="SRx-N0-fow"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eva-6O-s3X">
+                    <rect key="frame" x="147" y="278" width="120" height="140"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biding_empty" translatesAutoresizingMaskIntoConstraints="NO" id="SZA-UZ-eol">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="gJI-d8-VNQ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有竞买中的房源" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igg-sx-ND2">
+                            <rect key="frame" x="0.0" y="120" width="120" height="20"/>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                            <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="igg-sx-ND2" firstAttribute="leading" secondItem="eva-6O-s3X" secondAttribute="leading" id="1aF-9C-Ueo"/>
+                        <constraint firstAttribute="trailing" secondItem="igg-sx-ND2" secondAttribute="trailing" id="NlE-KH-AaW"/>
+                        <constraint firstAttribute="bottom" secondItem="igg-sx-ND2" secondAttribute="bottom" id="S2M-UQ-h3c"/>
+                        <constraint firstAttribute="height" constant="140" id="So7-Bh-rBm"/>
+                        <constraint firstAttribute="width" constant="120" id="Vag-dn-cNP"/>
+                        <constraint firstItem="igg-sx-ND2" firstAttribute="top" secondItem="SZA-UZ-eol" secondAttribute="bottom" id="XQI-0E-G40"/>
+                        <constraint firstItem="SZA-UZ-eol" firstAttribute="top" secondItem="eva-6O-s3X" secondAttribute="top" id="fft-7n-hfg"/>
+                        <constraint firstAttribute="trailing" secondItem="SZA-UZ-eol" secondAttribute="trailing" id="gfA-3d-Wdo"/>
+                        <constraint firstItem="SZA-UZ-eol" firstAttribute="leading" secondItem="eva-6O-s3X" secondAttribute="leading" id="sZk-49-UDb"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="8g5-Sb-WIB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tbn-Ed-yPZ" secondAttribute="trailing" id="3BM-eI-sPx"/>
+                <constraint firstItem="eva-6O-s3X" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Jr-Qg-Php"/>
+                <constraint firstItem="nLO-dA-b4K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BC5-Ox-rx7"/>
+                <constraint firstItem="nLO-dA-b4K" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-7" id="OLb-8B-DMQ"/>
+                <constraint firstItem="tbn-Ed-yPZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YN0-Ug-Ehw"/>
+                <constraint firstItem="eva-6O-s3X" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="ZaX-oo-UcX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nLO-dA-b4K" secondAttribute="trailing" id="dJP-Ie-XKj"/>
+                <constraint firstItem="tbn-Ed-yPZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iS7-XC-FyR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tbn-Ed-yPZ" secondAttribute="bottom" id="plk-3U-HTZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="biding_empty" width="106" height="100"/>
+        <image name="login_selected" width="14" height="14"/>
+        <image name="login_selected_no" width="14" height="14"/>
+    </resources>
+</document>

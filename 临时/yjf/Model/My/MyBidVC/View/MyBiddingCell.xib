@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyBiddingCell" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="竞买时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikL-lH-GgM">
+                        <rect key="frame" x="18" y="25" width="44" height="11"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1U-nc-ssX">
+                        <rect key="frame" x="77" y="25" width="7.5" height="11"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wk8-tY-nWq">
+                        <rect key="frame" x="18" y="50" width="257" height="13"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUt-Nd-e2t">
+                        <rect key="frame" x="361" y="50" width="35" height="13"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="cD8-JZ-iig"/>
+                            <constraint firstAttribute="width" constant="35" id="f8L-o2-JJS"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="买：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEJ-8v-z2n">
+                        <rect key="frame" x="342" y="51" width="22" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="okZ-eb-4AR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="卖：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55x-lE-Ybt">
+                        <rect key="frame" x="285" y="51" width="22" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="uzm-fP-A3d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALS-CI-X2L">
+                        <rect key="frame" x="18" y="79" width="7.5" height="11"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0人次竞买" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53I-4K-oqQ">
+                        <rect key="frame" x="75.5" y="79" width="51.5" height="11"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkm-3r-Kaj">
+                        <rect key="frame" x="18" y="111" width="378" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BzA-Z3-iLy"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的竞买价：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH5-vQ-RfH">
+                        <rect key="frame" x="18" y="127" width="78.5" height="13"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWO-8v-aq2">
+                        <rect key="frame" x="304" y="50" width="35" height="13"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="Ce4-tF-l70"/>
+                            <constraint firstAttribute="width" constant="35" id="cfs-z8-A7c"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BI-XR-bRg">
+                        <rect key="frame" x="-32" y="0.0" width="50" height="201"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="lzS-EN-ZcW"/>
+                        </constraints>
+                        <state key="normal" image="login_selected_no"/>
+                        <state key="selected" image="login_selected"/>
+                        <connections>
+                            <action selector="selectAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wMK-7F-cB2"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omj-E7-KME">
+                        <rect key="frame" x="18" y="175" width="378" height="26"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易保证金：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3R-Iq-GTv">
+                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="13"/>
+                                <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                                <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="去缴纳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1q-Fe-mW6">
+                                <rect key="frame" x="323" y="0.0" width="40" height="13"/>
+                                <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vak-v5-Y8Z">
+                                <rect key="frame" x="278" y="-11" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DtP-6c-I9c"/>
+                                    <constraint firstAttribute="height" constant="35" id="YmF-Hd-UpV"/>
+                                </constraints>
+                                <state key="normal" image="new_version_arrow"/>
+                                <connections>
+                                    <action selector="payDepositAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BwX-Fn-Kn7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无可用保证金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ch6-S6-pio">
+                                <rect key="frame" x="78.5" y="0.0" width="79" height="13"/>
+                                <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.2274509804" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vak-v5-Y8Z" secondAttribute="trailing" id="3td-FS-s9G"/>
+                            <constraint firstItem="Ch6-S6-pio" firstAttribute="leading" secondItem="z3R-Iq-GTv" secondAttribute="trailing" id="FYm-hd-9JR"/>
+                            <constraint firstItem="R1q-Fe-mW6" firstAttribute="trailing" secondItem="Vak-v5-Y8Z" secondAttribute="trailing" constant="-15" id="HLw-8H-GYh"/>
+                            <constraint firstItem="Ch6-S6-pio" firstAttribute="top" secondItem="omj-E7-KME" secondAttribute="top" id="Ube-8R-01n"/>
+                            <constraint firstItem="z3R-Iq-GTv" firstAttribute="top" secondItem="omj-E7-KME" secondAttribute="top" id="VuD-iJ-mra"/>
+                            <constraint firstItem="R1q-Fe-mW6" firstAttribute="centerY" secondItem="Vak-v5-Y8Z" secondAttribute="centerY" id="Wxv-UQ-bYK"/>
+                            <constraint firstItem="z3R-Iq-GTv" firstAttribute="leading" secondItem="omj-E7-KME" secondAttribute="leading" id="fci-V8-bxX"/>
+                            <constraint firstItem="Vak-v5-Y8Z" firstAttribute="centerY" secondItem="z3R-Iq-GTv" secondAttribute="centerY" id="nlc-c3-bk9"/>
+                            <constraint firstAttribute="height" constant="26" id="s4P-gt-goq"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其中：现金0万，贷款0万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqJ-0J-VzB">
+                        <rect key="frame" x="18" y="150" width="124.5" height="11"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                        <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3e-6k-4ee">
+                        <rect key="frame" x="96.5" y="127" width="22" height="13"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                        <color key="textColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iUt-Nd-e2t" secondAttribute="trailing" constant="18" id="1J8-Le-rhp"/>
+                    <constraint firstItem="n3e-6k-4ee" firstAttribute="centerY" secondItem="jH5-vQ-RfH" secondAttribute="centerY" id="1WH-oH-y8v"/>
+                    <constraint firstItem="n3e-6k-4ee" firstAttribute="leading" secondItem="jH5-vQ-RfH" secondAttribute="trailing" id="1n0-EV-yqZ"/>
+                    <constraint firstItem="jH5-vQ-RfH" firstAttribute="top" secondItem="xkm-3r-Kaj" secondAttribute="bottom" constant="15" id="B5f-xn-0Po"/>
+                    <constraint firstItem="ikL-lH-GgM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="Deb-rZ-hmu"/>
+                    <constraint firstAttribute="bottom" secondItem="5BI-XR-bRg" secondAttribute="bottom" id="Fur-gt-Kes"/>
+                    <constraint firstItem="ikL-lH-GgM" firstAttribute="leading" secondItem="5BI-XR-bRg" secondAttribute="trailing" id="GM4-Xi-aii"/>
+                    <constraint firstItem="53I-4K-oqQ" firstAttribute="centerY" secondItem="ALS-CI-X2L" secondAttribute="centerY" id="Gkr-pB-H9c"/>
+                    <constraint firstItem="ALS-CI-X2L" firstAttribute="leading" secondItem="5BI-XR-bRg" secondAttribute="trailing" id="Ifc-J8-RoL"/>
+                    <constraint firstItem="iUt-Nd-e2t" firstAttribute="centerY" secondItem="WWO-8v-aq2" secondAttribute="centerY" id="N0g-p0-o8h"/>
+                    <constraint firstItem="oqJ-0J-VzB" firstAttribute="leading" secondItem="5BI-XR-bRg" secondAttribute="trailing" id="OfD-ze-EL4"/>
+                    <constraint firstAttribute="bottom" secondItem="jH5-vQ-RfH" secondAttribute="bottom" constant="61" id="OgV-hi-Bkr"/>
+                    <constraint firstItem="iUt-Nd-e2t" firstAttribute="centerY" secondItem="vEJ-8v-z2n" secondAttribute="centerY" id="P2v-hw-NdD"/>
+                    <constraint firstItem="iUt-Nd-e2t" firstAttribute="centerY" secondItem="Wk8-tY-nWq" secondAttribute="centerY" id="RIb-Px-KWO"/>
+                    <constraint firstItem="g1U-nc-ssX" firstAttribute="leading" secondItem="ikL-lH-GgM" secondAttribute="trailing" constant="15" id="T9r-5p-nhr"/>
+                    <constraint firstItem="5BI-XR-bRg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="THu-gL-G51"/>
+                    <constraint firstItem="55x-lE-Ybt" firstAttribute="leading" secondItem="Wk8-tY-nWq" secondAttribute="trailing" constant="10" id="UD2-XL-SB3"/>
+                    <constraint firstAttribute="bottom" secondItem="omj-E7-KME" secondAttribute="bottom" id="UWJ-Rd-1ZQ"/>
+                    <constraint firstItem="omj-E7-KME" firstAttribute="leading" secondItem="5BI-XR-bRg" secondAttribute="trailing" id="b4w-2R-l8N"/>
+                    <constraint firstItem="jH5-vQ-RfH" firstAttribute="leading" secondItem="5BI-XR-bRg" secondAttribute="trailing" id="btK-Gd-uVg"/>
+                    <constraint firstItem="ALS-CI-X2L" firstAttribute="top" secondItem="Wk8-tY-nWq" secondAttribute="bottom" constant="16" id="e96-hC-ypC"/>
+                    <constraint firstItem="Wk8-tY-nWq" firstAttribute="leading" secondItem="5BI-XR-bRg" secondAttribute="trailing" id="eh6-1f-xlS"/>
+                    <constraint firstItem="g1U-nc-ssX" firstAttribute="centerY" secondItem="ikL-lH-GgM" secondAttribute="centerY" id="ez2-c1-0qK"/>
+                    <constraint firstAttribute="trailing" secondItem="omj-E7-KME" secondAttribute="trailing" constant="18" id="hdF-va-CsG"/>
+                    <constraint firstItem="53I-4K-oqQ" firstAttribute="leading" secondItem="ALS-CI-X2L" secondAttribute="trailing" constant="50" id="hvs-tH-E5y"/>
+                    <constraint firstAttribute="trailing" secondItem="xkm-3r-Kaj" secondAttribute="trailing" constant="18" id="kRD-AB-AEA"/>
+                    <constraint firstItem="WWO-8v-aq2" firstAttribute="leading" secondItem="55x-lE-Ybt" secondAttribute="trailing" constant="-3" id="ov5-tz-erv"/>
+                    <constraint firstItem="5BI-XR-bRg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-32" id="rMT-Xu-PPk"/>
+                    <constraint firstItem="vEJ-8v-z2n" firstAttribute="leading" secondItem="WWO-8v-aq2" secondAttribute="trailing" constant="3" id="rnx-nz-8cJ"/>
+                    <constraint firstItem="xkm-3r-Kaj" firstAttribute="leading" secondItem="5BI-XR-bRg" secondAttribute="trailing" id="udJ-tv-YWq"/>
+                    <constraint firstItem="Wk8-tY-nWq" firstAttribute="top" secondItem="ikL-lH-GgM" secondAttribute="bottom" constant="14" id="uvq-wI-Arf"/>
+                    <constraint firstItem="oqJ-0J-VzB" firstAttribute="top" secondItem="jH5-vQ-RfH" secondAttribute="bottom" constant="10" id="vOL-fG-nbl"/>
+                    <constraint firstItem="iUt-Nd-e2t" firstAttribute="centerY" secondItem="55x-lE-Ybt" secondAttribute="centerY" id="wtW-CE-ChN"/>
+                    <constraint firstItem="iUt-Nd-e2t" firstAttribute="leading" secondItem="vEJ-8v-z2n" secondAttribute="trailing" constant="-3" id="xFI-pD-Weo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bidDetailLB" destination="oqJ-0J-VzB" id="6pQ-pU-xw9"/>
+                <outlet property="btnLeftLC" destination="rMT-Xu-PPk" id="8Oy-Bu-9m1"/>
+                <outlet property="buyBgView" destination="iUt-Nd-e2t" id="cxq-nx-rC8"/>
+                <outlet property="buyLB" destination="vEJ-8v-z2n" id="oPa-Ic-Ya8"/>
+                <outlet property="buyNumLB" destination="53I-4K-oqQ" id="fyr-yR-kQ1"/>
+                <outlet property="buyWidthLC" destination="f8L-o2-JJS" id="yiA-PK-MTN"/>
+                <outlet property="lastLineView" destination="omj-E7-KME" id="x6T-8c-goe"/>
+                <outlet property="layoutLB" destination="ALS-CI-X2L" id="Lr6-2y-d2l"/>
+                <outlet property="myBidLB" destination="n3e-6k-4ee" id="Scd-kx-Fcz"/>
+                <outlet property="mypriceLBBottomLC" destination="OgV-hi-Bkr" id="7Y1-58-EgV"/>
+                <outlet property="selectBtn" destination="5BI-XR-bRg" id="1zg-qD-XoK"/>
+                <outlet property="sellBgView" destination="WWO-8v-aq2" id="grS-Fy-jdV"/>
+                <outlet property="sellLB" destination="55x-lE-Ybt" id="xRl-Tl-kAV"/>
+                <outlet property="sellWidthLC" destination="cfs-z8-A7c" id="cmT-Em-6Ni"/>
+                <outlet property="timeLB" destination="g1U-nc-ssX" id="ueI-wP-CKv"/>
+                <outlet property="titleLB" destination="Wk8-tY-nWq" id="Fxj-JY-Kfd"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="33.816964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="login_selected" width="14" height="14"/>
+        <image name="login_selected_no" width="14" height="14"/>
+        <image name="new_version_arrow" width="7" height="13"/>
+    </resources>
+</document>

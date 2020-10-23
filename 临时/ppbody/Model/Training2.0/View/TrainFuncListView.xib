@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TrainFuncListView" customModule="PPBody" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train_action_bg_top" translatesAutoresizingMaskIntoConstraints="NO" id="dbY-UV-pRJ">
+                    <rect key="frame" x="0.0" y="0.0" width="75" height="98"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1u-Eg-uLI">
+                    <rect key="frame" x="6" y="5" width="63" height="93"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.1172391244493392" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="hXt-K8-Bvn">
+                    <rect key="frame" x="6" y="5" width="63" height="93"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dbY-UV-pRJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1wd-6u-LO9"/>
+                <constraint firstAttribute="trailing" secondItem="dbY-UV-pRJ" secondAttribute="trailing" id="FqI-MB-S3H"/>
+                <constraint firstAttribute="trailing" secondItem="hXt-K8-Bvn" secondAttribute="trailing" constant="6" id="JCj-Do-LO4"/>
+                <constraint firstItem="dbY-UV-pRJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RmL-mK-5tq"/>
+                <constraint firstItem="hXt-K8-Bvn" firstAttribute="bottom" secondItem="R1u-Eg-uLI" secondAttribute="bottom" id="SOe-dM-EBQ"/>
+                <constraint firstAttribute="bottom" secondItem="dbY-UV-pRJ" secondAttribute="bottom" id="Tvc-5o-Hzl"/>
+                <constraint firstItem="hXt-K8-Bvn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="azm-RS-4ZX"/>
+                <constraint firstItem="R1u-Eg-uLI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="cpA-J2-iB2"/>
+                <constraint firstAttribute="trailing" secondItem="R1u-Eg-uLI" secondAttribute="trailing" constant="6" id="fr5-J0-26x"/>
+                <constraint firstItem="hXt-K8-Bvn" firstAttribute="top" secondItem="R1u-Eg-uLI" secondAttribute="top" id="mXg-PN-dXX"/>
+                <constraint firstAttribute="bottom" secondItem="hXt-K8-Bvn" secondAttribute="bottom" id="uP7-mA-amw"/>
+                <constraint firstItem="hXt-K8-Bvn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="yAK-lL-odS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgIV" destination="dbY-UV-pRJ" id="jUG-BN-LNz"/>
+                <outlet property="bottomLC" destination="uP7-mA-amw" id="ZP5-hW-58A"/>
+                <outlet property="stackView" destination="hXt-K8-Bvn" id="Yxi-QT-lnE"/>
+                <outlet property="topLC" destination="yAK-lL-odS" id="4Wj-Qc-sHd"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="104.34782608695653"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="train_action_bg_top" width="75" height="16.5"/>
+    </resources>
+</document>

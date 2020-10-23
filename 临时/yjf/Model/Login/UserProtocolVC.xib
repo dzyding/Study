@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserProtocolVC" customModule="YJF" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WL7-K1-A3O">
+                    <rect key="frame" x="0.0" y="44" width="414" height="2922"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgD-Ig-XKh">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="8196"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q40-G7-dVR">
+                                    <rect key="frame" x="16" y="16" width="382" height="8164"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="欢迎您使用易间房房产交易平台（简称易间房）！">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+本协议是用户与武汉易间房科技有限公司之间的法律协议，规定了用户注册易间房账号并接受其提供的服务时双方的权利与义务。在全文阅读了本协议各条款内容之后，如您继续访问和接受易间房的服务，即视为您已确知并完全同意本协议各项约定。
+
+</string>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="一、定义">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+1.1、易间房，是指武汉易间房科技有限公司旗下运营的易间房网站（</string>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="http://www.ejfun.com">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <url key="NSLink" string="http://www.ejfun.com/"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">)及移动应用软件易间房APP。易间房系专注于为房屋买卖用户（即买方和卖方）提供房产信息发布、搜索服务、24小时自助看房服务、二手房和新房在线交易竞价服务以及各项网络推广服务的互联网平台。
+
+1.2、用户，以下亦称为“您”，系指注册了易间房账号并接受其服务的具有完全民事行为能力的自然人、企业法人、社会团体或其他社会组织等。
+
+1.3、协议方，本协议中的一方，系指易间房所在的武汉易间房科技有限公司；您作为另一方。由此构成协议双方。
+
+</string>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="二、协议的效力">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+2.1、在您按照注册页面提示填写信息、阅读并同意本协议并完成全部注册程序后，在接受易间房服务时，您即受本协议的约束。
+
+2.2、本协议内容包括本协议正文，您在使用易间房某一特定服务或系统时，该服务可能会另有单独的协议、相关业务规则、公告、帮助、说明、通用条款等（以下统称为“规则”）。所有易间房已经发布的或将来可能发布的规则均为本协议不可分割的组成部分，与本协议具有同等法律效力。
+
+</string>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="三、注册">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+3.1、您确认，在您注册易间房账号时，您应当是具备完全民事行为能力的自然人、法人或其他组织。
+
+3.2、在您签署本协议，完成注册程序时，易间房会向您提供唯一编号的易间房账户。您应对您的用户账户、登录密码、支付密码（如有）、验证码的安全以及对通过您的账户实施的行为负责，除非有法律规定或行政、司法机关的指令，且征得易间房的同意，否则您的用户账户不得以任何方式转让、借用、赠与或继承（与账户相关的财产权益除外）。您的登录密码、支付密码（如有）和验证码不得对任何第三方提供或泄露，否则，由此给您（或易间房、任何第三方）造成的一切损失，概由您自行承担（或者负责赔偿），易间房不承担任何责任。
+
+3.3、如果发现任何人不当使用您的账户或有任何其他可能危及您的账户安全的情形时，您应当立即与易间房客服联系并通知易间房暂停或冻结相关服务。您理解易间房对您的请求采取行动需要合理时间，易间房对在采取行动前已经产生的后果（包括但不限于您的任何损失）不承担任何责任。
+
+</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="四、在线支付">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+如您在易间房在线支付，您认可并自愿使用电子合同服务方式签署合同（或协议），接受并认可通过易间房签署的电子合同（或协议）与纸质合同（或协议）具备同等法律效力，接受并认可您电子签名与您手写签名具备同等法律效力。您同意并不可撤销地对乙方进行以下授权：
+4.1、 您向乙方申请开通第三方服务的（包括但不限于钱包服务、电子合同服务、个人履约信息服务、金融产品服务、第三方支付服务等），即视为您同意并授权我们将您的信息提供给与易间房合作的提供该等服务的第三方，您的信息包括但不限于您向易间房提供的信息（如甲方向乙方提供的个人信息、征信信息以及甲方CA数字证书信息等）以及您在易间房平台录入的信息。
+
+4.2、 授权易间房及其合作的第三方通过合法渠道查询或核实您的信息（法律、法规、监管政策禁止查询的除外），并有权基于您使用易间房的需要而保存、整理或加工查获的信息。易间房及其合作的第三方可依据前述信息持续性地向您提供相应服务（包括但不限于将信息用于向您推广、提供其他更加优质的产品或服务）。因您提供信息虚假或无效导致的一切法律责任由您承担。
+
+4.3、 授权易间房及提供电子合同服务的第三方根据您向易间房提供的资料开通电子合同服务（您需首先通过易间房及其合作的第三方对其进行的合法、有效的实名认证，且取得相应的CA数字证书），并生成电子印章。授权易间房及提供电子合同服务的第三方在您使用电子合同服务期间或在电子合同服务终止后，有权保留您在使用电子合同服务期间所形成的相关信息数据。
+
+4.4、 授权易间房或其他第三方支付账户，支付您及其签约方签署的合同项下的相关款项，并向易间房支付其他服务费，易间房向您提供的收费服务，将在平台予以公示并由您自主选择。
+
+4.5、 您在易间房的账户、密码是我们识别您身份及指令的唯一标志，所有使用您账户、密码的操作（包括但不限于信息披露、信息发布、点击同意或提交各类规则协议、签署电子合同等）均为您或您的授权操作行为，任何使用您账户、密码发送至易间房或其合作的第三方的指令均构成您不可撤销的授权指示，易间房及其合作的第三方对于依照该指令进行的操作行为及其结果不承担任何责任。
+
+4.6、如您发现账号有任何异常操作，请及时联系我们的客服。
+
+</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="五、易间房服务规则">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">5.1、买方自助看房规则：
+买方自助看房，须向易间房支付一定的看房押金。单次看房时间限定为30分钟，开门计时开始，锁门计时结束。买方看房超时，易间房将象征性收取少量超时费（详见页面显示）。买方看房期间，不得损坏房屋及房屋内现有的电器、家具等财物，否则，照价赔偿。买方看房结束，要注意关灯、关水、关窗、关门，确保房屋安全。买方可以随时申请退还看房押金，在不存在看房超时、不存在损坏房屋及房屋内财物等情况下，易间房将于七个工作日之内依据原支付通道原路退还全部押金。如存在上述情况，易间房在扣除相关超时费用、赔偿费用以后退还剩余的押金。
+
+5.2、买方参与竞价规则：买方在参与易间房交易竞价之前，请确认您本人或者您的委托人具有当地购房资格，否则，将承担不利法律后果。在向易间房交纳一定的交易保证金以后，买方可以参与易间房交易竞价。在竞价过程中，当买方看到了能够接受的卖方报价时，可以选择成交。同理，买方报出的价格也会随时被卖方选择成交。此时，该房屋被平台锁定，不再接受竞价，易间房将为买卖双方安排后续签订买卖合同事宜。如果在易间房通知的时间里，买方不到易间房指定的签约服务中心与卖方签订买卖合同，易间房将没收买方所交纳的交易保证金，其中一半用于赔偿易间房的损失，另一半用于赔偿参与签约的卖方的损失。在达成成交意向之前，买方可以随时申请退还上述保证金。接到申请后，易间房将于七个工作日之内依据原支付通道原路全额退还。买方承诺，在买卖双方签订正式房屋买卖合同之时，愿意向易间房交纳房屋成交价一定比例的佣金，而易间房的服务将一直延续到协助买方办理该房屋的的交易过户手续；买方同时承诺，在办理上述手续过程中，承担国家规定的应该由买方缴纳的有关税费。（详见页面显示）
+
+5.3、智能门锁安装规则：为了方便买方随时看房，尽快成交，卖方可向易间房申请安装智能门锁。卖方在交纳一定的门锁押金以后，易间房将安排专人到卖方指定的房屋安智能门锁。智能门锁通过扫码或者输入密码等方式开锁，可提供24小时看房服务。智能门锁安装以后，易间房将按天收取少量的门锁租金，同时一次性收取相应的门锁装卸费用。如果该房屋在易间房一直没有成交，卖方可以随时申请拆卸智能门锁，易间房在对上述费用进行结算以后，将于七个工作日之内依据原支付通道原路把剩余押金退还给卖方。（详见页面显示）
+
+5.4、卖方参与竞价规则：卖方在参与易间房交易竞价之前，请确认您本人或者您的委托人是该房屋的产权所有人，该房屋无查封等产权纠纷，否则，将承担不利法律后果。在向易间房交纳一定的交易保证金以后，卖方可以参与易间房交易竞价。在竞价过程中，当卖方看到了能够接受的买方报价时，可以选择成交。同理，卖方报出的价格也会随时被买方选择成交。此时，该房屋被易间房锁定，不再接受竞价，易间房将为买卖双方安排后续签订买卖合同事宜。如果在易间房通知的时间里，卖方不到易间房指定的签约服务中心与买方签订买卖合同，易间房将没收卖方所交纳的交易保证金，其中一半用于赔偿易间房的损失，另一半用于赔偿参与签约的买方的损失。在达成成交意向之前，卖方可以随时申请退还上述保证金。接到申请后，易间房将于七个工作日之内依据原支付通道原路全额退还。卖方承诺，在买卖双方签订正式房屋买卖合同之时，愿意向易间房交纳房屋成交价一定比例的佣金，而易间房的服务将一直延续到协助卖方办理该房屋的交易过户手续；卖方同时承诺，在办理上述手续过程中，承担国家规定的应该由卖方缴纳的有关税费。（详见页面显示）
+
+5.5、在接受易间房服务过程中，您承诺遵守以下约定：
+</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="0.00013333333481568843" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">1)在接受易间房服务过程中实施的所有行为均遵守国家法律、法规等规范文件及易间房平台各项规则的规定和要求，不违背社会公共利益或公共道德，不损害他人的合法权益，不违反本协议及相关规则。
+2)不对易间房平台上的任何数据作商业性利用，包括但不限于在未经易间房事先书面同意的情况下，以复制、传播等任何方式使用易间房平台站上展示的资料。
+3)不使用任何装置、软件或例行程序干预或试图干预易间房的正常运作或者在易间房上进行的任何活动。不得采取任何将导致不合理的庞大数据负载加诸易间房平台网络设备的行动。
+
+5.6、您了解并同意：
+1)您违反上述承诺时，易间房有权依据本协议的约定，做出相应处理或终止向您提供服务，且无须征得您的同意或提前通知于您。
+2)如您涉嫌违反有关法律或者本协议之规定，使易间房遭受任何损失，或受到任何第三方的索赔，或受到任何行政管理部门的处罚，您应当赔偿易间房因此造成的损失及发生的费用，包括合理的律师费用。
+
+</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="六、责任范围和责任限制">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+6.1、易间房与其他的在线使用的互联网网站一样，也会面临着诸如黑客攻击、病毒感染、系统崩溃、网络掉线、网速缓慢、程序漏洞等问题的困扰和威胁。由此可能会给您造成相关的损失，概由您自行承担，易间房无须向您承担任何责任。
+
+6.2、您在易间房上接受第三方提供的产品或服务时，除遵守本协议约定外，还应遵守第三方的用户协议及其他相关规则。易间房和第三方对可能出现的纠纷在法律规定和约定的范围内各自承担责任。
+
+6.3、您同意在接受易间房服务过程中可接收易间房自行或由第三方服务商向您发送或提供的推广或宣传信息、资讯、动态等（统称为推广信息，包括商业与非商业信息），其方式和范围可不经向您特别通知而变更。除法律法规明确规定外，您应自行对依该推广信息进行的交易审慎评估理性接受，并对交易后果负责。对用户因依该推广信息进行的交易或前述第三方服务商提供的内容因而遭受的损失或损害，易间房不承担任何责任。
+
+6.4、易间房对下列不可抗力行为免责：信息网络正常的设备维护，信息网络连接故障，电脑、通讯或其他系统的故障，电力故障，劳动争议，暴乱，骚乱，生产力或生产资料不足，火灾，洪水，风暴，爆炸，战争，政府行为，司法、行政机关的命令或第三方的不作为而造成的不能服务或延迟服务。
+
+6.5、您应当严格遵守本协议及易间房规则等，因您违反协议或规则的行为给第三方或易间房造成损失的，您应当承担全部责任。
+
+6.6、易间房保留在法律允许的范围内独立决定拒绝服务、关闭用户账户的权利。
+
+</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="七、协议终止">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+7.1、您同意，易间房基于平台服务的安全性，有权中止向您提供部分或全部易间房服务，暂时冻结您的账户，待安全问题解决后及时恢复，并对中止、冻结及恢复的事实及时通知。如果网站的安全问题是由于您的违法行为引起，易间房有权终止向您提供部分或全部易间房服务，永久冻结（注销）您的帐户，并有权向您对损失进行索赔。
+
+7.2、您同意，您与易间房所在公司的协议关系终止后，易间房仍享有下列权利：
+1) 按法律规定保存您在接受易间房服务期间的信息发布记录、交易记录及及其他登陆使用操作记录等。
+2）您在接受易间房服务期间存在违法行为或违反本协议的行为的，易间房仍可依据本协议向您主张权利、追究责任。
+
+</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="八、隐私权政策">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+8.1、您知悉并认可：易间房可能会与第三方合作商向用户提供相关的网络服务，在此情况下，如该第三方同意承担与易间房同等的保护用户隐私的责任，则您同意易间房有权将您的个人注册信息及注册资料等提供给该第三方。另外，在对您信息进行脱敏处理后，易间房有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。
+
+8.2、易间房将运用各种安全技术和程序建立完善的管理制度来保护您的个人信息，以免遭受未经授权的访问、使用或披露。对此您表示理解和认同。
+
+8.3、易间房不会将您的个人信息转移或披露给任何非关联的第三方，除非：
+1）相关法律法规或司法、政府机关要求；
+2）为完成合并、分立、收购或资产转让而转移；
+3）为提供您要求的服务所必需；
+4）为您提供任何您可能感兴趣的信息或服务。
+
+8.4、易间房不对用户所发布信息的删除或储存失败负责。易间房并不承诺对用户的存储信息进行无限期保留。
+
+8.5、当您终止接受易间房的服务、注销易间房账号以后，易间房将停止收集并使用您的个人信息。
+
+</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="九、知识产权声明">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+9.1、“易间房网站” “易间房APP”等为易间房所在公司的商标，受法律保护，任何人不得擅自使用。凡侵犯本公司版权等知识产权的，易间房将依法追究其相关法律责任。
+
+9.2、易间房所刊登的资料信息（包括但不限于编码、文字、图表、标识、按钮图标、图像、声音文件片段、数字下载、数据编辑和软件），所有内容的汇编、所有软件均是易间房所在公司或其内容提供者的财产，受中国和国际版权法的保护。任何被授权的浏览、复制、打印和传播属于易间房的信息内容都不得用于商业目的，所有信息内容及其任何部分的使用都适用此版权声明。
+
+9.3、除法律另有强制性规定外，未经易间房明确的特别书面许可，任何单位或个人不得以任何方式非法地全部或部分复制、传播、展示、镜像、上载、下载、转载、引用、链接、抓取或以其他方式使用易间房的信息内容及相关资料，否则，易间房有权追究其法律责任。
+
+9.4、对于不当引用易间房的内容而引起的纷争等或因纠纷等造成的任何损失，易间房不承担相关法律责任。对不遵守本声明的用户或其他违法、恶意使用易间房内容者，易间房保留追究其法律责任的权利。
+
+</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="十、法律适用、管辖与其他">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Medium"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+10.1、本协议之订立、生效、解释、修订、补充、终止、执行与争议解决均适用中华人民共和国法律，如法律无相关规定的，则参照通用国际商业惯例和（或）行业惯例。
+
+10.2、本协议任一条款被视为废止、无效或不可执行，该条应视为可分的且并不影响本协议其余条款的有效性及可执行性。
+
+10.3、因本协议产生之争议、纠纷，应由易间房与您友好协商解决；协商不成的，任何一方均有权向易间房所在公司住所地人民法院诉讼解决。
+
+为给您提供更好的服务以及随着国家法律法规的调整、易间房业务的发展，本协议也会随之更新。我们会通过在易间房网站、易间房移动端上发出更新版本并在生效前通过适当方式提醒您相关内容的更新。
+为维护网民和相关权利人利益，武汉易间房科技有限公司已经以公示的方式，为用户及相关权利人提供了丰富、便捷的线上线下投诉渠道。
+ 
+</mutableString>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="本协议自2019年8月18日生效。">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.30980392156862746" green="0.50588235294117645" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+ 
+</string>
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content"> 
+</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="0.00013333333481568843" minimumLineHeight="26" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="q40-G7-dVR" secondAttribute="bottom" constant="16" id="5dH-Sw-sHt"/>
+                                <constraint firstItem="q40-G7-dVR" firstAttribute="top" secondItem="pgD-Ig-XKh" secondAttribute="top" constant="16" id="fhQ-1A-SzO"/>
+                                <constraint firstAttribute="trailing" secondItem="q40-G7-dVR" secondAttribute="trailing" constant="16" id="rXg-hM-lwi"/>
+                                <constraint firstItem="q40-G7-dVR" firstAttribute="leading" secondItem="pgD-Ig-XKh" secondAttribute="leading" constant="16" id="ugW-Ps-LOF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pgD-Ig-XKh" secondAttribute="bottom" id="DVb-ME-BmJ"/>
+                        <constraint firstItem="pgD-Ig-XKh" firstAttribute="top" secondItem="WL7-K1-A3O" secondAttribute="top" id="Lx6-31-77B"/>
+                        <constraint firstItem="pgD-Ig-XKh" firstAttribute="leading" secondItem="WL7-K1-A3O" secondAttribute="leading" id="Xix-7U-lZS"/>
+                        <constraint firstAttribute="trailing" secondItem="pgD-Ig-XKh" secondAttribute="trailing" id="aRi-7I-kPb"/>
+                        <constraint firstItem="pgD-Ig-XKh" firstAttribute="width" secondItem="WL7-K1-A3O" secondAttribute="width" id="kgu-bz-MHg"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WL7-K1-A3O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="10l-zj-MPp"/>
+                <constraint firstItem="WL7-K1-A3O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2pf-2Y-rw1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WL7-K1-A3O" secondAttribute="trailing" id="9uw-rR-mjd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WL7-K1-A3O" secondAttribute="bottom" id="Pve-dU-bhR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-162" y="25"/>
+        </view>
+    </objects>
+</document>

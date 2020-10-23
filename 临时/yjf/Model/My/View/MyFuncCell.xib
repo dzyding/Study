@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyFuncCell" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iG-vR-yxC">
+                        <rect key="frame" x="18" y="51.5" width="339" height="1"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8tg-qT-YYC"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4pe-FX-faM">
+                        <rect key="frame" x="18" y="16.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="9Ht-Xt-VZq"/>
+                            <constraint firstAttribute="height" constant="20" id="ilK-b5-1aS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的房源" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJb-aI-4Ih">
+                        <rect key="frame" x="51" y="19.5" width="56" height="14"/>
+                        <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4T-8X-d5r">
+                        <rect key="frame" x="350" y="15.5" width="7" height="22"/>
+                        <state key="normal" image="my_righy_arrow"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dJb-aI-4Ih" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1W7-8p-bEx"/>
+                    <constraint firstItem="h4T-8X-d5r" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7AP-hA-ASH"/>
+                    <constraint firstItem="4pe-FX-faM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7sQ-zd-1On"/>
+                    <constraint firstAttribute="trailing" secondItem="h4T-8X-d5r" secondAttribute="trailing" constant="18" id="7t4-zB-8o1"/>
+                    <constraint firstItem="5iG-vR-yxC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="HDy-Zs-rqN"/>
+                    <constraint firstItem="dJb-aI-4Ih" firstAttribute="leading" secondItem="4pe-FX-faM" secondAttribute="trailing" constant="13" id="S0X-zG-DvO"/>
+                    <constraint firstItem="4pe-FX-faM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="eMY-zv-cOw"/>
+                    <constraint firstAttribute="trailing" secondItem="5iG-vR-yxC" secondAttribute="trailing" constant="18" id="jWz-GI-Vcc"/>
+                    <constraint firstAttribute="bottom" secondItem="5iG-vR-yxC" secondAttribute="bottom" id="pFM-33-VGf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconIV" destination="4pe-FX-faM" id="BEy-xp-stD"/>
+                <outlet property="lineView" destination="5iG-vR-yxC" id="0mB-zH-YCI"/>
+                <outlet property="titleLB" destination="dJb-aI-4Ih" id="f1O-tb-aXQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="my_righy_arrow" width="7" height="13"/>
+    </resources>
+</document>

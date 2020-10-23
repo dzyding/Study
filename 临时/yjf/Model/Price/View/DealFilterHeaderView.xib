@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DealFilterHeaderView" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dHN-9N-cWl">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="44"/>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijX-xp-ftp">
+                    <rect key="frame" x="379" y="0.0" width="35" height="44"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" image="deal_filter_selected_no"/>
+                    <state key="selected" image="deal_filter_selected"/>
+                    <connections>
+                        <action selector="orderAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hh8-vU-42i"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuU-cT-sRz">
+                    <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="XtB-3n-fmE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nuU-cT-sRz" secondAttribute="bottom" id="GW0-7i-y4K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ijX-xp-ftp" secondAttribute="bottom" id="Kyf-Yu-TgL"/>
+                <constraint firstAttribute="bottom" secondItem="dHN-9N-cWl" secondAttribute="bottom" id="UiQ-Ac-XQQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dHN-9N-cWl" secondAttribute="trailing" constant="35" id="cu8-4m-bTN"/>
+                <constraint firstItem="ijX-xp-ftp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ewC-oD-q9K"/>
+                <constraint firstItem="dHN-9N-cWl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="f5p-ax-Rtc"/>
+                <constraint firstItem="dHN-9N-cWl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fRW-q3-df9"/>
+                <constraint firstAttribute="trailing" secondItem="nuU-cT-sRz" secondAttribute="trailing" id="fiV-53-bzM"/>
+                <constraint firstItem="nuU-cT-sRz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mx5-5V-nF1"/>
+                <constraint firstItem="ijX-xp-ftp" firstAttribute="leading" secondItem="dHN-9N-cWl" secondAttribute="trailing" id="ql2-4l-QQ0"/>
+                <constraint firstItem="ijX-xp-ftp" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="uFB-ng-SxP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="orderBtn" destination="ijX-xp-ftp" id="4rx-tK-iTc"/>
+                <outlet property="stackView" destination="dHN-9N-cWl" id="fcc-9C-Inu"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="41.576086956521742"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="deal_filter_selected" width="11.666666984558105" height="13"/>
+        <image name="deal_filter_selected_no" width="11.666666984558105" height="13"/>
+    </resources>
+</document>

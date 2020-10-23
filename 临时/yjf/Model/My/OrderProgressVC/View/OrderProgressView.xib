@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="St3-Ci-IVS" customClass="OrderProgressView" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+            <subviews>
+                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-0l-SbA">
+                    <rect key="frame" x="26" y="0.0" width="1" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.4549019608" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="SJm-S3-HnJ"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_progress_finish" translatesAutoresizingMaskIntoConstraints="NO" id="Cyo-gU-4IZ">
+                    <rect key="frame" x="19" y="7.6666666666666679" width="15" height="15"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="rZe-YE-1vX"/>
+                        <constraint firstAttribute="height" constant="15" id="rd6-wH-IIb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收买房资料" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elz-5b-sRR">
+                    <rect key="frame" x="48.000000000000007" y="8.6666666666666661" width="65.666666666666686" height="12.999999999999998"/>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="13"/>
+                    <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB0-hg-Hxl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                    <connections>
+                        <action selector="btnAction:" destination="St3-Ci-IVS" eventType="touchUpInside" id="mIY-dJ-ff7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Cyo-gU-4IZ" firstAttribute="centerY" secondItem="St3-Ci-IVS" secondAttribute="centerY" id="2Mc-gk-FNQ"/>
+                <constraint firstItem="Pn2-0l-SbA" firstAttribute="top" secondItem="St3-Ci-IVS" secondAttribute="top" id="4Tt-K6-tJf"/>
+                <constraint firstItem="GRc-YD-fcz" firstAttribute="trailing" secondItem="uB0-hg-Hxl" secondAttribute="trailing" id="4xF-6m-Ysm"/>
+                <constraint firstItem="uB0-hg-Hxl" firstAttribute="bottom" secondItem="GRc-YD-fcz" secondAttribute="bottom" id="6bc-UI-UzK"/>
+                <constraint firstItem="elz-5b-sRR" firstAttribute="centerY" secondItem="St3-Ci-IVS" secondAttribute="centerY" id="8cs-57-tRn"/>
+                <constraint firstItem="Pn2-0l-SbA" firstAttribute="leading" secondItem="St3-Ci-IVS" secondAttribute="leading" constant="26" id="QCR-re-QWm"/>
+                <constraint firstItem="elz-5b-sRR" firstAttribute="leading" secondItem="St3-Ci-IVS" secondAttribute="leading" constant="48" id="WGv-2z-zA2"/>
+                <constraint firstAttribute="height" constant="30" id="fmn-ZA-CVA"/>
+                <constraint firstItem="Cyo-gU-4IZ" firstAttribute="centerX" secondItem="Pn2-0l-SbA" secondAttribute="centerX" id="gMh-p6-QQe"/>
+                <constraint firstItem="uB0-hg-Hxl" firstAttribute="top" secondItem="GRc-YD-fcz" secondAttribute="top" id="nWH-Yk-fRH"/>
+                <constraint firstItem="uB0-hg-Hxl" firstAttribute="leading" secondItem="GRc-YD-fcz" secondAttribute="leading" id="v1O-Cx-QCA"/>
+                <constraint firstAttribute="bottom" secondItem="Pn2-0l-SbA" secondAttribute="bottom" id="zR9-6B-BaU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="GRc-YD-fcz"/>
+            <point key="canvasLocation" x="86.956521739130437" y="141.84782608695653"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="order_progress_finish" width="10" height="10"/>
+    </resources>
+</document>

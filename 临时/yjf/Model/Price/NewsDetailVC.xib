@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDetailVC" customModule="YJF" customModuleProvider="target">
+            <connections>
+                <outlet property="numLB" destination="mgO-t5-a1R" id="Ctv-H9-Rl7"/>
+                <outlet property="timeLB" destination="XVM-Rq-IUo" id="2aF-sA-xsc"/>
+                <outlet property="titleLB" destination="ig2-YE-9P9" id="gih-oa-laa"/>
+                <outlet property="topView" destination="xly-Dj-jUH" id="CkY-OV-7V8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xly-Dj-jUH">
+                    <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-Rq-IUo">
+                            <rect key="frame" x="10" y="52" width="30" height="11"/>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                            <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgO-t5-a1R">
+                            <rect key="frame" x="50" y="52" width="30" height="11"/>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="11"/>
+                            <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女子买了花园排屋很是兴奋，和丈夫夜看新房，失足坠楼" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig2-YE-9P9">
+                            <rect key="frame" x="10" y="10" width="394" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="nkc-Ay-AYy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="17"/>
+                            <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="6Xx-V9-hNs"/>
+                        <constraint firstItem="mgO-t5-a1R" firstAttribute="centerY" secondItem="XVM-Rq-IUo" secondAttribute="centerY" id="DiV-rZ-HLY"/>
+                        <constraint firstItem="ig2-YE-9P9" firstAttribute="leading" secondItem="xly-Dj-jUH" secondAttribute="leading" constant="10" id="Gpy-Ea-BRo"/>
+                        <constraint firstAttribute="trailing" secondItem="ig2-YE-9P9" secondAttribute="trailing" constant="10" id="KNM-E4-ezY"/>
+                        <constraint firstItem="ig2-YE-9P9" firstAttribute="top" secondItem="xly-Dj-jUH" secondAttribute="top" constant="10" id="SMk-ZF-aAG"/>
+                        <constraint firstItem="XVM-Rq-IUo" firstAttribute="leading" secondItem="xly-Dj-jUH" secondAttribute="leading" constant="10" id="doN-cB-Jgb"/>
+                        <constraint firstAttribute="bottom" secondItem="XVM-Rq-IUo" secondAttribute="bottom" constant="7" id="njN-eu-rxw"/>
+                        <constraint firstItem="mgO-t5-a1R" firstAttribute="leading" secondItem="XVM-Rq-IUo" secondAttribute="trailing" constant="10" id="z5h-X0-win"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="xly-Dj-jUH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KjX-ON-0AA"/>
+                <constraint firstItem="xly-Dj-jUH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZVY-zu-jxf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xly-Dj-jUH" secondAttribute="trailing" id="rsr-Ea-bdR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="104"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoachReduceVC" customModule="PPBody" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBarView" destination="A2i-78-5wu" id="qEA-zi-qQv"/>
+                <outlet property="containerView" destination="V1V-Z9-t5q" id="BQF-BQ-2XM"/>
+                <outlet property="view" destination="EDR-Ea-Ezr" id="uTD-PG-adU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="EDR-Ea-Ezr">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="A2i-78-5wu" customClass="ButtonBarView" customModule="PPBody" customModuleProvider="target">
+                    <rect key="frame" x="16" y="44" width="382" height="40"/>
+                    <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ezi-77-b6s"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6kq-XZ-yMQ">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1V-Z9-t5q">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Np-Vg-aDZ">
+                    <rect key="frame" x="344" y="792" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="AeS-PO-XEC"/>
+                        <constraint firstAttribute="height" constant="50" id="KKK-Du-59x"/>
+                    </constraints>
+                    <state key="normal" image="gym_coach_order"/>
+                    <connections>
+                        <action selector="setReduceAction:" destination="-1" eventType="touchUpInside" id="wao-I0-VIr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EWY-ql-LvS" firstAttribute="trailing" secondItem="A2i-78-5wu" secondAttribute="trailing" constant="16" id="3FB-jg-ic5"/>
+                <constraint firstItem="V1V-Z9-t5q" firstAttribute="leading" secondItem="EWY-ql-LvS" secondAttribute="leading" id="4Gt-rP-G5N"/>
+                <constraint firstItem="EWY-ql-LvS" firstAttribute="bottom" secondItem="V1V-Z9-t5q" secondAttribute="bottom" id="4Kv-wF-qik"/>
+                <constraint firstItem="EWY-ql-LvS" firstAttribute="bottom" secondItem="7Np-Vg-aDZ" secondAttribute="bottom" constant="20" id="7iJ-pG-aSK"/>
+                <constraint firstItem="A2i-78-5wu" firstAttribute="leading" secondItem="EWY-ql-LvS" secondAttribute="leading" constant="16" id="Qx1-vN-bqH"/>
+                <constraint firstItem="V1V-Z9-t5q" firstAttribute="top" secondItem="A2i-78-5wu" secondAttribute="bottom" constant="10" id="TdU-GU-1nw"/>
+                <constraint firstItem="EWY-ql-LvS" firstAttribute="trailing" secondItem="V1V-Z9-t5q" secondAttribute="trailing" id="ifV-3W-dfx"/>
+                <constraint firstItem="A2i-78-5wu" firstAttribute="top" secondItem="EWY-ql-LvS" secondAttribute="top" id="xyd-xZ-OuM"/>
+                <constraint firstItem="EWY-ql-LvS" firstAttribute="trailing" secondItem="7Np-Vg-aDZ" secondAttribute="trailing" constant="20" id="zLk-u4-sln"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="EWY-ql-LvS"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gym_coach_order" width="36" height="36"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+        <array key="HiraginoSansGB-W6.otf">
+            <string>HiraginoSansGB-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingleInputVC" customModule="YJF" customModuleProvider="target">
+            <connections>
+                <outlet property="inputTF" destination="d2G-zb-iXk" id="5jB-lg-7aG"/>
+                <outlet property="sureBtn" destination="lSF-E3-gu2" id="umz-yl-B9b"/>
+                <outlet property="titleLB" destination="kBr-13-Ahr" id="tIw-9g-cIh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLD-fI-VG7">
+                    <rect key="frame" x="0.0" y="54" width="414" height="53"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBr-13-Ahr">
+                            <rect key="frame" x="18" y="19.5" width="42" height="14"/>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                            <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2G-zb-iXk">
+                            <rect key="frame" x="70" y="9" width="326" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="28c-v3-6Yy"/>
+                            </constraints>
+                            <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="MLA-8z-Qf0"/>
+                        <constraint firstItem="d2G-zb-iXk" firstAttribute="centerY" secondItem="GLD-fI-VG7" secondAttribute="centerY" id="MUw-Q3-4oL"/>
+                        <constraint firstItem="d2G-zb-iXk" firstAttribute="leading" secondItem="kBr-13-Ahr" secondAttribute="trailing" constant="10" id="j8S-1k-kx9"/>
+                        <constraint firstItem="kBr-13-Ahr" firstAttribute="leading" secondItem="GLD-fI-VG7" secondAttribute="leading" constant="18" id="nvm-rG-0hJ"/>
+                        <constraint firstItem="kBr-13-Ahr" firstAttribute="centerY" secondItem="GLD-fI-VG7" secondAttribute="centerY" id="wnl-A5-68s"/>
+                        <constraint firstAttribute="trailing" secondItem="d2G-zb-iXk" secondAttribute="trailing" constant="18" id="xe4-6h-gtr"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSF-E3-gu2">
+                    <rect key="frame" x="30" y="772" width="354" height="50"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7cm-lR-yeG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W6" family="Hiragino Sans GB" pointSize="16"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sureAction:" destination="-1" eventType="touchUpInside" id="jcX-TK-8Jn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lSF-E3-gu2" secondAttribute="bottom" constant="40" id="0LF-td-kil"/>
+                <constraint firstItem="lSF-E3-gu2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="8S2-HK-ygR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lSF-E3-gu2" secondAttribute="trailing" constant="30" id="CKo-UC-miH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GLD-fI-VG7" secondAttribute="trailing" id="ii7-FS-Gg9"/>
+                <constraint firstItem="GLD-fI-VG7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nO2-m7-H5q"/>
+                <constraint firstItem="GLD-fI-VG7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="w6u-Xz-Mzb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="17" y="86"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddImageCell" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch_add_img" translatesAutoresizingMaskIntoConstraints="NO" id="E4X-iY-kSP">
+                        <rect key="frame" x="0.0" y="0.0" width="136" height="118"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="E4X-iY-kSP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6aw-io-ao4"/>
+                <constraint firstItem="E4X-iY-kSP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MB3-S4-oKQ"/>
+                <constraint firstAttribute="bottom" secondItem="E4X-iY-kSP" secondAttribute="bottom" id="iy3-T9-9XY"/>
+                <constraint firstAttribute="trailing" secondItem="E4X-iY-kSP" secondAttribute="trailing" id="r3w-7b-n7Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="136" height="118"/>
+            <connections>
+                <outlet property="imgView" destination="E4X-iY-kSP" id="Pp9-br-q0U"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="74"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="watch_add_img" width="110" height="110"/>
+    </resources>
+</document>

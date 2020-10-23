@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5B3-eT-GBd" customClass="CityPickerHotCell" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKc-vH-4N5">
+                        <rect key="frame" x="18" y="9" width="79" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY4-WK-whV">
+                                <rect key="frame" x="35" y="14.5" width="9" height="13"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sY4-WK-whV" firstAttribute="centerY" secondItem="iKc-vH-4N5" secondAttribute="centerY" id="AOE-CY-WTC"/>
+                            <constraint firstItem="sY4-WK-whV" firstAttribute="centerX" secondItem="iKc-vH-4N5" secondAttribute="centerX" id="Baz-WQ-4m3"/>
+                            <constraint firstItem="sY4-WK-whV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iKc-vH-4N5" secondAttribute="leading" constant="5" id="NOO-3h-SzY"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sY4-WK-whV" secondAttribute="trailing" constant="5" id="hDG-c5-LOb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iKc-vH-4N5" secondAttribute="bottom" constant="9" id="WYk-9t-O2h"/>
+                <constraint firstItem="iKc-vH-4N5" firstAttribute="top" secondItem="5B3-eT-GBd" secondAttribute="top" constant="9" id="f7t-hU-eGL"/>
+                <constraint firstItem="iKc-vH-4N5" firstAttribute="leading" secondItem="5B3-eT-GBd" secondAttribute="leading" constant="18" id="kTA-g9-G3A"/>
+                <constraint firstAttribute="trailing" secondItem="iKc-vH-4N5" secondAttribute="trailing" constant="18" id="z30-Gh-OaH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="eeF-QJ-Hd0"/>
+            <size key="customSize" width="115" height="60"/>
+            <connections>
+                <outlet property="nameLB" destination="sY4-WK-whV" id="sZA-Yj-Rfk"/>
+            </connections>
+            <point key="canvasLocation" x="118" y="159"/>
+        </collectionViewCell>
+    </objects>
+</document>

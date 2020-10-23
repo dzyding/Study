@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoSansGB-W3.otf">
+            <string>HiraginoSansGB-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rot-V4-X0D" customClass="HouseBidDetailBuyBottomView" customModule="YJF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmX-9E-eVB">
+                    <rect key="frame" x="70" y="15" width="326" height="40"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.4941176471" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2Af-b8-tVY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="16"/>
+                    <state key="normal" title="我要竞买">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="bidAction:" destination="Rot-V4-X0D" eventType="touchUpInside" id="wyJ-q6-D6M"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiT-Dn-QGb">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="WL2-Pb-OPN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSansGB-W3" family="Hiragino Sans GB" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-17" minY="25" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="20"/>
+                    <state key="normal" title="收藏" image="detail_favi_no">
+                        <color key="titleColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="已收藏" image="detail_favi"/>
+                    <connections>
+                        <action selector="faviAction:" destination="Rot-V4-X0D" eventType="touchUpInside" id="hjA-qr-P5A"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pmX-9E-eVB" secondAttribute="trailing" constant="18" id="3MU-iv-E0w"/>
+                <constraint firstItem="pmX-9E-eVB" firstAttribute="leading" secondItem="KiT-Dn-QGb" secondAttribute="trailing" constant="10" id="UA3-Qn-5Y9"/>
+                <constraint firstItem="KiT-Dn-QGb" firstAttribute="top" secondItem="sMH-33-Vyt" secondAttribute="top" id="W5o-WO-waV"/>
+                <constraint firstItem="KiT-Dn-QGb" firstAttribute="leading" secondItem="sMH-33-Vyt" secondAttribute="leading" id="ecC-uZ-32u"/>
+                <constraint firstItem="pmX-9E-eVB" firstAttribute="centerY" secondItem="Rot-V4-X0D" secondAttribute="centerY" id="fsq-Vj-cBJ"/>
+                <constraint firstItem="KiT-Dn-QGb" firstAttribute="bottom" secondItem="sMH-33-Vyt" secondAttribute="bottom" id="goj-ba-44I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="sMH-33-Vyt"/>
+            <connections>
+                <outlet property="faviBtn" destination="KiT-Dn-QGb" id="FtI-U3-aHt"/>
+            </connections>
+            <point key="canvasLocation" x="197" y="58"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="detail_favi" width="21" height="19.666666030883789"/>
+        <image name="detail_favi_no" width="21" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1024</key>
+	<string>https://qx1024.com</string>
+	<key>test</key>
+	<string>http://192.168.10.176:8082</string>
+	<key>online</key>
+	<string>https://www2.ejfun.com</string>
+</dict>
+</plist>
