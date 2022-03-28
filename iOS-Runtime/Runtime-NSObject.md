@@ -79,10 +79,51 @@ union isa_t
 ```  
 
 ## 一、isa
+
 在这里你需要了解 元类 (meta-class) 的概念，如果你还不清楚，可以自行搜索或者查看这篇文章 [What is a meta-class in Objective-C?](http://www.cocoawithlove.com/2010/01/what-is-meta-class-in-objective-c.html)。  
 
-- 对象的 isa 指针，指向类对象。  
-- 类对象的 isa 指针，指向元类。  
+对象分为三类
+
+1. 实例对象
+
+	存储对象的成员变量
+
+	eg: `NSObject * object = [[NSObject alloc] init];` 里面的 object。
+
+2. 类对象
+
+	存储对象的明细（方法，属性名，变量名，继承关系，遵守协议等）
+
+	eg: `Class object = [NSObject class];` 里面的object。
+
+3. 元类对象
+
+	存储对象的对象方法
+
+	eg: `Class meteClass = object_getClass([NSObject class]);` 里面的 meteClass; 
+
+> `根类对象` 就是 `NSObject`，`根元类对象` 就是 `NSObject` 的元类对象。
+
+
+- `实例对象`的 isa 指针指向`类对象`，`类对象`的 isa 指针指向`元类对象`，`元类对象`的 isa 指针指向`根元类对象`，`根元类对象`的 isa 指针指向`自己` 
+
+- `子类对象`的 superclass 指针指向`父类对象`，`父类对象`的 superclass 指针指向`根类对象`，`根类对象`的 superclass 指针指向 `nil`
+
+- `子元类对象`的 superclass 指针指向`父元类对象`，`父元类对象`的 superclass 指针指向`根元类对象`，`根元类对象`的 superclass 指针指向 `根类对象`，`根类对象`的 superclass 指针指向 `nil`
+
+方法调用轨迹:
+
+1. instance 调用对象方法的轨迹（给实例对象发送消息） 
+
+    isa 找到 class，方法不存在，就通过 superclass 找父类
+
+2. class 调用类方法（给类对象发送消息） 
+
+    isa 找到 meta-class，方法不存在，就通过 superclass 找父类
+
+> 由于所有的对象最终都会变成 C 语言的结构体形式，但是在 C 语言里面是不分`对象方法`和`类方法`的，所以 OC 的`对象方法`和`类`方法，其实只是存在了不同的类里面，`对象方法`在`类对象`里面，`类方法`在`元类对象`里面，OC 是通过这种方法来区分`对象方法`和`类方法的`。
+>
+> 但是由于方法的调用循环，`根元类对象`的`superclass`指针是指向`根类对象的`，**所以如果调用某个类方法，但是在元对象、父元对象、根元对象里面都没找到对应的类方法，却在根对象里面找到了同名的对象方法，将会执行该对象方法**
 
 ![](https://github.com/dzyding/Study/blob/master/iOS-Runtime/images/1-1.png)  
 
