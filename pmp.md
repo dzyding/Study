@@ -200,6 +200,55 @@
 
 	15. <a href="#8.15">范围蔓延的预防和处理</a>
 
+9. <a href="#9">进度管理</a>
+
+	1. <a href="#9.1">看板的六大核心实践</a>
+
+	2. <a href="#9.2">紧前关系绘图法 PDM</a>
+
+		1. <a href="#9.2.1">前导图PDM (Precedence Diagramming Method)</a>
+
+	3. <a href="#9.3">估算资源</a>
+
+	4. <a href="#9.4">活动的历时估算</a>
+
+		1. <a href="#9.4.1">三点估算</a>
+
+		2. <a href="#9.4.2">自下而上估算</a>
+
+		3. <a href="#9.4.3">五种估算方法对比</a>
+
+		4. <a href="#9.4.4">针对敏捷开发的估算方法 - 敏捷估算扑克</a>
+
+	5. <a href="#9.5">储备分析</a>
+
+		1. <a href="#9.5.1">风险的分类</a>
+
+		2. <a href="#9.5.2">应急储备和管理储备的区别</a>
+
+	6. <a href="#9.6">进度计划</a>
+
+		1. <a href="#9.6.1">里程碑计划</a>
+
+		2. <a href="#9.6.2">横道图</a>
+
+		3. <a href="#9.6.3">网络图</a>
+
+		4. <a href="#9.6.4">时标网络图</a>
+
+		5. <a href="#9.6.5">进度前锋线图</a>
+
+	7. <a href="#9.7">关键路径法 CPM</a>
+
+	8. <a href="#9.8">项目的三种浮动时间</a>
+
+	9. <a href="#9.9">关键链法</a>
+
+	10. <a href="#9.10">资源优化</a>
+
+	11. <a href="#9.11">进度压缩</a>
+
+	12. <a href="#9.12">燃尽图 Burn-down Chart</a>
 
 ## <a id="1">十个成语</a>
 
@@ -1485,7 +1534,7 @@ eg3 : 这个没有固定选项，要看投资人的风险偏好来决定
 
 4. 资源直方图
 
-### <a id="9.3">活动的历时估算</a>
+### <a id="9.4">活动的历时估算</a>
 
 1. 专家判断
 
@@ -1503,7 +1552,7 @@ eg3 : 这个没有固定选项，要看投资人的风险偏好来决定
 
 3. 参数估算
 
-#### <a id="9.3.1">三点估算</a>
+#### <a id="9.4.1">三点估算</a>
 
 - 期望值 = (O + 4M + P) / 6
 
@@ -1531,7 +1580,7 @@ eg3 : 这个没有固定选项，要看投资人的风险偏好来决定
 
 ![正态分布](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEA1PaHpBvjls8wDQDbQvDnpcOSOQxHcagKHk2COK4Q1zUdvR*4qs7JiGoftYZTtO*CzYoSaM3VOpgHOqMa6b0Bs!/b&bo=JQWAAnQJmAQDKU8!&rf=viewer_4)
 		
-#### <a id="9.3.2">自下而上估算</a>
+#### <a id="9.4.2">自下而上估算</a>
 
 > 凡是在项目管理中说到的自下而上或者自上而下，都是指的 WBS，工作分解结构
 
@@ -1539,7 +1588,7 @@ eg3 : 这个没有固定选项，要看投资人的风险偏好来决定
 
 缺点：周期长成本高
 
-#### <a id="9.3.3">五种估算方法对比</a>
+#### <a id="9.4.3">五种估算方法对比</a>
 
 ||类比估算|参数估算|专家判断|三点估算|自下而上|
 |:----:|:----:|:----:|:----:|:----:|:----:|
@@ -1549,15 +1598,15 @@ eg3 : 这个没有固定选项，要看投资人的风险偏好来决定
 |是否可估算工作包|是|是|是|是|是|
 |是否可估算子项目/项目|是|是|否|是|是|
 
-#### <a id="9.3.4">针对敏捷开发的估算方法 - 敏捷估算扑克</a>
+#### <a id="9.4.4">针对敏捷开发的估算方法 - 敏捷估算扑克</a>
 
 ![估算扑克](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEE9LnwNNpG2KHMqEPLXfj2VUDTCZqUlAD3phg0pvApSqgHp.Z2AvzuYin99kL9lLNvEiUmsbU8CDPv5Gatme*q4!/b&bo=2ghKBdoISgUDWXw!&rf=viewer_4)
 
-### <a id="9.4">储备分析</a>
+### <a id="9.5">储备分析</a>
 
 什么是储备：进度储备、安全时间、缓冲 Buffer。都一个意思。表示给活动多留出来的预备时间。
 
-#### <a id="9.4.1">风险的分类</a>
+#### <a id="9.5.1">风险的分类</a>
 
 1. 已知风险
 
@@ -1575,7 +1624,7 @@ eg3 : 这个没有固定选项，要看投资人的风险偏好来决定
 
 	例如飞机失事
 
-#### <a id="9.4.2">应急储备和管理储备的区别</a>
+#### <a id="9.5.2">应急储备和管理储备的区别</a>
 
 |应急储备|管理储备|
 |:----:|:----:|
@@ -1583,7 +1632,145 @@ eg3 : 这个没有固定选项，要看投资人的风险偏好来决定
 |已知-未知风险|未知-未知风险|
 |包含在成本基准|不包含在成本基准|
 
+### <a id="9.6">进度计划</a>
 
+#### <a id="9.6.1">里程碑计划</a>
+
+优点：
+
+1. 把项目分成了阶段性的目标
+
+2. 它是个强制性的约束
+
+3. 它是和我们领导、甲方沟通的工具
+
+4. 明确规定了项目各方的责任义务
+
+5. 简单、生动、通俗、实用
+
+#### <a id="9.6.2">横道图</a>
+
+优点：
+
+1. 直观
+
+2. 形象
+
+3. 通俗易懂
+
+缺点：
+
+1. 无法识别出项目是否在关键路径上
+
+2. 无法看出浮动时间
+
+#### <a id="9.6.3">网络图</a>
+
+![网络图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEDp5*ajO3e0CU7R6dTdALG4orLjBzqV3LCzSys0Rki06Dm0JCRsdgdH9JczAyC4KsnF85Va.I61u1y7wNo5bSJY!/b&bo=7gaIA.4GiAMDORw!&rf=viewer_4)
+
+> 双网络图中的虚线，例如 1 - 3 的，它只是表达一种逻辑关系，必须先完成 1，再完成 3。
+
+#### <a id="9.6.4">时标网络图</a>
+
+> 本质上是个双网络图
+
+> 虚线表示浮动时间，例如 2 - 6，其实只需要两天，第5到13天，只需要其中的任意 2 天干完就行。
+
+![时标](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrED0xIkS1YfTDkuvKFURof9aohGZjjaMYo12zzEgOVrcTaKeNOAh4y6rk9YzyIRInpEk.QTiT.hSnvFsvfiVTHi8!/b&bo=Dgm6BA4JugQDORw!&rf=viewer_4)
+
+#### <a id="9.6.5">进度前锋线图</a>
+
+> 本质上是一个双网络图
+
+> 蓝色表示今天，红色表示当前的真实进度
+
+![先锋](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEGG11C6kVHgm00L5IZpKiNeCD4KuKzqSfjw5JIOW00FQYjDowxH0vH4eqbMoO*5IKcitZMCQkUedvzsYm1yFkdw!/b&bo=fgpyBX4KcgUDaUw!&rf=viewer_4)
+
+### <a id="9.7">关键路径法 CPM</a>
+
+![cpm1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEJl3xtoehbVMzqcSVMXRZWpCCZEsVCcUzUke*xEZpcgB6nzjC3peTpR4EOcXnVRzfCqOsreBAUZ1YDmxD1MzjDI!/b&bo=RQaAAuAHJAMDKQ0!&rf=viewer_4)
+
+> 关键路径指的是，最长可能需要时长的那条路径。也就是可以确定总工期。
+
+![cpm2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEEF1Ow22ErLKH6sUpqpR4Tlvut3Z7lDc2csyRUFIBle2Ab*wjy1RNCzMzkXvsCDBYQbrrEu35kvrrY*GI*wuF08!/b&bo=XgqmBV4KpgUDSWw!&rf=viewer_4)
+
+规则：
+
+1. 先计算上面的三个值，把所有的项目列出来，画好逻辑关系图
+
+2. 再反过来从最后开始，计算下面的三个值
+
+eg: 
+
+![cpm-eg](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEFHsGprew7mXNfGiUelpuco2yLCBkx9oSxDSOjUuv69YTQebcR0WYg*PCajx2kiYgwZZ2FwPaX9u.sc.ITg5fmw!/b&bo=YgpcBWIKXAUDSWw!&rf=viewer_4)
+
+> 关键路径法中，浮动时间可能 = 0（时间刚刚够），可能 < 0（时间不够需要压缩工期），可能 > 0（时间富裕），都是有可能的
+
+![cpm-last](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEBlcH.uwUwtDwL38u6y0NXBZeJrBeXhYAOZtlCCsrSyXhybf.qhmXSMgorp0mmUTLqoj.1HJM*iM7I9ezIg0DTU!/b&bo=BAfMBAQHzAQDSWw!&rf=viewer_4)
+
+### <a id="9.8">项目的三种浮动时间</a>
+
+1. 自由浮动时间
+
+	针对某一项工作。不影响后续工作**最早可以开始时间**的前提下，这项工作可以拖延的时间叫自由浮动时间。
+
+2. 总浮动时间
+
+	针对项目整体。不影响项目总工期的前提下，活动可以拖延的总时间。
+
+3. 项目浮动时间
+
+	在你排的总工期的基础之上，你的客户甲方或者是你的领导，主动又多给你让出来的时间。
+
+### <a id="9.9">关键链法</a>
+
+所有的活动耗时都拿三点估算来预算，然后直接这样报给项目经理来排期。项目经理就只在最后留一个缓冲时间由自己掌控，用以确保项目的完成。
+
+> 这就存在一个问题，若一个活动有多个前置活动，因为每个前置活动的完成概率都是 50% (三点估算估出来的时间就是 50% 的概率)，则该活动能准时开始的几率就非常小。比如三个前置活动就是 12.5%，这个时候可以给所有非关键路径的活动，单独再加一个由项目经理掌控的缓冲时间，来增加该活动准时开始的概率。
+
+![关键链](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEGjkB*8RTiCcq8SUsEq8q6oaRokYKpoaXfo6J9dgWWYWLCyzrrOuruz9OkA20.V4wSwJopjiVfRWvjcjGCZYpBY!/b&bo=IQWAAtIH0AMDGZw!&rf=viewer_4)
+
+### <a id="9.10">资源优化</a>
+
+1. 资源平衡
+
+	虽然可以解决某个时间段，资源不够、过载这样的局部问题，但是有可能会导致工期的延长
+
+	![pl1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEFUovoiZrxQdQBqMsOulvIxeiHnWuXg977DoJIp3kkqwnrVyeFUMk*x2zn6MQmDeDEaUUkXY3RRMkl256ITAKsE!/b&bo=*gcUBf4HFAUDORw!&rf=viewer_4)
+
+	![pl2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEBuMOJDhp7LaXzBJQCcbm5nnew4rdEZ14cXDZJ0EpGMishx5jaS8FNtFaBJ1PrG9wreFVGLAOzNUN.slLM21I3c!/b&bo=cgjCBHIIwgQDORw!&rf=viewer_4)
+
+2. 资源平滑
+
+	解决的是资源数量波动的问题，尽量让资源的数量保持稳定，避免大起大落
+
+	![ps1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEC6mslpnur4JwWIHMlV5qHMpzGB6ZstD7Zf0i.vPTP754VpAL*iJsyd1dpMbhHXhfOweLw6fAVxYfli8C4jOwH0!/b&bo=fQaAAvgKOgQDKTk!&rf=viewer_4)
+
+	![ps2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEEMVEIxc.*I4chpgqRSam3PjFAacn*vxkE6OXXLuqZnC8gKIFfAZfF4Qye0vyjBcNlH4MwToVH8bOAf.29Hh5e8!/b&bo=XwaAAiYLYAQDKZ4!&rf=viewer_4)
+
+### <a id="9.11">进度压缩</a>
+
+1. 快速跟进(Fast Tracking)
+
+	不更改活动的总执行时间，在可弹性的情况下，提前开启后续活动。**代价**是增加返工的风险。
+
+	比如：刷墙和铺瓷砖，原本的路径是先刷墙，再铺瓷砖，但是你也可以不等墙全部刷完，在刷完一部分的时候，就开始贴这一部分的瓷砖。但是这样就会导致，如果后续发现刷墙的材料有问题，要进行返工，则你铺的瓷砖也有可能需要返工。
+
+2. 赶工(Crashing)
+
+	直接更改活动的总执行时间。**代价**就是投入资源的增加（钱、时间等）。
+
+	比如：一个工人五天才能干完的事情，你可以请两个工人要求他们三天干完。
+
+### <a id="9.12">燃尽图 Burn-down Chart</a>
+
+![燃尽图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEANWqP*vbnnUtONCy1rkNMEo38luDOfPtQknEuIRJpMC5PwH39hGyOagjhmoIo.LC7VG6GbexFsKRW4Sr7hGO3A!/b&bo=fgj2BH4I9gQDORw!&rf=viewer_4)
+
+> 蓝线始终在灰线上方，说明超时严重。
+
+> 蓝线始终在灰线下方，说明计划排的太保守，有点浪费资源，也不好。
+
+> 最好的情况就是蓝线和灰线经常交叉。
 
 
 
