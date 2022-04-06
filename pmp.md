@@ -1762,6 +1762,8 @@ eg:
 
 	比如：一个工人五天才能干完的事情，你可以请两个工人要求他们三天干完。
 
+> 在多个活动进行压缩，都可以满足目标要求的情况下，优先压缩先发生的活动。这样后面的活动还有继续压缩的可能性，不然就错过了前面活动的压缩可能。
+
 ### <a id="9.12">燃尽图 Burn-down Chart</a>
 
 ![燃尽图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEANWqP*vbnnUtONCy1rkNMEo38luDOfPtQknEuIRJpMC5PwH39hGyOagjhmoIo.LC7VG6GbexFsKRW4Sr7hGO3A!/b&bo=fgj2BH4I9gQDORw!&rf=viewer_4)
@@ -1772,10 +1774,192 @@ eg:
 
 > 最好的情况就是蓝线和灰线经常交叉。
 
+## <a id="10">成本管理</a>
 
+### <a id="10.1">成本的分类方式</a>
 
+1. 直接成本、间接成本
 
+![直接间接成本](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEMJM91jlnJOp80EnXtYauTNr*2bnyUnQKaIPjrrOj74Lslt8BD.utBEQBst*.fAx8Q7cxzvJPfobUt9JJLyqbh0!/b&bo=FAj6BBQI.gQDSWw!&rf=viewer_4)
 
+成本优化的思路：将总成本朝着最低成本去压缩，那么工期缩短的同时成本也在下降
+
+2. 固定成本、可变成本
+
+![固定、可变成本](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEIoo7xdwVdj*Xe0CpnBft3XjtYht3QHEWER2r2g61dnAKCKfVjTORbDHyr1BGZmWwW1eAaGQWknqGOn1ATXv5C0!/b&bo=YAgqBWAIKgUDORw!&rf=viewer_4)
+
+3. 机会成本
+
+	在所有可选的方案中，你选择了其中一个，放弃了其他的那些机会，在放弃的那些机会中，带给你的最大潜在收益，就叫机会成本
+
+4. 沉没成本
+
+	已经投入，但是不能带来收益的成本。比如投标之前的所有准备工作，如果没有中标就都浪费掉了，它就是沉没成本
+
+5. 全生命周期成本
+
+	全生命周期成本并不是个成本，而是个理念。
+
+	指我们在规划设计阶段，就要考虑未来全生命周期当中，包括运营维护、甚至最后报废拆除整个全过程的成本。实现整体项目的成本最优。
+
+### <a id="10.2">敏捷下的成本管理 MVP</a>
+
+Minimum Viable Product，MVP
+
+1. 产品介绍视频
+
+2. 仿真
+
+	创造一个概念，先通过最低的成本来试运营，确定有需求有钱赚，再来实际操作。
+
+	eg: 卖鞋，你可以先不生产鞋，在有用户需要买的时候，你直接去买现成的鞋来发给他（二道贩子）。等确定有一定的用户群里，你再真实的去做鞋、设计、生产鞋。
+
+3. 众筹
+
+	有想法，但是没有资金，也不确定有没有市场。直接发起一个众筹，若众筹成功，说明有需求，也有了第一批客户。
+
+4. 原型法
+
+5. 预售
+
+	不确定当前的产品是否有需求，可以先预售，若是有人要，我再去生产。如果没人要就退钱。
+
+6. 访谈
+
+	采访那些有需要的人，获取他们的真实需求，然后进行创造。
+
+### <a id="10.3">成本的估算与预算</a>
+
+#### <a id="10.3.1">成本估算精确度等级</a>
+
+|估算级别|项目阶段|目的|常用方法|估算精确度|
+|:----:|:----:|:----:|:----:|:----:|
+|粗略量级估算 ROM|启动阶段|可行性研究|类比估算|-25% ~ +75%|
+|预算级估算|规划阶段|编制预算|自下而上|-10% ~ +25%|
+|确定性估算|规划阶段|签订合同|自下而上|-5% ~ + 10%|
+
+#### <a id="10.3.2">资金限制平衡</a>
+
+![资金限制平衡](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEC*LRLkXTRIhDfuf6f2u6n0idSQUG6fRYI9Cu3aHbdF7Idp6Jj3BMsf3EVb4Mf8VDbiyYnXjAyo3PD4S47Qdn1o!/b&bo=cge0BHIHtAQDORw!&rf=viewer_4)
+
+#### <a id="10.3.3">项目预算的组成</a>
+
+活动成本估算 + 活动应急储备 = 工作包成本估算
+
+(多个)工作包成本估算 + 应急储备 = 控制账户 (项目经理添加的应急储备)
+
+(多个)控制账户 = 成本基准(也叫完工预算)
+
+成本基准 + 管理储备 = 项目预算  (管理层添加的管理储备，应对项目经理无法识别的"未知-未知"风险)
+
+![项目预算的组成](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrECLPLiETMLFM21I7NuICMk*kwssjKRxBX.k0ikSiJWxthaiU32wVxlkbcCa1ln5kaYzwr0ep3.HCPjl85LaP8bc!/b&bo=XgesBF4HrAQDORw!&rf=viewer_4)
+
+![资金储备关系](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEHZd4crsrdyPbA2OQhkM8ZJvpyLZVon6s9As5xC9rEk4ZTtvFfCTpIT*jUtfsOG*M74fPOaOBHBbopaOqcZaXC8!/b&bo=lAecBJQHnAQDORw!&rf=viewer_4)
+
+### <a id="10.4">挣值分析</a>
+
+#### <a id="10.4.1">三个指标PV、AC、EV</a>
+
+1. PV(Planned Value，计划值)
+
+	= 计划单价 * 计划工作量
+
+2. AC(Actual Cost，实际成本)
+
+	= 实际单价 * 实际工作量
+
+3. EV(Earned Value，挣得值)
+
+	= 计划单价 * 实际工作量
+
+#### <a id="10.4.2">两个偏差SV、CV</a>
+
+1. SV(进度偏差) 
+
+	= EV - PV;
+
+	> 0，进度超前
+
+	< 0，进度落后
+
+2. CV(成本偏差)
+
+	 = EV - AC;
+
+	 > 0，成本节约
+
+	 < 0，成本超支
+
+#### <a id="10.4.3">挣值曲线的6种情</a>
+
+![zz1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEPq7yZTMBZdmOULC93LmmJdXV3eQIr12zLP1N3YWNMVSm1gLPYTs*0pa6rj7S8Wv7Tl1n4CSbVn5kq2sx0Hkb0g!/b&bo=2AW6BNgFugQDORw!&rf=viewer_4)
+
+![zz2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEAwbFfoHsUHQbeVeJxD68VUf6JzdzZIXPv24TvJHsGzX23Uf7zAyOztKgP8mOEZ2YXPQUuq2h.qbdpeG7.Tf39A!/b&bo=sgXSBLIF0gQDORw!&rf=viewer_4)
+
+![zz3](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEI*jQx5oVnBeSz3wgoRkXam1Iypyr3D33fCntptAcRYMALvCQ.auoqGxkv2R.Xo8BFpVMTTepZ8hgtlALOmwJDE!/b&bo=8AXiBPAF4gQDORw!&rf=viewer_4)
+
+![zz4](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEK4aYEJm9JoqBO9lQHmlqWOHfkBzPOI0lXJdigxaHdaECK7QXWWVxn0*Ad.psBP1LId3d3iMz**qx5L*XYGKK1U!/b&bo=ggXUBIIF1AQDORw!&rf=viewer_4)
+
+![zz5](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEBL.NEDSl7jYdNVTHRgA825Orc.mrv9ZzUq86eVwXFXedJDdIIzTzgD5ys.DVhm92ggCYHS6.0uchW8kNSjPquE!/b&bo=bgXOBG4FzgQDORw!&rf=viewer_4)
+
+![zz6](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEK4aYEJm9JoqBO9lQHmlqWMW39ofc2r6XkNh0s9al5OlCgZzlJ3FbPxwiUkQBHhc6NzFZ4wh5nDdJru8frlkSLs!/b&bo=sAXCBLAFwgQDORw!&rf=viewer_4)
+
+|状态|CV|SV|成本效率|宜采取的措施|
+|:----:|:----:|:----:|:----:|:----:|
+|AC > PV > EV|<0|<0|较低|及时预警，全面强化成本绩效管理，必要时变更基准|
+|AC > EV > PV|<0|>0|较低|降低成本，提高成本效率|
+|PV > AC > EV|<0|<0|较低|强化监督考核，加速项目，同时控制成本|
+|PV > EV > AC|>0|<0|较高|加大资源投入，采取激励措施，加速项目进展速度|
+|EV > PV > AC|>0|>0|很高|可以根据需要提前完成项目，或释放部分资源|
+|EV > AC > PV|>0|>0|较高|可适当抽调一部分人员加速其他进度较低的项目进展|
+
+#### <a id="10.4.4">香蕉曲线</a>
+
+![香蕉](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEMgpWxishhxWir.74VfJmKXcVqcEmWJCsFqW18UoEduSHIj*3q*He954U8vFWtH0*swD9ZUQ1EdxgGAODoz4PmQ!/b&bo=zgSeA84EngMDKQw!&rf=viewer_4)
+
+> 挣值曲线，又叫香蕉曲线。宽度越细越好，说明控制的很精准。
+
+#### <a id="10.4.5">两个指数</a>
+
+1. CPI 成本绩效指数
+
+	= EV / AC
+
+2. SPI 进度绩效指数
+
+	= EV /PV
+
+> 这两个指数都是越接近1越好
+
+#### <a id="10.4.6">完工估算</a>
+
+1. 项目预算 Project Budget
+
+	项目的总预算
+
+2. 完工预算 Budget at Completion
+
+	项目经理把所有的成本都汇总在一起，总共干完这个项目要花的预算。（做计划的时候就定下来的）
+
+3. 完工估算 Estimate at Completion
+
+	**现在评估时刻**，去估计整个干完项目，要花多少钱
+
+4. 完工尚需估算 Estimate to Completion
+
+	从评估时刻往后看，还得花多少钱
+
+![各种成本](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEGOO.dYsFli3PpKNHBWMenChzvNywRFcdIhA0QdwfZ1oR5hRSrXqYZqHnLGArkEksOv*gI*9mJ4AQdQy7J2r3AA!/b&bo=MwWAAlYK.AQDKRg!&rf=viewer_4)
+
+eg:
+
+![tudou1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEDPiYFDUA.fivGBvfuVajFCom6cZrBUKfT4au0k8ljSK1UY5HflcQg81GO5aLLiOmlhRTtlYFqPK0edjn5DCeds!/b&bo=6gc2BOoHNgQDWXw!&rf=viewer_4)
+
+![tudou2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEFVO69e..vvv3igGH8AHEqbOSJD*FbwjQVLepeBRfsO3nTJQSlWwILdtOIwjCmUzvLbmd132IqVIUEsq5EgBpL8!/b&bo=IAWAAlAKCAUDKfw!&rf=viewer_4)
+
+> CPI 成本绩效指数 7500 / 15000 = 0.5
+
+> SPI 进度绩效指数 7500 / 10000 = 0.75
 
 
 
