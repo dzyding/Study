@@ -250,6 +250,79 @@
 
 	12. <a href="#9.12">燃尽图 Burn-down Chart</a>
 
+10. <a href="#10">成本管理</a>
+
+	1. <a href="#10.1">成本的分类方式</a>
+
+	2. <a href="#10.2">敏捷下的成本管理 MVP</a>
+
+	3. <a href="#10.3">成本的估算与预算</a>
+
+		1. <a href="#10.3.1">成本估算精确度等级</a>
+
+		2. <a href="#10.3.2">资金限制平衡</a>
+
+		3. <a href="#10.3.3">项目预算的组成</a>
+
+	4. <a href="#10.4">挣值分析</a>
+
+		1. <a href="#10.4.1">三个指标PV、AC、EV</a>
+
+		2. <a href="#10.4.2">两个偏差SV、CV</a>
+
+		3. <a href="#10.4.3">挣值曲线的6种情况</a>
+
+		4. <a href="#10.4.4">香蕉曲线</a>
+
+		5. <a href="#10.4.5">两个指数</a>
+
+		6. <a href="#10.4.6">完工估算</a>
+
+		7. <a href="#10.4.7">TCPI 完工尚需绩效指数</a>
+
+		8. <a href="#10.4.8">VAC 完工偏差</a>
+
+		9. <a href="#10.4.9">挣得值的应用难点（统计方式）</a>
+
+		10. <a href="#10.4.10">挣得进度</a>
+
+11. <a href="#11">质量管理</a>
+
+	1. <a href="#11.1">等级与质量、精确度与准确度</a>
+
+	2. <a href="#11.2">质量管理水平、质量管理的发展</a>
+
+		1. <a href="#11.2.1">质量管理水平</a>
+
+	3. <a href="#11.3">质量管理的发展趋势和代表人物</a>
+
+		1. <a href="#11.3.1">质量成本</a>
+
+	4. <a href="#11.4">质量矩阵图</a>
+
+	5. <a href="#11.5">QA 和 QC 的区别</a>
+
+	6. <a href="#11.6">面向X设计</a>
+
+	7. <a href="#11.7">质量管理工具-根本原因分析</a>
+
+		1. <a href="#11.7.1">相关人物-石川馨 Kaoru Ishikawa</a>
+
+	8. <a href="#11.8">质量管理工具-直方图</a>
+
+	9. <a href="#11.9">质量管理工具-散点图、检查表和帕累托图</a>
+
+	10. <a href="#11.10">质量管理工具-控制图</a>
+
+	11. <a href="#11.11">质量管理工具-层别法</a>
+
+	12. <a href="#11.12">质量管理工具-总结</a>
+
+	13. <a href="#11.13">质量管理工具-过程决策程序图PDPC</a>
+
+	14. <a href="#11.14">质量管理观念的改变</a>
+
+
 ## <a id="1">十个成语</a>
 
 1. 未雨绸缪（计划、风险）
@@ -1890,7 +1963,7 @@ Minimum Viable Product，MVP
 
 	 < 0，成本超支
 
-#### <a id="10.4.3">挣值曲线的6种情</a>
+#### <a id="10.4.3">挣值曲线的6种情况</a>
 
 ![zz1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEPq7yZTMBZdmOULC93LmmJdXV3eQIr12zLP1N3YWNMVSm1gLPYTs*0pa6rj7S8Wv7Tl1n4CSbVn5kq2sx0Hkb0g!/b&bo=2AW6BNgFugQDORw!&rf=viewer_4)
 
@@ -1937,7 +2010,7 @@ Minimum Viable Product，MVP
 
 	项目的总预算
 
-2. 完工预算 Budget at Completion
+2. 完工预算 Budget at Completion(BAC)
 
 	项目经理把所有的成本都汇总在一起，总共干完这个项目要花的预算。（做计划的时候就定下来的）
 
@@ -1960,6 +2033,281 @@ eg:
 > CPI 成本绩效指数 7500 / 15000 = 0.5
 
 > SPI 进度绩效指数 7500 / 10000 = 0.75
+
+#### <a id="10.4.7">TCPI 完工尚需绩效指数</a>
+
+![tcpi1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEO3ly5QbeN5.oUAMrNlfFPQUed6kDRmGU3rTcdHHW2wp6IZN3TBQ2vdVm5A8BPL8iX5.bqqrnjDmCxz.tOPlUdk!/b&bo=IQWAAgwLYgUDKco!&rf=viewer_4)
+
+> 当这个方法计算出来的 TCPI 已经**远远**的偏离了原来的成本绩效水平。则使用下面的这种方式
+
+![tcpi2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEJVDu.UXJfgx0ZbrS.kMevORdNoZetEe.Yd3LjPqK2R*AregkNe1TPvDD7w*u6fy93V6lJQv6GwlDIBiNE*d.l4!/b&bo=ogp4BaIKeAUDSWw!&rf=viewer_4)
+
+> 这里 EAC 的1、2、3对应它的三种计算方式，见上一小节
+
+#### <a id="10.4.8">VAC 完工偏差</a>
+
+VAC = BAC - EAC
+
+![VAC](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEPx0eIUAwAriLjeMSOOWrcjf*DyHQQps8p9zpJGrQsjwylo**URR.WP9XRv4cWo6nRcPlycyobBvX4cuYf5U.mE!/b&bo=RgkKBUYJCgUDORw!&rf=viewer_4)
+
+#### <a id="10.4.9">挣得值的应用难点（统计方式）</a>
+
+1. 实际百分比，实刻更新
+
+2. 两点计算，开始 50%，结束 50%
+
+3. 两点计算，开始 20%，结束 80%
+
+4. 单点计算，开始 0，结束 100%
+
+5. 里程碑法，每个里程碑一个确定的百分比
+
+6. 容器法
+
+	例如，给一个固定的容器让别人装成品，工作量就按一箱箱的算
+
+7. 主材料法
+
+	例如，刷油漆，不用按工作量算，可以按使用的油漆数量算
+
+#### <a id="10.4.10">挣得进度</a>
+
+![eas1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEAc8MQ011wwLwxzDRUYO3ERNKMzQqmVWrTT6AkxYsRUWfq*vNbKtKNB9172H8YLlfqiPZ4NqnuiEj.AMLMGOAaA!/b&bo=Bwg4BAAAAAADV0E!&rf=viewer_4)
+
+![eas2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEPp2Jnh2jYQTk4T01GNQdo2IFDHOfp0gUn2FRFif8SBaFJ7bKMEJ.qEaiAnbwNEeVNrmLHotLNVT*rZw4E3gHQM!/b&bo=cAg4BAAAAAADN1Y!&rf=viewer_4)
+
+## <a id="11">质量管理</a>
+
+控制质量的主要作用：
+
+1. 识别过程低效或产品质量低劣的原因，建议并/或采取相应措施消除这些原因
+
+2. 确认项目的可交付成果及工作满足主要相关方的既定要求，足以进行最终验收
+
+### <a id="11.1">等级与质量、精确度与准确度</a>
+
+1. 等级与质量
+
+	这就像买衣服，大牌(等级高)的衣服贵，大众(等级低)的衣服便宜。但是质量却不一定差很多，甚至有可能大众品牌的质量更好。
+
+2. 精确度与准确度
+
+	打靶，我瞄准10环打出了10环是高精确度，我瞄准5环打出了5环也是高精确度。但是就打靶这个游戏来说，打中的环数越接近10环准确度就越高。
+
+### <a id="11.2">质量管理水平、质量管理的发展</a>
+
+#### <a id="11.2.1">质量管理水平</a>
+
+1. 用户发现缺陷
+
+	代价最大，商誉和口碑受损
+
+2. QC 检查和纠正
+
+	检查结果和纠正缺陷来控制质量
+
+3. QA 过程保证
+
+	过程的保证和持续改进
+
+4. DfX 设计优化
+
+	质量融入规划设计中
+
+5. TQM
+
+	全员参与的质量管理文化
+
+### <a id="11.3">质量管理的发展趋势和代表人物</a>
+
+1. 客户满意
+
+	代表人物：朱兰 Joseph M.Juran
+
+	核心思想：符合要求、适于使用
+
+	定义了等级和质量的区别和联系
+
+	全面质量管理(TQM)奠基者
+
+2. 持续改进
+
+	爱德华.戴明 Edwards.Deming
+
+	戴明环 Plan -> Do -> Check -> Action
+
+	"员工只须对15%的问题负责，另外85%归咎于制度流程"
+
+	> 只要提到了**持续改进**，那就是戴明环
+
+	> 6σ的含义: 正态分布曲线，质量目标的左右各6个σ，包含的概率是 99.99966%，也就是说 100万个产品，有缺陷的不能操过3.4个。
+
+3. 管理层的责任
+
+	质量管理出了问题，主要是管理层的问题
+
+4. 与供应商持续合作，互利共赢
+
+5. 零缺陷
+
+	克劳斯比 Philip B.Crosby
+
+	"零缺陷之父"
+
+	"第一次就把工作做对总是比较便宜的"
+
+	质量产生于预防，而不是"评估"
+
+	质量成本是以"不符合要求的代价"衡量的
+
+6. 品质工程
+
+	田口玄一 Genichi Taguchi
+
+	"品质工程"奠基人
+
+	质量偏离目标值越大(太好或者太差)，损失越大
+
+#### <a id="11.3.1">质量成本</a>
+
+质量成本COQ：包括为预防质量不合格，或纠正不合格(返工等)，而发生的成本。
+
+1. 一致性成本
+		
+	预防用的
+
+2. 非一致性成本
+
+	纠错用的
+
+![coq](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEN8wJsloyFobQ6ywpnk*1ptPeyoeH0zLK64kkPe5jfo0dpeuKpL1bNA9Iaf4Falx*x90FIfDxL0VR2Y4SmTJkc8!/b&bo=hgj.BIYI*gQDaUw!&rf=viewer_4)
+
+### <a id="11.4">质量矩阵图</a>
+
+矩阵图是帮我们分析，我们的生产过程、生成工艺和最终的质量结果之间到底有什么关系
+
+![矩阵图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEMsI8S4ARhPySWrgijl0f06HgnvH2.cv28SFSFd6p1H958QvpWchgM2NXhuvFgavdsNgAZ*BI.wHfltQKoSxIhU!/b&bo=egjqBHoI6gQDSWw!&rf=viewer_4)
+
+### <a id="11.5">QA 和 QC 的区别</a>
+
+||QA质量保证|QC质量控制|
+|:----:|:----:|:----:|
+|过程组|执行|监控|
+|对象|Process **过程**|Result **结果**|
+|目标|合规|合格|
+|工具技术|分析、审核|检查|
+
+### <a id="11.6">面向X设计</a>
+
+设计时充分考虑：
+
+> 好加工、好装配、好品控、好搬运、好收纳、
+> 好使用、好维护、好维修、好回收、好报废......
+
+### <a id="11.7">质量管理工具-根本原因分析</a>
+
+当我们的产品出现了质量的缺陷出了问题，那么我们总能找着上一个环节，再上一个环节，我们追根溯源，总能找着产生这个问题的根本原因。
+
+#### <a id="11.7.1">相关人物-石川馨 Kaoru Ishikawa</a>
+
+1. QCC(Quality Control Circles 质量圈子)之父
+
+>质量圈子
+>
+>公司为了某一个具体问题，组织公司各个部门的人员(跟该问题有没有直接关系都行)，一起吃饭讨论该问题。
+
+2. 著《质量控制》
+
+3. 鱼骨图(因果图)
+
+![鱼骨图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEHsltTdOt66Paqd1Bosuifdodl69BxnBJT4np35xHaRh6LjSq7*XIxmLeGqAqDtFXAZ*uCi7ZeVLXEayDTj2p48!/b&bo=LAcQBSwHEAUDSWw!&rf=viewer_4)
+
+### <a id="11.8">质量管理工具-直方图</a>
+
+> 通过直方图分析，可以来评价质量好还是不好，以及寻找它不好的原因
+
+![直方图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEIUDfeXrZJkAuqc**5WLQbdM6A42bQ9rl7lLDijaMR9efnQ6WeWxXpK.hk1xTFTctIv1Q*alGrQcc8u8THE6rpc!/b&bo=oAqSBaAKkgUDSWw!&rf=viewer_4)
+
+![直方图分析](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEKTRrtPEOrzvN.reWK60urMBVUauJE3I9pRqI1*pL70kklbtbJoWX6gXn8D4Cv8nKYAK79jr57bYSq3ITr.2.f0!/b&bo=gAhGBYAIRgUDORw!&rf=viewer_4)
+
+![不好的直方图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEC2JAO1jNGiF62o5X6Y0jXY9U3CokMaFE4wUIfcFRzfUaE2yid9fH0jKJX*vhBpLuBZOMHLLTwaqHukZ5QQH640!/b&bo=RAqgBUQKoAUDaUw!&rf=viewer_4)
+
+### <a id="11.9">质量管理工具-散点图、检查表和帕累托图</a>
+
+![散点图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEAstbVH.atFSjemw2s8il1YMA5OYg1SBpCfg6EhnedkuG3s09pQAQkkz70MA7bhayzMxSB31QSGrXby0eOYjZ78!/b&bo=GgWAAuoIXgQDKSk!&rf=viewer_4)
+
+![检查表](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEJt4I3o*N3a8BynSYWPxera6gkU6snO9ooR.aBdMaE*6Lgfl.2Vs8YKgXjYM1i2vc4Au.mHxgNrcLMAXs6TZmvQ!/b&bo=NgWAAvoKRAUDKQw!&rf=viewer_4)
+
+![帕累托图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrENDlikDXfs5T597046FfUWc2CdUa*bDH1gSQyrjXZj2LcDBuYwak3RRmuDCqDt.J5PdwgX86ql*R7wFdwSGZJVQ!/b&bo=sgh8BLIIfAQDORw!&rf=viewer_4)
+
+### <a id="11.10">质量管理工具-控制图</a>
+
+规格线位于上下**4倍**标准差的位置
+
+控制线位于上下**3倍**标准差的位置
+
+![控制图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrELZl0xtlH99*EvKEUghXQvcFc*0rygirX9W3*tNoJgh.Z0fonZVvu2Teww3wn9ecZcw3wkG1Mui6Y9NoIid4KZk!/b&bo=NgWAApYKFAUDKTA!&rf=viewer_4)
+
+### <a id="11.11">质量管理工具-层别法</a>
+
+数据分层法 4M1E，把数据在这五个方面进行统计分析，分层去识别它，识别它引起质量缺陷的这种机理
+
+1. MAN 人
+
+2. MACHINE 机器设备
+
+3. MATERIAL 材料
+
+4. METHOD 方法
+
+5. ENVIRONMENT 环境
+
+eg: 
+
+![例子](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEMcQ63Cwy4p77zNdrdodTpKmvyFyQMN.XU9W5D*IvvRSwqfUK5Z8ZlBJScsXHK2f.TH.chrbhuaO1f.4di*vltE!/b&bo=0AmmBdAJpgUDSWw!&rf=viewer_4)
+
+### <a id="11.12">质量管理工具-总结</a>
+
+![质量管理工具总结](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrECUVxhSK9LmjpPdGjNEvRkhfdU67DqzKJm6vjNXHRTIvs0Zb1tLdbvaq6RoTChRcieq6eigB9BcUJCebJc8c8xg!/b&bo=9gjIBfYIyAUDWXw!&rf=viewer_4)
+
+### <a id="11.13">质量管理工具-过程决策程序图PDPC</a>
+
+针对某一个特定的问题，将你的担心以及应对措施，非常全面列出来，用以提示自己遵照执行
+
+![PDPC](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEOJNdlo.aW34doOsqCYSEn*a5zgWtIGOFeISvXDId2NWJB4AzEt7zSR4ZIxd.laEOQ5Km8IMWecdwEm5CJdj18A!/b&bo=NgreBTYK3gUDWXw!&rf=viewer_4)
+
+### <a id="11.14">质量管理观念的改变</a>
+
+||以前的观念|现在的观念|
+|:----:|:----:|:----:|
+|定义|好、优、美|与要求一致|
+|制度|缺陷减少成本增加|缺陷减少成本降低|
+|标准|合格|零缺陷|
+|测量|检验指标|质量成本COQ|
+|重点|检查、测试|设计、预防|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
