@@ -322,6 +322,47 @@
 
 	14. <a href="#11.14">质量管理观念的改变</a>
 
+12. <a href="#12">项目资源管理</a>
+
+	1. <a href="#12.1">权利矩阵</a>
+
+	2. <a href="#12.2">项目与企业人力资源管理的区别</a>
+
+		1. <a href="#12.2.1">员工各种方面的能力不足，分别归谁负责</a>
+
+		2. <a href="#12.2.2">团队章程</a>
+
+	3. <a href="#12.3">资源分解结构</a>
+
+		1. <a href="#12.3.1">RACI矩阵</a>
+
+		2. <a href="#12.3.2">预分派Pre-assignment</a>
+
+	4. <a href="#12.4">资源获取</a>
+
+	5. <a href="#12.5">建设团队-塔克曼阶梯理论</a>
+
+	6. <a href="#12.6">项目经理的管理风格</a>
+
+	7. <a href="#12.7">有效团队与无效团队</a>
+
+	8. <a href="#12.8">团队绩效评价与项目绩效评价</a>
+
+	9. <a href="#12.9">团队规模、工作时长与生产力</a>
+
+	10. <a href="#12.10">冲突管理</a>
+
+	11. <a href="#12.11">冲突的解决方法</a>
+
+	12. <a href="#12.12">人员遣散计划</a>
+
+	13. <a href="#12.13">X、Y理论</a>
+
+	14. <a href="#12.14">需求层次理论</a>
+
+	15. <a href="#12.15">双因素理论</a>
+
+	16. <a href="#12.16">期望理论</a>
 
 ## <a id="1">十个成语</a>
 
@@ -2286,20 +2327,217 @@ eg:
 |测量|检验指标|质量成本COQ|
 |重点|检查、测试|设计、预防|
 
+## <a id="12">项目资源管理</a>
 
+项目资源特点：临时性、流动性、松散型、复杂性
 
+### <a id="12.1">权利矩阵</a>
 
+关于项目管理的方式，有很多新的趋势。以下这个工具，做了个大概的分类。
 
+![权利矩阵](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEDr6hSAScQ.4uK*Wh5Ei2yiJHst6oFvH.cp5Y7JH029xGJ9JEgpzlXFT47MnwK2Wd3qWhXVagrLpnPZhhaBCIBk!/b&bo=kAbkBJAG5AQDSWw!&rf=viewer_4)
 
+### <a id="12.2">项目与企业人力资源管理的区别</a>
 
+1. 企业人力资源
 
+	“选”，“用”，“育”，“留”
 
+	人力资源最重要的任务就是 “留”
 
+2. 项目人力资源
 
+	“借”，“用”，“育”，“还”
 
+#### <a id="12.2.1">员工各种方面的能力不足，分别归谁负责</a>
 
+1. 专业技术能力不足 - 职能经理负责
 
+2. 项目管理的知识不懂，项目管理的方法不会用 - 项目经理
 
+3. 公司的规章制度、企业文化不了解 - 人力资源经理
+
+#### <a id="12.2.2">团队章程</a>
+
+![团队章程](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrELPl27qrA2mKvx19JLOLKiSyGQRns*WkS8HFb77lzrnnYEwktY3cDGo3NtTDLvW9U3tgpYUwTdo5CycRZlwCsRc!/b&bo=AwaAAmgKVAQDSdk!&rf=viewer_4)
+
+### <a id="12.3">资源分解结构</a>
+
+Resource Breakdown Structure
+
+把项目上所用到的各种各样的资源进行一个梳理和逐级的分解
+
+![RBS](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEAgQ0cocnh7thV1e3X3jSTFy.WpNjxWUfqT0f105CxdzRkI.279kqRlglGFFW4nojX1DjZihivdavtCWyVs6pME!/b&bo=rAe2BKwHtgQDKQw!&rf=viewer_4)
+
+#### <a id="12.3.1">RACI矩阵</a>
+
+![RACI](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEIu8uwwScZMP0SsTaewgfC4KRLmBdcfUsrn6JqS*geTLszauMXdeME*lMMR7HoYW7RvxFd9fHOT2xUuyGa8MSgI!/b&bo=Igk.BSIJPgUDORw!&rf=viewer_4)
+
+#### <a id="12.3.2">预分派Pre-assignment</a>
+
+1. 比如一个有续集的电影，金刚狼，第一部的男主角是狼叔，然后拍第二部、第三部，大家依旧只认他主演的男主，导演可以还，别的角色可以还，但是就他不能换。这就是预分派资源。
+
+2. 比如一个有特殊技术的技术人员，公司因为有他的存在接了一个项目，如果没有他这个项目做都不能做，那么他就是预分派资源。
+
+### <a id="12.4">资源获取</a>
+
+野狗、兔子到底有多少，其实取决于你，如果你的能力够强，包容性够强，影响力足够。野狗、兔子也是有机会变成明星的。
+
+用人，应该勇于用比自己优秀的人，而不是不如自己的人。虽然不如自己的，可能更好管理，但是做不出业绩。
+
+![资源获取](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEOE6A4hr9t9TFd7Q0B81xuzf.Vf.9woXV6.vzeImFdZl96VNXKF7aUu6wYJWlLLI6lqY5ry3bzqxBESy8wpGhUU!/b&bo=1gQYBdYEGAUDORw!&rf=viewer_4)
+
+### <a id="12.5">建设团队-塔克曼阶梯理论</a>
+
+![tkm](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEM11np2Zi4BRtW8kPCu7wH8S1eeSUeWtVjQskwHQOYbSJ9GWhVMjYl1sXHvlGG3gWaaPLyspO5IV6h3O7IMZlx8!/b&bo=sggKBbIICgUDORw!&rf=viewer_4)
+
+> 注意:
+> 
+> 1. 发展规律可能发生**反复**，比如在规范阶段，突然爆发了一个需求，大家意见不合，产生了冲突，从而回到了震荡阶段
+>
+> 2. 特殊情况下，阶段也不一定就是一个接一个的出现，也有可能出现**跳跃**，比如老团队，有可能跳过震动、规范阶段
+
+### <a id="12.6">项目经理的管理风格</a>
+
+不同的阶段，项目经理适合用不同的管理风格，具体如下：
+
+1. 形成阶段
+
+	指令型 - 直接、明确、清晰
+
+2. 震荡阶段
+
+	影响型 - 引导、斡旋、调解
+
+3. 规范阶段
+
+	参与型 - 帮助、参与、促进
+
+4. 表现阶段
+
+	授权型 - 信任、授权、支持
+
+### <a id="12.7">有效团队与无效团队</a>
+
+|有效团队|无效团队|
+|:----:|:----:|
+|具有共同的目标|每个人对目标的理解不一致|
+|喜欢一起工作，互相帮助|彼此排斥，单打独斗|
+|分工明确，优势互补|职责不清，专业重复或缺位|
+|凝聚力强，彼此信任|冲突和不良的竞争|
+|顺畅的沟通，主动分享|沟通障碍，没有效率的会议|
+|总能按计划达成目标|挫折，无谓的返工|
+|1+1>2|1+1<2|
+
+### <a id="12.8">团队绩效评价与项目绩效评价</a>
+
+||团队绩效评价|项目绩效评价|
+|针对|人：项目团队|事：项目进度、成本等指标|
+|标准|团队有效性|计划吻合度|
+|过程组|执行过程组|监控过程组|
+|方法(例)|回顾会议|挣值分析|
+
+### <a id="12.9">团队规模、工作时长与生产力</a>
+
+> 敏捷开发：最优团队规模是 7 +- 2 (也就是加班餐，两个披萨的量) 
+
+![团队规模](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEPZbTC6kMw2aBvkEQ9FLlBWWtPeOgiWujAJH3aba*8f.6BM*cI4HfuUBRWLecv.2F4arYlwbfnTwfR1RB2U90Ls!/b&bo=FAmUBBQJlAQDKQw!&rf=viewer_4)
+
+![持续时长](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEKlzWv8HQBuN9cmxvr8J8nNvwvaUsipbFKSlDFkFKyJQL3*O6ejpmTI9szik24lJupXaj5HbcTxYv4DFiLIgjMA!/b&bo=AgWAAoAIPgQDGQs!&rf=viewer_4)
+
+### <a id="12.10">冲突管理</a>
+
+项目环境中，冲突是难免的
+
+不过，冲突常常是**有益**的。
+
+> 良性的冲突针对事情，恶性的冲突针对人
+
+1. 促进磨合，增进了解
+
+2. 灵感源泉，创新动力
+
+3. 暴露问题，降低风险
+
+4. 加速决策，改进管理
+
+### <a id="12.11">冲突的解决方法</a>
+
+1. 强迫/命令(一赢一输)
+
+	上下级关系、权利有大小之分。强迫弱小的一方听从。
+
+2. 撤退/回避(双输)
+
+	冲突的一方或者双方，先从冲突中撤离，以后在商量
+
+3. 缓和/包容(一输一赢)
+
+	冲突的一方去迁就或者包容另一方，这事不跟你争了，算你赢
+
+4. 合作/解决(双赢)
+
+	双方坐下来一起商量去寻找一个双方都满意的方法
+
+5. 妥协/调解(双输)
+
+	双方讨价还价，你让一步，我也让一步，得以让事情继续往前推进
+
+![冲突的解决方法](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEPhG6O7ubwMeq10Z5Y32jUBiwQZtNFkzRuujoFeHA.zVqyBR7CwDALh*JqytgtXS.mzpAKcvvljEfQFtNrEbMC0!/b&bo=pgrABaYKwAUDSWw!&rf=viewer_4)
+
+### <a id="12.12">人员遣散计划</a>
+
+好处：
+
+1. 控制成本
+
+	如果完成了工作，没有及时回职能部门，成本就会一直发生，越来越多
+
+2. 提升士气
+
+	每个人都会想知道，完成了当前这个工作之后，接下来去干什么。会让人觉得安全，不会感觉到稀里糊涂的。
+
+3. 降低风险
+
+	工作安排的合理紧凑，就可以降低风险。
+
+### <a id="12.13">X、Y理论</a>
+
+X理论：假设人都是好逸恶劳的，人都是不负责任的，能偷懒就偷懒，能少干就少干，有利益要抢，有责任要推
+
+Y理论：假设人都是积极上进的，都是勇于承担责任的，都愿意去接受更大的挑战，不需要对他进行严格的条条框框管理，他也会积极主动的去创造更好的业绩
+
+> X理论更适合针对**没有创造性的工作**，用条条框框去清清楚楚的告诉人们应该怎么做
+>
+> Y理论更适合针对**有创造性的工作**，让人们自由发挥
+
+### <a id="12.14">需求层次理论</a>
+
+1. 生存：空气/水/食物
+
+2. 安全：安全/次序/自由
+
+3. 社会：爱情/友情/归属
+
+4. 尊重：自尊/成就/责任
+
+5. 自我实现：不讲回报/心甘情愿
+
+### <a id="12.15">双因素理论</a>
+
+1. 激励因素
+
+	成就、赏识、挑战性的工作、增加的工作责任，以及成长和发展的机会
+
+2. 保健因素
+
+	工作条件、工资、福利、制度。基本没有激励作用但必须满足
+
+![双因素](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEPiIWZtABM90iiIhT2MAKxhzbCotZ4HkpOwQSWV8R.RARiHEMzbwhK*BA9VCOUscjagmWAU8*CLyezufWH1Z3ww!/b&bo=tgQ2A7YENgMDGTw!&rf=viewer_4)
+
+### <a id="12.16">期望理论</a>
+
+![期望理论](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEDiDoTLfEZiGZkE2dc0CyDy8SFGwiScC7FdECrcqIMW*kPzSVC3H7igrQ2Wzrw54YqqdfeFMaVyibjaZOKja4nM!/b&bo=sQWAAnoKmgQDKdQ!&rf=viewer_4)
 
 
 
