@@ -364,6 +364,30 @@
 
 	16. <a href="#12.16">期望理论</a>
 
+13. <a href="#13">项目沟通管理</a>
+
+	1. <a href="#13.1">沟通的效果</a>
+
+	2. <a href="#13.2">沟通的方式</a>
+
+		1. <a href="#13.2.1">乔哈里窗 Johari Window</a>
+
+	3. <a href="#13.3">书面沟通的5c原则</a>
+
+	4. <a href="#13.4">规划沟通管理需要考虑的要素</a>
+
+	5. <a href="#13.5">沟通模型</a>
+
+	6. <a href="#13.6">沟通路径</a>
+
+	7. <a href="#13.7">沟通过滤</a>
+
+	8. <a href="#13.8">影响沟通的障碍</a>
+
+	9. <a href="#13.9">沟通技巧和方式</a>
+
+	10. <a href="#13.10">会议管理的学问</a>
+
 ## <a id="1">十个成语</a>
 
 1. 未雨绸缪（计划、风险）
@@ -2539,9 +2563,175 @@ Y理论：假设人都是积极上进的，都是勇于承担责任的，都愿�
 
 ![期望理论](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/TmEUgtj9EK6.7V8ajmQrEDiDoTLfEZiGZkE2dc0CyDy8SFGwiScC7FdECrcqIMW*kPzSVC3H7igrQ2Wzrw54YqqdfeFMaVyibjaZOKja4nM!/b&bo=sQWAAnoKmgQDKdQ!&rf=viewer_4)
 
+## <a id="13">项目沟通管理</a>
+
+**沟通管理**：为确保项目信息及时且恰当的规划、收集、生成、发布、存储、检索、管理、控制、监督和最终处置所需的各个过程
+
+### <a id="13.1">沟通的效果</a>
+
+![沟通的效果](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqXIu*ckibF7muh7Q*ig4Gk52zOrHSbGi81DORVFDzeosCpilUjkNA56KX0MqR3rpj*ckAMdpM8CvbT9TzEEhPR4!/b&bo=LgWAAkQK9AQDKRs!&rf=viewer_4)
+
+**有效的沟通**：以正确的形式、在正确的时间把信息提供给正确的受众，并且使信息产生正确的影响
+
+### <a id="13.2">沟通的方式</a>
+
+1. 内部 --- 外部
+
+2. 正式 --- 非正式
+
+3. 垂直 --- 水平
+
+4. 官方 --- 非官方
+
+5. 书面 --- 口头
+
+6. 语言 --- 体语
+
+#### <a id="13.2.1">乔哈里窗 Johari Window</a>
+
+由 Joseph Luft 和 Harry Ingram 在20世纪50年代提出，被称为：“自我意识的发现--反馈模型”
+
+**原始的样子**
+
+![jwin1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqd7.ALA19WQPmqyKSRqa6R45rdZdJ8HiJz1mnDF07R.FXn6ae6VtCM71wSGk9WUjcpXiHpFoXn*IBGcX5FTyRrA!/b&bo=TAIYAkwCGAIDKQw!&rf=viewer_4)
+
+**适当的分享自己的隐秘区给对方**
+
+![jwin2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqb9OGiKGLCVeVe7RgZepQWInJSLiM61rXGGcivGdQivFPpbH5qdGFGLJXqJNPZpyrx4HTjYKYrf4cWLAEpZWzUw!/b&bo=JgM.AyYDPgMDORw!&rf=viewer_4)
+
+### <a id="13.3">书面沟通的5c原则</a>
+
+1. 正确的语法和拼写 
+
+	Correct Grammar & Speling
+
+2. 简洁的表述和无多余字
+
+	Concise Expression & Elimination of Excess Words
+
+	图 > 表 > 文字
+
+3. 清楚的目的和表述
+
+	Clear Purpose & Expewssion Directed to the Needs of Readers
+
+4. 连贯的思维逻辑
+
+	Coherent Logical Flow of Ideas
+
+5. 受控的语句和想法承接
+
+	Controlling Flow of Words & Ideas
+
+	就是说章节和章节之间，段落与段落之间由呼应，收尾呼应，及时的小结和归纳
+
+### <a id="13.4">规划沟通管理需要考虑的要素</a>
+
+1. 谁需要什么信息和谁有权接触这些信息
+
+2. 他们什么时候需要信息
+
+3. 信息应存储在什么地方
+
+4. 信息应以什么形式存储
+
+5. 如何检索这些信息
+
+6. 是否需要考虑时差、语言障碍和跨文化因素等
+
+### <a id="13.5">沟通模型</a>
+
+![沟通模型](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqVHsKCICff7KcNf1l*.f.Kp8wY5ZrmQSQuA8HjhUWCFJh7jBprC5yxkokUsxXDuYbyN.nnGpkzTIiSfSduWmSwU!/b&bo=wgdGBcIHRgUDORw!&rf=viewer_4)
+
+> 沟通中，不要想当然的认为你说过的，别人都听懂了
+> 
+> 在沟通完成之后，可以通过让别人重复一遍，或者问别人听清楚了没有之类的方式，来形成信息的反馈，让沟通变成闭环。这样可以大幅度减少沟通漏斗的影响。
+
+![沟通漏斗](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqWUwMcXbgDQ1N11jkjyjNPrUkjcQJ69JN12JvHicFFS7iRCH5f7OMoIF0FPC.oxoqmoaEN3ubJaG0A390m7F.XY!/b&bo=7giEBe4IhAUDORw!&rf=viewer_4)
+
+### <a id="13.6">沟通路径</a>
+
+> 两个人之间算 1 条沟通路径
+>
+> N 个人之间的沟通路径：N * (N - 1) / 2
+
+### <a id="13.7">沟通过滤</a>
+
+指大量信息在自上而下或自下而上的沟通过程中损失掉的现象
+
+> 可以通过公司组织架构的扁平化管理来减少这种信息的流失
+
+### <a id="13.8">影响沟通的障碍</a>
+
+1. 信息过载
+
+2. 缺少知识
+
+3. 文化差异
+
+4. 分散注意力的环境因素
+
+5. 有害的态度
+
+6. 情绪
+
+7. 不懂专业或技术术语
+
+8. 沟通渠道过多
+
+9. 选择性认知
+
+	人人都爱听表扬的话，不喜欢批评的话
 
 
+沟通障碍的原因：
 
+> 不同干系人对项目目标理解不同
+>
+> 人力、设备、材料等资源的竞争
+>
+> 人员之间的个人冲突
+>
+> 对变化的抵制（如新技术、新流程）
+
+### <a id="13.9">沟通技巧和方式</a>
+
+沟通技术：
+
+1. 简化运用语言
+
+2. 视觉辅助手段
+
+3. 积极倾听
+
+4. 有效的反馈
+
+5. 情绪控制
+
+
+沟通的方式：
+
+|沟通方式|特征|优点|缺点|举例|
+|:----:|:----:|:----:|:----:|:----:|
+|交互式沟通|在两方或多方之间进行实时多向信息交换|实时互动、沟通充分、反馈及时|规模受限，人数增加沟通效率和效果快速下降|会议、电话、即时通讯、视频会议|
+|推式沟通|向需要接收信息的特定接收方发布或推送|确保信息已定向发出|无法保证接收，无法保证理解|信件、备忘录、报告、电子邮件、广播、博客、新闻|
+|拉式沟通|信息量大且复杂，请庞大受众自行取阅|信息量大且受众多，需求方各取所需|无法保证接受，无法保证理解|订阅、下载、百科、文库、在线音影|
+
+### <a id="13.10">会议管理的学问</a>
+
+1. 准备并发布会议议程
+	
+	包含会议目标
+
+2. 在规定的时间开始和结束
+
+3. 确保适当参与者受邀并出席
+
+4. 切题
+
+5. 处理会议中的期望、问题和冲突
+
+6. 记录所有行动及责任人
 
 
 
