@@ -388,6 +388,166 @@
 
 	10. <a href="#13.10">会议管理的学问</a>
 
+14. <a href="#14">项目风险管理</a>
+
+	1. <a href="#14.1">风险敞口</a>
+
+	2. <a href="#14.2">风险的类别</a>
+
+		1. <a href="#14.2.1">单个项目风险 vc 整体项目风险</a>
+
+		2. <a href="#14.2.2">变异性风险</a>
+
+		3. <a href="#14.2.3">模糊性风险Ambiguity Risk</a>
+
+	3. <a href="#14.3">降低风险的方式</a>
+
+		1. <a href="#14.3.1">项目的韧性</a>
+
+		2. <a href="#14.3.2">整合式风险管理</a>
+
+	4. <a href="#14.4">项目风险的分类</a>
+
+	5. <a href="#14.5">风险分解结构 Risk Breakdown Structure</a>
+
+	6. <a href="#14.6">风险态度</a>
+
+	7. <a href="#14.7">识别风险的几种方法</a>
+
+		1. <a href="#14.7.1">头脑风暴法</a>
+
+		2. <a href="#14.7.2">德尔菲法</a>
+
+		3. <a href="#14.7.3">根本原因分析</a>
+
+		4. <a href="#14.7.4">核对单分析</a>
+
+		5. <a href="#14.7.5">假设分析</a>
+
+		6. <a href="#14.7.6">鱼骨图，也叫因果图、石川图</a>
+
+		7. <a href="#14.7.7">系统流程图</a>
+
+		8. <a href="#14.7.8">专家判断</a>
+
+		9. <a href="#14.7.9">假设条件和制约因素分析</a>
+
+		10. <a href="#14.7.10">SWOT分析</a>
+
+		11. <a href="#14.7.11">提示清单</a>
+
+		12. <a href="#14.7.12">战略框架</a>
+
+		13. <a href="#14.7.13">层级图(气泡图)</a>
+
+	8. <a href="#14.8">风险的定性分析</a>
+
+	9. <a href="#14.9">风险的定量分析</a>
+
+		1. <a href="#14.9.1">模拟-蒙特卡洛技术</a>
+
+		2. <a href="#14.9.2">敏感词分析</a>
+
+		3. <a href="#14.9.3">决策树</a>
+
+		4. <a href="#14.9.4">影响图</a>
+
+	10. <a href="#14.10">应对风险的工具、技术</a>
+
+	11. <a href="#14.11">风险和资源的关系及风险应对流程</a>
+
+	12. <a href="#14.12">风险应对策略-负面风险(威胁)</a>
+
+	13. <a href="#14.13">风险应对策略-正面风险(机会)</a>
+
+	14. <a href="#14.14">风险应对策略-正反面通用</a>
+
+	15. <a href="#14.15">选择应对策略时的影响因素</a>
+
+	16. <a href="#14.16">风险与项目生命周期</a>
+
+15. <a href="#15">采购管理</a>
+
+	1. <a href="#15.1">建筑信息模型 BIM</a>
+
+	2. <a href="#15.2">国际标准采购合同范本提供组织</a>
+
+	3. <a href="#15.3">采购合同类型</a>
+
+		1. <a href="#15.3.1">总价合同</a>
+
+		2. <a href="#15.3.2">成本补偿类合同</a>
+
+		3. <a href="#15.3.3">工料类合同</a>
+
+	4. <a href="#15.4">采购文件</a>
+
+		1. <a href="#15.4.1">招标文件-对外</a>
+
+		2. <a href="#15.4.2">招标文件-对内</a>
+
+	5. <a href="#15.5">采购策略之交付方法</a>
+
+		1. <a href="#15.5.1">特许经营(主要是政府项目)</a>
+
+	6. <a href="#15.6">合同类型与风险分担</a>
+
+	7. <a href="#15.7">自制-外购分析</a>
+
+		1. <a href="#15.7.1">供方选择分析</a>
+
+		2. <a href="#15.7.2">独立估算</a>
+
+		3. <a href="#15.7.3">投标人会议</a>
+
+		4. <a href="#15.7.4">采购谈判</a>
+
+	8. <a href="#15.8">索赔管理</a>
+
+		1. <a href="#15.8.1">采购合同几种解决争议的方法</a>
+
+		2. <a href="#15.8.2">采购审计</a>
+
+	9. <a href="#15.9">采购合同的结束形式</a>
+
+		1. <a href="#15.9.1">采购管理中的责任</a>
+
+		2. <a href="#15.9.2">项目收尾</a>
+
+16. <a href="#16">相关方管理</a>
+	
+	0. <a href="#16">相关方管理的相关理念</a>
+
+		1. <a href="#16.0.1">相关理念</a>
+
+		2. <a href="#16.0.2">相关方管理包含的内容</a>
+
+	1. <a href="#16.1">相关方的分类</a>
+
+		1. <a href="#16.1.1">通过相关方的类型来分类</a>
+
+		2. <a href="#16.1.2">离我们距离的远近</a>
+
+		3. <a href="#16.1.3">相关方类型</a>
+
+		4. <a href="#16.1.4">相关方影响力</a>
+
+		5. <a href="#16.1.5">相关方态度</a>
+
+		6. <a href="#16.1.6">权利利益矩阵</a>
+
+		7. <a href="#16.1.7">凸显模型</a>
+
+	2. <a href="#16.2">相关方影响方向</a>
+
+		1. <a href="#16.2.1">用西游记来解释各种相关方</a>
+
+		2. <a href="#16.2.2">管理相关方的本质</a>
+
+	3. <a href="#16.3">相关方登记册</a>
+
+		1. <a href="#16.3.1">相关方评估矩阵</a>
+
 ## <a id="1">十个成语</a>
 
 1. 未雨绸缪（计划、风险）
@@ -2733,21 +2893,649 @@ Y理论：假设人都是积极上进的，都是勇于承担责任的，都愿�
 
 6. 记录所有行动及责任人
 
+## <a id="14">项目风险管理</a>
 
+![什么是风险](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqdzqg61xPCQNw4EuFzMvfH8.2B1kiPGwXZ8CQ.V3bC.P7qOBlSL*axxElwjC5DOr1**3TaIvrghuAfClqwIN8To!/b&bo=IAfaAyAH2gMDNxI!&rf=viewer_4)
 
+### <a id="14.1">风险敞口</a>
 
+风险敞口：未加保护的风险，也称“风险敞口”
 
+在某个项目、项目集或项目组合中，针对任一特定对象，而适时作出的对所有风险的潜在影响的综合评估。
 
+### <a id="14.2">风险的类别</a>
 
+#### <a id="14.2.1">单个项目风险 vc 整体项目风险</a>
 
+单个项目风险 vs 整体项目风险
 
+> 只关注单个项目风险而忽略整个项目风险，
+>
+> 只关注项目局部风险而忽略项目全局风险，
+>
+> 只关注项目短期风险而忽略项目长期风险，
+>
+> 只关注项目战术风险而忽略项目战略风险，
+>
+> 都是**风险近视症**的表现。
 
+#### <a id="14.2.2">变异性风险</a>
 
+1. 黑天鹅事件
 
+2. 剧情反转
 
+3. 屌丝逆袭
 
+4. 不按套路出牌
 
+5. 亮瞎眼了
 
+#### <a id="14.2.3">模糊性风险Ambiguity Risk</a>
+
+1. 需求？ 不了解
+
+2. 未来？ 看不懂
+
+3. 规律？ 搞不懂
+
+4. 趋势？ 猜不透
+
+### <a id="14.3">降低风险的方式</a>
+
+#### <a id="14.3.1">项目的韧性</a>
+
+项目遭遇风险，或受到扰动时
+
+1. 维护状态的能力
+
+2. 迅速恢复的能力
+
+3. 通过适应来更好的应对未来的不确定性的能力
+
+#### <a id="14.3.2">整合式风险管理</a>
+
+把不同种类的任务，给不同的人分别管理，**各司其职**
+
+![整合](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqavlqjlDprwk4AvA77ZD2UtY0xT6EYNy17LGYvZAYrrZ3IxV3DAJ1xG0R0i7aSrPhyN1H74yolNtL4cpm1*DWww!/b&bo=OAjYAzgI2AMDNxI!&rf=viewer_4)
+
+### <a id="14.4">项目风险的分类</a>
+
+1. 内部风险、外部风险
+
+	项目经理有手段可以解决的风险，就是内部风险
+
+	没有办法施加任何的干预，就是外部风险
+
+2. 已知风险、未知风险
+
+	对风险很了解，知道概率，知道影响，就是已知风险
+
+	知道该风险，不知道概率或者不知道影响，就是已知-未知风险
+	
+	如果不知道概率、不知道影响、甚至连风险都没听过，就是未知-未知风险
+
+3. 商业风险、可保险风险
+
+	可以通过买保险的方式，来承担风险，就是可保险风险
+
+	我们做任何生意，都有可能成功或者失败，类似这种社会规律，无法买保险来规避的，就是商业风险
+
+### <a id="14.5">风险分解结构 Risk Breakdown Structure</a>
+
+![RBS](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqR1t0dAmqEwfcb8GjnacnfahmgUoAEb2RWmhRzVyq6vdYbY5DhfqWFBrMmLZvaSHc7NuNzDLgte2dUWYLtQePe0!/b&bo=1AjQBNQI0AQDNxI!&rf=viewer_4)
+
+### <a id="14.6">风险态度</a>
+
+![风险态度](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqVHd7*rVTLF8JeVDLW6YDv.OUHGTep6kkK2ZAbnuH5mbkksz*EjA4ZbbTeIrCIzhvhxnKtBWL4SlUveY9LGIXho!/b&bo=hAkaA4QJGgMDNxI!&rf=viewer_4)
+
+### <a id="14.7">识别风险的几种方法</a>
+
+#### <a id="14.7.1">头脑风暴法</a>
+
+又叫诸葛亮法(这里的诸葛亮指的三个臭皮匠胜于诸葛亮)
+
+1. 不要轻易的打击别人，要包容所有看似愚蠢的点子
+
+2. 不能把一群资深专家(或者说权利不对称特别大的)弄在一起头脑风暴，这样容易让他们影响到别人不敢说真话，光顾着奉承
+
+#### <a id="14.7.2">德尔菲法</a>
+
+请了好几个专家，但是不让他们碰头，亲自登门把项目的材料给人做汇报送过去，然后给人留下一个风险的空白清单，让专家给提意见，隔几天再去回收、汇总，根据汇总的结果第二次登门拜访，将汇总结果再次一一汇报，隔一天再回收，来来回回折腾好几轮，让所有专家的意见趋于一致。
+
+> 这种做是为了确保没人专家都不用顾虑别人的想法，充分的表明自己的意见
+
+#### <a id="14.7.3">根本原因分析</a>
+
+也叫做，瑞士奶酪原理(瑞士的奶酪有一堆小孔，但是都不会连在一起，不会让你一次就能看个对穿)
+
+意识就是发现了一个风险苗头，就要向上去追溯，引起它的原因是什么，一直找到根本原因为止
+
+#### <a id="14.7.4">核对单分析</a>
+
+就好比盘点库房，把一个项目可能存在风险的各个方方面面，我们都拉个清单，从钱人技术等各个方面去检查，目标类型的问题有没有可能存在
+
+#### <a id="14.7.5">假设分析</a>
+
+把所有的假设都提出来，然后两两配对，两两进行比较，看谁影响会更大一些，最后选出影响这个结果最主要的原因
+
+#### <a id="14.7.6">鱼骨图，也叫因果图、石川图</a>
+
+从结果反向推断找出原因
+
+![鱼骨图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqe*RmuUrgpESt1342zRRFqWS1bKJ9AJ.RDKzVOT1sDIXvbZ78sh2Ne1KAEDD1DmTliMiwVAyTFFPu*UoJQvJTVw!/b&bo=hAVaA4QFWgMDByI!&rf=viewer_4)
+
+#### <a id="14.7.7">系统流程图</a>
+
+> 出现问题的相关操作(事情)，系统的全部走一遍，查找问题所在范围
+
+![系统](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqbHypsGeH0iy253RBtMOcyCb*s6puVSHJKnAUOEA1Wev0*zU*rrBojgRJLl4QRRB*i3ETqt.pbLCw6DW3T235k4!/b&bo=lQiwBI4JOAUDV.E!&rf=viewer_4)
+
+#### <a id="14.7.8">专家判断</a>
+
+1. 注意专家的偏见
+
+2. 重视专家的直觉
+
+	专家的直觉往往都很准，但是可能说不清楚理由。不过我们应该重视
+
+#### <a id="14.7.9">假设条件和制约因素分析</a>
+
+制约因素：已确定，客观存在
+
+假设条件：不确定，经验推断
+
+![制约假设](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqdmLjUn6d9S*S95e4V*Coaerhq1lOJKL.*deghKfM1T7mskBgsGnLehmM5y.nJqDRJO8ZMco3dn.oJsBvfvLIT0!/b&bo=YAmwBFwKLgUDd*I!&rf=viewer_4)
+
+#### <a id="14.7.10">SWOT分析</a>
+
+![swot1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqXMgMsUdyJVxyAyhfErGaeOjMiBKc8RGyQq.CnCgvAMApdtmuITqQaY5PQXvgGRie3qfuB2DeaoWXoQl.D9wXwI!/b&bo=agn0BGoJ9AQDR2I!&rf=viewer_4)
+
+![swot2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqdGlwPGwcKPXnr9Hgr*Qpw2dhTmo0avHyGd77j2F0BKoqsq2.0mvSzA1avnaC796NJxvVOkzY0dAC*qUDoTLd9g!/b&bo=7AewBD4JeAUDZ1c!&rf=viewer_4)
+
+#### <a id="14.7.11">提示清单</a>
+
+> 针对单个的项目风险
+
+![提示清单](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqVDx3IQJJbqblw1YVhynGvyTtMNRUaJ6zSXK2GKy0U4EdUb.veIXYof3szZ6pZo7b89VxddTS.fTY*ijnPwAXJw!/b&bo=GgmEBRoJhAUDR2I!&rf=viewer_4)
+
+#### <a id="14.7.12">战略框架</a>
+
+> 针对整体项目风险
+
+![战略](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqfCxVZ7QJuseCcwILPoy7hqabBsW47IH.akthMJGcRmE5DLrBoOw.jhWXF94gid3cPPEWLvs0vgDSuseZDTLeZM!/b&bo=fgloA34JaAMDNxI!&rf=viewer_4)
+
+#### <a id="14.7.13">层级图(气泡图)</a>
+
+> 横轴代表什么、纵轴代表什么、气泡的大小代表什么，都是自己去定义的，很灵活
+
+![气泡](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqcgrmSJFruYiW6Wd2yda3yj3HnV2ReYq4QqGphjgw*5m*pnl5tBrQR8WAWd9g5U*BjAD9qefT9B1iWVcjc3tyYw!/b&bo=vAnWBLwJ1gQDR2I!&rf=viewer_4)
+
+### <a id="14.8">风险的定性分析</a>
+
+> 核心就是给风险排序，按重要程度
+
+关于风险概率的大小和影响的高低，需要有一个同于的图表进行规范，**不然每个人对这个大小和高低的定义都不一样**
+
+![定义](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqb22Rq*hykOx6Spgejmy6BS00l7Rf0J8nloeQaVVzRCVtmIdZuzITZusBgUUpfEWh7KmZRZ199GA9hrONT*7JcI!/b&bo=Mgn6BDIJ.gQDByI!&rf=viewer_4)
+
+![矩阵](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqfmeSoKC.zYk1o2ex93Vx0SqsUH6B.DNRr7G.p8BWe.LRrRFyIISNVLxszlFylSUhb8NRxjtEajc0wh0pMfJAuw!/b&bo=agl2BWoJdgUDR2I!&rf=viewer_4)
+
+> 要注意，该矩阵坐标轴的数值，是等比顺序，而不是等差顺序。这里是根据了用户自己的**侧重点**，而进行的调整。
+>
+> 对于那种落在深灰色区域的风险，应该将他们写入**风险短名单**，短名单里的风险要作出详细的应对计划，比如如果发生了，采取什么措施去解决它，准备花多少钱解决，谁来解决，都要进行详细的应对计划。
+>
+> 对于其他的未落入深灰色区域的风险，相对不那么急迫或者重要，则应该将他们写入**风险观察清单**，然后每周做项目例会的时候，都要进行回顾过一遍，看看它们有没有变化，已经不可能再发生的则删除，风险变大的项目则添加到短名单中。
+>
+> 通常情况下，大部分的风险都是在观察清单里面。所以定期分析很重要。
+
+### <a id="14.9">风险的定量分析</a>
+
+> 并不是所有识别出来的风险都要做定量分析，因为定量分析很耗时耗力，成本非常高，只有特别重要的项目中针对特别重要的风险，才会使用定量分析。
+
+#### <a id="14.9.1">模拟-蒙特卡洛技术</a>
+
+通过计算机，产生一组随机数，每一个随机数就代表着各种各样的风险的不同的组合。最终通过无穷无尽的随机数，产生的各种不同的额风险组合，所描绘出的曲线。
+
+![mtkl](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqSxKiUfM9XRGF2RI2xi0JoRJpUSjdlJBI0zf2Km4opVr0zo2SjBnodnhKWHMQotxP64FvBIAUZ0NLyqe8zXOqJs!/b&bo=5giOBeYIjgUDByI!&rf=viewer_4)
+
+#### <a id="14.9.2">敏感词分析</a>
+
+> 针对敏感词对项目的影响，从大到小的画出矩形状龙卷风图
+
+![ljft](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqZo1V7Kczf*can5vXh*DadtpjdHtbP40jxlbzfHFhWYQxNZa9UvuLZXryj3slBoXdWZcOOAjyTrOVDDig.gNxdc!/b&bo=4AleBOAJXgQDR2I!&rf=viewer_4)
+
+> 该图的意识是，针对每项指标，加减 5% 之后的 NPV 值，从而可以知道哪一项指标的影响最大。并根据结果画出线图，线越陡也就影响越大
+
+![mgc-eg1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqXcl1WYehHMSX7zbrhiU2MpwN.EYTaKwvDKIng83AvoDD6DCKWE6R3eea7owdaz7sxxOXnqf3YHzMM1WtaLdxLo!/b&bo=FAg2AxQINgMDR2I!&rf=viewer_4)
+
+![mgc-eg2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqZo027oceqtLdlT9EwmTVBLTlWSLH8iXwSefpQocBgyqUYZIxDSTLVdhrQ419Ty1b2zv8qQ.onFWo3aibPRxzG8!/b&bo=XgiqBF4IqgQDByI!&rf=viewer_4)
+
+#### <a id="14.9.3">决策树</a>
+
+把未来市场变动的风险，在我们当下决策的时候考虑进去
+
+![决策树](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqSqDvaPUqZ3T0fdD2ZVldceKlZDZR*4Mnip700v0zUCIMEr2*8IgAmbe4uR3g3SXEqWZTexbbvSshvfCBCIv6jQ!/b&bo=hAfQBIQH0AQDByI!&rf=viewer_4)
+
+> EMV = 成功的收益 * 成功的概率 + 失败的损失 * 失败的概率
+
+#### <a id="14.9.4">影响图</a>
+
+由结点和有向弧组成的无环路的有向图，其中，结点代表所研究问题中的主要变量，有向弧表示变量间的各种相互关系。
+
+用不同的形状、颜色代表不同的风险类型，把同类的用一个形状或颜色来表示，最后把相同的归成一组，然后你会发生风险和风险之间它有着千丝万缕的联系，容易发生连锁反应。还可以用线条把它连在一起，线条的粗细代表强弱关系。
+
+![影响图](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqZSBfxR1hF2K9j2xG4Vu2z9K6NVhBHSZGQmhlNxFN8JRuN47n6obLGOETQ58jN5I*o*pytE07e8yK3Jwjb03tNU!/b&bo=7AJ.AuwCfgIDFzI!&rf=viewer_4)
+
+### <a id="14.10">应对风险的工具、技术</a>
+
+1. 应急计划 (PLANB)
+
+2. 弹回计划 (保底计划)
+
+3. 权变措施 (随机应变、临时想计划)
+
+```
+比如：
+
+原计划：出国
+应急计划：考研
+弹回计划：找工作
+权变措施：送外卖
+
+```
+
+### <a id="14.11">风险和资源的关系及风险应对流程</a>
+
+|风险种类|应对措施|活动资源|成本基准|成立责任|
+|:----:|:----:|:----:|:----:|:----:|
+|已知|原计划|活动预算|包含|团队成员|
+|已知-未知|应急计划|应急储备|包含|项目经理|
+|未知-未知|权变模式|管理储备|不包含|高层管理者|
+
+![风险应对](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqV1WBfs*xRvbjUx.EW.Dj9ukZNu9heNX6x4NgponJ80KhzZkCJJWq5aiv6272Ms73c4HVT3VgMkOZOCTG0XjDy0!/b&bo=sgkWBbIJFgUDByI!&rf=viewer_4)
+
+**自动权变的两种条件：**
+
+1. 生命为大
+
+2. 你有充分的理由证明你没时间去请求权变
+
+> ! 应急计划、权变措施、弹回计划，如果执行，都需要先进行变更控制流程
+
+### <a id="14.12">风险应对策略-负面风险(威胁)</a>
+
+1. 规避
+
+	处理风险的代价特别大时，可以选择规避(绕开，避开)
+
+2. 转移
+
+	不承担风险，让别人承担。比如买保险、外包。比如快捷酒店，选择了不去评星级，不提供健身措施、餐厅，只保留了商务客户最需要的需求
+
+3. 减轻
+
+	针对风险的两个要素，降低要素、降低影响。比如打疫苗减轻感染的概率。
+
+### <a id="14.13">风险应对策略-正面风险(机会)</a>
+
+1. 开拓
+
+	拥抱机会
+
+2. 提高
+
+	乘胜追击
+
+3. 分享
+
+	一个人不可能什么方面都很擅长，但是你可以组建一个拥有各方面大佬的完美团队
+
+### <a id="14.14">风险应对策略-正反面通用/a>
+
+1. 接受
+
+	预先留一些储备，来应对危机
+
+2. 上报
+
+	超出了自己的能力、没有经验、没有资源等情况
+
+### <a id="14.15">选择应对策略时的影响因素</a>
+
+![风险因素](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqUupcNMGu6lwfE6SVIkU4z.1blnUQMF1nxN3ZxASyhawAeykkJq4QexC0K*j6VgWLbNFyHEr4N3KdGMQf2cav*M!/b&bo=FAdeBBQHXgQDByI!&rf=viewer_4)
+
+### <a id="14.16">风险与项目生命周期</a>
+
+![风险概率](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqUns2tY8mNKbmBiXF6VIcOhnA4Z5EQ7NbI7DuQiJJfjbXdAlc.CObZDMZtr8rToqpDOr9VxyM8fW1NAWI*Pnfso!/b&bo=xAnUBMQJ1AQDJwI!&rf=viewer_4)
+
+## <a id="15">采购管理</a>
+
+> 敏捷下的采购管理：通过主要服务协议(MSA)来管辖整体协作关系，用附录或补充文件记录适应型的工作内容。
+
+### <a id="15.1">建筑信息模型 BIM</a>
+
+1. 可视化
+	
+	3D、4D、5D ......
+
+2. 协调性
+
+	设计碰撞检查；设计、采购、施工；各专业分包；
+
+3. 模拟性
+
+	可展现未来建造过程和成果
+
+4. 优化性
+
+	变更随时更新模型，随时出新图；
+
+5. 持续性
+
+	从规划、设计、加工、安装、维修到报废。
+
+### <a id="15.2">国际标准采购合同范本提供组织</a>
+
+1. FIDIC：国际咨询工程师联合会
+
+2. AIA：美国建筑师学会
+
+3. ICE：英国土木工程师学会
+
+4. World Bank：世界银行
+
+### <a id="15.3">采购合同类型</a>
+
+#### <a id="15.3.1">总价合同</a>
+
+1. 固定总价合同 FFP(Firm Fixed Price/Lump Sum)
+
+	总价是固定死的，卖方自己去控制成本和盈利，不管价格是不是超了，你都需要给我固定的货物。
+
+	这种合同适合甲乙双方都对项目的范围很清楚，项目也比较简单，不会有太大的分歧或者变化，大家都不需要花更多的心思来操心这个事情
+
+2. 总价加激励费 FPIF(Fixed Price Plus Incentive Fee)
+
+	成本按预算控制，另加约定费用，如成本超支或节约，按约定的比例分担或分享，并设置价格天花板。
+
+![FPIF](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqZA0QUIIS*n1Av3CXv.jgYQcGVexJ5iJpljDQoAQwJ87TEwL79AQ0V6TM.sXNO2QEjk0HwrYsv*C2II.DYp5fOA!/b&bo=kAWAAtIJagQDB4A!&rf=viewer_4)
+
+3. 总价加经济价格调整 FP-EPA(Fixed Price-Economic Price Adjustment)
+
+	合同总价可以根据物价变动等因素调整。规定一个检查周期，定期查看市场价格波动，从而调整价格。
+
+#### <a id="15.3.2">成本补偿类合同</a>
+
+1. 成本+固定费 CPFF(Cost Plus Fixed Fee)
+
+	成本实报实销，按约定的固定数额支付费用
+
+![CPFF](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqVzCr41vX6JuGMvt.KRIhsv5pH0CrWYEU.aaKa4US.Q9fSNvoe1n72YXbNCxt.q8laMwea82bj3nobPO0EgeBp8!/b&bo=QARmAUAEZgEDByI!&rf=viewer_4)
+
+2. 成本+激励费 CPIF(Cost Plus Incentive Fee)
+
+	成本按预算控制另加约定费用，如成本超支或节约，按约定的比例分担或者分享。
+
+![CPIF](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqSjkVWgUJV1O3O.aZ3WqxBWm.oSFRgH.IjqSIvOCTC3EfOzY7bWTtYrROLEg*M7JhurooWGAMYL5i8ZRZMPLHnc!/b&bo=EgQqAhIEKgIDNxI!&rf=viewer_4)
+
+3. 成本+奖励费 CPAF(Cost Plus Award Fee)
+
+	成本实报实销，甲方根据乙方表现给予奖励。
+
+> 只要是能算出来的多给予的费用，都算“激励”，也就是有规则的。“奖励”属于根据心情，随意给的。
+
+#### <a id="15.3.3">工料类合同</a>
+
+根据人工和材料的用量才规定的合同
+
+适用于项目范围本身不复杂，要干的活相对简单、不复杂、没什么不确定性，但是所需的人工和材料的用量，总量，现在还不好预测，活着说预测太麻烦。
+
+### <a id="15.4">采购文件</a>
+
+#### <a id="15.4.1">招标文件-对外</a>
+
+1. 信息邀请书 RFI(Request fro Information)
+
+	大致的筛选一下，看看有哪些厂家符合要求，让对方提供一下他们自己的信息
+
+2. 报价邀请书 RFQ(Request for Quotation)
+
+	这个就不光只是信息了，这是要对方根据你的要求报个价
+
+3. 建议邀请书 RFP(Request for Proposal)
+	
+	除了报价，还要对方拿出一套具体的方案
+
+#### <a id="15.4.2">招标文件-对内</a>
+
+1. 采购工作说明书 Sow(Statement of work)
+
+	说清楚到底需要厂家做什么
+
+2. 工作大纲 TOR(Terms of Reference)
+
+	说清楚工作范围，工作性质
+
+> 采购工作说明书、工作大纲。都属于范围基准的一部分（需要外包出去的那部分）
+
+![招标文件](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqbtteT4l5hl7*Faq6xqp4JZ9Pb2Kqz*YKGRAKSi2X*Tv6vZssTDUWL4lj8YMBXLzFLSZ14e7LKAwO.IcPuxHFCs!/b&bo=BAmwBCYLzAUDB38!&rf=viewer_4)
+
+### <a id="15.5">采购策略之交付方法</a>
+
+1. 设计-招标-建造 DBB(Design-Bid-Build)
+
+	传统模式
+
+2. 总承包 EPC(Turn key交钥匙)
+
+3. 特许经营
+
+#### <a id="15.5.1">特许经营(主要是政府项目)</a>
+
+1. BOT(Build-Operation-Transfer)
+
+	建设-运营-移交。比如高速公路，政府要建的时候，没钱，于是招标让别人来干。你做好了之后，让你收50年的费，当作项目费用。如果10年你就回本了，其余40年就算你的盈利。
+
+2. BT(Build-Transfer)
+
+	建设-移交。如果政府要建廉租房，招标让开发商来做房子，你做完了就交给我，我回收了资金就给你项目工钱。
+
+3. PPP(Pubilc-Private-Partnership)
+
+	政府、私企合作经营。一般政府占小头，私企占大头。
+
+### <a id="15.6">合同类型与风险分担</a>
+
+||总价合同|成本补偿合同|
+|:----:|:----:|:----:|
+|项目范围|明确|不明确|
+|不确定性|低|中|
+|风险分担|乙方|甲方、乙方|
+
+### <a id="15.7">自制-外购分析</a>
+
+|自制的原因|外购的原因|
+|:----:|:----:|
+|自制成本低|外购成本低|
+|保证充足供应|降低库存压力|
+|无合适的供应商|保留供应商的许诺|
+|利用过剩劳动力|生产能力不足|
+|获得供应的主动性|获得技术或管理能力|
+|排除供应商之间的勾结|获得供应的灵活性和可替代性|
+|保护专利设计或商业秘密|产品受到专利或商业秘密的保护|
+|保证质量|保证质量|
+|维持组织的规模或能力|享受配套的售后服务|
+
+#### <a id="15.7.1">供方选择分析</a>
+
+|选择方法|使用场景|选择标准|
+|:----:|:----:|:----:|
+|最低成本|有成熟的标准，明确的范围和预期成果|价低者得|
+|仅凭资质|采购价值小，不值得大费周章|买方从短名单中选择资质、经验、历史业绩最佳的投标人|
+|基于质量或技术方案分析|买方最看重质量或技术方案，成本可商量|评估技术建议书，只要成本可接受，选择技术方案或质量得分最高的投标人|
+|基于质量和成本|买方最看重质量和成本，适合不确定性较高的项目|质量和成本得分最高者中标|
+|独有来源|有依据证明没有别家可以提供相同的产品或服务|独一家，别无选择|
+|固定预算|工作说明书定义完整精确，预期不会发生变更，预算固定不得超出的情况|预算公开，选择技术建议书得分最高的投标人|
+
+#### <a id="15.7.2">独立估算</a>
+
+当买方对所包出去的项目价值，完全摸不着头脑，则可以找专业机构去帮你估算它的价值。然后根据估算价格再去招标。这个就叫独立估算。
+
+#### <a id="15.7.3">投标人会议</a>
+
+定位：主要是甲方申明招标过程的合法合规有效，主要是对**招标文件**的解释。 
+
+要做什么：甲方把所有具备资格的，也就是合格的有条件有资格来投标的这所有的投标方都召集来开这个投标人会议，投标人在会上澄清本次招标是合法合规的，公平公正的，不存在什么猫腻，不存在着灰色地带。申明完了，让所有投标人签字确认。
+
+#### <a id="15.7.4">采购谈判</a>
+
+当投标人确定了，甲乙双方在合同签署之前，对合同内容加以澄清，以取得一致意见。
+
+谈判内容：主要是对**合同内容**进行逐一的澄清和确认。包括责任、变更的权限、使用的条款和法律、技术和商务要求、所有权、合同融资、技术解决方案、总体进度计划、付款以及价格等。
+
+不能谈的：中标的价格、交付的期限、质量的验收标准、工作的范围
+
+||投标人会议|采购谈判|
+|:----:|:----:|:----:|
+|召开时间|投标前|中标后，签合同前|
+|邀请参与方|所有符合条件的投标方|中标方|
+|要澄清的内容|招标文件|合同|
+
+### <a id="15.8">索赔管理</a>
+
+签完合同之后，由于甲方或者乙方没完全按照合同履行义务，那么就有可能给对方造成更多的损失或者成本，就需要通过索赔来进行补偿。
+
+#### <a id="15.8.1">采购合同几种解决争议的方法</a>
+
+||谈判|替代争议解决ADR(就是找第三方主持公道)|仲裁|诉讼|
+|:----:|:----:|:----:|:----:|:----:|
+|正式性||||有|
+|保密性|有|有|有||
+|便利性|有|有|||
+|双方自愿|有|有|有||
+
+#### <a id="15.8.2">采购审计</a>
+
+先得有采购管理计划来定义规则，然后采购审计就是去检查采购过程是否**合规**，重点是合规。至于那一家中标了，以及最终的金额，不是它重点关注的。
+
+### <a id="15.9">采购合同的结束形式</a>
+
+![结束](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqUvewFn5PexSLU9injz3sArh*ZGfdG1Yi.FiBcgUHE.9qp3MTcROPm6yez8nRFxZufWF0YbeL0UYtj3ZvgkFp80!/b&bo=jAZOA4wGTgMDByI!&rf=viewer_4)
+
+#### <a id="15.9.1">采购管理中的责任</a>
+
+采购文件 - 项目经理
+
+技术规范 - 技术经理
+
+项目需求 - 项目经理
+
+#### <a id="15.9.2">项目收尾</a>
+
+![收尾](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqZMDv8vBIvLM1jrv06zJ50cxt.Y8ywMiLyQnlHzHd4IbY2o2eMlvKGdUp08gFiFxH7byGeOmPKVtbyEFhfxX7l4!/b&bo=9giYBPYImAQDNxI!&rf=viewer_4)
+
+## <a id="16">相关方管理</a>
+
+#### <a id="16.0.1">相关理念</a>
+
+> 项目往往死在被忽略的相关方手上
+
+1. 共创
+
+	类似维基百科、百度百科、github
+
+2. 海尔
+
+	把公司拆成了很多小公司，各个部门的领导人当自己公司的领导人，就成了自己给自己打工。你成功了，我就成功了。
+
+3. 小米
+
+	粉丝效应，粉丝参与
+
+4. 京东、天猫；麦当劳、肯德基；
+
+	友商，竞争队友
+
+	今天的商业世界，经常这样打着打着就成一家人。比如 uber、滴滴；美团、大众点评；
+
+> 你快回来，我一个人忽略不来
+
+#### <a id="16.0.2">相关方管理包含的内容</a>
+
+1. 谁是你的相关方
+
+2. 他们有什么期望
+
+3. 他们的影响有多大
+
+4. 怎么调动他们的积极性
+
+5. 如果与他们沟通
+
+6. 怎么解决利益冲突
+
+### <a id="16.1">相关方的分类</a>
+
+#### <a id="16.1.1">通过相关方的类型来分类</a>
+
+1. 参与项目的人
+
+2. 受项目影响的人
+
+	- 正面影响
+
+	- 负面影响
+
+#### <a id="16.1.2">离我们距离的远近</a>
+
+![距离](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqT5WALsdkPCJ3TZhrr85IJzti97XenB1P.9cEigtZzgwqZGl8Ic20wsdRC6tijZ3stDkzy3FVOzzdfIXS7Oesj0!/b&bo=bQewBF4ISAUDB.c!&rf=viewer_4)
+
+#### <a id="16.1.3">相关方类型</a>
+
+![类型](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqR3UxClSgwOrXMzAnjNtlaTICLqWSygCF41m1I*CpUpXTxLAxr4g97Jz497iFCWAeRc0UdiX349GR23sCO9ILvg!/b&bo=cAoCBHAKAgQDR2I!&rf=viewer_4)
+
+#### <a id="16.1.4">相关方影响力</a>
+
+![影响力](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqTNmjKfbhCQqZnpn3TCqJ64kPrP4P825NXzdYydNhbuHvS6vPKnVMm0JNHgEg7VeCIVJgcll9omyYzaCBHcgFjw!/b&bo=CgcQBQoHEAUDNxI!&rf=viewer_4)
+
+#### <a id="16.1.5">相关方态度</a>
+
+![态度](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqXcE8lBy5G*aYzCMhUeM2*.iImJgo*GIpC5ve0tPjeLZQ6xVs8mijEl5PlKMd1*osVWOfhBSdUYV0TKIx97E8vU!/b&bo=bAfaBGwH2gQDNxI!&rf=viewer_4)
+
+#### <a id="16.1.6">权利利益矩阵</a>
+
+![权利](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqUe.wFUZh2DBlyI868gmrBdvYxTmgd1uZhvg1nQZ1hP81vn3Dqkei*1pEOnb80bB5nzhWbWRPA8BNGFd0ALQbHo!/b&bo=tgZ8A7YGfAMDByI!&rf=viewer_4)
+
+#### <a id="16.1.7">凸显模型</a>
+
+![凸显1](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqfAdfsqqVoKcz6axoeVMWgU9Nw2GW8irH*n9RnRPJkmZv279CDttpBmSK5mgwbZK3uXaS9PogmrGZhxp3zzGtRE!/b&bo=2giSBNoIkgQDR2I!&rf=viewer_4)
+
+> 蓝色的代表已经获取的能力，灰色的代表有机会获取的。这里要注重关注灰色的区域。
+
+![凸显2](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqSJ4vHWWJy34EVl*JOQat*9bTrGExZIS2Nu4KUZKgQNyrJZfJlU*sayi3eugsnjwoQNx7SVAX5KLm*ZzqMcP4Ws!/b&bo=3gguA94ILgMDNxI!&rf=viewer_4)
+
+### <a id="16.2">相关方影响方向</a>
+
+#### <a id="16.2.1">用西游记来解释各种相关方</a>
+
+![西游记](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqYsHEMzzv6*pXFFNdj0hobG8vZqZIB.wr2y3FOvYotyYtGV9QDGUBd85xzNEvG3DYbNCb5ZPVZjiX4jeE30nAng!/b&bo=bgiwBNwKCgYDV3o!&rf=viewer_4)
+
+#### <a id="16.2.2">管理相关方的本质</a>
+
+> 项目经理通过自己的能力（做人、做事、说话），让“恶魔”相关方变成“天使”
+
+![天使](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqfQS*f400DUz7Xv4p3dPc5N7qD12b63HCVq.Mv*4eQZJUY1KhB7XCYAS0u4Ev.MRzU0Smqxr5kM0gUt.fpsMF2A!/b&bo=Wgn6BFoJ.gQDR2I!&rf=viewer_4)
+
+![恶魔](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqWgbWauEmq34O5KHHVsNCXNpgudCNMv*zc3bK62lmcKWsBh7WEeyjl0pgRS9CxLUHH6ZiKob6HeFqlzm2SUZaAQ!/b&bo=CAlIBQgJSAUDNxI!&rf=viewer_4)
+
+### <a id="16.3">相关方登记册</a>
+
+![登记册](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqVK.0j6eT2TdWq36EBXVaLaP063kzwU*RzqpKIzDwRo3Wk8nsLvf3oM7DI0HP.Jx4Fd*LGTlOWZecqHn*eq8DZ8!/b&bo=egZ0A3oGdAMDByI!&rf=viewer_4)
+
+#### <a id="16.3.1">相关方评估矩阵</a>
+
+![评估矩阵](http://m.qpic.cn/psc?/V51v1yDM0Gv5Od16EXbW21m85g405U2I/bqQfVz5yrrGYSXMvKr.cqa80cBiE02k4uuRybk3I4MXO4pSstv8fFBMmBBtvsPobVT6gZmHbNTjSgWzcujsoJjhWsNh2pD771Z46iriS2D0!/b&bo=iAfMBIgHzAQDR2I!&rf=viewer_4)
 
 
 
