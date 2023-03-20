@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qw-ta-Njx">
+                                <rect key="frame" x="0.0" y="48" width="150" height="100"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gH5-Ze-GAt"/>
+                                    <constraint firstAttribute="width" constant="150" id="xvx-bj-sMT"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startLive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xT8-oX-y5m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7H-I9-QOJ">
+                                <rect key="frame" x="314" y="48" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IwQ-qO-j0U"/>
+                                    <constraint firstAttribute="height" constant="100" id="Onv-H4-Adr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="查看文件"/>
+                                <connections>
+                                    <action selector="fileListAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkz-dd-XBI"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TTW-rU-0L2">
+                                <rect key="frame" x="0.0" y="178" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ex-gX-uCa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="获取App内部音频(声道2 码率 44100)"/>
+                                        <connections>
+                                            <action selector="sourceAppAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USq-Vk-mLB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEr-7Y-ZHV">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="获取麦克风音频(声道1 码率 44100)"/>
+                                        <connections>
+                                            <action selector="sourceMicAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UHY-Dv-Mfl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hbN-HA-CsA"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="默认获取App内部音频，这个地方两个音频的合成Demo中没有做" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZj-Co-htu">
+                                <rect key="frame" x="20" y="298" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不要在录屏的中途切换音频来源！！！！！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yR-1O-sFQ">
+                                <rect key="frame" x="61.5" y="344" width="291" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="IZj-Co-htu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1gH-TW-X0s"/>
+                            <constraint firstItem="7yR-1O-sFQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BHu-Sd-wQM"/>
+                            <constraint firstItem="O7H-I9-QOJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E83-Mf-64O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O7H-I9-QOJ" secondAttribute="trailing" id="F6T-n1-lXL"/>
+                            <constraint firstItem="9qw-ta-Njx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LoK-tE-NKf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TTW-rU-0L2" secondAttribute="trailing" id="SZ2-LC-qs6"/>
+                            <constraint firstItem="IZj-Co-htu" firstAttribute="top" secondItem="TTW-rU-0L2" secondAttribute="bottom" constant="20" id="UuS-8m-YQK"/>
+                            <constraint firstItem="IZj-Co-htu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WWl-p5-cfd"/>
+                            <constraint firstItem="TTW-rU-0L2" firstAttribute="top" secondItem="9qw-ta-Njx" secondAttribute="bottom" constant="30" id="boz-oL-osc"/>
+                            <constraint firstItem="TTW-rU-0L2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jCX-mt-pZw"/>
+                            <constraint firstAttribute="trailing" secondItem="IZj-Co-htu" secondAttribute="trailing" constant="20" id="kNb-vo-MK9"/>
+                            <constraint firstItem="7yR-1O-sFQ" firstAttribute="top" secondItem="IZj-Co-htu" secondAttribute="bottom" constant="10" id="pMU-Nv-y3w"/>
+                            <constraint firstItem="9qw-ta-Njx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uaT-Wn-f3M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sourceAppBtn" destination="4Ex-gX-uCa" id="PHj-r5-hGq"/>
+                        <outlet property="sourceMicBtn" destination="AEr-7Y-ZHV" id="2Ey-FC-tMp"/>
+                        <outlet property="startBtn" destination="9qw-ta-Njx" id="w63-L1-A27"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
